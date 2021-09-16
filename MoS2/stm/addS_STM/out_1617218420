@@ -1,0 +1,812 @@
+------------------------------------------------------------
+          Invoking FHI-aims ...
+
+          When using FHI-aims, please cite the following reference:
+
+            Volker Blum, Ralf Gehrke, Felix Hanke, Paula Havu,
+            Ville Havu, Xinguo Ren, Karsten Reuter, and Matthias Scheffler,
+            'Ab Initio Molecular Simulations with Numeric Atom-Centered Orbitals',
+            Computer Physics Communications 180, 2175-2196 (2009)
+
+          In addition, many other developments in FHI-aims are likely important for
+          your particular application. A partial list of references is given at the end of
+          this file. Thank you for giving credit to the authors of these developments.
+
+          For any questions about FHI-aims, please visit our slack channel at
+
+            https://fhi-aims.slack.com
+
+          and our main development and support site at
+
+            https://aims-git.rz-berlin.mpg.de .
+
+          The latter site, in particular, has a wiki to collect information, as well
+          as an issue tracker to log discussions, suggest improvements, and report issues
+          or bugs. https://aims-git.rz-berlin.mpg.de is also the main development site
+          of the project and all new and updated code versions can be obtained there.
+          Please send an email to aims-coordinators@fhi-berlin.mpg.de and we will add
+          you to these sites. They are for you and everyone is welcome there.
+
+------------------------------------------------------------
+
+
+
+  Date     :  20210331, Time     :  212024.201
+  Time zero on CPU 1             :   0.194707000000000E+00  s.
+  Internal wall clock time zero  :           386457624.201  s.
+
+  FHI-aims created a unique identifier for this run for later identification
+  aims_uuid : 26382752-5541-4E5B-A929-8A5C9837749E
+
+  Build configuration of the current instance of FHI-aims
+  -------------------------------------------------------
+  FHI-aims version      : 210313
+  Commit number         : f94121f93
+  CMake host system     : Linux-4.12.14-122.57-default
+  CMake version         : 3.5.2
+  Fortran compiler      : /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/bin/mpiifort (Intel) version 19.1.0.20200306
+  Fortran compiler flags: -O3 -ip -fp-model precise
+  C compiler            : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icc (Intel) version 19.1.0.20200306
+  C compiler flags      : -O3 -ip -fp-model precise -std=gnu99
+  C++ compiler          : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icpc (Intel) version 19.1.0.20200306
+  C++ compiler flags    : -O3 -ip -fp-model precise -std=gnu99
+  Using MPI
+  Using ScaLAPACK
+  Using LibXC
+  Using i-PI
+  Using RLSY
+  Linking against: /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_intel_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_sequential.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_core.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_blacs_intelmpi_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_scalapack_lp64.so
+
+  Using      160 parallel tasks.
+  Task        0 on host co2133 reporting.
+  Task        1 on host co2133 reporting.
+  Task        2 on host co2133 reporting.
+  Task        3 on host co2133 reporting.
+  Task        4 on host co2133 reporting.
+  Task        5 on host co2133 reporting.
+  Task        6 on host co2133 reporting.
+  Task        7 on host co2133 reporting.
+  Task        8 on host co2133 reporting.
+  Task        9 on host co2133 reporting.
+  Task       10 on host co2133 reporting.
+  Task       11 on host co2133 reporting.
+  Task       12 on host co2133 reporting.
+  Task       13 on host co2133 reporting.
+  Task       14 on host co2133 reporting.
+  Task       15 on host co2133 reporting.
+  Task       16 on host co2133 reporting.
+  Task       17 on host co2133 reporting.
+  Task       18 on host co2133 reporting.
+  Task       19 on host co2133 reporting.
+  Task       20 on host co2133 reporting.
+  Task       21 on host co2133 reporting.
+  Task       22 on host co2133 reporting.
+  Task       23 on host co2133 reporting.
+  Task       24 on host co2133 reporting.
+  Task       25 on host co2133 reporting.
+  Task       26 on host co2133 reporting.
+  Task       27 on host co2133 reporting.
+  Task       28 on host co2133 reporting.
+  Task       29 on host co2133 reporting.
+  Task       30 on host co2133 reporting.
+  Task       31 on host co2133 reporting.
+  Task       32 on host co2133 reporting.
+  Task       33 on host co2133 reporting.
+  Task       34 on host co2133 reporting.
+  Task       35 on host co2133 reporting.
+  Task       36 on host co2133 reporting.
+  Task       37 on host co2133 reporting.
+  Task       38 on host co2133 reporting.
+  Task       39 on host co2133 reporting.
+  Task       40 on host co2134 reporting.
+  Task       41 on host co2134 reporting.
+  Task       42 on host co2134 reporting.
+  Task       43 on host co2134 reporting.
+  Task       44 on host co2134 reporting.
+  Task       45 on host co2134 reporting.
+  Task       46 on host co2134 reporting.
+  Task       47 on host co2134 reporting.
+  Task       48 on host co2134 reporting.
+  Task       49 on host co2134 reporting.
+  Task       50 on host co2134 reporting.
+  Task       51 on host co2134 reporting.
+  Task       52 on host co2134 reporting.
+  Task       53 on host co2134 reporting.
+  Task       54 on host co2134 reporting.
+  Task       55 on host co2134 reporting.
+  Task       56 on host co2134 reporting.
+  Task       57 on host co2134 reporting.
+  Task       58 on host co2134 reporting.
+  Task       59 on host co2134 reporting.
+  Task       60 on host co2134 reporting.
+  Task       61 on host co2134 reporting.
+  Task       62 on host co2134 reporting.
+  Task       63 on host co2134 reporting.
+  Task       64 on host co2134 reporting.
+  Task       65 on host co2134 reporting.
+  Task       66 on host co2134 reporting.
+  Task       67 on host co2134 reporting.
+  Task       68 on host co2134 reporting.
+  Task       69 on host co2134 reporting.
+  Task       70 on host co2134 reporting.
+  Task       71 on host co2134 reporting.
+  Task       72 on host co2134 reporting.
+  Task       73 on host co2134 reporting.
+  Task       74 on host co2134 reporting.
+  Task       75 on host co2134 reporting.
+  Task       76 on host co2134 reporting.
+  Task       77 on host co2134 reporting.
+  Task       78 on host co2134 reporting.
+  Task       79 on host co2134 reporting.
+  Task       80 on host co2135 reporting.
+  Task       81 on host co2135 reporting.
+  Task       82 on host co2135 reporting.
+  Task       83 on host co2135 reporting.
+  Task       84 on host co2135 reporting.
+  Task       85 on host co2135 reporting.
+  Task       86 on host co2135 reporting.
+  Task       87 on host co2135 reporting.
+  Task       88 on host co2135 reporting.
+  Task       89 on host co2135 reporting.
+  Task       90 on host co2135 reporting.
+  Task       91 on host co2135 reporting.
+  Task       92 on host co2135 reporting.
+  Task       93 on host co2135 reporting.
+  Task       94 on host co2135 reporting.
+  Task       95 on host co2135 reporting.
+  Task       96 on host co2135 reporting.
+  Task       97 on host co2135 reporting.
+  Task       98 on host co2135 reporting.
+  Task       99 on host co2135 reporting.
+  Task      100 on host co2135 reporting.
+  Task      101 on host co2135 reporting.
+  Task      102 on host co2135 reporting.
+  Task      103 on host co2135 reporting.
+  Task      104 on host co2135 reporting.
+  Task      105 on host co2135 reporting.
+  Task      106 on host co2135 reporting.
+  Task      107 on host co2135 reporting.
+  Task      108 on host co2135 reporting.
+  Task      109 on host co2135 reporting.
+  Task      110 on host co2135 reporting.
+  Task      111 on host co2135 reporting.
+  Task      112 on host co2135 reporting.
+  Task      113 on host co2135 reporting.
+  Task      114 on host co2135 reporting.
+  Task      115 on host co2135 reporting.
+  Task      116 on host co2135 reporting.
+  Task      117 on host co2135 reporting.
+  Task      118 on host co2135 reporting.
+  Task      119 on host co2135 reporting.
+  Task      120 on host co2626 reporting.
+  Task      121 on host co2626 reporting.
+  Task      122 on host co2626 reporting.
+  Task      123 on host co2626 reporting.
+  Task      124 on host co2626 reporting.
+  Task      125 on host co2626 reporting.
+  Task      126 on host co2626 reporting.
+  Task      127 on host co2626 reporting.
+  Task      128 on host co2626 reporting.
+  Task      129 on host co2626 reporting.
+  Task      130 on host co2626 reporting.
+  Task      131 on host co2626 reporting.
+  Task      132 on host co2626 reporting.
+  Task      133 on host co2626 reporting.
+  Task      134 on host co2626 reporting.
+  Task      135 on host co2626 reporting.
+  Task      136 on host co2626 reporting.
+  Task      137 on host co2626 reporting.
+  Task      138 on host co2626 reporting.
+  Task      139 on host co2626 reporting.
+  Task      140 on host co2626 reporting.
+  Task      141 on host co2626 reporting.
+  Task      142 on host co2626 reporting.
+  Task      143 on host co2626 reporting.
+  Task      144 on host co2626 reporting.
+  Task      145 on host co2626 reporting.
+  Task      146 on host co2626 reporting.
+  Task      147 on host co2626 reporting.
+  Task      148 on host co2626 reporting.
+  Task      149 on host co2626 reporting.
+  Task      150 on host co2626 reporting.
+  Task      151 on host co2626 reporting.
+  Task      152 on host co2626 reporting.
+  Task      153 on host co2626 reporting.
+  Task      154 on host co2626 reporting.
+  Task      155 on host co2626 reporting.
+  Task      156 on host co2626 reporting.
+  Task      157 on host co2626 reporting.
+  Task      158 on host co2626 reporting.
+  Task      159 on host co2626 reporting.
+
+  Performing system and environment tests:
+  | Environment variable OMP_NUM_THREADS correctly set to 1.
+  | Checking for ScaLAPACK...
+  | Testing pdtran()...
+  | All pdtran() tests passed.
+
+  Obtaining array dimensions for all initial allocations:
+  
+  -----------------------------------------------------------------------
+  Parsing control.in (first pass over file, find array dimensions only).
+  The contents of control.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of control.in .
+  -----------------------------------------------------------------------
+  
+  ##### Physical settings  ################
+  xc                 pbe
+  spin               none
+  charge      0.0
+  relativistic       atomic_zora scalar
+  #elsi_restart read
+  # SCF settings
+  #relax_unit_cell full
+  
+  
+  
+  #vdw_correction_hirshfeld
+  harmonic_length_scale 0.09
+  energy_tolerance  1E-3
+  occupation_type gaussian       0.01
+  # k-grid settings  (to be adjusted)
+  k_grid  2 2 1
+  #empty_states 8
+  use_dipole_correction
+  #include_spin_orbit non_self_consistent
+  
+  output cube stm -1
+  mixer   pulay
+  n_max_pulay        12 # high for metal
+  charge_mix_param   0.1 #low for metal
+  ################################################################################
+  #
+  #  FHI-aims code project
+  # Volker Blum, Fritz Haber Institute Berlin, 2009
+  #
+  #  Suggested "tight" defaults for S atom (to be pasted into control.in file)
+  #
+  #  Revised Jan 04, 2011, following tests (SiC) done by Lydia Nemec:
+  #     d and g functions of tier 2 now enabled by default.
+  #
+  ################################################################################
+    species        S
+  #     global species definitions
+      nucleus             16
+      mass                32.065
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0          2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         44 7.0
+      radial_multiplier   2
+      angular_grids       specified
+        division   0.4665  110
+        division   0.5810  194
+        division   0.7139  302
+        division   0.8274  434
+  #      division   0.9105  590
+  #      division   1.0975  770
+  #      division   1.2028  974
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      3  s   2.
+      valence      3  p   4.
+  #     ion occupancy
+      ion_occ      3  s   1.
+      ion_occ      3  p   3.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.6 A, 1.9 A, 2.5 A, 3.25 A, 4.0 A
+  #
+  ################################################################################
+  #  "First tier" - improvements: -652.81 meV to -45.53 meV
+       ionic 3 d auto
+       hydro 2 p 1.8
+       hydro 4 f 7
+       ionic 3 s auto
+  #  "Second tier" - improvements: -30.20 meV to -1.74 meV
+       hydro 4 d 6.2
+       hydro 5 g 10.8
+  #     hydro 4 p 4.9
+  #     hydro 5 f 10
+  #     hydro 1 s 0.8
+  #  "Third tier" - improvements: -1.04 meV to -0.20 meV
+  #     hydro 3 d 3.9
+  #     hydro 3 d 2.7
+  #     hydro 5 g 12
+  #     hydro 4 p 10.4
+  #     hydro 5 f 12.4
+  #     hydro 2 s 1.9
+  #  "Fourth tier" - improvements: -0.35 meV to -0.06 meV
+  #     hydro 4 d 10.4
+  #     hydro 4 p 7.2
+  #     hydro 4 d 10
+  #     hydro 5 g 19.2
+  #     hydro 4 s 12
+  
+  ################################################################################
+  #
+  # For methods that use the localized form of the "resolution of identity" for
+  # the two-electron Coulomb operator (RI_method LVL), particularly Hartree-Fock and
+  # hybrid density functional calculations, the highest accuracy can be obtained by
+  # uncommenting the line beginning with "for_aux"  below, thus adding an extra g radial
+  # function to the construction of the product basis set for the expansion.
+  # See Ref. New J. Phys. 17, 093020 (2015) for more information, particularly Figs. 1 and 6.
+  #
+  ################################################################################
+  #
+  # for_aux hydro 5 g 6.0
+  ################################################################################
+  #
+  #  FHI-aims code project
+  # Volker Blum, Fritz Haber Institute Berlin, 2009
+  #
+  #  Suggested "tight" defaults for Mo atom (to be pasted into control.in file)
+  #
+  ################################################################################
+    species        Mo
+  #     global species definitions
+      nucleus             42
+      mass                95.94
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0  2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         59 7.0
+      radial_multiplier   2
+      angular_grids specified
+        division   0.3117   50
+        division   0.6750  110
+        division   1.0351  194
+        division   1.2073  302
+        division   1.6402  434
+  #      division   1.9185  590
+  #      division   2.0237  770
+  #      division   2.0980  974
+  #      division   2.7972 1202
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      5  s   1.
+      valence      4  p   6.
+      valence      4  d   5.
+  #     ion occupancy
+      ion_occ     5  s   0.
+      ion_occ     4  p   6.
+      ion_occ     4  d   4.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.675 A, 1.9 A, 2.375 A, 3.00 A, 4.00 A
+  #
+  ################################################################################
+  #  "First tier"  - max. impr. -711.23  meV, min. impr. -21.07 meV
+       hydro 4 f 8.4
+       hydro 3 d 2.8
+       ionic 5 p auto
+       hydro 5 g 12
+       ionic 5 s auto
+  #  "Second tier" - max. impr. -39.38  meV, min. impr. -2.68 meV
+  #     hydro 4 f 12.4
+  #     hydro 3 d 3.3
+  #     hydro 6 h 17.2
+  #     hydro 4 f 7.6
+  #     hydro 3 p 3.0
+  #     hydro 1 s 0.65
+  #  "Third tier"  - max. impr. -5.50 meV, min. impr. -0.47 meV
+  #     hydro 4 f 29.2
+  #     hydro 5 g 11.2
+  #     hydro 3 d 6.8
+  #     hydro 6 h 14.8
+  #     hydro 2 p 2.3
+  #     hydro 4 s 3.8
+  #  "Fourth tier"  - max. impr. -0.58 meV, min. impr. -0.19 meV
+  #     hydro 5 f 6.8
+  #     hydro 5 d 14.8
+  #     hydro 6 s 7.8
+  #     hydro 5 g 20.8
+  #     hydro 5 d 10.4
+  #     hydro 5 p 9.8
+  #  Further functions - -0.17 meV and below
+  #     hydro 5 d 3.2
+  
+  -----------------------------------------------------------------------
+  Completed first pass over input file control.in .
+  -----------------------------------------------------------------------
+  
+  
+  -----------------------------------------------------------------------
+  Parsing geometry.in (first pass over file, find array dimensions only).
+  The contents of geometry.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of geometry.in .
+  -----------------------------------------------------------------------
+  
+  lattice_vector     15.90000000      0.00000000      0.00000000
+  lattice_vector     -7.95000000     13.76980390      0.00000000
+  lattice_vector      0.00000000      0.00000000    100.00000000
+  atom       1.58939428      0.91770622      3.07863823 Mo
+  atom      -0.00139656      1.83627283      4.63717380 S
+  atom       0.00039120      1.83228139      1.51529589 S
+  atom       0.00170589      3.66869505      3.07293438 Mo
+  atom      -1.59022062      4.59019026      4.63291525 S
+  atom      -1.58988938      4.59037579      1.51403790 S
+  atom      -1.59230562      6.42961731      3.07292507 Mo
+  atom      -3.18077741      7.34311914      4.63715156 S
+  atom      -3.18332324      7.34666821      1.51528488 S
+  atom      -3.18090175      9.18011202      3.07862817 Mo
+  atom      -4.76999472     10.09779415      4.64066596 S
+  atom      -4.76999894     10.09956376      1.51898278 S
+  atom      -4.77001079     11.93423333      3.08057042 Mo
+  atom      -6.36038774     12.85243832      4.64067010 S
+  atom      -6.35886942     12.85155228      1.51899669 S
+  atom       4.77057386      0.91769956      3.07862852 Mo
+  atom       3.18000881      1.84087018      4.63677142 S
+  atom       3.18000176      1.83383183      1.51813094 S
+  atom       3.17998226      3.67521218      3.07263208 Mo
+  atom       1.58600110      4.59305406      4.63235265 S
+  atom       1.58738795      4.57488270      1.50183627 S
+  atom       1.56153590      6.40988448      3.05792059 Mo
+  atom       0.00037086      7.33944317      4.63234507 S
+  atom      -0.01466621      7.34974961      1.50183144 S
+  atom       0.00248718      9.17882892      3.07263925 Mo
+  atom      -1.58609101     10.09599418      4.63676675 S
+  atom      -1.59216831     10.09950861      1.51813394 S
+  atom      -1.59030984     11.93508346      3.07863273 Mo
+  atom      -3.17959676     12.85243868      4.64066575 S
+  atom      -3.18112705     12.85155050      1.51898336 S
+  atom       7.95038492      0.91861276      3.07583071 Mo
+  atom       6.36140900      1.83627053      4.63715539 S
+  atom       6.35961452      1.83227938      1.51528060 S
+  atom       6.35826733      3.66869634      3.07291678 Mo
+  atom       4.77401170      4.59304321      4.63233311 S
+  atom       4.77261398      4.57488452      1.50183006 S
+  atom       4.79844338      6.40988378      3.05791388 Mo
+  atom       3.18000491      7.34423564      4.58042887 S
+  atom       3.17999370      7.34412916      6.52020239 S_add
+  atom       3.18000426      7.34427901      1.52965277 S
+  atom       3.17998564      9.21309191      3.05794935 Mo
+  atom       1.59437544     10.10033520      4.63236256 S
+  atom       1.57795646     10.10821542      1.50185090 S
+  atom       1.58597280     11.93455963      3.07294546 Mo
+  atom       0.00062404     12.85347264      4.63716677 S
+  atom      -0.00370980     12.85389716      1.51529238 S
+  atom      11.12999126      0.91873922      3.07364748 Mo
+  atom       9.54104125      1.83696658      4.63499404 S
+  atom       9.53960233      1.83611828      1.51373060 S
+  atom       9.54030003      3.67217099      3.07362904 Mo
+  atom       7.95023420      4.59019273      4.63290227 S
+  atom       7.94990674      4.59038651      1.51402834 S
+  atom       7.95227903      6.42962795      3.07292178 Mo
+  atom       6.35964382      7.33944932      4.63234515 S
+  atom       6.37468003      7.34975504      1.50183063 S
+  atom       6.35748939      9.17883088      3.07264890 Mo
+  atom       4.76563600     10.10032474      4.63237899 S
+  atom       4.78205933     10.10822068      1.50185972 S
+  atom       4.77400497     11.93455594      3.07295994 Mo
+  atom       3.18000614     12.85247208      4.63293653 S
+  atom       3.18001530     12.85208134      1.51405735 S
+  atom      14.30959077      0.91861451      3.07584805 Mo
+  atom      12.71896816      1.83696727      4.63500534 S
+  atom      12.72042109      1.83611845      1.51373859 S
+  atom      12.71967988      3.67216904      3.07363732 Mo
+  atom      11.13000642      4.58913339      4.63498834 S
+  atom      11.13001294      4.59080229      1.51372463 S
+  atom      11.12998438      6.42585736      3.07582482 Mo
+  atom       9.54078745      7.34311914      4.63715506 S
+  atom       9.54333556      7.34667404      1.51528298 S
+  atom       9.54087296      9.18011056      3.07863318 Mo
+  atom       7.94610209     10.09598991      4.63678002 S
+  atom       7.95217935     10.09951229      1.51814335 S
+  atom       7.95027793     11.93508120      3.07864726 Mo
+  atom       6.35938576     12.85347092      4.63718492 S
+  atom       6.36372246     12.85390046      1.51530946 S
+  
+  -----------------------------------------------------------------------
+  Completed first pass over input file geometry.in .
+  -----------------------------------------------------------------------
+  
+
+  Basic array size parameters:
+  | Number of species                 :        2
+  | Number of atoms                   :       76
+  | Number of lattice vectors         :        3
+  | Max. basis fn. angular momentum   :        4
+  | Max. atomic/ionic basis occupied n:        5
+  | Max. number of basis fn. types    :        3
+  | Max. radial fns per species/type  :       10
+  | Max. logarithmic grid size        :     1436
+  | Max. radial integration grid size :      119
+  | Max. angular integration grid size:      434
+  | Max. angular grid division number :        8
+  | Radial grid for Hartree potential :     1436
+  | Number of spin channels           :        1
+  | Cube type output requested        :        1
+
+------------------------------------------------------------
+          Reading file control.in.
+------------------------------------------------------------
+  XC: Using PBE gradient-corrected functionals.
+  Spin treatment: No spin polarisation.
+  Charge =   0.000000E+00: Neutral system requested explicitly.
+  Scalar relativistic treatment of kinetic energy: on-site free-atom approximation to ZORA.
+  Assuming qualitatively harmonic for steps shorter than   0.900000E-01 A.
+  Max energy increase before discarding BFGS move:   0.100000E-02 eV
+  Occupation type: Gaussian broadening, width =   0.100000E-01 eV.
+  Found k-point grid:         2         2         1
+  Using dipole correction.
+  | STM width in eV:      -1.0000
+ *** Proc    2 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc    4 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   17 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   29 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   18 in read_geo: Non-existent species definition found while reading geometry.in
+  | Cube output options:
+ * Cube origin was not provided following cube request. Will be using default value.
+ * Cube edges were not provided following cube request. Defaults will be used.
+ Standard cube format requested.
+
+  Using pulay charge density mixing.
+  Pulay mixing - number of memorized iterations:   12
+  Charge density mixing - mixing parameter:     0.1000
+ *** Proc    5 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   26 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   12 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   39 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc    1 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   23 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   35 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   36 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   30 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   20 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   19 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   33 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc    3 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   10 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   34 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   11 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   28 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   14 in read_geo: Non-existent species definition found while reading geometry.in
+ 
+  Reading configuration options for species S                   .
+  | Found nuclear charge :  16.0000
+ *** Proc    8 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   16 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   24 in read_geo: Non-existent species definition found while reading geometry.in
+  | Found atomic mass :    32.0650000000000      amu
+  | Found l_max for Hartree potential  :   6
+ *** Proc   15 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   32 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc    6 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   13 in read_geo: Non-existent species definition found while reading geometry.in
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    44 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+ *** Proc   25 in read_geo: Non-existent species definition found while reading geometry.in
+  | Specified grid contains     5 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  3 s   2.000
+  | Found free-atom valence shell :  3 p   4.000
+  | Found free-ion valence shell :  3 s   1.000
+  | Found free-ion valence shell :  3 p   3.000
+  | Found ionic basis function :  3 d , default cutoff radius.
+  | Found hydrogenic basis function :  2 p   1.800
+  | Found hydrogenic basis function :  4 f   7.000
+  | Found ionic basis function :  3 s , default cutoff radius.
+  | Found hydrogenic basis function :  4 d   6.200
+  | Found hydrogenic basis function :  5 g  10.800
+ *** Proc   27 in read_geo: Non-existent species definition found while reading geometry.in
+  Species S                   : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species S : No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive S                    ion.
+  Species S : On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species S                   : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species S                   : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species S                   : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain    89 grid points.
+ 
+  Reading configuration options for species Mo                  .
+  | Found nuclear charge :  42.0000
+  | Found atomic mass :    95.9400000000000      amu
+ *** Proc   38 in read_geo: Non-existent species definition found while reading geometry.in
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    59 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     6 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  5 s   1.000
+  | Found free-atom valence shell :  4 p   6.000
+  | Found free-atom valence shell :  4 d   5.000
+  | Found free-ion valence shell :  5 s   0.000
+  | Found free-ion valence shell :  4 p   6.000
+  | Found free-ion valence shell :  4 d   4.000
+  | Found hydrogenic basis function :  4 f   8.400
+  | Found hydrogenic basis function :  3 d   2.800
+  | Found ionic basis function :  5 p , default cutoff radius.
+  | Found hydrogenic basis function :  5 g  12.000
+  | Found ionic basis function :  5 s , default cutoff radius.
+  Species Mo                  : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species Mo: No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive Mo                   ion.
+  Species Mo: On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species Mo                  : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species Mo                  : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species Mo                  : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain   119 grid points.
+ *** Proc    7 in read_geo: Non-existent species definition found while reading geometry.in
+ 
+  Finished reading input file 'control.in'.
+ 
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+          Reading geometry description geometry.in.
+------------------------------------------------------------
+ *** Proc    9 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   22 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   21 in read_geo: Non-existent species definition found while reading geometry.in
+ * Species S_add               , listed in geometry.in, is not described in input file control.in.
+ * List of            2  species: 
+ *            1 :S                   
+ *            2 :Mo                  
+ * Aborting.
+ *** Proc    0 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   37 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   31 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   52 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   47 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   55 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   68 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   76 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   63 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   45 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   41 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   54 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   59 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   66 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   40 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   56 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   57 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   60 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   62 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   44 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   75 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   78 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   79 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   65 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   64 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   77 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   49 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   67 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   71 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   61 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   73 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   74 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   70 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   42 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   46 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   48 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   50 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   53 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   58 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   69 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  153 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  159 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  155 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  121 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  127 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  140 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  148 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  146 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  158 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  130 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  143 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  134 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  139 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  125 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  133 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  150 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  154 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  131 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  137 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  138 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  147 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  156 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  120 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  142 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  157 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  132 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  129 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  151 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  126 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  128 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  145 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  149 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  135 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  106 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  141 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  122 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  124 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  144 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  136 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  152 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  123 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   90 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  112 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   81 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  102 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  111 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  101 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   97 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  105 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   92 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   93 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  117 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   82 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  113 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  103 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  114 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  107 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  119 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   91 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   85 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   94 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   84 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   88 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  109 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   86 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   95 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  108 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   87 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  116 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  115 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  104 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  110 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   98 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   99 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   80 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   96 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  100 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   51 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   43 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   72 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   89 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc   83 in read_geo: Non-existent species definition found while reading geometry.in
+ *** Proc  118 in read_geo: Non-existent species definition found while reading geometry.in

@@ -1,0 +1,50 @@
+Total number of atoms found: 2
+Number of atoms considered in fequency calcualtion: 2
+Processing atom: 1/2, coord.: 1/3, delta: -0.002
+Processing atom: 1/2, coord.: 1/3, delta: 0.002
+Processing atom: 1/2, coord.: 2/3, delta: -0.002
+Processing atom: 1/2, coord.: 2/3, delta: 0.002
+Processing atom: 1/2, coord.: 3/3, delta: -0.002
+Processing atom: 1/2, coord.: 3/3, delta: 0.002
+Processing atom: 2/2, coord.: 1/3, delta: -0.002
+Processing atom: 2/2, coord.: 1/3, delta: 0.002
+Processing atom: 2/2, coord.: 2/3, delta: -0.002
+Processing atom: 2/2, coord.: 2/3, delta: 0.002
+Processing atom: 2/2, coord.: 3/3, delta: -0.002
+Processing atom: 2/2, coord.: 3/3, delta: 0.002
+Entering hessian diagonalization
+Number of atoms                = 2
+Name of Hessian input file     = hessian.S2.dat
+Name of grad dipole input file = grad_dipole.S2.dat
+Name of Masses  input file     = masses.S2.dat
+Name of XYZ output file        = S2.xyz
+Threshold for Matrix elements  = -1
+     All matrix elements are taken into account by default
+
+Solving eigenvalue system for Hessian Matrix
+Done ... 
+ZPE is [-9.90801360e-08 -4.11734533e-08 -2.70578809e-08  1.19917554e-02
+  1.19917753e-02  1.28230123e-02]
+Results
+
+List of all frequencies found:
+Mode number      Frequency [cm^(-1)]   Zero point energy [eV]       Raman-intensity [Ang^4/amu] 
+          1              -0.00159827              -0.00000010               0.00000000
+          2              -0.00066417              -0.00000004               0.00000000
+          3              -0.00043647              -0.00000003               0.00000000
+          4             193.44006252               0.01199176               0.00000000
+          5             193.44038232               0.01199178               0.00034332
+          6             206.84914072               0.01282301               0.00000000
+
+
+Summary of zero point energy for entire system:
+| Cumulative ZPE               =      0.03680638 eV
+| without first three eigenmodes =      0.03680654 eV
+
+Stability checking - eigenvalues should all be positive for a stable structure. 
+The three smallest frequencies should be (almost) zero:
+              -0.00159827              -0.00066417              -0.00043647
+Compare this with the largest eigenvalue, 
+             206.84914072
+
+ Done. 

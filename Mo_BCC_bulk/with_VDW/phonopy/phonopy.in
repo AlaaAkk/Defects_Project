@@ -1,0 +1,36 @@
+# configfile written at 2021/07/07 09:14:26
+
+[phonopy]
+supercell_matrix:              [1, 1, 1]
+displacement:                  0.01
+is_diagonal:                   False
+is_plusminus:                  auto
+symprec:                       1e-05
+q_mesh:                        [1, 1, 1]
+workdir:                       phonopy
+
+[machine]
+basissetloc:                   /u/alaa/do/FHIaims/species_defaults
+aims_command:                  /u/alaa/do/FHIaims/run_aims.sh
+
+[calculator]
+name:                          aims
+workdir:                       /cobra/u/alaa/data/MoS2_defect/Mo_BCC_bulk/with_VDW/phonopy
+
+[calculator.parameters]
+xc:                            pbe
+k_grid:                        [8, 8, 8]
+sc_accuracy_rho:               1e-06
+relativistic:                  atomic_zora scalar
+output_level:                  MD_light
+compute_forces:                True
+use_pimd_wrapper:              ('localhost', 12346)
+
+[calculator.kpoints]
+density:                       3
+
+[calculator.basissets]
+default:                       tight
+
+[calculator.socketio]
+port:                          12345

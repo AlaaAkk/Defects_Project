@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  Alaa
+Node list: co1491
+Job start: Mon Jun 21 18:09:05 CEST 2021
+Job end:   Mon Jun 21 18:09:11 CEST 2021
+Work dir:  /u/alaa/supercell/VS22_So/./
+Command:   /cobra/u/alaa/supercell/VS22_So/sub2.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+4226219            Alaa      1            80                             00:00:06      1:0 
+4226219.0         dos.x      1     40     40       32.22M        5.75M   00:00:02      1:0 
+  
+Maximum memory per node: 1.3198 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 0 %
+     

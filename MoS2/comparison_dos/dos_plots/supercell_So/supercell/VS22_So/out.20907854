@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  Alaa
+Node list: dra[0617,0626,0628-0629,0632]
+Job start: Wed Jun  9 21:51:14 CEST 2021
+Job end:   Thu Jun 10 00:31:55 CEST 2021
+Work dir:  /ptmp/alaa/qe/2/VS22_So/./
+Command:   /draco/ptmp/alaa/qe/2/VS22_So/sub.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+20907854           Alaa      5           320                             02:40:41      0:0 
+20907854.0         pw.x      5    160    160     1057.40M     1003.20M   02:40:37      0:0 
+  
+Maximum memory per node: 34.649 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 99.8 %
+     

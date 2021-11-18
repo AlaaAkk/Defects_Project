@@ -5,7 +5,6 @@ charge      0.0
 relativistic       atomic_zora scalar
 #elsi_restart read 
 # SCF settings
-relax_geometry trm 1E-3
 
 #vdw_correction_hirshfeld
 # k-grid settings  (to be adjusted)
@@ -13,11 +12,11 @@ relax_geometry trm 1E-3
 #use_dipole_correction
 #include_spin_orbit non_self_consistent
 
-many_body_dispersion_nl    beta=0.81 
+#many_body_dispersion_nl    beta=0.81 
 mixer   pulay
 n_max_pulay        12 # high for metal
 charge_mix_param   0.1 #low for metal
-#many_body_dispersion_nl    beta=0.81 do_rpa=.true. rpa_rescale_eigs=.true. parallel_mode=k_points
+many_body_dispersion_nl    beta=0.81 
 ################################################################################
 #
 #  FHI-aims code project

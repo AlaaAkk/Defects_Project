@@ -32,7 +32,7 @@ import matplotlib.pyplot as plt
 # Reading in total DOS data from FHI-aims output
 total_dos_file = "KS_DOS_total_raw_tetrahedron.dat"
 energy_tot, dos_tot = np.loadtxt(total_dos_file, unpack=True)
-#print(energy_tot)
+
 
 #############################################################################################################
 ### USER INPUTS
@@ -41,42 +41,70 @@ energy_tot, dos_tot = np.loadtxt(total_dos_file, unpack=True)
 xmin=min(energy_tot)
 xmax=max(energy_tot)
 # Or custom limits
-#xmin=-9
-#xmax=9
+xmin=-4
+xmax=4
 ymin=0
-ymax=100
+ymax=40
 
 # Option to shift zero of energy to VBM and mark on the band gap (by default these will be set to zero for no shifting)
 # User inputs to shift zero of energy
+#VBM = -5.96981626
 #VBM = 0
-#Eg=0
-VBM = -5.74602357
-Eg = -4.61124319
-#Eg =-5.41264238
-
+#Eg=1.66662478
+#Eg = -4.30319148
+# Reading the Fermi energy from the aims.out file
+f = open('aims.out', 'r')
+FermiValues = list()
+VBMValues = list()
+gapValues = list()
+lines = f.readlines()
+for line in lines:
+    if "(Fermi" in line.split(" "):
+        try:
+            FermiValues.append(float(line.split(" ")[-2]))
+        except:
+            continue
+    if "(VBM)" in line.split(" "):
+        try:
+            VBMValues.append(float(line.split(" ")[-6]))
+        except:
+            continue
+    if "HOMO-LUMO" in line.split(" "):
+        try:
+            gapValues.append(float(line.split(" ")[-12]))
+        except:
+            continue
+VBM = VBMValues[-1]
+#print(VBM)
+Eg = gapValues[-1]
+#print(Eg)
+Fermi = FermiValues[-1]
+Fermi=Fermi-VBM
+#print(Fermi)
 #############################################################################################################
 #############################################################################################################
 
 # Assigning number of subplots based on number of user-inputted arguments
 plt.subplot(len(sys.argv), 1, 1)
-plt.fill_between(energy_tot, dos_tot, color='black')
+plt.fill_between(energy_tot-VBM, dos_tot, color='black')
 plt.xlim(xmin,xmax)
 plt.ylim(ymin,2*ymax)
-plt.ylabel("Total DOS", size=9)
+plt.ylabel("Total DOS", size=16)
 
-if (VBM !=0) or (Eg !=0):
+if (VBM !=0) and (Eg !=0):
   # Adding lines and labels for VBM and CBM
   text_y_position = 2*ymax
-  plt.axvline(x=VBM, color='black', linestyle='--')
-  plt.axvline(x=Eg, color='black', linestyle='--')
-  plt.text(VBM, text_y_position, 'VBM', color='red', fontsize=6)
-  plt.text(Eg, text_y_position, 'CBM', color='red', fontsize=6)
-  plt.title('di S neighbors Supercell')
-#
+  plt.axvline(x=0.0, color='k', linestyle='--')
+  plt.axvline(x=Eg, color='k', linestyle='--')
+  plt.axvline(x=Fermi, color='red', linestyle='--')
+  #plt.text(-1.2, text_y_position-5, 'VBM', fontsize=12, color='r')
+  #plt.text(Eg+0.3, text_y_position-5, 'CBM', fontsize=12, color='r')
+  plt.text(Fermi+0.3, text_y_position-0.5, 'Fermi', fontsize=12, color='r')
+
 #############################################################################################################
 ########## Starting to plot species proj dos requested by user ##############################################
-
-for i in range(1, len(sys.argv)):
+compoundName = str(sys.argv[1])
+for i in range(2, len(sys.argv)):
 #  print i
 
   # Reading in arguments and assigning as species
@@ -91,54 +119,50 @@ for i in range(1, len(sys.argv)):
       all_data = [] # initialise empty list
       for line in data:
           all_data.append(line.strip().split())  # storing element and coordinates into 2D array of strings (or list appended onto another list?)
-  #        print all_data
   data.close()
   if (all_data[3][-1]=="4"):
-   #print "4 -Pb"
-   energy, total_species_dos, l0, l1, l2, l3, l4 = np.loadtxt(data_file, unpack=True)
+   # print "4 -Pb"
+    energy, total_species_dos, l0, l1, l2, l3, l4 = np.loadtxt(data_file, unpack=True)
   if (all_data[3][-1]=="3"):
    # print "3 -Sb"
     energy, total_species_dos, l0, l1, l2, l3 = np.loadtxt(data_file, unpack=True)
   if (all_data[3][-1]=="2"):
-  #  print "2 -Sb"
     energy, total_species_dos, l0, l1, l2 = np.loadtxt(data_file, unpack=True)
   if (all_data[3][-1]=="1"):
-  #  print "1 -Sb"
     energy, total_species_dos, l0, l1 = np.loadtxt(data_file, unpack=True)
   if (all_data[3][-1]=="0"):
-  #  print "0 -Sb"
     energy, total_species_dos, l0 = np.loadtxt(data_file, unpack=True)
-  #  print(energy)
   #else:
    # print "Error in data file read in!"
 
-  plt.subplot(len(sys.argv), 1, 1+i)
-  plt.fill_between(energy, total_species_dos, color='gray', alpha=0.09)
+  plt.subplot(len(sys.argv), 1, i)
+  plt.fill_between(energy-VBM, total_species_dos, color='gray', alpha=0.3)
   if (all_data[3][-1]=="4"):
-     plt.plot(energy, l0, label='s', color='purple', lw=1)
-     plt.plot(energy, l1, label='p', color='blue', lw=1)
-     plt.plot(energy, l2, label='d', color='green', lw=1)
-     plt.plot(energy, l3, label='f', color='red', lw=1)
-     plt.plot(energy, l4, label='g', color='orange', lw=1)
+    plt.plot(energy-VBM, l0, label='s', color='purple', lw=2)
+    plt.plot(energy-VBM, l1, label='p', color='blue', lw=2)
+    plt.plot(energy-VBM, l2, label='d', color='green', lw=2)
+    plt.plot(energy-VBM, l3, label='f', color='red', lw=2)
+    plt.plot(energy-VBM, l4, label='g', color='orange', lw=2)
   if (all_data[3][-1]=="3"):
-    plt.plot(energy, l0, label='s', color='purple', lw=1)
-    plt.plot(energy, l1, label='p', color='blue', lw=1)
-    plt.plot(energy, l2, label='d', color='green', lw=1)
-    plt.plot(energy, l3, label='f', color='red', lw=1)
+    plt.plot(energy-VBM, l0, label='s', color='purple', lw=2)
+    plt.plot(energy-VBM, l1, label='p', color='blue', lw=2)
+    plt.plot(energy-VBM, l2, label='d', color='green', lw=2)
+    plt.plot(energy-VBM, l3, label='f', color='red', lw=2)
   if (all_data[3][-1]=="2"):
-    plt.plot(energy, l0, label='s', color='purple', lw=1)
-    plt.plot(energy, l1, label='p', color='blue', lw=1)
-    plt.plot(energy, l2, label='d', color='green', lw=1)
+    plt.plot(energy-VBM, l0, label='s', color='purple', lw=2)
+    plt.plot(energy-VBM, l1, label='p', color='blue', lw=2)
+    plt.plot(energy-VBM, l2, label='d', color='green', lw=2)
   if (all_data[3][-1]=="1"):
-    plt.plot(energy, l0, label='s', color='purple', lw=1)
-    plt.plot(energy, l1, label='p', color='blue', lw=1)
+    plt.plot(energy-VBM, l0, label='s', color='purple', lw=2)
+    plt.plot(energy-VBM, l1, label='p', color='blue', lw=2)
   if (all_data[3][-1]=="0"):
-    plt.plot(energy, l0, label='s', color='purple', lw=1)
+    plt.plot(energy-VBM, l0, label='s', color='purple', lw=2)
 
-  if (VBM !=0) or (Eg !=0):
+  if (VBM !=0) and (Eg !=0):
     # Adding lines to mark VBM and CBM
-    plt.axvline(x=VBM, color='black', linestyle='--')
-    plt.axvline(x=Eg, color='black', linestyle='--')
+    plt.axvline(x=0.0, color='k', linestyle='--')
+    plt.axvline(x=Eg, color='k', linestyle='--')
+    plt.axvline(x=Fermi, color='k', linestyle='--')
 
 #############################################################################################################
 ### USER INPUT: option to scale some pDOS axes differently
@@ -151,11 +175,12 @@ for i in range(1, len(sys.argv)):
 
   plt.xlim(xmin,xmax)
   plt.ylim(ymin,ymax)
-  plt.ylabel(str(species)+' DOS', size=9)
+  plt.ylabel(str(species)+' DOS', size=16)
 
-plt.xlabel('Energy (eV)', size=9) # Just for final plot
-plt.subplots_adjust(bottom=0.2)
-plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.6), fancybox=True, shadow=True, ncol=5)
-plt.savefig('dos.png')
-
+plt.xlabel('Energy (eV)', size=16) # Just for final plot
+plt.subplots_adjust(bottom=0.0002)
+#plt.legend(bbox_to_anchor=(1.05, 1.0), loc='upper center')
+plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.8), fancybox=True, shadow=True, ncol=5)
+plt.savefig('%s_DOS.pdf'%compoundName)
+plt.show()
 plt.show()

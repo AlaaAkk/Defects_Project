@@ -14,37 +14,24 @@ Processing atom: 2/2, coord.: 3/3, delta: -0.002
 Processing atom: 2/2, coord.: 3/3, delta: 0.002
 Entering hessian diagonalization
 Number of atoms                = 2
-Name of Hessian input file     = hessian.S2.dat
-Name of grad dipole input file = grad_dipole.S2.dat
-Name of Masses  input file     = masses.S2.dat
-Name of XYZ output file        = S2.xyz
+Name of Hessian input file     = hessian.Mo.dat
+Eigen vectors input file       = eigen_vectors.Mo.dat
+Name of Masses  input file     = masses.Mo.dat
+Name of XYZ output file        = Mo.xyz
 Threshold for Matrix elements  = -1
      All matrix elements are taken into account by default
 
 Solving eigenvalue system for Hessian Matrix
+-157500050924.79135
+-52836275402.222984
+-7365974919.05038
+36428088235330.91
+36551116273107.375
+39011677298440.04
+-0.8361421701244328
+-0.28049919804281764
+-0.03910476357139684
+193.39079937897012
+194.04393523440987
+207.10665377554662
 Done ... 
-ZPE is [-9.90801360e-08 -4.11734533e-08 -2.70578809e-08  1.19917554e-02
-  1.19917753e-02  1.28230123e-02]
-Results
-
-List of all frequencies found:
-Mode number      Frequency [cm^(-1)]   Zero point energy [eV]       Raman-intensity [Ang^4/amu] 
-          1              -0.00159827              -0.00000010               0.00000000
-          2              -0.00066417              -0.00000004               0.00000000
-          3              -0.00043647              -0.00000003               0.00000000
-          4             193.44006252               0.01199176               0.00000000
-          5             193.44038232               0.01199178               0.00034332
-          6             206.84914072               0.01282301               0.00000000
-
-
-Summary of zero point energy for entire system:
-| Cumulative ZPE               =      0.03680638 eV
-| without first three eigenmodes =      0.03680654 eV
-
-Stability checking - eigenvalues should all be positive for a stable structure. 
-The three smallest frequencies should be (almost) zero:
-              -0.00159827              -0.00066417              -0.00043647
-Compare this with the largest eigenvalue, 
-             206.84914072
-
- Done. 

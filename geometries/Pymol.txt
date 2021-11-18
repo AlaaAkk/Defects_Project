@@ -1,0 +1,60 @@
+loadall /home/akkoush/Defect/MoS2_defect/geometries/geometry.xyz, discrete=0
+bg white
+set auto_zoom, off
+set specular, off
+set sphere_quality, 2
+set depth_cue, 0
+zoom all, 2
+color grey30, elem c
+color grey80, elem h
+color deepsalmon, elem o
+color skyblue, elem n
+color lightorange, elem cu
+color bluewhite, elem ag
+color gold, elem au
+select hc, elem h+c
+select ho, elem h+o
+select hn, elem h+n
+select hcu, elem h+cu
+select hau, elem h+au
+select hag, elem h+ag
+selec cc, elem c+c
+selec co, elem c+o
+selec cn, elem c+n
+selec on, elem o+n
+selec oo, elem o+o
+selec nn, elem n+n
+selec smo, elem s+mo
+preset.ball_and_stick(selection='all', mode=1)
+set sphere_transparency=0.0, elem h
+set sphere_scale, 1.06, elem cu
+set sphere_scale, 1.02, elem au
+set sphere_scale, 1.0, elem ag
+set sphere_scale, 0.8, elem s
+set sphere_transparency=0.0, elem s
+set sphere_scale, 1.0, elem mo
+set sphere_transparency=0.0, elem mo
+set_bond stick_transparency, 0.00, hc, ho, hn, hcu, hau, hag
+set_bond stick_transparency, 0.00, ho
+set_bond stick_transparency, 0.00, hn
+set_bond stick_transparency, 0.00, hcu
+set_bond stick_transparency, 0.00, hau
+set_bond stick_transparency, 0.00, hag```
+set_bond stick_radius, 0.5, hc
+set_bond stick_radius, 0.5, ho
+set_bond stick_radius, 0.5, hn
+set_bond stick_radius, 0.50, hcu
+set_bond stick_radius, 0.50, hau
+set_bond stick_radius, 0.50, hag
+set_bond stick_radius, 0.50, smo
+set_bond stick_radius, 0.2, cc
+set_bond stick_radius, 0.2, co
+set_bond stick_radius, 0.2, cn
+set_bond stick_radius, 0.2, on
+set_bond stick_radius, 0.2, oo
+set_bond stick_radius, 0.2, nn
+set_bond stick_transparency, 0, cc
+save Eldens.pse
+ray 2000 2000
+png eldens.png
+

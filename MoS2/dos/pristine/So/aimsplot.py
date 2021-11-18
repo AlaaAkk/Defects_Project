@@ -263,8 +263,7 @@ for line in open("control.in"):
 if PLOT_SOC:
     max_spin_channel = 1
 
-if PLOT_BANDS and PLOT_DOS and PLOT_DOS_TETRAHEDRON or PLOT_DOS_SPECIES or PLOT_DOS_SPECIES_TETRAHEDRON:
-    print('with')
+if PLOT_BANDS and PLOT_DOS and PLOT_DOS_TETRAHEDRON and PLOT_DOS_SPECIES and PLOT_DOS_SPECIES_TETRAHEDRON:
     ax_bands = plt.axes([0.1,0.1,0.6,0.8])
     ax_dos = plt.axes([0.72,0.1,0.18,0.8],sharey=ax_bands)
     ax_dos.set_title("DOS")
@@ -272,12 +271,11 @@ if PLOT_BANDS and PLOT_DOS and PLOT_DOS_TETRAHEDRON or PLOT_DOS_SPECIES or PLOT_
     ax_bands.set_ylabel("E [eV]")
     PLOT_DOS_REVERSED = True
 elif PLOT_BANDS:
-    ax_bands = subplot(1,1,1)
+    ax_bands = plt.subplot(1,1,1)
 elif PLOT_DOS or PLOT_DOS_TETRAHEDRON or PLOT_DOS_SPECIES or PLOT_DOS_SPECIES_TETRAHEDRON:
-    print('without')
     ax_dos = plt.subplot(1,1,1)
     ax_dos.set_title("DOS")
-    PLOT_DOS_REVERSED = True
+    PLOT_DOS_REVERSED = False
 
 #######################
 
@@ -334,7 +332,7 @@ if PLOT_BANDS:
             #    band_energies = np.asarray(new_band_energies).transpose() # recombine the bands back into the original data format
             #    xvals = xvals_smooth # and use the interpolated x axis
             for b in range(band_energies.shape[1]):
-                ax_bands.plot(xvals,band_energies[:,b],color=' br'[spin])
+                ax_bands.plot(xvals,band_energies[:,b],color=' k'[spin])
 
     tickx = []
     tickl = []
@@ -478,13 +476,13 @@ else:
     if PLOT_DOS_SPECIES or PLOT_DOS_SPECIES_TETRAHEDRON:
         for sp in range(len(species)):
             for ispin in range(max_spin_channel):
-                ax_dos.plot(energy,tdos[sp][:,ispin]*spinsgn[ispin],color='br'[ispin],linestyle='-',label='%s %s'%(species[sp],['up','down'][ispin]))
+                ax_dos.plot(energy,tdos[sp][:,ispin]*spinsgn[ispin],color='b'[ispin],linestyle='-',label='%s %s'%(species[sp],['up','down'][ispin]))
                 for l in range(ldos[sp].shape[2]):
-                    ax_dos.plot(energy,ldos[sp][:,ispin,l]*spinsgn[ispin],color='br'[ispin],linestyle='--',label='%s (l=%i) %s'%(species[sp],l,['up','down'][ispin]))
+                    ax_dos.plot(energy,ldos[sp][:,ispin,l]*spinsgn[ispin],color='r'[ispin],linestyle='--',label='%s (l=%i) %s'%(species[sp],l,['up','down'][ispin]))
 
     if PLOT_DOS or PLOT_DOS_TETRAHEDRON:
         for ispin in range(max_spin_channel):
-            ax_dos.plot(energy,dos[:,ispin]*spinsgn[ispin],color='br'[ispin])
+            ax_dos.plot(energy,dos[:,ispin]*spinsgn[ispin],color='g'[ispin])
 
     ax_dos.set_xlim(energy[0],energy[-1])
     if CUSTOM_YLIM:

@@ -1,0 +1,141 @@
+------------------------------------------------------------
+          Invoking FHI-aims ...
+
+          When using FHI-aims, please cite the following reference:
+
+            Volker Blum, Ralf Gehrke, Felix Hanke, Paula Havu,
+            Ville Havu, Xinguo Ren, Karsten Reuter, and Matthias Scheffler,
+            'Ab Initio Molecular Simulations with Numeric Atom-Centered Orbitals',
+            Computer Physics Communications 180, 2175-2196 (2009)
+
+          In addition, many other developments in FHI-aims are likely important for
+          your particular application. A partial list of references is given at the end of
+          this file. Thank you for giving credit to the authors of these developments.
+
+          For any questions about FHI-aims, please visit our slack channel at
+
+            https://fhi-aims.slack.com
+
+          and our main development and support site at
+
+            https://aims-git.rz-berlin.mpg.de .
+
+          The latter site, in particular, has a wiki to collect information, as well
+          as an issue tracker to log discussions, suggest improvements, and report issues
+          or bugs. https://aims-git.rz-berlin.mpg.de is also the main development site
+          of the project and all new and updated code versions can be obtained there.
+          Please send an email to aims-coordinators@fhi-berlin.mpg.de and we will add
+          you to these sites. They are for you and everyone is welcome there.
+
+------------------------------------------------------------
+
+
+
+  Date     :  20210723, Time     :  103510.612
+  Time zero on CPU 1             :   0.818590000000000E-01  s.
+  Internal wall clock time zero  :           396268510.612  s.
+
+  FHI-aims created a unique identifier for this run for later identification
+  aims_uuid : DAA2AF1A-D3A2-4AEA-AF25-9D376CF72377
+
+  Build configuration of the current instance of FHI-aims
+  -------------------------------------------------------
+  FHI-aims version      : 210413
+  Commit number         : e4873593e
+  CMake host system     : Linux-4.12.14-122.57-default
+  CMake version         : 3.5.2
+  Fortran compiler      : /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/bin/mpiifort (Intel) version 19.1.0.20200306
+  Fortran compiler flags: -O3 -ip -fp-model precise
+  C compiler            : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icc (Intel) version 19.1.0.20200306
+  C compiler flags      : -O3 -ip -fp-model precise -std=gnu99
+  C++ compiler          : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icpc (Intel) version 19.1.0.20200306
+  C++ compiler flags    : -O3 -ip -fp-model precise -std=gnu99
+  Using MPI
+  Using ScaLAPACK
+  Using LibXC
+  Using i-PI
+  Using RLSY
+  Linking against: /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_intel_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_sequential.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_core.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_blacs_intelmpi_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_scalapack_lp64.so
+
+  Using       40 parallel tasks.
+  Task        0 on host co1599 reporting.
+  Task        1 on host co1599 reporting.
+  Task        2 on host co1599 reporting.
+  Task        3 on host co1599 reporting.
+  Task        4 on host co1599 reporting.
+  Task        5 on host co1599 reporting.
+  Task        6 on host co1599 reporting.
+  Task        7 on host co1599 reporting.
+  Task        8 on host co1599 reporting.
+  Task        9 on host co1599 reporting.
+  Task       10 on host co1599 reporting.
+  Task       11 on host co1599 reporting.
+  Task       12 on host co1599 reporting.
+  Task       13 on host co1599 reporting.
+  Task       14 on host co1599 reporting.
+  Task       15 on host co1599 reporting.
+  Task       16 on host co1599 reporting.
+  Task       17 on host co1599 reporting.
+  Task       18 on host co1599 reporting.
+  Task       19 on host co1599 reporting.
+  Task       20 on host co1599 reporting.
+  Task       21 on host co1599 reporting.
+  Task       22 on host co1599 reporting.
+  Task       23 on host co1599 reporting.
+  Task       24 on host co1599 reporting.
+  Task       25 on host co1599 reporting.
+  Task       26 on host co1599 reporting.
+  Task       27 on host co1599 reporting.
+  Task       28 on host co1599 reporting.
+  Task       29 on host co1599 reporting.
+  Task       30 on host co1599 reporting.
+  Task       31 on host co1599 reporting.
+  Task       32 on host co1599 reporting.
+  Task       33 on host co1599 reporting.
+  Task       34 on host co1599 reporting.
+  Task       35 on host co1599 reporting.
+  Task       36 on host co1599 reporting.
+  Task       37 on host co1599 reporting.
+  Task       38 on host co1599 reporting.
+  Task       39 on host co1599 reporting.
+
+  Performing system and environment tests:
+  | Environment variable OMP_NUM_THREADS correctly set to 1.
+  | Checking for ScaLAPACK...
+  | Testing pdtran()...
+  | All pdtran() tests passed.
+
+  Obtaining array dimensions for all initial allocations:
+  
+  -----------------------------------------------------------------------
+  Parsing control.in (first pass over file, find array dimensions only).
+  The contents of control.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of control.in .
+  -----------------------------------------------------------------------
+  
+  ##### Physical settings  ################
+  xc                 pbe
+  spin               none
+  charge      0.0
+  relativistic       atomic_zora scalar
+  #elsi_restart read
+  # SCF settings
+  relax_geometry trm 1E-3
+  
+  #vdw_correction_hirshfeld
+  # k-grid settings  (to be adjusted)
+  #empty_states 8
+  #use_dipole_correction
+  #include_spin_orbit non_self_consistent
+  
+  many_body_dispersion_nl    beta=0.81
+  mixer   pulay
+  n_max_pulay        12 # high for metal
+  charge_mix_param   0.1 #low for metal
+  many_body_dispersion_nl    beta=0.81
+ ***   Error: Multiple Libmbd methods specified

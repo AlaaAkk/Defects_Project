@@ -1,0 +1,52 @@
+
+     Program DOS v.6.7MaX starts on  6Oct2021 at 17:50: 0 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI & OpenMP), running on     200 processor cores
+     Number of MPI processes:               200
+     Threads/MPI process:                     1
+
+     MPI processes distributed on     5 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =     200
+
+     Reading xml data from directory:
+
+     ./unfold.save/
+     Message from routine read_pp_mesh:
+     mesh size missing, using the one in header
+     Message from routine read_pp_mesh:
+     mesh size missing, using the one in header
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min          39      39     10                 3655     3655     504
+     Max          40      40     11                 3672     3672     519
+     Sum        7951    7951   2149               732811   732811  102299
+ 
+
+     Gaussian broadening (default values): ngauss,degauss=   0    0.002205
+
+ 
+     DOS          :      0.99s CPU      2.32s WALL
+
+ 
+   This run was terminated on:  17:50: 2   6Oct2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

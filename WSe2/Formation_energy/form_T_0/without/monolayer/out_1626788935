@@ -1,0 +1,1379 @@
+------------------------------------------------------------
+          Invoking FHI-aims ...
+
+          When using FHI-aims, please cite the following reference:
+
+            Volker Blum, Ralf Gehrke, Felix Hanke, Paula Havu,
+            Ville Havu, Xinguo Ren, Karsten Reuter, and Matthias Scheffler,
+            'Ab Initio Molecular Simulations with Numeric Atom-Centered Orbitals',
+            Computer Physics Communications 180, 2175-2196 (2009)
+
+          In addition, many other developments in FHI-aims are likely important for
+          your particular application. A partial list of references is given at the end of
+          this file. Thank you for giving credit to the authors of these developments.
+
+          For any questions about FHI-aims, please visit our slack channel at
+
+            https://fhi-aims.slack.com
+
+          and our main development and support site at
+
+            https://aims-git.rz-berlin.mpg.de .
+
+          The latter site, in particular, has a wiki to collect information, as well
+          as an issue tracker to log discussions, suggest improvements, and report issues
+          or bugs. https://aims-git.rz-berlin.mpg.de is also the main development site
+          of the project and all new and updated code versions can be obtained there.
+          Please send an email to aims-coordinators@fhi-berlin.mpg.de and we will add
+          you to these sites. They are for you and everyone is welcome there.
+
+------------------------------------------------------------
+
+
+
+  Date     :  20210720, Time     :  154856.313
+  Time zero on CPU 1             :   0.128984000000000E+00  s.
+  Internal wall clock time zero  :           396028136.313  s.
+
+  FHI-aims created a unique identifier for this run for later identification
+  aims_uuid : C2F792E7-72A9-4EED-ACEA-7D4E2F70D8F5
+
+  Build configuration of the current instance of FHI-aims
+  -------------------------------------------------------
+  FHI-aims version      : 210413
+  Commit number         : e4873593e
+  CMake host system     : Linux-4.12.14-122.57-default
+  CMake version         : 3.5.2
+  Fortran compiler      : /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/bin/mpiifort (Intel) version 19.1.0.20200306
+  Fortran compiler flags: -O3 -ip -fp-model precise
+  C compiler            : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icc (Intel) version 19.1.0.20200306
+  C compiler flags      : -O3 -ip -fp-model precise -std=gnu99
+  C++ compiler          : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icpc (Intel) version 19.1.0.20200306
+  C++ compiler flags    : -O3 -ip -fp-model precise -std=gnu99
+  Using MPI
+  Using ScaLAPACK
+  Using LibXC
+  Using i-PI
+  Using RLSY
+  Linking against: /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_intel_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_sequential.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_core.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_blacs_intelmpi_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_scalapack_lp64.so
+
+  Using      160 parallel tasks.
+  Task        0 on host co4091 reporting.
+  Task        1 on host co4091 reporting.
+  Task        2 on host co4091 reporting.
+  Task        3 on host co4091 reporting.
+  Task        4 on host co4091 reporting.
+  Task        5 on host co4091 reporting.
+  Task        6 on host co4091 reporting.
+  Task        7 on host co4091 reporting.
+  Task        8 on host co4091 reporting.
+  Task        9 on host co4091 reporting.
+  Task       10 on host co4091 reporting.
+  Task       11 on host co4091 reporting.
+  Task       12 on host co4091 reporting.
+  Task       13 on host co4091 reporting.
+  Task       14 on host co4091 reporting.
+  Task       15 on host co4091 reporting.
+  Task       16 on host co4091 reporting.
+  Task       17 on host co4091 reporting.
+  Task       18 on host co4091 reporting.
+  Task       19 on host co4091 reporting.
+  Task       20 on host co4091 reporting.
+  Task       21 on host co4091 reporting.
+  Task       22 on host co4091 reporting.
+  Task       23 on host co4091 reporting.
+  Task       24 on host co4091 reporting.
+  Task       25 on host co4091 reporting.
+  Task       26 on host co4091 reporting.
+  Task       27 on host co4091 reporting.
+  Task       28 on host co4091 reporting.
+  Task       29 on host co4091 reporting.
+  Task       30 on host co4091 reporting.
+  Task       31 on host co4091 reporting.
+  Task       32 on host co4091 reporting.
+  Task       33 on host co4091 reporting.
+  Task       34 on host co4091 reporting.
+  Task       35 on host co4091 reporting.
+  Task       36 on host co4091 reporting.
+  Task       37 on host co4091 reporting.
+  Task       38 on host co4091 reporting.
+  Task       39 on host co4091 reporting.
+  Task       40 on host co4096 reporting.
+  Task       41 on host co4096 reporting.
+  Task       42 on host co4096 reporting.
+  Task       43 on host co4096 reporting.
+  Task       44 on host co4096 reporting.
+  Task       45 on host co4096 reporting.
+  Task       46 on host co4096 reporting.
+  Task       47 on host co4096 reporting.
+  Task       48 on host co4096 reporting.
+  Task       49 on host co4096 reporting.
+  Task       50 on host co4096 reporting.
+  Task       51 on host co4096 reporting.
+  Task       52 on host co4096 reporting.
+  Task       53 on host co4096 reporting.
+  Task       54 on host co4096 reporting.
+  Task       55 on host co4096 reporting.
+  Task       56 on host co4096 reporting.
+  Task       57 on host co4096 reporting.
+  Task       58 on host co4096 reporting.
+  Task       59 on host co4096 reporting.
+  Task       60 on host co4096 reporting.
+  Task       61 on host co4096 reporting.
+  Task       62 on host co4096 reporting.
+  Task       63 on host co4096 reporting.
+  Task       64 on host co4096 reporting.
+  Task       65 on host co4096 reporting.
+  Task       66 on host co4096 reporting.
+  Task       67 on host co4096 reporting.
+  Task       68 on host co4096 reporting.
+  Task       69 on host co4096 reporting.
+  Task       70 on host co4096 reporting.
+  Task       71 on host co4096 reporting.
+  Task       72 on host co4096 reporting.
+  Task       73 on host co4096 reporting.
+  Task       74 on host co4096 reporting.
+  Task       75 on host co4096 reporting.
+  Task       76 on host co4096 reporting.
+  Task       77 on host co4096 reporting.
+  Task       78 on host co4096 reporting.
+  Task       79 on host co4096 reporting.
+  Task       80 on host co4097 reporting.
+  Task       81 on host co4097 reporting.
+  Task       82 on host co4097 reporting.
+  Task       83 on host co4097 reporting.
+  Task       84 on host co4097 reporting.
+  Task       85 on host co4097 reporting.
+  Task       86 on host co4097 reporting.
+  Task       87 on host co4097 reporting.
+  Task       88 on host co4097 reporting.
+  Task       89 on host co4097 reporting.
+  Task       90 on host co4097 reporting.
+  Task       91 on host co4097 reporting.
+  Task       92 on host co4097 reporting.
+  Task       93 on host co4097 reporting.
+  Task       94 on host co4097 reporting.
+  Task       95 on host co4097 reporting.
+  Task       96 on host co4097 reporting.
+  Task       97 on host co4097 reporting.
+  Task       98 on host co4097 reporting.
+  Task       99 on host co4097 reporting.
+  Task      100 on host co4097 reporting.
+  Task      101 on host co4097 reporting.
+  Task      102 on host co4097 reporting.
+  Task      103 on host co4097 reporting.
+  Task      104 on host co4097 reporting.
+  Task      105 on host co4097 reporting.
+  Task      106 on host co4097 reporting.
+  Task      107 on host co4097 reporting.
+  Task      108 on host co4097 reporting.
+  Task      109 on host co4097 reporting.
+  Task      110 on host co4097 reporting.
+  Task      111 on host co4097 reporting.
+  Task      112 on host co4097 reporting.
+  Task      113 on host co4097 reporting.
+  Task      114 on host co4097 reporting.
+  Task      115 on host co4097 reporting.
+  Task      116 on host co4097 reporting.
+  Task      117 on host co4097 reporting.
+  Task      118 on host co4097 reporting.
+  Task      119 on host co4097 reporting.
+  Task      120 on host co4191 reporting.
+  Task      121 on host co4191 reporting.
+  Task      122 on host co4191 reporting.
+  Task      123 on host co4191 reporting.
+  Task      124 on host co4191 reporting.
+  Task      125 on host co4191 reporting.
+  Task      126 on host co4191 reporting.
+  Task      127 on host co4191 reporting.
+  Task      128 on host co4191 reporting.
+  Task      129 on host co4191 reporting.
+  Task      130 on host co4191 reporting.
+  Task      131 on host co4191 reporting.
+  Task      132 on host co4191 reporting.
+  Task      133 on host co4191 reporting.
+  Task      134 on host co4191 reporting.
+  Task      135 on host co4191 reporting.
+  Task      136 on host co4191 reporting.
+  Task      137 on host co4191 reporting.
+  Task      138 on host co4191 reporting.
+  Task      139 on host co4191 reporting.
+  Task      140 on host co4191 reporting.
+  Task      141 on host co4191 reporting.
+  Task      142 on host co4191 reporting.
+  Task      143 on host co4191 reporting.
+  Task      144 on host co4191 reporting.
+  Task      145 on host co4191 reporting.
+  Task      146 on host co4191 reporting.
+  Task      147 on host co4191 reporting.
+  Task      148 on host co4191 reporting.
+  Task      149 on host co4191 reporting.
+  Task      150 on host co4191 reporting.
+  Task      151 on host co4191 reporting.
+  Task      152 on host co4191 reporting.
+  Task      153 on host co4191 reporting.
+  Task      154 on host co4191 reporting.
+  Task      155 on host co4191 reporting.
+  Task      156 on host co4191 reporting.
+  Task      157 on host co4191 reporting.
+  Task      158 on host co4191 reporting.
+  Task      159 on host co4191 reporting.
+
+  Performing system and environment tests:
+  | Environment variable OMP_NUM_THREADS correctly set to 1.
+  | Checking for ScaLAPACK...
+  | Testing pdtran()...
+  | All pdtran() tests passed.
+
+  Obtaining array dimensions for all initial allocations:
+  
+  -----------------------------------------------------------------------
+  Parsing control.in (first pass over file, find array dimensions only).
+  The contents of control.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of control.in .
+  -----------------------------------------------------------------------
+  
+  ##### Physical settings  ################
+  xc                 pbe
+  spin               none
+  charge      0.0
+  relativistic       atomic_zora scalar
+  #elsi_restart read
+  # SCF settings
+  
+  relax_geometry  bfgs 1e-03
+  relax_unit_cell full          #for bulk
+  
+  #vdw_correction_hirshfeld
+  harmonic_length_scale 0.09
+  energy_tolerance  1E-3
+  occupation_type gaussian       0.01
+  # k-grid settings  (to be adjusted)
+  k_grid  2 2 1
+  #empty_states 8
+  use_dipole_correction
+  include_spin_orbit non_self_consistent
+  
+  sc_accuracy_rho    1E-4
+  sc_accuracy_eev    1E-3
+  sc_accuracy_etot   1E-4
+  sc_accuracy_forces 1E-3
+  
+  #output cube stm -0.5
+  mixer   pulay
+  n_max_pulay        12 # high for metal
+  charge_mix_param   0.07 #low for metal
+  
+  #output cube stm -0.5
+  many_body_dispersion_nl    beta=0.81
+  ################################################################################
+  #
+  #  FHI-aims code project
+  # Volker Blum, Fritz Haber Institute Berlin, 2009
+  #
+  #  Suggested "tight" defaults for S atom (to be pasted into control.in file)
+  #
+  #  Revised Jan 04, 2011, following tests (SiC) done by Lydia Nemec:
+  #     d and g functions of tier 2 now enabled by default.
+  #
+  ################################################################################
+    species        S
+  #     global species definitions
+      nucleus             16
+      mass                32.065
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0          2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         44 7.0
+      radial_multiplier   2
+      angular_grids       specified
+        division   0.4665  110
+        division   0.5810  194
+        division   0.7139  302
+        division   0.8274  434
+  #      division   0.9105  590
+  #      division   1.0975  770
+  #      division   1.2028  974
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      3  s   2.
+      valence      3  p   4.
+  #     ion occupancy
+      ion_occ      3  s   1.
+      ion_occ      3  p   3.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.6 A, 1.9 A, 2.5 A, 3.25 A, 4.0 A
+  #
+  ################################################################################
+  #  "First tier" - improvements: -652.81 meV to -45.53 meV
+       ionic 3 d auto
+       hydro 2 p 1.8
+       hydro 4 f 7
+       ionic 3 s auto
+  #  "Second tier" - improvements: -30.20 meV to -1.74 meV
+       hydro 4 d 6.2
+       hydro 5 g 10.8
+  #     hydro 4 p 4.9
+  #     hydro 5 f 10
+  #     hydro 1 s 0.8
+  #  "Third tier" - improvements: -1.04 meV to -0.20 meV
+  #     hydro 3 d 3.9
+  #     hydro 3 d 2.7
+  #     hydro 5 g 12
+  #     hydro 4 p 10.4
+  #     hydro 5 f 12.4
+  #     hydro 2 s 1.9
+  #  "Fourth tier" - improvements: -0.35 meV to -0.06 meV
+  #     hydro 4 d 10.4
+  #     hydro 4 p 7.2
+  #     hydro 4 d 10
+  #     hydro 5 g 19.2
+  #     hydro 4 s 12
+  
+  ################################################################################
+  #
+  # For methods that use the localized form of the "resolution of identity" for
+  # the two-electron Coulomb operator (RI_method LVL), particularly Hartree-Fock and
+  # hybrid density functional calculations, the highest accuracy can be obtained by
+  # uncommenting the line beginning with "for_aux"  below, thus adding an extra g radial
+  # function to the construction of the product basis set for the expansion.
+  # See Ref. New J. Phys. 17, 093020 (2015) for more information, particularly Figs. 1 and 6.
+  #
+  ################################################################################
+  #
+  # for_aux hydro 5 g 6.0
+  ################################################################################
+  #
+  #  FHI-aims code project
+  # Volker Blum, Fritz Haber Institute Berlin, 2009
+  #
+  #  Suggested "tight" defaults for Mo atom (to be pasted into control.in file)
+  #
+  ################################################################################
+    species        Mo
+  #     global species definitions
+      nucleus             42
+      mass                95.94
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0  2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         59 7.0
+      radial_multiplier   2
+      angular_grids specified
+        division   0.3117   50
+        division   0.6750  110
+        division   1.0351  194
+        division   1.2073  302
+        division   1.6402  434
+  #      division   1.9185  590
+  #      division   2.0237  770
+  #      division   2.0980  974
+  #      division   2.7972 1202
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      5  s   1.
+      valence      4  p   6.
+      valence      4  d   5.
+  #     ion occupancy
+      ion_occ     5  s   0.
+      ion_occ     4  p   6.
+      ion_occ     4  d   4.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.675 A, 1.9 A, 2.375 A, 3.00 A, 4.00 A
+  #
+  ################################################################################
+  #  "First tier"  - max. impr. -711.23  meV, min. impr. -21.07 meV
+       hydro 4 f 8.4
+       hydro 3 d 2.8
+       ionic 5 p auto
+       hydro 5 g 12
+       ionic 5 s auto
+  #  "Second tier" - max. impr. -39.38  meV, min. impr. -2.68 meV
+  #     hydro 4 f 12.4
+  #     hydro 3 d 3.3
+  #     hydro 6 h 17.2
+  #     hydro 4 f 7.6
+  #     hydro 3 p 3.0
+  #     hydro 1 s 0.65
+  #  "Third tier"  - max. impr. -5.50 meV, min. impr. -0.47 meV
+  #     hydro 4 f 29.2
+  #     hydro 5 g 11.2
+  #     hydro 3 d 6.8
+  #     hydro 6 h 14.8
+  #     hydro 2 p 2.3
+  #     hydro 4 s 3.8
+  #  "Fourth tier"  - max. impr. -0.58 meV, min. impr. -0.19 meV
+  #     hydro 5 f 6.8
+  #     hydro 5 d 14.8
+  #     hydro 6 s 7.8
+  #     hydro 5 g 20.8
+  #     hydro 5 d 10.4
+  #     hydro 5 p 9.8
+  #  Further functions - -0.17 meV and below
+  #     hydro 5 d 3.2
+  ################################################################################
+  #
+  #  FHI-aims code project
+  # Volker Blum, Fritz Haber Institute Berlin, 2009
+  #
+  #  Suggested "tight" defaults for W atom (to be pasted into control.in file)
+  #
+  ################################################################################
+    species          W
+  #     global species definitions
+      nucleus        74
+      mass           183.84
+  #
+      l_hartree      6
+  #
+      cut_pot        4.0  2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base    71  7.0
+      radial_multiplier  2
+      angular_grids specified
+        division   0.2901   50
+        division   0.6986  110
+        division   1.0528  194
+        division   1.2659  302
+        division   1.5223  434
+  #      division   1.8111  590
+  #      division   2.0105  770
+  #      division   2.0413  974
+  #      division   2.8804 1202
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      6  s   2.
+      valence      5  p   6.
+      valence      5  d   4.
+      valence      4  f  14.
+  #     ion occupancy
+      ion_occ      6  s   1.
+      ion_occ      5  p   6.
+      ion_occ      5  d   3.
+      ion_occ      4  f  14.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.775, 1.99, 2.50, 3.25, 4.50 AA
+  #
+  ################################################################################
+  #
+  #  "First tier" - improvements: -603.77 meV to -28.99 meV
+       hydro 4 f 7.8
+       hydro 4 d 5.8
+       ionic 6 p auto
+       hydro 5 g 12.4
+       ionic 6 s auto
+  #  "Second tier" - improvements: -28.30 meV to -1.31 meV
+  #     hydro 6 h 16.8
+  #     ionic 5 d auto
+  #     hydro 4 f 8.6
+  #     hydro 5 g 16.8
+  #     hydro 5 d 8.4
+  #     hydro 3 p 3.3
+  #     hydro 1 s 0.55
+  #  "Third tier" - max. impr. -1.79 meV, min. impr. -0.26 meV
+  #     hydro 5 f 10.8
+  #     hydro 5 g 34.4
+  #     hydro 6 h 20.8
+  #     hydro 5 g 12.8
+  #     hydro 2 p 1.6
+  #     hydro 4 s 4.7
+  #     hydro 6 d 18.4
+  #  "Fourth tier" -0.46 max. impr. - meV, min. impr. -0.09 meV
+  #     hydro 6 h 21.6
+  #     hydro 5 f 22.4
+  #     hydro 4 f 4
+  #     hydro 5 p 9.6
+  #     hydro 6 d 17.2
+  #     hydro 3 p 5.2
+  #     hydro 5 g 4.7
+  #     hydro 6 s 7.6
+  ################################################################################
+  #
+  #  FHI-aims code project
+  # Volker Blum, Fritz Haber Institute Berlin, 2009
+  #
+  #  Suggested "tight" defaults for Se atom (to be pasted into control.in file)
+  #
+  ################################################################################
+    species        Se
+  #     global species definitions
+      nucleus             34
+      mass                78.96
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0          2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         55 7.0
+      radial_multiplier   2
+      angular_grids       specified
+        division   0.0830  110
+        division   0.1357  194
+        division   0.7377  302
+        division   0.8610  434
+  #      division   0.9640  590
+  #      division   1.0773  770
+  #      division   2.5539  974
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      4  s   2.
+      valence      4  p   4.
+      valence      3  d  10.
+  #     ion occupancy
+      ion_occ      4  s   1.
+      ion_occ      4  p   3.
+      ion_occ      3  d  10.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.85 A, 2.15 A, 2.50 A, 3.00 A, 4.00 A
+  #
+  ################################################################################
+  #  "First tier" - improvements: -336.21 meV to -36.85 meV
+       hydro 3 d 4.3
+       hydro 2 p 1.6
+       hydro 4 f 7.2
+       ionic 4 s auto
+  #  "Second tier" - improvements: -14.39 meV to -1.49 meV
+  #     hydro 5 g 10.4
+  #     hydro 4 p 4.5
+  #     hydro 4 d 6.2
+  #     hydro 4 f 11.2
+  #     hydro 1 s 0.65
+  #     hydro 6 h 15.2
+  #  "Third tier" - improvements: -0.46 meV and below
+  #     hydro 5 g 14.4
+  #     ionic 4 d auto
+  #     hydro 4 f 22.4
+  #     hydro 5 f 7.4
+  #     hydro 5 p 8
+  #     hydro 5 s 9.4
+  #  "Fourth tier" - improvements: -0.12 meV and below
+  #     hydro 5 d 11.6
+  #     hydro 6 h 18
+  #     hydro 4 p 4
+  #     hydro 5 f 16
+  #     hydro 4 s 3.9
+  
+  
+  
+  -----------------------------------------------------------------------
+  Completed first pass over input file control.in .
+  -----------------------------------------------------------------------
+  
+  
+  -----------------------------------------------------------------------
+  Parsing geometry.in (first pass over file, find array dimensions only).
+  The contents of geometry.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of geometry.in .
+  -----------------------------------------------------------------------
+  
+  #=======================================================
+  # FHI-aims file: geometry_monolayer.in
+  # Created using the Atomic Simulation Environment (ASE)
+  # Wed Jun  2 16:14:27 2021
+  #=======================================================
+  lattice_vector 3.3100000000000001 0.0000000000000000 0.0000000000000000
+  lattice_vector -1.6550000000000000 2.8665440865264920 0.0000000000000000
+  lattice_vector 0.0000000000000000 -0.0000000000000000 5.3300000000000001
+  atom 0.0000000000000001 0.9555146955088307 2.6650000000000000 W
+  atom 1.6549999999999998 1.9110293910176614 4.3300000000000001 Se
+  atom 1.6549999999999998 1.9110293910176614 1.0000000000000000 Se
+  
+  -----------------------------------------------------------------------
+  Completed first pass over input file geometry.in .
+  -----------------------------------------------------------------------
+  
+
+  Basic array size parameters:
+  | Number of species                 :        4
+  | Number of atoms                   :        3
+  | Number of lattice vectors         :        3
+  | Max. basis fn. angular momentum   :        4
+  | Max. atomic/ionic basis occupied n:        6
+  | Max. number of basis fn. types    :        3
+  | Max. radial fns per species/type  :       14
+  | Max. logarithmic grid size        :     1483
+  | Max. radial integration grid size :      143
+  | Max. angular integration grid size:      434
+  | Max. angular grid division number :        8
+  | Radial grid for Hartree potential :     1483
+  | Number of spin channels           :        1
+
+------------------------------------------------------------
+          Reading file control.in.
+------------------------------------------------------------
+  XC: Using PBE gradient-corrected functionals.
+  Spin treatment: No spin polarisation.
+  Charge =   0.000000E+00: Neutral system requested explicitly.
+  Scalar relativistic treatment of kinetic energy: on-site free-atom approximation to ZORA.
+  Geometry relaxation: Modified BFGS - TRM (trust radius method) for lattice optimization.
+  Convergence accuracy for geometry relaxation: Maximum force <   0.100000E-02 eV/A.
+  Assuming qualitatively harmonic for steps shorter than   0.900000E-01 A.
+  Max energy increase before discarding BFGS move:   0.100000E-02 eV
+  Occupation type: Gaussian broadening, width =   0.100000E-01 eV.
+  Found k-point grid:         2         2         1
+  Using dipole correction.
+  Calculating non-self-consistent second-variational spin-orbit coupling after scf-cycle
+  Convergence accuracy of self-consistent charge density:  0.1000E-03
+  Convergence accuracy of sum of eigenvalues:  0.1000E-02
+  Convergence accuracy of total energy:  0.1000E-03
+  Convergence accuracy of forces:  0.1000E-02
+  Using pulay charge density mixing.
+  Pulay mixing - number of memorized iterations:   12
+  Charge density mixing - mixing parameter:     0.0700
+  Using libMBD for calculating MBD and TS energies
+ 
+  Reading configuration options for species S                   .
+  | Found nuclear charge :  16.0000
+  | Found atomic mass :    32.0650000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    44 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     5 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  3 s   2.000
+  | Found free-atom valence shell :  3 p   4.000
+  | Found free-ion valence shell :  3 s   1.000
+  | Found free-ion valence shell :  3 p   3.000
+  | Found ionic basis function :  3 d , default cutoff radius.
+  | Found hydrogenic basis function :  2 p   1.800
+  | Found hydrogenic basis function :  4 f   7.000
+  | Found ionic basis function :  3 s , default cutoff radius.
+  | Found hydrogenic basis function :  4 d   6.200
+  | Found hydrogenic basis function :  5 g  10.800
+  Species S                   : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species S : No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive S                    ion.
+  Species S : On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species S                   : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species S                   : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species S                   : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain    89 grid points.
+ 
+  Reading configuration options for species Mo                  .
+  | Found nuclear charge :  42.0000
+  | Found atomic mass :    95.9400000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    59 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     6 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  5 s   1.000
+  | Found free-atom valence shell :  4 p   6.000
+  | Found free-atom valence shell :  4 d   5.000
+  | Found free-ion valence shell :  5 s   0.000
+  | Found free-ion valence shell :  4 p   6.000
+  | Found free-ion valence shell :  4 d   4.000
+  | Found hydrogenic basis function :  4 f   8.400
+  | Found hydrogenic basis function :  3 d   2.800
+  | Found ionic basis function :  5 p , default cutoff radius.
+  | Found hydrogenic basis function :  5 g  12.000
+  | Found ionic basis function :  5 s , default cutoff radius.
+  Species Mo                  : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species Mo: No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive Mo                   ion.
+  Species Mo: On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species Mo                  : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species Mo                  : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species Mo                  : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain   119 grid points.
+ 
+  Reading configuration options for species W                   .
+  | Found nuclear charge :  74.0000
+  | Found atomic mass :    183.840000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    71 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     6 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  6 s   2.000
+  | Found free-atom valence shell :  5 p   6.000
+  | Found free-atom valence shell :  5 d   4.000
+  | Found free-atom valence shell :  4 f  14.000
+  | Found free-ion valence shell :  6 s   1.000
+  | Found free-ion valence shell :  5 p   6.000
+  | Found free-ion valence shell :  5 d   3.000
+  | Found free-ion valence shell :  4 f  14.000
+  | Found hydrogenic basis function :  4 f   7.800
+  | Found hydrogenic basis function :  4 d   5.800
+  | Found ionic basis function :  6 p , default cutoff radius.
+  | Found hydrogenic basis function :  5 g  12.400
+  | Found ionic basis function :  6 s , default cutoff radius.
+  Species W                   : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species W : No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive W                    ion.
+  Species W : On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species W                   : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species W                   : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species W                   : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain   143 grid points.
+ 
+  Reading configuration options for species Se                  .
+  | Found nuclear charge :  34.0000
+  | Found atomic mass :    78.9600000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    55 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     5 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  4 s   2.000
+  | Found free-atom valence shell :  4 p   4.000
+  | Found free-atom valence shell :  3 d  10.000
+  | Found free-ion valence shell :  4 s   1.000
+  | Found free-ion valence shell :  4 p   3.000
+  | Found free-ion valence shell :  3 d  10.000
+  | Found hydrogenic basis function :  3 d   4.300
+  | Found hydrogenic basis function :  2 p   1.600
+  | Found hydrogenic basis function :  4 f   7.200
+  | Found ionic basis function :  4 s , default cutoff radius.
+  Species Se                  : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species Se: No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive Se                   ion.
+  Species Se: On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species Se                  : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species Se                  : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species Se                  : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain   111 grid points.
+ 
+  Finished reading input file 'control.in'.
+ 
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+          Reading geometry description geometry.in.
+------------------------------------------------------------
+  | The smallest distance between any two atoms is         2.00000000 AA.
+  | The first atom of this pair is atom number                      2 .
+  | The second atom of this pair is atom number                     3 .
+  | Wigner-Seitz cell of the first atom image           0     0     0 .
+  | (The Wigner-Seitz cell of the second atom is 0 0 0  by definition.)
+
+  Symmetry information by spglib:
+  | Precision set to  0.1E-04
+  | Number of Operations  : 12
+  | Space group           : 187
+  | International         : P-6m2
+  | Schoenflies           : D3h^1
+  Input structure read successfully.
+  The structure contains        3 atoms,  and a total of        142.000 electrons.
+
+  Input geometry:
+  | Unit cell:
+  |        3.31000000        0.00000000        0.00000000
+  |       -1.65500000        2.86654409        0.00000000
+  |        0.00000000        0.00000000        5.33000000
+  | Atomic structure:
+  |       Atom                x [A]            y [A]            z [A]
+  |    1: Species W             0.00000000        0.95551470        2.66500000
+  |    2: Species Se            1.65500000        1.91102939        4.33000000
+  |    3: Species Se            1.65500000        1.91102939        1.00000000
+
+  Lattice parameters for 3D lattice (in Angstroms) :     3.310000    3.310000    5.330000
+  Angle(s) between unit vectors (in degrees)       :    90.000000   90.000000  120.000000
+
+
+  Quantities derived from the lattice vectors:
+  | Reciprocal lattice vector 1:  1.898243  1.095951  0.000000
+  | Reciprocal lattice vector 2: -0.000000  2.191903  0.000000
+  | Reciprocal lattice vector 3:  0.000000  0.000000  1.178834
+  | Unit cell volume                               :   0.505724E+02  A^3
+
+  Fractional coordinates:
+                         L1                L2                L3
+       atom_frac         0.16666667        0.33333333        0.50000000  W
+       atom_frac         0.83333333        0.66666667        0.81238274  Se
+       atom_frac         0.83333333        0.66666667        0.18761726  Se
+
+ 
+  Finished reading input file 'control.in'.
+ 
+
+------------------------------------------------------------
+          Reading geometry description geometry.in.
+------------------------------------------------------------
+ 
+  Consistency checks for stacksize environment parameter are next.
+ 
+  | Maximum stacksize for task 0: unlimited
+  | Maximum stacksize for task 1: unlimited
+  | Maximum stacksize for task 2: unlimited
+  | Maximum stacksize for task 3: unlimited
+  | Maximum stacksize for task 4: unlimited
+  | Maximum stacksize for task 5: unlimited
+  | Maximum stacksize for task 6: unlimited
+  | Maximum stacksize for task 7: unlimited
+  | Maximum stacksize for task 8: unlimited
+  | Maximum stacksize for task 9: unlimited
+  | Maximum stacksize for task 10: unlimited
+  | Maximum stacksize for task 11: unlimited
+  | Maximum stacksize for task 12: unlimited
+  | Maximum stacksize for task 13: unlimited
+  | Maximum stacksize for task 14: unlimited
+  | Maximum stacksize for task 15: unlimited
+  | Maximum stacksize for task 16: unlimited
+  | Maximum stacksize for task 17: unlimited
+  | Maximum stacksize for task 18: unlimited
+  | Maximum stacksize for task 19: unlimited
+  | Maximum stacksize for task 20: unlimited
+  | Maximum stacksize for task 21: unlimited
+  | Maximum stacksize for task 22: unlimited
+  | Maximum stacksize for task 23: unlimited
+  | Maximum stacksize for task 24: unlimited
+  | Maximum stacksize for task 25: unlimited
+  | Maximum stacksize for task 26: unlimited
+  | Maximum stacksize for task 27: unlimited
+  | Maximum stacksize for task 28: unlimited
+  | Maximum stacksize for task 29: unlimited
+  | Maximum stacksize for task 30: unlimited
+  | Maximum stacksize for task 31: unlimited
+  | Maximum stacksize for task 32: unlimited
+  | Maximum stacksize for task 33: unlimited
+  | Maximum stacksize for task 34: unlimited
+  | Maximum stacksize for task 35: unlimited
+  | Maximum stacksize for task 36: unlimited
+  | Maximum stacksize for task 37: unlimited
+  | Maximum stacksize for task 38: unlimited
+  | Maximum stacksize for task 39: unlimited
+  | Maximum stacksize for task 40: unlimited
+  | Maximum stacksize for task 41: unlimited
+  | Maximum stacksize for task 42: unlimited
+  | Maximum stacksize for task 43: unlimited
+  | Maximum stacksize for task 44: unlimited
+  | Maximum stacksize for task 45: unlimited
+  | Maximum stacksize for task 46: unlimited
+  | Maximum stacksize for task 47: unlimited
+  | Maximum stacksize for task 48: unlimited
+  | Maximum stacksize for task 49: unlimited
+  | Maximum stacksize for task 50: unlimited
+  | Maximum stacksize for task 51: unlimited
+  | Maximum stacksize for task 52: unlimited
+  | Maximum stacksize for task 53: unlimited
+  | Maximum stacksize for task 54: unlimited
+  | Maximum stacksize for task 55: unlimited
+  | Maximum stacksize for task 56: unlimited
+  | Maximum stacksize for task 57: unlimited
+  | Maximum stacksize for task 58: unlimited
+  | Maximum stacksize for task 59: unlimited
+  | Maximum stacksize for task 60: unlimited
+  | Maximum stacksize for task 61: unlimited
+  | Maximum stacksize for task 62: unlimited
+  | Maximum stacksize for task 63: unlimited
+  | Maximum stacksize for task 64: unlimited
+  | Maximum stacksize for task 65: unlimited
+  | Maximum stacksize for task 66: unlimited
+  | Maximum stacksize for task 67: unlimited
+  | Maximum stacksize for task 68: unlimited
+  | Maximum stacksize for task 69: unlimited
+  | Maximum stacksize for task 70: unlimited
+  | Maximum stacksize for task 71: unlimited
+  | Maximum stacksize for task 72: unlimited
+  | Maximum stacksize for task 73: unlimited
+  | Maximum stacksize for task 74: unlimited
+  | Maximum stacksize for task 75: unlimited
+  | Maximum stacksize for task 76: unlimited
+  | Maximum stacksize for task 77: unlimited
+  | Maximum stacksize for task 78: unlimited
+  | Maximum stacksize for task 79: unlimited
+  | Maximum stacksize for task 80: unlimited
+  | Maximum stacksize for task 81: unlimited
+  | Maximum stacksize for task 82: unlimited
+  | Maximum stacksize for task 83: unlimited
+  | Maximum stacksize for task 84: unlimited
+  | Maximum stacksize for task 85: unlimited
+  | Maximum stacksize for task 86: unlimited
+  | Maximum stacksize for task 87: unlimited
+  | Maximum stacksize for task 88: unlimited
+  | Maximum stacksize for task 89: unlimited
+  | Maximum stacksize for task 90: unlimited
+  | Maximum stacksize for task 91: unlimited
+  | Maximum stacksize for task 92: unlimited
+  | Maximum stacksize for task 93: unlimited
+  | Maximum stacksize for task 94: unlimited
+  | Maximum stacksize for task 95: unlimited
+  | Maximum stacksize for task 96: unlimited
+  | Maximum stacksize for task 97: unlimited
+  | Maximum stacksize for task 98: unlimited
+  | Maximum stacksize for task 99: unlimited
+  | Maximum stacksize for task 100: unlimited
+  | Maximum stacksize for task 101: unlimited
+  | Maximum stacksize for task 102: unlimited
+  | Maximum stacksize for task 103: unlimited
+  | Maximum stacksize for task 104: unlimited
+  | Maximum stacksize for task 105: unlimited
+  | Maximum stacksize for task 106: unlimited
+  | Maximum stacksize for task 107: unlimited
+  | Maximum stacksize for task 108: unlimited
+  | Maximum stacksize for task 109: unlimited
+  | Maximum stacksize for task 110: unlimited
+  | Maximum stacksize for task 111: unlimited
+  | Maximum stacksize for task 112: unlimited
+  | Maximum stacksize for task 113: unlimited
+  | Maximum stacksize for task 114: unlimited
+  | Maximum stacksize for task 115: unlimited
+  | Maximum stacksize for task 116: unlimited
+  | Maximum stacksize for task 117: unlimited
+  | Maximum stacksize for task 118: unlimited
+  | Maximum stacksize for task 119: unlimited
+  | Maximum stacksize for task 120: unlimited
+  | Maximum stacksize for task 121: unlimited
+  | Maximum stacksize for task 122: unlimited
+  | Maximum stacksize for task 123: unlimited
+  | Maximum stacksize for task 124: unlimited
+  | Maximum stacksize for task 125: unlimited
+  | Maximum stacksize for task 126: unlimited
+  | Maximum stacksize for task 127: unlimited
+  | Maximum stacksize for task 128: unlimited
+  | Maximum stacksize for task 129: unlimited
+  | Maximum stacksize for task 130: unlimited
+  | Maximum stacksize for task 131: unlimited
+  | Maximum stacksize for task 132: unlimited
+  | Maximum stacksize for task 133: unlimited
+  | Maximum stacksize for task 134: unlimited
+  | Maximum stacksize for task 135: unlimited
+  | Maximum stacksize for task 136: unlimited
+  | Maximum stacksize for task 137: unlimited
+  | Maximum stacksize for task 138: unlimited
+  | Maximum stacksize for task 139: unlimited
+  | Maximum stacksize for task 140: unlimited
+  | Maximum stacksize for task 141: unlimited
+  | Maximum stacksize for task 142: unlimited
+  | Maximum stacksize for task 143: unlimited
+  | Maximum stacksize for task 144: unlimited
+  | Maximum stacksize for task 145: unlimited
+  | Maximum stacksize for task 146: unlimited
+  | Maximum stacksize for task 147: unlimited
+  | Maximum stacksize for task 148: unlimited
+  | Maximum stacksize for task 149: unlimited
+  | Maximum stacksize for task 150: unlimited
+  | Maximum stacksize for task 151: unlimited
+  | Maximum stacksize for task 152: unlimited
+  | Maximum stacksize for task 153: unlimited
+  | Maximum stacksize for task 154: unlimited
+  | Maximum stacksize for task 155: unlimited
+  | Maximum stacksize for task 156: unlimited
+  | Maximum stacksize for task 157: unlimited
+  | Maximum stacksize for task 158: unlimited
+  | Maximum stacksize for task 159: unlimited
+  | Current stacksize for task 0: unlimited
+  | Current stacksize for task 1: unlimited
+  | Current stacksize for task 2: unlimited
+  | Current stacksize for task 3: unlimited
+  | Current stacksize for task 4: unlimited
+  | Current stacksize for task 5: unlimited
+  | Current stacksize for task 6: unlimited
+  | Current stacksize for task 7: unlimited
+  | Current stacksize for task 8: unlimited
+  | Current stacksize for task 9: unlimited
+  | Current stacksize for task 10: unlimited
+  | Current stacksize for task 11: unlimited
+  | Current stacksize for task 12: unlimited
+  | Current stacksize for task 13: unlimited
+  | Current stacksize for task 14: unlimited
+  | Current stacksize for task 15: unlimited
+  | Current stacksize for task 16: unlimited
+  | Current stacksize for task 17: unlimited
+  | Current stacksize for task 18: unlimited
+  | Current stacksize for task 19: unlimited
+  | Current stacksize for task 20: unlimited
+  | Current stacksize for task 21: unlimited
+  | Current stacksize for task 22: unlimited
+  | Current stacksize for task 23: unlimited
+  | Current stacksize for task 24: unlimited
+  | Current stacksize for task 25: unlimited
+  | Current stacksize for task 26: unlimited
+  | Current stacksize for task 27: unlimited
+  | Current stacksize for task 28: unlimited
+  | Current stacksize for task 29: unlimited
+  | Current stacksize for task 30: unlimited
+  | Current stacksize for task 31: unlimited
+  | Current stacksize for task 32: unlimited
+  | Current stacksize for task 33: unlimited
+  | Current stacksize for task 34: unlimited
+  | Current stacksize for task 35: unlimited
+  | Current stacksize for task 36: unlimited
+  | Current stacksize for task 37: unlimited
+  | Current stacksize for task 38: unlimited
+  | Current stacksize for task 39: unlimited
+  | Current stacksize for task 40: unlimited
+  | Current stacksize for task 41: unlimited
+  | Current stacksize for task 42: unlimited
+  | Current stacksize for task 43: unlimited
+  | Current stacksize for task 44: unlimited
+  | Current stacksize for task 45: unlimited
+  | Current stacksize for task 46: unlimited
+  | Current stacksize for task 47: unlimited
+  | Current stacksize for task 48: unlimited
+  | Current stacksize for task 49: unlimited
+  | Current stacksize for task 50: unlimited
+  | Current stacksize for task 51: unlimited
+  | Current stacksize for task 52: unlimited
+  | Current stacksize for task 53: unlimited
+  | Current stacksize for task 54: unlimited
+  | Current stacksize for task 55: unlimited
+  | Current stacksize for task 56: unlimited
+  | Current stacksize for task 57: unlimited
+  | Current stacksize for task 58: unlimited
+  | Current stacksize for task 59: unlimited
+  | Current stacksize for task 60: unlimited
+  | Current stacksize for task 61: unlimited
+  | Current stacksize for task 62: unlimited
+  | Current stacksize for task 63: unlimited
+  | Current stacksize for task 64: unlimited
+  | Current stacksize for task 65: unlimited
+  | Current stacksize for task 66: unlimited
+  | Current stacksize for task 67: unlimited
+  | Current stacksize for task 68: unlimited
+  | Current stacksize for task 69: unlimited
+  | Current stacksize for task 70: unlimited
+  | Current stacksize for task 71: unlimited
+  | Current stacksize for task 72: unlimited
+  | Current stacksize for task 73: unlimited
+  | Current stacksize for task 74: unlimited
+  | Current stacksize for task 75: unlimited
+  | Current stacksize for task 76: unlimited
+  | Current stacksize for task 77: unlimited
+  | Current stacksize for task 78: unlimited
+  | Current stacksize for task 79: unlimited
+  | Current stacksize for task 80: unlimited
+  | Current stacksize for task 81: unlimited
+  | Current stacksize for task 82: unlimited
+  | Current stacksize for task 83: unlimited
+  | Current stacksize for task 84: unlimited
+  | Current stacksize for task 85: unlimited
+  | Current stacksize for task 86: unlimited
+  | Current stacksize for task 87: unlimited
+  | Current stacksize for task 88: unlimited
+  | Current stacksize for task 89: unlimited
+  | Current stacksize for task 90: unlimited
+  | Current stacksize for task 91: unlimited
+  | Current stacksize for task 92: unlimited
+  | Current stacksize for task 93: unlimited
+  | Current stacksize for task 94: unlimited
+  | Current stacksize for task 95: unlimited
+  | Current stacksize for task 96: unlimited
+  | Current stacksize for task 97: unlimited
+  | Current stacksize for task 98: unlimited
+  | Current stacksize for task 99: unlimited
+  | Current stacksize for task 100: unlimited
+  | Current stacksize for task 101: unlimited
+  | Current stacksize for task 102: unlimited
+  | Current stacksize for task 103: unlimited
+  | Current stacksize for task 104: unlimited
+  | Current stacksize for task 105: unlimited
+  | Current stacksize for task 106: unlimited
+  | Current stacksize for task 107: unlimited
+  | Current stacksize for task 108: unlimited
+  | Current stacksize for task 109: unlimited
+  | Current stacksize for task 110: unlimited
+  | Current stacksize for task 111: unlimited
+  | Current stacksize for task 112: unlimited
+  | Current stacksize for task 113: unlimited
+  | Current stacksize for task 114: unlimited
+  | Current stacksize for task 115: unlimited
+  | Current stacksize for task 116: unlimited
+  | Current stacksize for task 117: unlimited
+  | Current stacksize for task 118: unlimited
+  | Current stacksize for task 119: unlimited
+  | Current stacksize for task 120: unlimited
+  | Current stacksize for task 121: unlimited
+  | Current stacksize for task 122: unlimited
+  | Current stacksize for task 123: unlimited
+  | Current stacksize for task 124: unlimited
+  | Current stacksize for task 125: unlimited
+  | Current stacksize for task 126: unlimited
+  | Current stacksize for task 127: unlimited
+  | Current stacksize for task 128: unlimited
+  | Current stacksize for task 129: unlimited
+  | Current stacksize for task 130: unlimited
+  | Current stacksize for task 131: unlimited
+  | Current stacksize for task 132: unlimited
+  | Current stacksize for task 133: unlimited
+  | Current stacksize for task 134: unlimited
+  | Current stacksize for task 135: unlimited
+  | Current stacksize for task 136: unlimited
+  | Current stacksize for task 137: unlimited
+  | Current stacksize for task 138: unlimited
+  | Current stacksize for task 139: unlimited
+  | Current stacksize for task 140: unlimited
+  | Current stacksize for task 141: unlimited
+  | Current stacksize for task 142: unlimited
+  | Current stacksize for task 143: unlimited
+  | Current stacksize for task 144: unlimited
+  | Current stacksize for task 145: unlimited
+  | Current stacksize for task 146: unlimited
+  | Current stacksize for task 147: unlimited
+  | Current stacksize for task 148: unlimited
+  | Current stacksize for task 149: unlimited
+  | Current stacksize for task 150: unlimited
+  | Current stacksize for task 151: unlimited
+  | Current stacksize for task 152: unlimited
+  | Current stacksize for task 153: unlimited
+  | Current stacksize for task 154: unlimited
+  | Current stacksize for task 155: unlimited
+  | Current stacksize for task 156: unlimited
+  | Current stacksize for task 157: unlimited
+  | Current stacksize for task 158: unlimited
+  | Current stacksize for task 159: unlimited
+ 
+  Consistency checks for the contents of control.in are next.
+ 
+  MPI_IN_PLACE appears to work with this MPI implementation.
+  | Keeping use_mpi_in_place .true. (see manual).
+  Target number of points in a grid batch is not set. Defaulting to  100
+  Method for grid partitioning is not set. Defaulting to parallel hash+maxmin partitioning.
+  Batch size limit is not set. Defaulting to    200
+  By default, will store active basis functions for each batch.
+  If in need of memory, prune_basis_once .false. can be used to disable this option.
+  communication_type for Hartree potential was not specified.
+  Defaulting to calc_hartree .
+  Pulay mixer: Number of initial linear mixing iterations not set.
+  Defaulting to    0 iterations.
+  Work space size for distributed Hartree potential not set.
+  Defaulting to   0.200000E+03 MB.
+  Algorithm-dependent basis array size parameters:
+  | n_max_pulay                         :       12
+  Maximum number of self-consistency iterations not provided.
+  Presetting  1000 iterations.
+  Presetting      1001 iterations before the initial mixing cycle
+  is restarted anyway using the sc_init_iter criterion / keyword.
+  Presetting a factor      1.000 between actual scf density residual
+  and density convergence criterion sc_accuracy_rho below which sc_init_iter
+  takes no effect.
+  No maximum number of relaxation steps, defaulting to     1000
+  Default initial Hessian is Lindh matrix (thres = 15.00) plus  0.200000E+01 eV/A^2 times unity.
+  Maximum energy tolerance by which TRM/BFGS trajectory may increase over multiple steps:   0.300000E-02
+  No trust radius initializer. Defaulting to   0.200000E+00 A.
+  Unit cell relaxation: Unit cell will be relaxed fully.
+  Unit cell relaxation: Analytical stress will be used.
+  Analytical stress will be computed.
+  Analytical stress calculation: Only the upper triangle is calculated.
+                                 Final output is symmetrized.
+  Analytical stress calculation: scf convergence accuracy of stress not set.
+                                 Analytical stress self-consistency will not be checked explicitly.
+                                 Be sure to set other criteria like sc_accuracy_rho tight enough.
+  Handling of forces: Unphysical translation and rotation will be removed from forces.
+  No accuracy limit for integral partition fn. given. Defaulting to  0.1000E-14.
+  No threshold value for u(r) in integrations given. Defaulting to  0.1000E-05.
+  No accuracy for occupation numbers given. Defaulting to  0.1000E-12.
+  No threshold value for occupation numbers given. Defaulting to  0.0000E+00.
+  No accuracy for fermi level given. Defaulting to  0.1000E-19.
+  Maximum # of iterations to find E_F not set. Defaulting to  200.
+  Preferred method for the eigenvalue solver ('KS_method') not specified in 'control.in'.
+  Calling BLACS routine to test compilation state
+  Since ScaLAPACK support is enabled, defaulting to ELPA (via ELSI).
+  Will not use alltoall communication since running on < 1024 CPUs.
+  Threshold for basis singularities not set.
+  Default threshold for basis singularities:  0.1000E-04
+  partition_type (choice of integration weights) for integrals was not specified.
+  | Using a version of the partition function of Stratmann and coworkers ('stratmann_sparse').
+  | At each grid point, the set of atoms used to build the partition table is smoothly restricted to
+  | only those atoms whose free-atom density would be non-zero at that grid point.
+  Partitioning for Hartree potential was not defined. Using partition_type for integrals.
+  | Adjusted default value of keyword multip_moments_threshold to:       0.10000000E-11
+  | This value may affect high angular momentum components of the Hartree potential in periodic systems.
+  Angular momentum expansion for Kerker preconditioner not set explicitly.
+  | Using default value of   0
+  No explicit requirement for turning off preconditioner.
+  | By default, it will be turned off when the charge convergence reaches
+  | sc_accuracy_rho  =   0.100000E-03
+  | sc_accuracy_eev  =   0.100000E-02
+  | sc_accuracy_etot =   0.100000E-03
+  No special mixing parameter while Kerker preconditioner is on.
+  Using default: charge_mix_param =     0.0700.
+  No q(lm)/r^(l+1) cutoff set for long-range Hartree potential.
+  | Using default value of  0.100000E-09 .
+  | Verify using the multipole_threshold keyword.
+  Defaulting to new monopole extrapolation.
+  Density update method: automatic selection selected.
+  Using density matrix based charge density update.
+  Using density matrix based charge density update.
+  Using packed matrix style: index .
+  Geometry relaxation: A file "geometry.in.next_step" is written out by default after each step.
+  | This file contains the geometry of the current relaxation step as well as
+  | the current Hessian matrix needed to restart the relaxation algorithm.
+  | If you do not want part or all of this information, use the keywords
+  | "write_restart_geometry" or "hessian_to_restart_geometry" to switch the output off.
+  Defaulting to use time-reversal symmetry for k-point grid.
+  Charge integration errors on the 3D integration grid will be compensated
+  by explicit normalization and distribution of residual charges.
+  Use the "compensate_multipole_errors" flag to change this behaviour.
+ 
+  Consistency checks for the contents of geometry.in are next.
+ 
+
+  Range separation radius for Ewald summation (hartree_convergence_parameter):      3.64843734 bohr.
+ *** Proc  123 : Error.
+ *** Proc  136 : Error.
+ *** Proc  139 : Error.
+ *** Proc  125 : Error.
+ *** Proc  143 : Error.
+ *** Proc  159 : Error.
+ *** Proc  134 : Error.
+ *** Proc  146 : Error.
+ *** Proc  156 : Error.
+ *** Proc  124 : Error.
+ *** Proc  147 : Error.
+ *** Proc  148 : Error.
+ *** Proc  150 : Error.
+ *** Proc  157 : Error.
+ *** Proc  121 : Error.
+ *** Proc  138 : Error.
+ *** Proc  155 : Error.
+ *** Proc  127 : Error.
+ *** Proc  131 : Error.
+ *** Proc  141 : Error.
+ *** Proc  128 : Error.
+ *** Proc  135 : Error.
+ *** Proc  142 : Error.
+ *** Proc  152 : Error.
+ *** Proc  130 : Error.
+ *** Proc  132 : Error.
+ *** Proc  153 : Error.
+ *** Proc  120 : Error.
+ *** Proc  137 : Error.
+ *** Proc  149 : Error.
+  Number of empty states per atom not set in control.in - providing a guess from actual geometry.
+  | Total number of empty states used during s.c.f. cycle:       20
+ *** Proc  154 : Error.
+  If you use a very high smearing, use empty_states (per atom!) in control.in to increase this value.
+
+  Structure-dependent array size parameters: 
+  | Maximum number of distinct radial functions  :       57
+  | Maximum number of basis functions            :      133
+  | Number of Kohn-Sham states (occupied + empty):       91
+------------------------------------------------------------
+ Error: The dipole correction needs vacuum z-level to be defined
+ Vacuum level will be determined automatically.
+ *** Proc  122 : Error.
+ Determine position of vacuum level automatically
+ **WARNING** : This feature is experimental and still requires some testing
+ **PLEASE ** : If you see it fail, please report.
+ *** Proc  126 : Error.
+ *** Proc  129 : Error.
+ *** Proc  140 : Error.
+ Vacuum is smaller than 10 Bohr.
+ No sensible vacuum level can be set.
+ Please set the vacuum level manually or increase the size of the vacuum level
+ *** Proc  144 : Error.
+ *** Proc  145 : Error.
+ *** Proc  151 : Error.
+ *** Proc  158 : Error.
+ *** Proc    4 : Error.
+ *** Proc   19 : Error.
+ *** Proc   23 : Error.
+ *** Proc   17 : Error.
+ *** Proc   35 : Error.
+ *** Proc    2 : Error.
+ *** Proc    9 : Error.
+ *** Proc   18 : Error.
+ *** Proc   11 : Error.
+ *** Proc   16 : Error.
+ *** Proc   34 : Error.
+ *** Proc   22 : Error.
+ *** Proc    3 : Error.
+ *** Proc   37 : Error.
+ *** Proc   29 : Error.
+ *** Proc   36 : Error.
+ *** Proc   13 : Error.
+ *** Proc    7 : Error.
+ *** Proc   27 : Error.
+ *** Proc   21 : Error.
+ *** Proc   12 : Error.
+ *** Proc   26 : Error.
+ *** Proc   28 : Error.
+ *** Proc   39 : Error.
+ *** Proc   30 : Error.
+ *** Proc   38 : Error.
+ *** Proc   10 : Error.
+ *** Proc   24 : Error.
+ *** Proc   33 : Error.
+ *** Proc    0 : Error.
+ *** Proc   15 : Error.
+ *** Proc    1 : Error.
+ *** Proc    8 : Error.
+ *** Proc   20 : Error.
+ *** Proc   25 : Error.
+ *** Proc   31 : Error.
+ *** Proc   32 : Error.
+ *** Proc    5 : Error.
+ *** Proc    6 : Error.
+ *** Proc   14 : Error.
+ *** Proc  133 : Error.

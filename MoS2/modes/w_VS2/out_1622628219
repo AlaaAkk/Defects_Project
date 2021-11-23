@@ -1,0 +1,3332 @@
+------------------------------------------------------------
+          Invoking FHI-aims ...
+
+          When using FHI-aims, please cite the following reference:
+
+            Volker Blum, Ralf Gehrke, Felix Hanke, Paula Havu,
+            Ville Havu, Xinguo Ren, Karsten Reuter, and Matthias Scheffler,
+            'Ab Initio Molecular Simulations with Numeric Atom-Centered Orbitals',
+            Computer Physics Communications 180, 2175-2196 (2009)
+
+          In addition, many other developments in FHI-aims are likely important for
+          your particular application. A partial list of references is given at the end of
+          this file. Thank you for giving credit to the authors of these developments.
+
+          For any questions about FHI-aims, please visit our slack channel at
+
+            https://fhi-aims.slack.com
+
+          and our main development and support site at
+
+            https://aims-git.rz-berlin.mpg.de .
+
+          The latter site, in particular, has a wiki to collect information, as well
+          as an issue tracker to log discussions, suggest improvements, and report issues
+          or bugs. https://aims-git.rz-berlin.mpg.de is also the main development site
+          of the project and all new and updated code versions can be obtained there.
+          Please send an email to aims-coordinators@fhi-berlin.mpg.de and we will add
+          you to these sites. They are for you and everyone is welcome there.
+
+------------------------------------------------------------
+
+
+
+  Date     :  20210602, Time     :  120341.669
+  Time zero on CPU 1             :   0.120799000000000E+00  s.
+  Internal wall clock time zero  :           391867421.669  s.
+
+  FHI-aims created a unique identifier for this run for later identification
+  aims_uuid : 98BDF13A-5C93-4A84-AAA9-2DCC4DD5E969
+
+  Build configuration of the current instance of FHI-aims
+  -------------------------------------------------------
+  FHI-aims version      : 210413
+  Commit number         : e4873593e
+  CMake host system     : Linux-4.12.14-122.57-default
+  CMake version         : 3.5.2
+  Fortran compiler      : /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/bin/mpiifort (Intel) version 19.1.0.20200306
+  Fortran compiler flags: -O3 -ip -fp-model precise
+  C compiler            : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icc (Intel) version 19.1.0.20200306
+  C compiler flags      : -O3 -ip -fp-model precise -std=gnu99
+  C++ compiler          : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icpc (Intel) version 19.1.0.20200306
+  C++ compiler flags    : -O3 -ip -fp-model precise -std=gnu99
+  Using MPI
+  Using ScaLAPACK
+  Using LibXC
+  Using i-PI
+  Using RLSY
+  Linking against: /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_intel_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_sequential.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_core.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_blacs_intelmpi_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_scalapack_lp64.so
+
+  Using      160 parallel tasks.
+  Task        0 on host co1173 reporting.
+  Task        1 on host co1173 reporting.
+  Task        2 on host co1173 reporting.
+  Task        3 on host co1173 reporting.
+  Task        4 on host co1173 reporting.
+  Task        5 on host co1173 reporting.
+  Task        6 on host co1173 reporting.
+  Task        7 on host co1173 reporting.
+  Task        8 on host co1173 reporting.
+  Task        9 on host co1173 reporting.
+  Task       10 on host co1173 reporting.
+  Task       11 on host co1173 reporting.
+  Task       12 on host co1173 reporting.
+  Task       13 on host co1173 reporting.
+  Task       14 on host co1173 reporting.
+  Task       15 on host co1173 reporting.
+  Task       16 on host co1173 reporting.
+  Task       17 on host co1173 reporting.
+  Task       18 on host co1173 reporting.
+  Task       19 on host co1173 reporting.
+  Task       20 on host co1173 reporting.
+  Task       21 on host co1173 reporting.
+  Task       22 on host co1173 reporting.
+  Task       23 on host co1173 reporting.
+  Task       24 on host co1173 reporting.
+  Task       25 on host co1173 reporting.
+  Task       26 on host co1173 reporting.
+  Task       27 on host co1173 reporting.
+  Task       28 on host co1173 reporting.
+  Task       29 on host co1173 reporting.
+  Task       30 on host co1173 reporting.
+  Task       31 on host co1173 reporting.
+  Task       32 on host co1173 reporting.
+  Task       33 on host co1173 reporting.
+  Task       34 on host co1173 reporting.
+  Task       35 on host co1173 reporting.
+  Task       36 on host co1173 reporting.
+  Task       37 on host co1173 reporting.
+  Task       38 on host co1173 reporting.
+  Task       39 on host co1173 reporting.
+  Task       40 on host co1174 reporting.
+  Task       41 on host co1174 reporting.
+  Task       42 on host co1174 reporting.
+  Task       43 on host co1174 reporting.
+  Task       44 on host co1174 reporting.
+  Task       45 on host co1174 reporting.
+  Task       46 on host co1174 reporting.
+  Task       47 on host co1174 reporting.
+  Task       48 on host co1174 reporting.
+  Task       49 on host co1174 reporting.
+  Task       50 on host co1174 reporting.
+  Task       51 on host co1174 reporting.
+  Task       52 on host co1174 reporting.
+  Task       53 on host co1174 reporting.
+  Task       54 on host co1174 reporting.
+  Task       55 on host co1174 reporting.
+  Task       56 on host co1174 reporting.
+  Task       57 on host co1174 reporting.
+  Task       58 on host co1174 reporting.
+  Task       59 on host co1174 reporting.
+  Task       60 on host co1174 reporting.
+  Task       61 on host co1174 reporting.
+  Task       62 on host co1174 reporting.
+  Task       63 on host co1174 reporting.
+  Task       64 on host co1174 reporting.
+  Task       65 on host co1174 reporting.
+  Task       66 on host co1174 reporting.
+  Task       67 on host co1174 reporting.
+  Task       68 on host co1174 reporting.
+  Task       69 on host co1174 reporting.
+  Task       70 on host co1174 reporting.
+  Task       71 on host co1174 reporting.
+  Task       72 on host co1174 reporting.
+  Task       73 on host co1174 reporting.
+  Task       74 on host co1174 reporting.
+  Task       75 on host co1174 reporting.
+  Task       76 on host co1174 reporting.
+  Task       77 on host co1174 reporting.
+  Task       78 on host co1174 reporting.
+  Task       79 on host co1174 reporting.
+  Task       80 on host co1175 reporting.
+  Task       81 on host co1175 reporting.
+  Task       82 on host co1175 reporting.
+  Task       83 on host co1175 reporting.
+  Task       84 on host co1175 reporting.
+  Task       85 on host co1175 reporting.
+  Task       86 on host co1175 reporting.
+  Task       87 on host co1175 reporting.
+  Task       88 on host co1175 reporting.
+  Task       89 on host co1175 reporting.
+  Task       90 on host co1175 reporting.
+  Task       91 on host co1175 reporting.
+  Task       92 on host co1175 reporting.
+  Task       93 on host co1175 reporting.
+  Task       94 on host co1175 reporting.
+  Task       95 on host co1175 reporting.
+  Task       96 on host co1175 reporting.
+  Task       97 on host co1175 reporting.
+  Task       98 on host co1175 reporting.
+  Task       99 on host co1175 reporting.
+  Task      100 on host co1175 reporting.
+  Task      101 on host co1175 reporting.
+  Task      102 on host co1175 reporting.
+  Task      103 on host co1175 reporting.
+  Task      104 on host co1175 reporting.
+  Task      105 on host co1175 reporting.
+  Task      106 on host co1175 reporting.
+  Task      107 on host co1175 reporting.
+  Task      108 on host co1175 reporting.
+  Task      109 on host co1175 reporting.
+  Task      110 on host co1175 reporting.
+  Task      111 on host co1175 reporting.
+  Task      112 on host co1175 reporting.
+  Task      113 on host co1175 reporting.
+  Task      114 on host co1175 reporting.
+  Task      115 on host co1175 reporting.
+  Task      116 on host co1175 reporting.
+  Task      117 on host co1175 reporting.
+  Task      118 on host co1175 reporting.
+  Task      119 on host co1175 reporting.
+  Task      120 on host co1176 reporting.
+  Task      121 on host co1176 reporting.
+  Task      122 on host co1176 reporting.
+  Task      123 on host co1176 reporting.
+  Task      124 on host co1176 reporting.
+  Task      125 on host co1176 reporting.
+  Task      126 on host co1176 reporting.
+  Task      127 on host co1176 reporting.
+  Task      128 on host co1176 reporting.
+  Task      129 on host co1176 reporting.
+  Task      130 on host co1176 reporting.
+  Task      131 on host co1176 reporting.
+  Task      132 on host co1176 reporting.
+  Task      133 on host co1176 reporting.
+  Task      134 on host co1176 reporting.
+  Task      135 on host co1176 reporting.
+  Task      136 on host co1176 reporting.
+  Task      137 on host co1176 reporting.
+  Task      138 on host co1176 reporting.
+  Task      139 on host co1176 reporting.
+  Task      140 on host co1176 reporting.
+  Task      141 on host co1176 reporting.
+  Task      142 on host co1176 reporting.
+  Task      143 on host co1176 reporting.
+  Task      144 on host co1176 reporting.
+  Task      145 on host co1176 reporting.
+  Task      146 on host co1176 reporting.
+  Task      147 on host co1176 reporting.
+  Task      148 on host co1176 reporting.
+  Task      149 on host co1176 reporting.
+  Task      150 on host co1176 reporting.
+  Task      151 on host co1176 reporting.
+  Task      152 on host co1176 reporting.
+  Task      153 on host co1176 reporting.
+  Task      154 on host co1176 reporting.
+  Task      155 on host co1176 reporting.
+  Task      156 on host co1176 reporting.
+  Task      157 on host co1176 reporting.
+  Task      158 on host co1176 reporting.
+  Task      159 on host co1176 reporting.
+
+  Performing system and environment tests:
+  | Environment variable OMP_NUM_THREADS correctly set to 1.
+  | Checking for ScaLAPACK...
+  | Testing pdtran()...
+  | All pdtran() tests passed.
+
+  Obtaining array dimensions for all initial allocations:
+  
+  -----------------------------------------------------------------------
+  Parsing control.in (first pass over file, find array dimensions only).
+  The contents of control.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of control.in .
+  -----------------------------------------------------------------------
+  
+  ##### Physical settings  ################
+  xc                 pbe
+  spin               none
+  charge      0.0
+  relativistic       atomic_zora scalar
+  #elsi_restart read
+  # SCF settings
+  
+  
+  #vdw_correction_hirshfeld
+  harmonic_length_scale 0.09
+  energy_tolerance  1E-3
+  occupation_type gaussian       0.01
+  # k-grid settings  (to be adjusted)
+  k_grid  2 2 1
+  #empty_states 8
+  use_dipole_correction
+  include_spin_orbit non_self_consistent
+  
+  sc_accuracy_rho    1E-4
+  sc_accuracy_eev    1E-3
+  sc_accuracy_etot   1E-4
+  sc_accuracy_forces 1E-3
+  
+  #output cube stm -0.5
+  mixer   pulay
+  n_max_pulay        12 # high for metal
+  charge_mix_param   0.07 #low for metal
+  
+  #output cube stm -0.5
+  many_body_dispersion_nl    beta=0.81
+  ################################################################################
+  #
+  #  FHI-aims code project
+  # Volker Blum, Fritz Haber Institute Berlin, 2009
+  #
+  #  Suggested "tight" defaults for S atom (to be pasted into control.in file)
+  #
+  #  Revised Jan 04, 2011, following tests (SiC) done by Lydia Nemec:
+  #     d and g functions of tier 2 now enabled by default.
+  #
+  ################################################################################
+    species        S
+  #     global species definitions
+      nucleus             16
+      mass                32.065
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0          2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         44 7.0
+      radial_multiplier   2
+      angular_grids       specified
+        division   0.4665  110
+        division   0.5810  194
+        division   0.7139  302
+        division   0.8274  434
+  #      division   0.9105  590
+  #      division   1.0975  770
+  #      division   1.2028  974
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      3  s   2.
+      valence      3  p   4.
+  #     ion occupancy
+      ion_occ      3  s   1.
+      ion_occ      3  p   3.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.6 A, 1.9 A, 2.5 A, 3.25 A, 4.0 A
+  #
+  ################################################################################
+  #  "First tier" - improvements: -652.81 meV to -45.53 meV
+       ionic 3 d auto
+       hydro 2 p 1.8
+       hydro 4 f 7
+       ionic 3 s auto
+  #  "Second tier" - improvements: -30.20 meV to -1.74 meV
+       hydro 4 d 6.2
+       hydro 5 g 10.8
+  #     hydro 4 p 4.9
+  #     hydro 5 f 10
+  #     hydro 1 s 0.8
+  #  "Third tier" - improvements: -1.04 meV to -0.20 meV
+  #     hydro 3 d 3.9
+  #     hydro 3 d 2.7
+  #     hydro 5 g 12
+  #     hydro 4 p 10.4
+  #     hydro 5 f 12.4
+  #     hydro 2 s 1.9
+  #  "Fourth tier" - improvements: -0.35 meV to -0.06 meV
+  #     hydro 4 d 10.4
+  #     hydro 4 p 7.2
+  #     hydro 4 d 10
+  #     hydro 5 g 19.2
+  #     hydro 4 s 12
+  
+  ################################################################################
+  #
+  # For methods that use the localized form of the "resolution of identity" for
+  # the two-electron Coulomb operator (RI_method LVL), particularly Hartree-Fock and
+  # hybrid density functional calculations, the highest accuracy can be obtained by
+  # uncommenting the line beginning with "for_aux"  below, thus adding an extra g radial
+  # function to the construction of the product basis set for the expansion.
+  # See Ref. New J. Phys. 17, 093020 (2015) for more information, particularly Figs. 1 and 6.
+  #
+  ################################################################################
+  #
+  # for_aux hydro 5 g 6.0
+  ################################################################################
+  #
+  #  FHI-aims code project
+  # Volker Blum, Fritz Haber Institute Berlin, 2009
+  #
+  #  Suggested "tight" defaults for Mo atom (to be pasted into control.in file)
+  #
+  ################################################################################
+    species        Mo
+  #     global species definitions
+      nucleus             42
+      mass                95.94
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0  2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         59 7.0
+      radial_multiplier   2
+      angular_grids specified
+        division   0.3117   50
+        division   0.6750  110
+        division   1.0351  194
+        division   1.2073  302
+        division   1.6402  434
+  #      division   1.9185  590
+  #      division   2.0237  770
+  #      division   2.0980  974
+  #      division   2.7972 1202
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      5  s   1.
+      valence      4  p   6.
+      valence      4  d   5.
+  #     ion occupancy
+      ion_occ     5  s   0.
+      ion_occ     4  p   6.
+      ion_occ     4  d   4.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.675 A, 1.9 A, 2.375 A, 3.00 A, 4.00 A
+  #
+  ################################################################################
+  #  "First tier"  - max. impr. -711.23  meV, min. impr. -21.07 meV
+       hydro 4 f 8.4
+       hydro 3 d 2.8
+       ionic 5 p auto
+       hydro 5 g 12
+       ionic 5 s auto
+  #  "Second tier" - max. impr. -39.38  meV, min. impr. -2.68 meV
+  #     hydro 4 f 12.4
+  #     hydro 3 d 3.3
+  #     hydro 6 h 17.2
+  #     hydro 4 f 7.6
+  #     hydro 3 p 3.0
+  #     hydro 1 s 0.65
+  #  "Third tier"  - max. impr. -5.50 meV, min. impr. -0.47 meV
+  #     hydro 4 f 29.2
+  #     hydro 5 g 11.2
+  #     hydro 3 d 6.8
+  #     hydro 6 h 14.8
+  #     hydro 2 p 2.3
+  #     hydro 4 s 3.8
+  #  "Fourth tier"  - max. impr. -0.58 meV, min. impr. -0.19 meV
+  #     hydro 5 f 6.8
+  #     hydro 5 d 14.8
+  #     hydro 6 s 7.8
+  #     hydro 5 g 20.8
+  #     hydro 5 d 10.4
+  #     hydro 5 p 9.8
+  #  Further functions - -0.17 meV and below
+  #     hydro 5 d 3.2
+  
+  -----------------------------------------------------------------------
+  Completed first pass over input file control.in .
+  -----------------------------------------------------------------------
+  
+  
+  -----------------------------------------------------------------------
+  Parsing geometry.in (first pass over file, find array dimensions only).
+  The contents of geometry.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of geometry.in .
+  -----------------------------------------------------------------------
+  
+  #
+  # This is the geometry file that corresponds to the current relaxation step.
+  # If you do not want this file to be written, set the "write_restart_geometry" flag to .false.
+  #  aims_uuid : 2B9F13F0-CCC8-4B54-A404-1D3A84819141
+  #
+    set_vacuum_level        53.072500
+  lattice_vector     15.90000000      0.00000000      0.00000000
+  lattice_vector     -7.95000000     13.76980390      0.00000000
+  lattice_vector      0.00000000      0.00000000    100.00000000
+  atom       1.59573974      0.92170007      3.07250000 Mo
+  atom       0.00001079      1.83908508      4.63077013 S
+  atom       0.00001079      1.83908508      1.51422987 S
+  atom      -0.00001696      3.67485126      3.07250000 Mo
+  atom      -1.61296665      4.58356198      4.62934187 S
+  atom      -1.61296665      4.58356198      1.51565813 S
+  atom      -1.60444117      6.41791611      3.07250000 Mo
+  atom      -3.20739110      7.32851042      4.62563801 S
+  atom      -3.20739110      7.32851042      1.51936199 S
+  atom      -3.19453650      9.17201664      3.07250000 Mo
+  atom      -4.78734020     10.08179225      4.62934486 S
+  atom      -4.78734020     10.08179225      1.51565514 S
+  atom      -4.76787344     11.93297470      3.07250000 Mo
+  atom      -6.35763253     12.85086424      4.63076820 S
+  atom      -6.35763253     12.85086424      1.51423180 S
+  atom       4.78837113      0.95386493      3.07250000 Mo
+  atom       3.19259356      1.84359054      4.63127934 S
+  atom       3.19259356      1.84359054      1.51372066 S
+  atom       3.22008186      3.67047959      3.07250000 Mo
+  atom       1.61297804      4.58352415      4.62934135 S
+  atom       1.61297804      4.58352415      1.51565865 S
+  atom       1.60442816      6.41787354      3.07250000 Mo
+  atom       0.00002084      7.33708485      4.62600609 S
+  atom       0.00002084      7.33708485      1.51899391 S
+  atom      -0.00001983      9.18025974      3.07250000 Mo
+  atom      -1.59624244     10.10182718      4.62600531 S
+  atom      -1.59624244     10.10182718      1.51899469 S
+  atom      -1.59013345     11.95088236      3.07250000 Mo
+  atom      -3.17441833     12.87540067      4.62935159 S
+  atom      -3.17441833     12.87540067      1.51564841 S
+  atom       7.94992685      0.97595606      3.07250000 Mo
+  atom       6.40324493      1.94555182      4.62715657 S
+  atom       6.40324493      1.94555182      1.51784343 S
+  atom       6.51087771      3.75934353      3.07250000 Mo
+  atom       4.88643001      4.57307744      4.62716411 S
+  atom       4.88643001      4.57307744      1.51783589 S
+  atom       4.82013494      6.39737915      3.07250000 Mo
+  atom       3.20747626      7.32843872      4.62562187 S
+  atom       3.20747626      7.32843872      1.51937813 S
+  atom       3.19453157      9.17198509      3.07250000 Mo
+  atom       1.59625889     10.10181304      4.62600486 S
+  atom       1.59625889     10.10181304      1.51899514 S
+  atom       1.59005940     11.95088398      3.07250000 Mo
+  atom      -0.00001995     12.88372930      4.62564985 S
+  atom      -0.00001995     12.88372930      1.51935015 S
+  atom      11.11151664      0.95396760      3.07250000 Mo
+  atom       9.49665581      1.94568496      4.62713601 S
+  atom       9.49665581      1.94568496      1.51786399 S
+  atom       9.38889769      3.75949839      3.07250000 Mo
+  atom       7.95002352      6.25208450      3.07250000 Mo
+  atom       6.43314423      7.25211865      4.62717291 S
+  atom       6.43314423      7.25211865      1.51782709 S
+  atom       6.38168798      9.14648136      3.07250000 Mo
+  atom       4.78740967     10.08176345      4.62933432 S
+  atom       4.78740967     10.08176345      1.51566568 S
+  atom       4.76785808     11.93298644      3.07250000 Mo
+  atom       3.17440038     12.87544815      4.62934099 S
+  atom       3.17440038     12.87544815      1.51565901 S
+  atom      14.30423784      0.92172591      3.07250000 Mo
+  atom      12.70738687      1.84364978      4.63127621 S
+  atom      12.70738687      1.84364978      1.51372379 S
+  atom      12.67987661      3.67055134      3.07250000 Mo
+  atom      11.01353048      4.57315103      4.62713004 S
+  atom      11.01353048      4.57315103      1.51786996 S
+  atom      11.07995890      6.39751764      3.07250000 Mo
+  atom       9.46696596      7.25219927      4.62716063 S
+  atom       9.46696596      7.25219927      1.51783937 S
+  atom       9.51838331      9.14655651      3.07250000 Mo
+  atom       7.95004050     10.08377640      4.63128180 S
+  atom       7.95004050     10.08377640      1.51371820 S
+  atom       7.95001079     11.92762525      3.07250000 Mo
+  atom       6.35767329     12.85087583      4.63076978 S
+  atom       6.35767329     12.85087583      1.51423022 S
+  #
+  # What follows is the current estimated Hessian matrix constructed by the BFGS algorithm.
+  
+  -----------------------------------------------------------------------
+  Completed first pass over input file geometry.in .
+  -----------------------------------------------------------------------
+  
+
+  Basic array size parameters:
+  | Number of species                 :        2
+  | Number of atoms                   :       73
+  | Number of lattice vectors         :        3
+  | Max. basis fn. angular momentum   :        4
+  | Max. atomic/ionic basis occupied n:        5
+  | Max. number of basis fn. types    :        3
+  | Max. radial fns per species/type  :       10
+  | Max. logarithmic grid size        :     1436
+  | Max. radial integration grid size :      119
+  | Max. angular integration grid size:      434
+  | Max. angular grid division number :        8
+  | Radial grid for Hartree potential :     1436
+  | Number of spin channels           :        1
+
+------------------------------------------------------------
+          Reading file control.in.
+------------------------------------------------------------
+  XC: Using PBE gradient-corrected functionals.
+  Spin treatment: No spin polarisation.
+  Charge =   0.000000E+00: Neutral system requested explicitly.
+  Scalar relativistic treatment of kinetic energy: on-site free-atom approximation to ZORA.
+  Assuming qualitatively harmonic for steps shorter than   0.900000E-01 A.
+  Max energy increase before discarding BFGS move:   0.100000E-02 eV
+  Occupation type: Gaussian broadening, width =   0.100000E-01 eV.
+  Found k-point grid:         2         2         1
+  Using dipole correction.
+  Calculating non-self-consistent second-variational spin-orbit coupling after scf-cycle
+  Convergence accuracy of self-consistent charge density:  0.1000E-03
+  Convergence accuracy of sum of eigenvalues:  0.1000E-02
+  Convergence accuracy of total energy:  0.1000E-03
+  Convergence accuracy of forces:  0.1000E-02
+  Using pulay charge density mixing.
+  Pulay mixing - number of memorized iterations:   12
+  Charge density mixing - mixing parameter:     0.0700
+  Using libMBD for calculating MBD and TS energies
+ 
+  Reading configuration options for species S                   .
+  | Found nuclear charge :  16.0000
+  | Found atomic mass :    32.0650000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    44 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     5 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  3 s   2.000
+  | Found free-atom valence shell :  3 p   4.000
+  | Found free-ion valence shell :  3 s   1.000
+  | Found free-ion valence shell :  3 p   3.000
+  | Found ionic basis function :  3 d , default cutoff radius.
+  | Found hydrogenic basis function :  2 p   1.800
+  | Found hydrogenic basis function :  4 f   7.000
+  | Found ionic basis function :  3 s , default cutoff radius.
+  | Found hydrogenic basis function :  4 d   6.200
+  | Found hydrogenic basis function :  5 g  10.800
+  Species S                   : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species S : No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive S                    ion.
+  Species S : On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species S                   : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species S                   : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species S                   : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain    89 grid points.
+ 
+  Reading configuration options for species Mo                  .
+  | Found nuclear charge :  42.0000
+  | Found atomic mass :    95.9400000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    59 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     6 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  5 s   1.000
+  | Found free-atom valence shell :  4 p   6.000
+  | Found free-atom valence shell :  4 d   5.000
+  | Found free-ion valence shell :  5 s   0.000
+  | Found free-ion valence shell :  4 p   6.000
+  | Found free-ion valence shell :  4 d   4.000
+  | Found hydrogenic basis function :  4 f   8.400
+  | Found hydrogenic basis function :  3 d   2.800
+  | Found ionic basis function :  5 p , default cutoff radius.
+  | Found hydrogenic basis function :  5 g  12.000
+  | Found ionic basis function :  5 s , default cutoff radius.
+  Species Mo                  : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species Mo: No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive Mo                   ion.
+  Species Mo: On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species Mo                  : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species Mo                  : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species Mo                  : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain   119 grid points.
+ 
+  Finished reading input file 'control.in'.
+ 
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+          Reading geometry description geometry.in.
+------------------------------------------------------------
+  Vacuum level in z-axis :   0.530725E+02
+  | The smallest distance between any two atoms is         2.39122849 AA.
+  | The first atom of this pair is atom number                     34 .
+  | The second atom of this pair is atom number                    35 .
+  | Wigner-Seitz cell of the first atom image           1     0     0 .
+  | (The Wigner-Seitz cell of the second atom is 0 0 0  by definition.)
+
+  Symmetry information by spglib:
+  | Precision set to  0.1E-04
+  | Number of Operations  : 2
+  | Space group           : 6
+  | International         : Pm 1 839085
+  | Schoenflies           : Cs^1
+  Input structure read successfully.
+  The structure contains       73 atoms,  and a total of       1818.000 electrons.
+
+  Input geometry:
+  | Unit cell:
+  |       15.90000000        0.00000000        0.00000000
+  |       -7.95000000       13.76980390        0.00000000
+  |        0.00000000        0.00000000      100.00000000
+  | Atomic structure:
+  |       Atom                x [A]            y [A]            z [A]
+  |    1: Species Mo            1.59573974        0.92170007        3.07250000
+  |    2: Species S             0.00001079        1.83908508        4.63077013
+  |    3: Species S             0.00001079        1.83908508        1.51422987
+  |    4: Species Mo           -0.00001696        3.67485126        3.07250000
+  |    5: Species S            -1.61296665        4.58356198        4.62934187
+  |    6: Species S            -1.61296665        4.58356198        1.51565813
+  |    7: Species Mo           -1.60444117        6.41791611        3.07250000
+  |    8: Species S            -3.20739110        7.32851042        4.62563801
+  |    9: Species S            -3.20739110        7.32851042        1.51936199
+  |   10: Species Mo           -3.19453650        9.17201664        3.07250000
+  |   11: Species S            -4.78734020       10.08179225        4.62934486
+  |   12: Species S            -4.78734020       10.08179225        1.51565514
+  |   13: Species Mo           -4.76787344       11.93297470        3.07250000
+  |   14: Species S            -6.35763253       12.85086424        4.63076820
+  |   15: Species S            -6.35763253       12.85086424        1.51423180
+  |   16: Species Mo            4.78837113        0.95386493        3.07250000
+  |   17: Species S             3.19259356        1.84359054        4.63127934
+  |   18: Species S             3.19259356        1.84359054        1.51372066
+  |   19: Species Mo            3.22008186        3.67047959        3.07250000
+  |   20: Species S             1.61297804        4.58352415        4.62934135
+  |   21: Species S             1.61297804        4.58352415        1.51565865
+  |   22: Species Mo            1.60442816        6.41787354        3.07250000
+  |   23: Species S             0.00002084        7.33708485        4.62600609
+  |   24: Species S             0.00002084        7.33708485        1.51899391
+  |   25: Species Mo           -0.00001983        9.18025974        3.07250000
+  |   26: Species S            -1.59624244       10.10182718        4.62600531
+  |   27: Species S            -1.59624244       10.10182718        1.51899469
+  |   28: Species Mo           -1.59013345       11.95088236        3.07250000
+  |   29: Species S            -3.17441833       12.87540067        4.62935159
+  |   30: Species S            -3.17441833       12.87540067        1.51564841
+  |   31: Species Mo            7.94992685        0.97595606        3.07250000
+  |   32: Species S             6.40324493        1.94555182        4.62715657
+  |   33: Species S             6.40324493        1.94555182        1.51784343
+  |   34: Species Mo            6.51087771        3.75934353        3.07250000
+  |   35: Species S             4.88643001        4.57307744        4.62716411
+  |   36: Species S             4.88643001        4.57307744        1.51783589
+  |   37: Species Mo            4.82013494        6.39737915        3.07250000
+  |   38: Species S             3.20747626        7.32843872        4.62562187
+  |   39: Species S             3.20747626        7.32843872        1.51937813
+  |   40: Species Mo            3.19453157        9.17198509        3.07250000
+  |   41: Species S             1.59625889       10.10181304        4.62600486
+  |   42: Species S             1.59625889       10.10181304        1.51899514
+  |   43: Species Mo            1.59005940       11.95088398        3.07250000
+  |   44: Species S            -0.00001995       12.88372930        4.62564985
+  |   45: Species S            -0.00001995       12.88372930        1.51935015
+  |   46: Species Mo           11.11151664        0.95396760        3.07250000
+  |   47: Species S             9.49665581        1.94568496        4.62713601
+  |   48: Species S             9.49665581        1.94568496        1.51786399
+  |   49: Species Mo            9.38889769        3.75949839        3.07250000
+  |   50: Species Mo            7.95002352        6.25208450        3.07250000
+  |   51: Species S             6.43314423        7.25211865        4.62717291
+  |   52: Species S             6.43314423        7.25211865        1.51782709
+  |   53: Species Mo            6.38168798        9.14648136        3.07250000
+  |   54: Species S             4.78740967       10.08176345        4.62933432
+  |   55: Species S             4.78740967       10.08176345        1.51566568
+  |   56: Species Mo            4.76785808       11.93298644        3.07250000
+  |   57: Species S             3.17440038       12.87544815        4.62934099
+  |   58: Species S             3.17440038       12.87544815        1.51565901
+  |   59: Species Mo           14.30423784        0.92172591        3.07250000
+  |   60: Species S            12.70738687        1.84364978        4.63127621
+  |   61: Species S            12.70738687        1.84364978        1.51372379
+  |   62: Species Mo           12.67987661        3.67055134        3.07250000
+  |   63: Species S            11.01353048        4.57315103        4.62713004
+  |   64: Species S            11.01353048        4.57315103        1.51786996
+  |   65: Species Mo           11.07995890        6.39751764        3.07250000
+  |   66: Species S             9.46696596        7.25219927        4.62716063
+  |   67: Species S             9.46696596        7.25219927        1.51783937
+  |   68: Species Mo            9.51838331        9.14655651        3.07250000
+  |   69: Species S             7.95004050       10.08377640        4.63128180
+  |   70: Species S             7.95004050       10.08377640        1.51371820
+  |   71: Species Mo            7.95001079       11.92762525        3.07250000
+  |   72: Species S             6.35767329       12.85087583        4.63076978
+  |   73: Species S             6.35767329       12.85087583        1.51423022
+
+  Lattice parameters for 3D lattice (in Angstroms) :    15.900000   15.900000  100.000000
+  Angle(s) between unit vectors (in degrees)       :    90.000000   90.000000  120.000000
+
+
+  Quantities derived from the lattice vectors:
+  | Reciprocal lattice vector 1:  0.395169  0.228151  0.000000
+  | Reciprocal lattice vector 2: -0.000000  0.456302  0.000000
+  | Reciprocal lattice vector 3:  0.000000  0.000000  0.062832
+  | Unit cell volume                               :   0.218940E+05  A^3
+
+  Fractional coordinates:
+                         L1                L2                L3
+       atom_frac         0.13382915        0.06693633        0.03072500  Mo
+       atom_frac         0.06678032        0.13355928        0.04630770  S
+       atom_frac         0.06678032        0.13355928        0.01514230  S
+       atom_frac         0.13343770        0.26687753        0.03072500  Mo
+       atom_frac         0.06499082        0.33287053        0.04629342  S
+       atom_frac         0.06499082        0.33287053        0.01515658  S
+       atom_frac         0.13213487        0.46608624        0.03072500  Mo
+       atom_frac         0.06438531        0.53221603        0.04625638  S
+       atom_frac         0.06438531        0.53221603        0.01519362  S
+       atom_frac         0.13213395        0.66609639        0.03072500  Mo
+       atom_frac         0.06499278        0.73216673        0.04629345  S
+       atom_frac         0.06499278        0.73216673        0.01515655  S
+       atom_frac         0.13343602        0.86660455        0.03072500  Mo
+       atom_frac         0.06678097        0.93326414        0.04630768  S
+       atom_frac         0.06678097        0.93326414        0.01514232  S
+       atom_frac         0.33579153        0.06927222        0.03072500  Mo
+       atom_frac         0.26773529        0.13388648        0.04631279  S
+       atom_frac         0.26773529        0.13388648        0.01513721  S
+       atom_frac         0.33580090        0.26656005        0.03072500  Mo
+       atom_frac         0.26787905        0.33286779        0.04629341  S
+       atom_frac         0.26787905        0.33286779        0.01515659  S
+       atom_frac         0.33394901        0.46608315        0.03072500  Mo
+       atom_frac         0.26642068        0.53283873        0.04626006  S
+       atom_frac         0.26642068        0.53283873        0.01518994  S
+       atom_frac         0.33334626        0.66669502        0.03072500  Mo
+       atom_frac         0.26641825        0.73362172        0.04626005  S
+       atom_frac         0.26641825        0.73362172        0.01518995  S
+       atom_frac         0.33394413        0.86790505        0.03072500  Mo
+       atom_frac         0.26787407        0.93504604        0.04629352  S
+       atom_frac         0.26787407        0.93504604        0.01515648  S
+       atom_frac         0.53543367        0.07087654        0.03072500  Mo
+       atom_frac         0.47336540        0.14129118        0.04627157  S
+       atom_frac         0.47336540        0.14129118        0.01517843  S
+       atom_frac         0.54599596        0.27301359        0.03072500  Mo
+       atom_frac         0.47337720        0.33210912        0.04627164  S
+       atom_frac         0.47337720        0.33210912        0.01517836  S
+       atom_frac         0.53545054        0.46459479        0.03072500  Mo
+       atom_frac         0.46783348        0.53221083        0.04625622  S
+       atom_frac         0.46783348        0.53221083        0.01519378  S
+       atom_frac         0.53396098        0.66609410        0.03072500  Mo
+       atom_frac         0.46720399        0.73362069        0.04626005  S
+       atom_frac         0.46720399        0.73362069        0.01518995  S
+       atom_frac         0.53395632        0.86790517        0.03072500  Mo
+       atom_frac         0.46782419        0.93565089        0.04625650  S
+       atom_frac         0.46782419        0.93565089        0.01519350  S
+       atom_frac         0.73347736        0.06927968        0.03072500  Mo
+       atom_frac         0.66792437        0.14130085        0.04627136  S
+       atom_frac         0.66792437        0.14130085        0.01517864  S
+       atom_frac         0.72700913        0.27302483        0.03072500  Mo
+       atom_frac         0.72702303        0.45404310        0.03072500  Mo
+       atom_frac         0.66793440        0.52666826        0.04627173  S
+       atom_frac         0.66793440        0.52666826        0.01517827  S
+       atom_frac         0.73348500        0.66424195        0.03072500  Mo
+       atom_frac         0.66717727        0.73216464        0.04629334  S
+       atom_frac         0.66717727        0.73216464        0.01515666  S
+       atom_frac         0.73316799        0.86660540        0.03072500  Mo
+       atom_frac         0.66717257        0.93504949        0.04629341  S
+       atom_frac         0.66717257        0.93504949        0.01515659  S
+       atom_frac         0.93310670        0.06693820        0.03072500  Mo
+       atom_frac         0.86615211        0.13389078        0.04631276  S
+       atom_frac         0.86615211        0.13389078        0.01513724  S
+       atom_frac         0.93075915        0.26656526        0.03072500  Mo
+       atom_frac         0.85873210        0.33211446        0.04627130  S
+       atom_frac         0.85873210        0.33211446        0.01517870  S
+       atom_frac         0.92915518        0.46460485        0.03072500  Mo
+       atom_frac         0.85874372        0.52667411        0.04627161  S
+       atom_frac         0.85874372        0.52667411        0.01517839  S
+       atom_frac         0.93076416        0.66424741        0.03072500  Mo
+       atom_frac         0.86615796        0.73231082        0.04631282  S
+       atom_frac         0.86615796        0.73231082        0.01513718  S
+       atom_frac         0.93310871        0.86621606        0.03072500  Mo
+       atom_frac         0.86648616        0.93326498        0.04630770  S
+       atom_frac         0.86648616        0.93326498        0.01514230  S
+
+ 
+  Finished reading input file 'control.in'.
+ 
+
+------------------------------------------------------------
+          Reading geometry description geometry.in.
+------------------------------------------------------------
+ 
+  Consistency checks for stacksize environment parameter are next.
+ 
+  | Maximum stacksize for task 0: unlimited
+  | Maximum stacksize for task 1: unlimited
+  | Maximum stacksize for task 2: unlimited
+  | Maximum stacksize for task 3: unlimited
+  | Maximum stacksize for task 4: unlimited
+  | Maximum stacksize for task 5: unlimited
+  | Maximum stacksize for task 6: unlimited
+  | Maximum stacksize for task 7: unlimited
+  | Maximum stacksize for task 8: unlimited
+  | Maximum stacksize for task 9: unlimited
+  | Maximum stacksize for task 10: unlimited
+  | Maximum stacksize for task 11: unlimited
+  | Maximum stacksize for task 12: unlimited
+  | Maximum stacksize for task 13: unlimited
+  | Maximum stacksize for task 14: unlimited
+  | Maximum stacksize for task 15: unlimited
+  | Maximum stacksize for task 16: unlimited
+  | Maximum stacksize for task 17: unlimited
+  | Maximum stacksize for task 18: unlimited
+  | Maximum stacksize for task 19: unlimited
+  | Maximum stacksize for task 20: unlimited
+  | Maximum stacksize for task 21: unlimited
+  | Maximum stacksize for task 22: unlimited
+  | Maximum stacksize for task 23: unlimited
+  | Maximum stacksize for task 24: unlimited
+  | Maximum stacksize for task 25: unlimited
+  | Maximum stacksize for task 26: unlimited
+  | Maximum stacksize for task 27: unlimited
+  | Maximum stacksize for task 28: unlimited
+  | Maximum stacksize for task 29: unlimited
+  | Maximum stacksize for task 30: unlimited
+  | Maximum stacksize for task 31: unlimited
+  | Maximum stacksize for task 32: unlimited
+  | Maximum stacksize for task 33: unlimited
+  | Maximum stacksize for task 34: unlimited
+  | Maximum stacksize for task 35: unlimited
+  | Maximum stacksize for task 36: unlimited
+  | Maximum stacksize for task 37: unlimited
+  | Maximum stacksize for task 38: unlimited
+  | Maximum stacksize for task 39: unlimited
+  | Maximum stacksize for task 40: unlimited
+  | Maximum stacksize for task 41: unlimited
+  | Maximum stacksize for task 42: unlimited
+  | Maximum stacksize for task 43: unlimited
+  | Maximum stacksize for task 44: unlimited
+  | Maximum stacksize for task 45: unlimited
+  | Maximum stacksize for task 46: unlimited
+  | Maximum stacksize for task 47: unlimited
+  | Maximum stacksize for task 48: unlimited
+  | Maximum stacksize for task 49: unlimited
+  | Maximum stacksize for task 50: unlimited
+  | Maximum stacksize for task 51: unlimited
+  | Maximum stacksize for task 52: unlimited
+  | Maximum stacksize for task 53: unlimited
+  | Maximum stacksize for task 54: unlimited
+  | Maximum stacksize for task 55: unlimited
+  | Maximum stacksize for task 56: unlimited
+  | Maximum stacksize for task 57: unlimited
+  | Maximum stacksize for task 58: unlimited
+  | Maximum stacksize for task 59: unlimited
+  | Maximum stacksize for task 60: unlimited
+  | Maximum stacksize for task 61: unlimited
+  | Maximum stacksize for task 62: unlimited
+  | Maximum stacksize for task 63: unlimited
+  | Maximum stacksize for task 64: unlimited
+  | Maximum stacksize for task 65: unlimited
+  | Maximum stacksize for task 66: unlimited
+  | Maximum stacksize for task 67: unlimited
+  | Maximum stacksize for task 68: unlimited
+  | Maximum stacksize for task 69: unlimited
+  | Maximum stacksize for task 70: unlimited
+  | Maximum stacksize for task 71: unlimited
+  | Maximum stacksize for task 72: unlimited
+  | Maximum stacksize for task 73: unlimited
+  | Maximum stacksize for task 74: unlimited
+  | Maximum stacksize for task 75: unlimited
+  | Maximum stacksize for task 76: unlimited
+  | Maximum stacksize for task 77: unlimited
+  | Maximum stacksize for task 78: unlimited
+  | Maximum stacksize for task 79: unlimited
+  | Maximum stacksize for task 80: unlimited
+  | Maximum stacksize for task 81: unlimited
+  | Maximum stacksize for task 82: unlimited
+  | Maximum stacksize for task 83: unlimited
+  | Maximum stacksize for task 84: unlimited
+  | Maximum stacksize for task 85: unlimited
+  | Maximum stacksize for task 86: unlimited
+  | Maximum stacksize for task 87: unlimited
+  | Maximum stacksize for task 88: unlimited
+  | Maximum stacksize for task 89: unlimited
+  | Maximum stacksize for task 90: unlimited
+  | Maximum stacksize for task 91: unlimited
+  | Maximum stacksize for task 92: unlimited
+  | Maximum stacksize for task 93: unlimited
+  | Maximum stacksize for task 94: unlimited
+  | Maximum stacksize for task 95: unlimited
+  | Maximum stacksize for task 96: unlimited
+  | Maximum stacksize for task 97: unlimited
+  | Maximum stacksize for task 98: unlimited
+  | Maximum stacksize for task 99: unlimited
+  | Maximum stacksize for task 100: unlimited
+  | Maximum stacksize for task 101: unlimited
+  | Maximum stacksize for task 102: unlimited
+  | Maximum stacksize for task 103: unlimited
+  | Maximum stacksize for task 104: unlimited
+  | Maximum stacksize for task 105: unlimited
+  | Maximum stacksize for task 106: unlimited
+  | Maximum stacksize for task 107: unlimited
+  | Maximum stacksize for task 108: unlimited
+  | Maximum stacksize for task 109: unlimited
+  | Maximum stacksize for task 110: unlimited
+  | Maximum stacksize for task 111: unlimited
+  | Maximum stacksize for task 112: unlimited
+  | Maximum stacksize for task 113: unlimited
+  | Maximum stacksize for task 114: unlimited
+  | Maximum stacksize for task 115: unlimited
+  | Maximum stacksize for task 116: unlimited
+  | Maximum stacksize for task 117: unlimited
+  | Maximum stacksize for task 118: unlimited
+  | Maximum stacksize for task 119: unlimited
+  | Maximum stacksize for task 120: unlimited
+  | Maximum stacksize for task 121: unlimited
+  | Maximum stacksize for task 122: unlimited
+  | Maximum stacksize for task 123: unlimited
+  | Maximum stacksize for task 124: unlimited
+  | Maximum stacksize for task 125: unlimited
+  | Maximum stacksize for task 126: unlimited
+  | Maximum stacksize for task 127: unlimited
+  | Maximum stacksize for task 128: unlimited
+  | Maximum stacksize for task 129: unlimited
+  | Maximum stacksize for task 130: unlimited
+  | Maximum stacksize for task 131: unlimited
+  | Maximum stacksize for task 132: unlimited
+  | Maximum stacksize for task 133: unlimited
+  | Maximum stacksize for task 134: unlimited
+  | Maximum stacksize for task 135: unlimited
+  | Maximum stacksize for task 136: unlimited
+  | Maximum stacksize for task 137: unlimited
+  | Maximum stacksize for task 138: unlimited
+  | Maximum stacksize for task 139: unlimited
+  | Maximum stacksize for task 140: unlimited
+  | Maximum stacksize for task 141: unlimited
+  | Maximum stacksize for task 142: unlimited
+  | Maximum stacksize for task 143: unlimited
+  | Maximum stacksize for task 144: unlimited
+  | Maximum stacksize for task 145: unlimited
+  | Maximum stacksize for task 146: unlimited
+  | Maximum stacksize for task 147: unlimited
+  | Maximum stacksize for task 148: unlimited
+  | Maximum stacksize for task 149: unlimited
+  | Maximum stacksize for task 150: unlimited
+  | Maximum stacksize for task 151: unlimited
+  | Maximum stacksize for task 152: unlimited
+  | Maximum stacksize for task 153: unlimited
+  | Maximum stacksize for task 154: unlimited
+  | Maximum stacksize for task 155: unlimited
+  | Maximum stacksize for task 156: unlimited
+  | Maximum stacksize for task 157: unlimited
+  | Maximum stacksize for task 158: unlimited
+  | Maximum stacksize for task 159: unlimited
+  | Current stacksize for task 0: unlimited
+  | Current stacksize for task 1: unlimited
+  | Current stacksize for task 2: unlimited
+  | Current stacksize for task 3: unlimited
+  | Current stacksize for task 4: unlimited
+  | Current stacksize for task 5: unlimited
+  | Current stacksize for task 6: unlimited
+  | Current stacksize for task 7: unlimited
+  | Current stacksize for task 8: unlimited
+  | Current stacksize for task 9: unlimited
+  | Current stacksize for task 10: unlimited
+  | Current stacksize for task 11: unlimited
+  | Current stacksize for task 12: unlimited
+  | Current stacksize for task 13: unlimited
+  | Current stacksize for task 14: unlimited
+  | Current stacksize for task 15: unlimited
+  | Current stacksize for task 16: unlimited
+  | Current stacksize for task 17: unlimited
+  | Current stacksize for task 18: unlimited
+  | Current stacksize for task 19: unlimited
+  | Current stacksize for task 20: unlimited
+  | Current stacksize for task 21: unlimited
+  | Current stacksize for task 22: unlimited
+  | Current stacksize for task 23: unlimited
+  | Current stacksize for task 24: unlimited
+  | Current stacksize for task 25: unlimited
+  | Current stacksize for task 26: unlimited
+  | Current stacksize for task 27: unlimited
+  | Current stacksize for task 28: unlimited
+  | Current stacksize for task 29: unlimited
+  | Current stacksize for task 30: unlimited
+  | Current stacksize for task 31: unlimited
+  | Current stacksize for task 32: unlimited
+  | Current stacksize for task 33: unlimited
+  | Current stacksize for task 34: unlimited
+  | Current stacksize for task 35: unlimited
+  | Current stacksize for task 36: unlimited
+  | Current stacksize for task 37: unlimited
+  | Current stacksize for task 38: unlimited
+  | Current stacksize for task 39: unlimited
+  | Current stacksize for task 40: unlimited
+  | Current stacksize for task 41: unlimited
+  | Current stacksize for task 42: unlimited
+  | Current stacksize for task 43: unlimited
+  | Current stacksize for task 44: unlimited
+  | Current stacksize for task 45: unlimited
+  | Current stacksize for task 46: unlimited
+  | Current stacksize for task 47: unlimited
+  | Current stacksize for task 48: unlimited
+  | Current stacksize for task 49: unlimited
+  | Current stacksize for task 50: unlimited
+  | Current stacksize for task 51: unlimited
+  | Current stacksize for task 52: unlimited
+  | Current stacksize for task 53: unlimited
+  | Current stacksize for task 54: unlimited
+  | Current stacksize for task 55: unlimited
+  | Current stacksize for task 56: unlimited
+  | Current stacksize for task 57: unlimited
+  | Current stacksize for task 58: unlimited
+  | Current stacksize for task 59: unlimited
+  | Current stacksize for task 60: unlimited
+  | Current stacksize for task 61: unlimited
+  | Current stacksize for task 62: unlimited
+  | Current stacksize for task 63: unlimited
+  | Current stacksize for task 64: unlimited
+  | Current stacksize for task 65: unlimited
+  | Current stacksize for task 66: unlimited
+  | Current stacksize for task 67: unlimited
+  | Current stacksize for task 68: unlimited
+  | Current stacksize for task 69: unlimited
+  | Current stacksize for task 70: unlimited
+  | Current stacksize for task 71: unlimited
+  | Current stacksize for task 72: unlimited
+  | Current stacksize for task 73: unlimited
+  | Current stacksize for task 74: unlimited
+  | Current stacksize for task 75: unlimited
+  | Current stacksize for task 76: unlimited
+  | Current stacksize for task 77: unlimited
+  | Current stacksize for task 78: unlimited
+  | Current stacksize for task 79: unlimited
+  | Current stacksize for task 80: unlimited
+  | Current stacksize for task 81: unlimited
+  | Current stacksize for task 82: unlimited
+  | Current stacksize for task 83: unlimited
+  | Current stacksize for task 84: unlimited
+  | Current stacksize for task 85: unlimited
+  | Current stacksize for task 86: unlimited
+  | Current stacksize for task 87: unlimited
+  | Current stacksize for task 88: unlimited
+  | Current stacksize for task 89: unlimited
+  | Current stacksize for task 90: unlimited
+  | Current stacksize for task 91: unlimited
+  | Current stacksize for task 92: unlimited
+  | Current stacksize for task 93: unlimited
+  | Current stacksize for task 94: unlimited
+  | Current stacksize for task 95: unlimited
+  | Current stacksize for task 96: unlimited
+  | Current stacksize for task 97: unlimited
+  | Current stacksize for task 98: unlimited
+  | Current stacksize for task 99: unlimited
+  | Current stacksize for task 100: unlimited
+  | Current stacksize for task 101: unlimited
+  | Current stacksize for task 102: unlimited
+  | Current stacksize for task 103: unlimited
+  | Current stacksize for task 104: unlimited
+  | Current stacksize for task 105: unlimited
+  | Current stacksize for task 106: unlimited
+  | Current stacksize for task 107: unlimited
+  | Current stacksize for task 108: unlimited
+  | Current stacksize for task 109: unlimited
+  | Current stacksize for task 110: unlimited
+  | Current stacksize for task 111: unlimited
+  | Current stacksize for task 112: unlimited
+  | Current stacksize for task 113: unlimited
+  | Current stacksize for task 114: unlimited
+  | Current stacksize for task 115: unlimited
+  | Current stacksize for task 116: unlimited
+  | Current stacksize for task 117: unlimited
+  | Current stacksize for task 118: unlimited
+  | Current stacksize for task 119: unlimited
+  | Current stacksize for task 120: unlimited
+  | Current stacksize for task 121: unlimited
+  | Current stacksize for task 122: unlimited
+  | Current stacksize for task 123: unlimited
+  | Current stacksize for task 124: unlimited
+  | Current stacksize for task 125: unlimited
+  | Current stacksize for task 126: unlimited
+  | Current stacksize for task 127: unlimited
+  | Current stacksize for task 128: unlimited
+  | Current stacksize for task 129: unlimited
+  | Current stacksize for task 130: unlimited
+  | Current stacksize for task 131: unlimited
+  | Current stacksize for task 132: unlimited
+  | Current stacksize for task 133: unlimited
+  | Current stacksize for task 134: unlimited
+  | Current stacksize for task 135: unlimited
+  | Current stacksize for task 136: unlimited
+  | Current stacksize for task 137: unlimited
+  | Current stacksize for task 138: unlimited
+  | Current stacksize for task 139: unlimited
+  | Current stacksize for task 140: unlimited
+  | Current stacksize for task 141: unlimited
+  | Current stacksize for task 142: unlimited
+  | Current stacksize for task 143: unlimited
+  | Current stacksize for task 144: unlimited
+  | Current stacksize for task 145: unlimited
+  | Current stacksize for task 146: unlimited
+  | Current stacksize for task 147: unlimited
+  | Current stacksize for task 148: unlimited
+  | Current stacksize for task 149: unlimited
+  | Current stacksize for task 150: unlimited
+  | Current stacksize for task 151: unlimited
+  | Current stacksize for task 152: unlimited
+  | Current stacksize for task 153: unlimited
+  | Current stacksize for task 154: unlimited
+  | Current stacksize for task 155: unlimited
+  | Current stacksize for task 156: unlimited
+  | Current stacksize for task 157: unlimited
+  | Current stacksize for task 158: unlimited
+  | Current stacksize for task 159: unlimited
+ 
+  Consistency checks for the contents of control.in are next.
+ 
+  MPI_IN_PLACE appears to work with this MPI implementation.
+  | Keeping use_mpi_in_place .true. (see manual).
+  Target number of points in a grid batch is not set. Defaulting to  100
+  Method for grid partitioning is not set. Defaulting to parallel hash+maxmin partitioning.
+  Batch size limit is not set. Defaulting to    200
+  By default, will store active basis functions for each batch.
+  If in need of memory, prune_basis_once .false. can be used to disable this option.
+  communication_type for Hartree potential was not specified.
+  Defaulting to calc_hartree .
+  Pulay mixer: Number of initial linear mixing iterations not set.
+  Defaulting to    0 iterations.
+  Work space size for distributed Hartree potential not set.
+  Defaulting to   0.200000E+03 MB.
+  Algorithm-dependent basis array size parameters:
+  | n_max_pulay                         :       12
+  Maximum number of self-consistency iterations not provided.
+  Presetting  1000 iterations.
+  Presetting      1001 iterations before the initial mixing cycle
+  is restarted anyway using the sc_init_iter criterion / keyword.
+  Presetting a factor      1.000 between actual scf density residual
+  and density convergence criterion sc_accuracy_rho below which sc_init_iter
+  takes no effect.
+  Geometry relaxation not requested: no relaxation will be performed.
+Requested energy tolerance for BFGS, but no relaxation. Ignoring input.
+  Handling of forces: Unphysical translation and rotation will be removed from forces.
+  No accuracy limit for integral partition fn. given. Defaulting to  0.1000E-14.
+  No threshold value for u(r) in integrations given. Defaulting to  0.1000E-05.
+  No accuracy for occupation numbers given. Defaulting to  0.1000E-12.
+  No threshold value for occupation numbers given. Defaulting to  0.0000E+00.
+  No accuracy for fermi level given. Defaulting to  0.1000E-19.
+  Maximum # of iterations to find E_F not set. Defaulting to  200.
+  Preferred method for the eigenvalue solver ('KS_method') not specified in 'control.in'.
+  Calling BLACS routine to test compilation state
+  Since ScaLAPACK support is enabled, defaulting to ELPA (via ELSI).
+  Will not use alltoall communication since running on < 1024 CPUs.
+  Threshold for basis singularities not set.
+  Default threshold for basis singularities:  0.1000E-04
+  partition_type (choice of integration weights) for integrals was not specified.
+  | Using a version of the partition function of Stratmann and coworkers ('stratmann_sparse').
+  | At each grid point, the set of atoms used to build the partition table is smoothly restricted to
+  | only those atoms whose free-atom density would be non-zero at that grid point.
+  Partitioning for Hartree potential was not defined. Using partition_type for integrals.
+  | Adjusted default value of keyword multip_moments_threshold to:       0.10000000E-11
+  | This value may affect high angular momentum components of the Hartree potential in periodic systems.
+  Angular momentum expansion for Kerker preconditioner not set explicitly.
+  | Using default value of   0
+  No explicit requirement for turning off preconditioner.
+  | By default, it will be turned off when the charge convergence reaches
+  | sc_accuracy_rho  =   0.100000E-03
+  | sc_accuracy_eev  =   0.100000E-02
+  | sc_accuracy_etot =   0.100000E-03
+  No special mixing parameter while Kerker preconditioner is on.
+  Using default: charge_mix_param =     0.0700.
+  No q(lm)/r^(l+1) cutoff set for long-range Hartree potential.
+  | Using default value of  0.100000E-09 .
+  | Verify using the multipole_threshold keyword.
+  Defaulting to new monopole extrapolation.
+  Density update method: automatic selection selected.
+  Using density matrix based charge density update.
+  Using density matrix based charge density update.
+  Using packed matrix style: index .
+  Defaulting to use time-reversal symmetry for k-point grid.
+  Charge integration errors on the 3D integration grid will be compensated
+  by explicit normalization and distribution of residual charges.
+  Use the "compensate_multipole_errors" flag to change this behaviour.
+ 
+  Consistency checks for the contents of geometry.in are next.
+ 
+
+  Range separation radius for Ewald summation (hartree_convergence_parameter):      5.00000000 bohr.
+  Number of empty states per atom not set in control.in - providing a guess from actual geometry.
+  | Total number of empty states used during s.c.f. cycle:      282
+  If you use a very high smearing, use empty_states (per atom!) in control.in to increase this value.
+
+  Structure-dependent array size parameters: 
+  | Maximum number of distinct radial functions  :       26
+  | Maximum number of basis functions            :     3097
+  | Number of Kohn-Sham states (occupied + empty):     1191
+------------------------------------------------------------
+
+------------------------------------------------------------
+          Preparing all fixed parts of the calculation.
+------------------------------------------------------------
+  Determining machine precision:
+    2.225073858507201E-308
+  Setting up grids for atomic and cluster calculations.
+
+  Creating wave function, potential, and density for free atoms.
+
+  Species: S
+
+  List of occupied orbitals and eigenvalues:
+    n    l              occ      energy [Ha]    energy [eV]
+    1    0           2.0000       -88.680731     -2413.1255
+    2    0           2.0000        -7.781719      -211.7513
+    3    0           2.0000        -0.633662       -17.2428
+    2    1           6.0000        -5.751976      -156.5192
+    3    1           4.0000        -0.257086        -6.9957
+
+
+  Species: Mo
+
+  List of occupied orbitals and eigenvalues:
+    n    l              occ      energy [Ha]    energy [eV]
+    1    0           2.0000      -745.344654    -20281.8600
+    2    0           2.0000      -103.288246     -2810.6162
+    3    0           2.0000       -17.516687      -476.6533
+    4    0           2.0000        -2.358559       -64.1796
+    5    0           1.0000        -0.145159        -3.9500
+    2    1           6.0000       -92.308627     -2511.8455
+    3    1           6.0000       -13.936005      -379.2180
+    4    1           6.0000        -1.408138       -38.3174
+    3    2          10.0000        -8.119011      -220.9295
+    4    2           5.0000        -0.132984        -3.6187
+
+
+  Adding cutoff potential to free-atom effective potential.
+  Creating fixed part of basis set: Ionic, confined, hydrogenic.
+ 
+  S                    ion:
+
+  List of free ionic orbitals and eigenvalues:
+    n    l      energy [Ha]    energy [eV]
+    1    0       -89.703778     -2440.9640
+    2    0        -8.775428      -238.7916
+    3    0        -1.470343       -40.0101
+    2    1        -6.747660      -183.6132
+    3    1        -1.048627       -28.5346
+
+
+  List of ionic basis orbitals and eigenvalues:
+    n    l      energy [Ha]    energy [eV]    outer radius [A]
+    3    2        -0.495605       -13.4861       5.386362
+    3    0        -1.470336       -40.0099       3.967934
+
+ 
+  S                    hydrogenic:
+ 
+  List of hydrogenic basis orbitals: 
+    n    l      effective z      eigenvalue [eV]  inner max. [A]     outer max. [A]     outer radius [A]   
+    2    1         1.800000       -11.0118           1.168531           1.168531           5.452614
+    4    3         7.000000       -41.6672           1.212182           1.212182           5.066981
+    4    2         6.200000       -32.6848           0.582121           1.814567           5.386362
+    5    4        10.800000       -63.4785           1.227092           1.227092           4.766538
+ 
+ 
+  Mo                   ion:
+
+  List of free ionic orbitals and eigenvalues:
+    n    l      energy [Ha]    energy [eV]
+    1    0      -746.048685    -20301.0176
+    2    0      -103.980912     -2829.4646
+    3    0       -18.206601      -495.4268
+    4    0        -3.040545       -82.7374
+    2    1       -93.001013     -2530.6863
+    3    1       -14.625827      -397.9890
+    4    1        -2.084855       -56.7318
+    3    2        -8.808854      -239.7011
+    4    2        -0.765435       -20.8285
+
+
+  List of ionic basis orbitals and eigenvalues:
+    n    l      energy [Ha]    energy [eV]    outer radius [A]
+    5    1        -0.465587       -12.6693       5.456393
+    5    0        -0.650331       -17.6964       5.390095
+
+ 
+  Mo                   hydrogenic:
+ 
+  List of hydrogenic basis orbitals: 
+    n    l      effective z      eigenvalue [eV]  inner max. [A]     outer max. [A]     outer radius [A]   
+    4    3         8.400000       -60.0010           1.009788           1.009788           4.487018
+    3    2         2.800000       -11.8048           1.687401           1.687401           5.456393
+    5    4        12.000000       -78.3687           1.100005           1.100005           4.432498
+ 
+  Creating atomic-like basis functions for current effective potential.
+
+  Species S                   :
+
+  List of atomic basis orbitals and eigenvalues:
+    n    l      energy [Ha]    energy [eV]    outer radius [A]
+    1    0       -88.680731     -2413.1255       0.682391
+    2    0        -7.781719      -211.7513       2.289014
+    3    0        -0.633662       -17.2428       5.256262
+    2    1        -5.751976      -156.5192       2.555240
+    3    1        -0.257086        -6.9957       5.386362
+
+
+  Species Mo                  :
+
+  List of atomic basis orbitals and eigenvalues:
+    n    l      energy [Ha]    energy [eV]    outer radius [A]
+    1    0      -745.344654    -20281.8600       0.247552
+    2    0      -103.288246     -2810.6162       0.682864
+    3    0       -17.516687      -476.6533       1.626637
+    4    0        -2.358559       -64.1796       4.220963
+    5    0        -0.145159        -3.9500       5.456393
+    2    1       -92.308627     -2511.8455       0.699766
+    3    1       -13.936005      -379.2180       1.793761
+    4    1        -1.408138       -38.3174       4.828511
+    3    2        -8.119011      -220.9295       2.181285
+    4    2        -0.132984        -3.6187       5.390095
+
+  Assembling full basis from fixed parts.
+  | Species S :   atomic orbital   1 s accepted.
+  | Species S :   atomic orbital   2 s accepted.
+  | Species S :    ionic orbital   3 s accepted.
+  | Species S :   atomic orbital   3 s accepted.
+  | Species S :   atomic orbital   2 p accepted.
+  | Species S :   atomic orbital   3 p accepted.
+  | Species S :    hydro orbital   2 p accepted.
+  | Species S :    ionic orbital   3 d accepted.
+  | Species S :    hydro orbital   4 d accepted.
+  | Species S :    hydro orbital   4 f accepted.
+  | Species S :    hydro orbital   5 g accepted.
+  | Species Mo :   atomic orbital   1 s accepted.
+  | Species Mo :   atomic orbital   2 s accepted.
+  | Species Mo :   atomic orbital   3 s accepted.
+  | Species Mo :   atomic orbital   4 s accepted.
+  | Species Mo :    ionic orbital   5 s accepted.
+  | Species Mo :   atomic orbital   5 s accepted.
+  | Species Mo :   atomic orbital   2 p accepted.
+  | Species Mo :   atomic orbital   3 p accepted.
+  | Species Mo :   atomic orbital   4 p accepted.
+  | Species Mo :    ionic orbital   5 p accepted.
+  | Species Mo :   atomic orbital   3 d accepted.
+  | Species Mo :   atomic orbital   4 d accepted.
+  | Species Mo :    hydro orbital   3 d accepted.
+  | Species Mo :    hydro orbital   4 f accepted.
+  | Species Mo :    hydro orbital   5 g accepted.
+ 
+  Basis size parameters after reduction:
+  | Total number of radial functions:       26
+  | Total number of basis functions :     3097
+ 
+  Per-task memory consumption for arrays in subroutine allocate_ext:
+  |           9.629756MB.
+  Testing on-site integration grid accuracy.
+  |  Species  Function  <phi|h_atom|phi> (log., in eV)  <phi|h_atom|phi> (rad., in eV)
+           1        1              -2413.1254568977              -2413.1254096663
+           1        2               -211.7513411281               -211.7513404762
+           1        3                -16.9725280787                -16.9725279206
+           1        4                  7.6024436204                  7.6024549059
+           1        5               -156.5192206929               -156.5192205451
+           1        6                 -6.9959757887                 -6.9959777655
+           1        7                  6.8896462808                  6.8895564741
+           1        8                  6.0214250550                  6.0214220200
+           1        9                 19.6206468977                 19.6206494558
+           1       10                 24.7008710786                 24.7008710738
+           1       11                 47.5292252001                 47.5292260486
+           2       12             -20281.8599610543             -20281.8584300616
+           2       13              -2810.6161812280              -2810.6161551921
+           2       14               -476.6533163555               -476.6533136395
+           2       15                -64.1796433667                -64.1796426456
+           2       16                 -3.3691762756                 -3.3691802887
+           2       17                  4.4704608512                  4.4699102345
+           2       18              -2511.8455406047              -2511.8455385741
+           2       19               -379.2179896350               -379.2179882338
+           2       20                -38.3173891619                -38.3173886619
+           2       21                  0.2493245095                  0.2492931069
+           2       22               -220.9295301098               -220.9295297081
+           2       23                 -3.6195697699                 -3.6195754704
+           2       24                  7.1428000922                  7.1426882355
+           2       25                 23.3975871087                 23.3975871819
+           2       26                 50.2449608881                 50.2449608586
+
+  Preparing densities etc. for the partition functions (integrals / Hartree potential).
+ Frequency grid relative error: 0.12418110983958286E-009                        
+   
+ Will use parallel mode: atoms     
+ BLACS block size: 12                                                
+
+  Preparations completed.
+  max(cpu_time)          :      0.443 s.
+  Wall clock time (cpu1) :      0.444 s.
+------------------------------------------------------------
+
+------------------------------------------------------------
+          Begin self-consistency loop: Initialization.
+
+          Date     :  20210602, Time     :  120342.271
+------------------------------------------------------------
+
+  Initializing index lists of integration centers etc. from given atomic structure:
+  Mapping all atomic coordinates to central unit cell.
+
+  Initializing the k-points
+  Using symmetry for reducing the k-points
+  | k-points reduced from:        4 to        4
+  | Number of k-points                             :         4
+  The eigenvectors in the calculations are REAL.
+  | Number of basis functions in the Hamiltonian integrals :      8219
+  | Number of basis functions in a single unit cell        :      3097
+  | Number of centers in hartree potential         :       759
+  | Number of centers in hartree multipole         :       481
+  | Number of centers in electron density summation:       417
+  | Number of centers in basis integrals           :       439
+  | Number of centers in integrals                 :       259
+  | Number of centers in hamiltonian               :       417
+  | Consuming          0 KiB for k_phase.
+  | Number of super-cells (origin) [n_cells]                     :          75
+  | Number of super-cells (after PM_index) [n_cells]             :          10
+  | Number of super-cells in hamiltonian [n_cells_in_hamiltonian]:          10
+  | Size of matrix packed + index [n_hamiltonian_matrix_size] :     5834300
+  | Estimated reciprocal-space cutoff momentum G_max:         1.90186217 bohr^-1 .
+  | Reciprocal lattice points for long-range Hartree potential:   17088
+  Using simple linear distribution as default method for k-point parallelism.
+  * Using 160 tasks for Scalapack Eigenvalue solver.
+  Detailed listing of tasks and assigned k-points:
+   Task     0 k-point     1 on co1173
+   Task     1 k-point     1 on co1173
+   Task     2 k-point     1 on co1173
+   Task     3 k-point     1 on co1173
+   Task     4 k-point     1 on co1173
+   Task     5 k-point     1 on co1173
+   Task     6 k-point     1 on co1173
+   Task     7 k-point     1 on co1173
+   Task     8 k-point     1 on co1173
+   Task     9 k-point     1 on co1173
+   Task    10 k-point     1 on co1173
+   Task    11 k-point     1 on co1173
+   Task    12 k-point     1 on co1173
+   Task    13 k-point     1 on co1173
+   Task    14 k-point     1 on co1173
+   Task    15 k-point     1 on co1173
+   Task    16 k-point     1 on co1173
+   Task    17 k-point     1 on co1173
+   Task    18 k-point     1 on co1173
+   Task    19 k-point     1 on co1173
+   Task    20 k-point     1 on co1173
+   Task    21 k-point     1 on co1173
+   Task    22 k-point     1 on co1173
+   Task    23 k-point     1 on co1173
+   Task    24 k-point     1 on co1173
+   Task    25 k-point     1 on co1173
+   Task    26 k-point     1 on co1173
+   Task    27 k-point     1 on co1173
+   Task    28 k-point     1 on co1173
+   Task    29 k-point     1 on co1173
+   Task    30 k-point     1 on co1173
+   Task    31 k-point     1 on co1173
+   Task    32 k-point     1 on co1173
+   Task    33 k-point     1 on co1173
+   Task    34 k-point     1 on co1173
+   Task    35 k-point     1 on co1173
+   Task    36 k-point     1 on co1173
+   Task    37 k-point     1 on co1173
+   Task    38 k-point     1 on co1173
+   Task    39 k-point     1 on co1173
+   Task    40 k-point     2 on co1174
+   Task    41 k-point     2 on co1174
+   Task    42 k-point     2 on co1174
+   Task    43 k-point     2 on co1174
+   Task    44 k-point     2 on co1174
+   Task    45 k-point     2 on co1174
+   Task    46 k-point     2 on co1174
+   Task    47 k-point     2 on co1174
+   Task    48 k-point     2 on co1174
+   Task    49 k-point     2 on co1174
+   Task    50 k-point     2 on co1174
+   Task    51 k-point     2 on co1174
+   Task    52 k-point     2 on co1174
+   Task    53 k-point     2 on co1174
+   Task    54 k-point     2 on co1174
+   Task    55 k-point     2 on co1174
+   Task    56 k-point     2 on co1174
+   Task    57 k-point     2 on co1174
+   Task    58 k-point     2 on co1174
+   Task    59 k-point     2 on co1174
+   Task    60 k-point     2 on co1174
+   Task    61 k-point     2 on co1174
+   Task    62 k-point     2 on co1174
+   Task    63 k-point     2 on co1174
+   Task    64 k-point     2 on co1174
+   Task    65 k-point     2 on co1174
+   Task    66 k-point     2 on co1174
+   Task    67 k-point     2 on co1174
+   Task    68 k-point     2 on co1174
+   Task    69 k-point     2 on co1174
+   Task    70 k-point     2 on co1174
+   Task    71 k-point     2 on co1174
+   Task    72 k-point     2 on co1174
+   Task    73 k-point     2 on co1174
+   Task    74 k-point     2 on co1174
+   Task    75 k-point     2 on co1174
+   Task    76 k-point     2 on co1174
+   Task    77 k-point     2 on co1174
+   Task    78 k-point     2 on co1174
+   Task    79 k-point     2 on co1174
+   Task    80 k-point     3 on co1175
+   Task    81 k-point     3 on co1175
+   Task    82 k-point     3 on co1175
+   Task    83 k-point     3 on co1175
+   Task    84 k-point     3 on co1175
+   Task    85 k-point     3 on co1175
+   Task    86 k-point     3 on co1175
+   Task    87 k-point     3 on co1175
+   Task    88 k-point     3 on co1175
+   Task    89 k-point     3 on co1175
+   Task    90 k-point     3 on co1175
+   Task    91 k-point     3 on co1175
+   Task    92 k-point     3 on co1175
+   Task    93 k-point     3 on co1175
+   Task    94 k-point     3 on co1175
+   Task    95 k-point     3 on co1175
+   Task    96 k-point     3 on co1175
+   Task    97 k-point     3 on co1175
+   Task    98 k-point     3 on co1175
+   Task    99 k-point     3 on co1175
+   Task   100 k-point     3 on co1175
+   Task   101 k-point     3 on co1175
+   Task   102 k-point     3 on co1175
+   Task   103 k-point     3 on co1175
+   Task   104 k-point     3 on co1175
+   Task   105 k-point     3 on co1175
+   Task   106 k-point     3 on co1175
+   Task   107 k-point     3 on co1175
+   Task   108 k-point     3 on co1175
+   Task   109 k-point     3 on co1175
+   Task   110 k-point     3 on co1175
+   Task   111 k-point     3 on co1175
+   Task   112 k-point     3 on co1175
+   Task   113 k-point     3 on co1175
+   Task   114 k-point     3 on co1175
+   Task   115 k-point     3 on co1175
+   Task   116 k-point     3 on co1175
+   Task   117 k-point     3 on co1175
+   Task   118 k-point     3 on co1175
+   Task   119 k-point     3 on co1175
+   Task   120 k-point     4 on co1176
+   Task   121 k-point     4 on co1176
+   Task   122 k-point     4 on co1176
+   Task   123 k-point     4 on co1176
+   Task   124 k-point     4 on co1176
+   Task   125 k-point     4 on co1176
+   Task   126 k-point     4 on co1176
+   Task   127 k-point     4 on co1176
+   Task   128 k-point     4 on co1176
+   Task   129 k-point     4 on co1176
+   Task   130 k-point     4 on co1176
+   Task   131 k-point     4 on co1176
+   Task   132 k-point     4 on co1176
+   Task   133 k-point     4 on co1176
+   Task   134 k-point     4 on co1176
+   Task   135 k-point     4 on co1176
+   Task   136 k-point     4 on co1176
+   Task   137 k-point     4 on co1176
+   Task   138 k-point     4 on co1176
+   Task   139 k-point     4 on co1176
+   Task   140 k-point     4 on co1176
+   Task   141 k-point     4 on co1176
+   Task   142 k-point     4 on co1176
+   Task   143 k-point     4 on co1176
+   Task   144 k-point     4 on co1176
+   Task   145 k-point     4 on co1176
+   Task   146 k-point     4 on co1176
+   Task   147 k-point     4 on co1176
+   Task   148 k-point     4 on co1176
+   Task   149 k-point     4 on co1176
+   Task   150 k-point     4 on co1176
+   Task   151 k-point     4 on co1176
+   Task   152 k-point     4 on co1176
+   Task   153 k-point     4 on co1176
+   Task   154 k-point     4 on co1176
+   Task   155 k-point     4 on co1176
+   Task   156 k-point     4 on co1176
+   Task   157 k-point     4 on co1176
+   Task   158 k-point     4 on co1176
+   Task   159 k-point     4 on co1176
+  K-point:     1 Tasks:    40 split into      8 X      5 BLACS grid
+  Calculating block size based on n_basis =         3097  max_nprow =            8  max_npcol =            5
+  ScaLAPACK block size set to:           16
+  Allocating        1.904 MB for ovlp
+  Allocating        1.904 MB for ham
+  Allocating        1.904 MB for eigenvec
+  Required Scalapack workspace - INTEGER:            1  REAL:             1
+  Partitioning the integration grid into batches with parallel hashing+maxmin method.
+  | Number of batches:    22262
+  | Maximal batch size:     200
+  | Minimal batch size:       1
+  | Average batch size:      80.898
+  | Standard deviation of batch sizes:      24.670
+
+  Integration load balanced across   160 MPI tasks.
+  Work distribution over tasks is as follows:
+  Task     0 has      11262 integration points.
+  Task     1 has      11201 integration points.
+  Task     2 has      11277 integration points.
+  Task     3 has      11280 integration points.
+  Task     4 has      11238 integration points.
+  Task     5 has      11244 integration points.
+  Task     6 has      11316 integration points.
+  Task     7 has      11242 integration points.
+  Task     8 has      11304 integration points.
+  Task     9 has      11264 integration points.
+  Task    10 has      11291 integration points.
+  Task    11 has      11213 integration points.
+  Task    12 has      11210 integration points.
+  Task    13 has      11241 integration points.
+  Task    14 has      11288 integration points.
+  Task    15 has      11267 integration points.
+  Task    16 has      11236 integration points.
+  Task    17 has      11230 integration points.
+  Task    18 has      11215 integration points.
+  Task    19 has      11289 integration points.
+  Task    20 has      11201 integration points.
+  Task    21 has      11276 integration points.
+  Task    22 has      11240 integration points.
+  Task    23 has      11238 integration points.
+  Task    24 has      11196 integration points.
+  Task    25 has      11206 integration points.
+  Task    26 has      11268 integration points.
+  Task    27 has      11239 integration points.
+  Task    28 has      11239 integration points.
+  Task    29 has      11337 integration points.
+  Task    30 has      11279 integration points.
+  Task    31 has      11241 integration points.
+  Task    32 has      11309 integration points.
+  Task    33 has      11213 integration points.
+  Task    34 has      11286 integration points.
+  Task    35 has      11309 integration points.
+  Task    36 has      11218 integration points.
+  Task    37 has      11254 integration points.
+  Task    38 has      11327 integration points.
+  Task    39 has      11211 integration points.
+  Task    40 has      11265 integration points.
+  Task    41 has      11218 integration points.
+  Task    42 has      11243 integration points.
+  Task    43 has      11224 integration points.
+  Task    44 has      11245 integration points.
+  Task    45 has      11237 integration points.
+  Task    46 has      11193 integration points.
+  Task    47 has      11307 integration points.
+  Task    48 has      11201 integration points.
+  Task    49 has      11242 integration points.
+  Task    50 has      11218 integration points.
+  Task    51 has      11304 integration points.
+  Task    52 has      11276 integration points.
+  Task    53 has      11239 integration points.
+  Task    54 has      11316 integration points.
+  Task    55 has      11217 integration points.
+  Task    56 has      11238 integration points.
+  Task    57 has      11300 integration points.
+  Task    58 has      11227 integration points.
+  Task    59 has      11275 integration points.
+  Task    60 has      11270 integration points.
+  Task    61 has      11197 integration points.
+  Task    62 has      11236 integration points.
+  Task    63 has      11252 integration points.
+  Task    64 has      11277 integration points.
+  Task    65 has      11266 integration points.
+  Task    66 has      11214 integration points.
+  Task    67 has      11216 integration points.
+  Task    68 has      11305 integration points.
+  Task    69 has      11210 integration points.
+  Task    70 has      11281 integration points.
+  Task    71 has      11274 integration points.
+  Task    72 has      11264 integration points.
+  Task    73 has      11239 integration points.
+  Task    74 has      11280 integration points.
+  Task    75 has      11232 integration points.
+  Task    76 has      11278 integration points.
+  Task    77 has      11267 integration points.
+  Task    78 has      11238 integration points.
+  Task    79 has      11268 integration points.
+  Task    80 has      11279 integration points.
+  Task    81 has      11202 integration points.
+  Task    82 has      11196 integration points.
+  Task    83 has      11316 integration points.
+  Task    84 has      11277 integration points.
+  Task    85 has      11240 integration points.
+  Task    86 has      11234 integration points.
+  Task    87 has      11195 integration points.
+  Task    88 has      11237 integration points.
+  Task    89 has      11221 integration points.
+  Task    90 has      11245 integration points.
+  Task    91 has      11269 integration points.
+  Task    92 has      11293 integration points.
+  Task    93 has      11330 integration points.
+  Task    94 has      11294 integration points.
+  Task    95 has      11242 integration points.
+  Task    96 has      11267 integration points.
+  Task    97 has      11267 integration points.
+  Task    98 has      11238 integration points.
+  Task    99 has      11270 integration points.
+  Task   100 has      11239 integration points.
+  Task   101 has      11212 integration points.
+  Task   102 has      11241 integration points.
+  Task   103 has      11237 integration points.
+  Task   104 has      11311 integration points.
+  Task   105 has      11277 integration points.
+  Task   106 has      11205 integration points.
+  Task   107 has      11209 integration points.
+  Task   108 has      11206 integration points.
+  Task   109 has      11315 integration points.
+  Task   110 has      11243 integration points.
+  Task   111 has      11274 integration points.
+  Task   112 has      11209 integration points.
+  Task   113 has      11306 integration points.
+  Task   114 has      11279 integration points.
+  Task   115 has      11359 integration points.
+  Task   116 has      11281 integration points.
+  Task   117 has      11269 integration points.
+  Task   118 has      11260 integration points.
+  Task   119 has      11243 integration points.
+  Task   120 has      11263 integration points.
+  Task   121 has      11234 integration points.
+  Task   122 has      11242 integration points.
+  Task   123 has      11262 integration points.
+  Task   124 has      11212 integration points.
+  Task   125 has      11240 integration points.
+  Task   126 has      11273 integration points.
+  Task   127 has      11241 integration points.
+  Task   128 has      11235 integration points.
+  Task   129 has      11214 integration points.
+  Task   130 has      11198 integration points.
+  Task   131 has      11286 integration points.
+  Task   132 has      11265 integration points.
+  Task   133 has      11271 integration points.
+  Task   134 has      11204 integration points.
+  Task   135 has      11197 integration points.
+  Task   136 has      11214 integration points.
+  Task   137 has      11294 integration points.
+  Task   138 has      11281 integration points.
+  Task   139 has      11255 integration points.
+  Task   140 has      11307 integration points.
+  Task   141 has      11243 integration points.
+  Task   142 has      11291 integration points.
+  Task   143 has      11297 integration points.
+  Task   144 has      11309 integration points.
+  Task   145 has      11264 integration points.
+  Task   146 has      11266 integration points.
+  Task   147 has      11273 integration points.
+  Task   148 has      11240 integration points.
+  Task   149 has      11282 integration points.
+  Task   150 has      11313 integration points.
+  Task   151 has      11318 integration points.
+  Task   152 has      11215 integration points.
+  Task   153 has      11277 integration points.
+  Task   154 has      11242 integration points.
+  Task   155 has      11277 integration points.
+  Task   156 has      11240 integration points.
+  Task   157 has      11269 integration points.
+  Task   158 has      11361 integration points.
+  Task   159 has      11250 integration points.
+  Initializing partition tables, free-atom densities, potentials, etc. across the integration grid (initialize_grid_storage).
+  | initialize_grid_storage: Actual outermost partition radius vs. multipole_radius_free
+  | (-- VB: in principle, multipole_radius_free should be larger, hence this output)
+  | Species        1: Confinement radius =              6.000000000000000 AA, multipole_radius_free =              6.012827091137924 AA.
+  | Species        1: outer_partition_radius set to              6.012827091137924 AA .
+  | Species        2: Confinement radius =              6.000000000000000 AA, multipole_radius_free =              6.016994434057369 AA.
+  | Species        2: outer_partition_radius set to              6.016994434057369 AA .
+  | The sparse table of interatomic distances needs       1023.13 kbyte instead of      1541.77 kbyte of memory.
+  | Net number of integration points:  1800946
+  | of which are non-zero points    :  1466582
+  | Numerical average free-atom electrostatic potential    :     -1.08604722 eV
+  Renormalizing the initial density to the exact electron count on the 3D integration grid.
+  | Initial density: Formal number of electrons (from input files) :    1818.0000000000
+  | Integrated number of electrons on 3D grid     :    1817.9989445812
+  | Charge integration error                      :      -0.0010554188
+  | Normalization factor for density and gradient :       1.0000005805
+  Renormalizing the free-atom superposition density to the exact electron count on the 3D integration grid.
+  | Formal number of electrons (from input files) :    1818.0000000000
+  | Integrated number of electrons on 3D grid     :    1817.9989445812
+  | Charge integration error                      :      -0.0010554188
+  | Normalization factor for density and gradient :       1.0000005805
+  Obtaining max. number of non-zero basis functions in each batch (get_n_compute_maxes).
+  | Maximal number of non-zero basis functions:     1187 in task     0
+  | Maximal number of non-zero basis functions:     1144 in task     1
+  | Maximal number of non-zero basis functions:     1129 in task     2
+  | Maximal number of non-zero basis functions:     1144 in task     3
+  | Maximal number of non-zero basis functions:     1131 in task     4
+  | Maximal number of non-zero basis functions:     1160 in task     5
+  | Maximal number of non-zero basis functions:     1176 in task     6
+  | Maximal number of non-zero basis functions:     1185 in task     7
+  | Maximal number of non-zero basis functions:     1160 in task     8
+  | Maximal number of non-zero basis functions:     1150 in task     9
+  | Maximal number of non-zero basis functions:     1161 in task    10
+  | Maximal number of non-zero basis functions:     1183 in task    11
+  | Maximal number of non-zero basis functions:     1178 in task    12
+  | Maximal number of non-zero basis functions:     1187 in task    13
+  | Maximal number of non-zero basis functions:     1185 in task    14
+  | Maximal number of non-zero basis functions:     1160 in task    15
+  | Maximal number of non-zero basis functions:     1161 in task    16
+  | Maximal number of non-zero basis functions:     1194 in task    17
+  | Maximal number of non-zero basis functions:     1162 in task    18
+  | Maximal number of non-zero basis functions:     1180 in task    19
+  | Maximal number of non-zero basis functions:     1141 in task    20
+  | Maximal number of non-zero basis functions:     1149 in task    21
+  | Maximal number of non-zero basis functions:     1150 in task    22
+  | Maximal number of non-zero basis functions:     1202 in task    23
+  | Maximal number of non-zero basis functions:     1179 in task    24
+  | Maximal number of non-zero basis functions:     1176 in task    25
+  | Maximal number of non-zero basis functions:     1168 in task    26
+  | Maximal number of non-zero basis functions:     1155 in task    27
+  | Maximal number of non-zero basis functions:     1142 in task    28
+  | Maximal number of non-zero basis functions:     1148 in task    29
+  | Maximal number of non-zero basis functions:     1159 in task    30
+  | Maximal number of non-zero basis functions:     1168 in task    31
+  | Maximal number of non-zero basis functions:     1186 in task    32
+  | Maximal number of non-zero basis functions:     1165 in task    33
+  | Maximal number of non-zero basis functions:     1157 in task    34
+  | Maximal number of non-zero basis functions:     1185 in task    35
+  | Maximal number of non-zero basis functions:     1178 in task    36
+  | Maximal number of non-zero basis functions:     1141 in task    37
+  | Maximal number of non-zero basis functions:     1139 in task    38
+  | Maximal number of non-zero basis functions:     1120 in task    39
+  | Maximal number of non-zero basis functions:     1162 in task    40
+  | Maximal number of non-zero basis functions:     1167 in task    41
+  | Maximal number of non-zero basis functions:     1202 in task    42
+  | Maximal number of non-zero basis functions:     1166 in task    43
+  | Maximal number of non-zero basis functions:     1176 in task    44
+  | Maximal number of non-zero basis functions:     1170 in task    45
+  | Maximal number of non-zero basis functions:     1202 in task    46
+  | Maximal number of non-zero basis functions:     1155 in task    47
+  | Maximal number of non-zero basis functions:     1182 in task    48
+  | Maximal number of non-zero basis functions:     1146 in task    49
+  | Maximal number of non-zero basis functions:     1167 in task    50
+  | Maximal number of non-zero basis functions:     1169 in task    51
+  | Maximal number of non-zero basis functions:     1176 in task    52
+  | Maximal number of non-zero basis functions:     1159 in task    53
+  | Maximal number of non-zero basis functions:     1119 in task    54
+  | Maximal number of non-zero basis functions:     1135 in task    55
+  | Maximal number of non-zero basis functions:     1130 in task    56
+  | Maximal number of non-zero basis functions:     1178 in task    57
+  | Maximal number of non-zero basis functions:     1135 in task    58
+  | Maximal number of non-zero basis functions:     1134 in task    59
+  | Maximal number of non-zero basis functions:     1138 in task    60
+  | Maximal number of non-zero basis functions:     1154 in task    61
+  | Maximal number of non-zero basis functions:     1158 in task    62
+  | Maximal number of non-zero basis functions:     1168 in task    63
+  | Maximal number of non-zero basis functions:     1167 in task    64
+  | Maximal number of non-zero basis functions:     1162 in task    65
+  | Maximal number of non-zero basis functions:     1167 in task    66
+  | Maximal number of non-zero basis functions:     1170 in task    67
+  | Maximal number of non-zero basis functions:     1202 in task    68
+  | Maximal number of non-zero basis functions:     1174 in task    69
+  | Maximal number of non-zero basis functions:     1203 in task    70
+  | Maximal number of non-zero basis functions:     1169 in task    71
+  | Maximal number of non-zero basis functions:     1211 in task    72
+  | Maximal number of non-zero basis functions:     1160 in task    73
+  | Maximal number of non-zero basis functions:     1188 in task    74
+  | Maximal number of non-zero basis functions:     1177 in task    75
+  | Maximal number of non-zero basis functions:     1138 in task    76
+  | Maximal number of non-zero basis functions:     1142 in task    77
+  | Maximal number of non-zero basis functions:     1175 in task    78
+  | Maximal number of non-zero basis functions:     1178 in task    79
+  | Maximal number of non-zero basis functions:     1143 in task    80
+  | Maximal number of non-zero basis functions:     1175 in task    81
+  | Maximal number of non-zero basis functions:     1162 in task    82
+  | Maximal number of non-zero basis functions:     1180 in task    83
+  | Maximal number of non-zero basis functions:     1121 in task    84
+  | Maximal number of non-zero basis functions:     1178 in task    85
+  | Maximal number of non-zero basis functions:     1168 in task    86
+  | Maximal number of non-zero basis functions:     1139 in task    87
+  | Maximal number of non-zero basis functions:     1166 in task    88
+  | Maximal number of non-zero basis functions:     1138 in task    89
+  | Maximal number of non-zero basis functions:     1162 in task    90
+  | Maximal number of non-zero basis functions:     1146 in task    91
+  | Maximal number of non-zero basis functions:     1146 in task    92
+  | Maximal number of non-zero basis functions:     1185 in task    93
+  | Maximal number of non-zero basis functions:     1171 in task    94
+  | Maximal number of non-zero basis functions:     1167 in task    95
+  | Maximal number of non-zero basis functions:     1174 in task    96
+  | Maximal number of non-zero basis functions:     1171 in task    97
+  | Maximal number of non-zero basis functions:     1219 in task    98
+  | Maximal number of non-zero basis functions:     1136 in task    99
+  | Maximal number of non-zero basis functions:     1167 in task   100
+  | Maximal number of non-zero basis functions:     1176 in task   101
+  | Maximal number of non-zero basis functions:     1135 in task   102
+  | Maximal number of non-zero basis functions:     1169 in task   103
+  | Maximal number of non-zero basis functions:     1153 in task   104
+  | Maximal number of non-zero basis functions:     1178 in task   105
+  | Maximal number of non-zero basis functions:     1201 in task   106
+  | Maximal number of non-zero basis functions:     1163 in task   107
+  | Maximal number of non-zero basis functions:     1174 in task   108
+  | Maximal number of non-zero basis functions:     1143 in task   109
+  | Maximal number of non-zero basis functions:     1168 in task   110
+  | Maximal number of non-zero basis functions:     1193 in task   111
+  | Maximal number of non-zero basis functions:     1155 in task   112
+  | Maximal number of non-zero basis functions:     1192 in task   113
+  | Maximal number of non-zero basis functions:     1201 in task   114
+  | Maximal number of non-zero basis functions:     1164 in task   115
+  | Maximal number of non-zero basis functions:     1192 in task   116
+  | Maximal number of non-zero basis functions:     1162 in task   117
+  | Maximal number of non-zero basis functions:     1163 in task   118
+  | Maximal number of non-zero basis functions:     1176 in task   119
+  | Maximal number of non-zero basis functions:     1139 in task   120
+  | Maximal number of non-zero basis functions:     1166 in task   121
+  | Maximal number of non-zero basis functions:     1176 in task   122
+  | Maximal number of non-zero basis functions:     1147 in task   123
+  | Maximal number of non-zero basis functions:     1151 in task   124
+  | Maximal number of non-zero basis functions:     1192 in task   125
+  | Maximal number of non-zero basis functions:     1146 in task   126
+  | Maximal number of non-zero basis functions:     1138 in task   127
+  | Maximal number of non-zero basis functions:     1144 in task   128
+  | Maximal number of non-zero basis functions:     1176 in task   129
+  | Maximal number of non-zero basis functions:     1201 in task   130
+  | Maximal number of non-zero basis functions:     1210 in task   131
+  | Maximal number of non-zero basis functions:     1166 in task   132
+  | Maximal number of non-zero basis functions:     1153 in task   133
+  | Maximal number of non-zero basis functions:     1187 in task   134
+  | Maximal number of non-zero basis functions:     1187 in task   135
+  | Maximal number of non-zero basis functions:     1170 in task   136
+  | Maximal number of non-zero basis functions:     1153 in task   137
+  | Maximal number of non-zero basis functions:     1186 in task   138
+  | Maximal number of non-zero basis functions:     1181 in task   139
+  | Maximal number of non-zero basis functions:     1177 in task   140
+  | Maximal number of non-zero basis functions:     1156 in task   141
+  | Maximal number of non-zero basis functions:     1169 in task   142
+  | Maximal number of non-zero basis functions:     1186 in task   143
+  | Maximal number of non-zero basis functions:     1157 in task   144
+  | Maximal number of non-zero basis functions:     1135 in task   145
+  | Maximal number of non-zero basis functions:     1146 in task   146
+  | Maximal number of non-zero basis functions:     1146 in task   147
+  | Maximal number of non-zero basis functions:     1124 in task   148
+  | Maximal number of non-zero basis functions:     1138 in task   149
+  | Maximal number of non-zero basis functions:     1162 in task   150
+  | Maximal number of non-zero basis functions:     1169 in task   151
+  | Maximal number of non-zero basis functions:     1177 in task   152
+  | Maximal number of non-zero basis functions:     1168 in task   153
+  | Maximal number of non-zero basis functions:     1197 in task   154
+  | Maximal number of non-zero basis functions:     1169 in task   155
+  | Maximal number of non-zero basis functions:     1203 in task   156
+  | Maximal number of non-zero basis functions:     1168 in task   157
+  | Maximal number of non-zero basis functions:     1169 in task   158
+  | Maximal number of non-zero basis functions:     1202 in task   159
+  Integrating Hamiltonian matrix: batch-based integration.
+  Time summed over all CPUs for integration: real work      291.477 s, elapsed      306.339 s
+  Integrating overlap matrix.
+  Time summed over all CPUs for integration: real work      219.088 s, elapsed      231.387 s
+  Decreasing sparse matrix size:
+  | Tolerance:  0.1000E-12
+  Hamiltonian matrix
+  | Array has  5043369 nonzero elements out of  5834300 elements
+  | Sparsity factor is 0.136
+  Overlap matrix
+  | Array has  4810846 nonzero elements out of  5834300 elements
+  | Sparsity factor is 0.175
+  New size of hamiltonian matrix:     5057089
+  Deallocating overlap matrix.
+
+  Updating Kohn-Sham eigenvalues and eigenvectors using ELSI and the ELPA eigensolver.
+  Singularity check in k-point 1 (analysis for other k-points may follow below):
+  Overlap matrix is not singular
+  | Lowest and highest eigenvalues :  0.3414E-03,  0.8866E+01
+  Finished singularity check of overlap matrix
+  | Time :     0.246 s
+  Starting ELPA eigensolver
+  Finished Cholesky decomposition
+  | Time :     0.058 s
+  Finished transformation to standard eigenproblem
+  | Time :     0.066 s
+  Finished solving standard eigenproblem
+  | Time :     0.335 s
+  Finished back-transformation of eigenvectors
+  | Time :     0.022 s
+
+  Obtaining occupation numbers and chemical potential using ELSI.
+  | Chemical potential (Fermi level):    -4.73379785 eV
+  Writing Kohn-Sham eigenvalues.
+  K-point:       1 at    0.000000    0.000000    0.000000 (in units of recip. lattice)
+
+  State    Occupation    Eigenvalue [Ha]    Eigenvalue [eV]
+      1       2.00000        -745.362621       -20282.34888
+      2       2.00000        -745.362621       -20282.34887
+      3       2.00000        -745.362620       -20282.34885
+      4       2.00000        -745.361963       -20282.33098
+      5       2.00000        -745.361963       -20282.33097
+      6       2.00000        -745.361962       -20282.33094
+      7       2.00000        -745.361953       -20282.33070
+      8       2.00000        -745.361953       -20282.33069
+      9       2.00000        -745.361952       -20282.33067
+     10       2.00000        -745.361951       -20282.33065
+     11       2.00000        -745.361951       -20282.33064
+     12       2.00000        -745.361951       -20282.33063
+     13       2.00000        -745.361937       -20282.33026
+     14       2.00000        -745.361778       -20282.32593
+     15       2.00000        -745.361776       -20282.32587
+     16       2.00000        -745.361775       -20282.32586
+     17       2.00000        -745.361738       -20282.32486
+     18       2.00000        -745.361738       -20282.32485
+     19       2.00000        -745.361737       -20282.32483
+     20       2.00000        -745.361443       -20282.31682
+     21       2.00000        -745.361443       -20282.31682
+     22       2.00000        -745.361442       -20282.31678
+     23       2.00000        -745.361441       -20282.31676
+     24       2.00000        -745.361441       -20282.31676
+     25       2.00000        -745.361440       -20282.31674
+     26       2.00000        -103.306744        -2811.11953
+     27       2.00000        -103.306744        -2811.11952
+     28       2.00000        -103.306743        -2811.11950
+     29       2.00000        -103.306079        -2811.10145
+     30       2.00000        -103.306079        -2811.10144
+     31       2.00000        -103.306078        -2811.10141
+     32       2.00000        -103.306069        -2811.10118
+     33       2.00000        -103.306069        -2811.10116
+     34       2.00000        -103.306068        -2811.10114
+     35       2.00000        -103.306068        -2811.10113
+     36       2.00000        -103.306067        -2811.10111
+     37       2.00000        -103.306067        -2811.10111
+     38       2.00000        -103.306053        -2811.10073
+     39       2.00000        -103.305892        -2811.09634
+     40       2.00000        -103.305890        -2811.09628
+     41       2.00000        -103.305889        -2811.09627
+     42       2.00000        -103.305834        -2811.09478
+     43       2.00000        -103.305834        -2811.09477
+     44       2.00000        -103.305833        -2811.09475
+     45       2.00000        -103.305553        -2811.08712
+     46       2.00000        -103.305553        -2811.08712
+     47       2.00000        -103.305551        -2811.08707
+     48       2.00000        -103.305550        -2811.08706
+     49       2.00000        -103.305550        -2811.08705
+     50       2.00000        -103.305550        -2811.08704
+     51       2.00000         -92.327114        -2512.34859
+     52       2.00000         -92.327113        -2512.34858
+     53       2.00000         -92.327113        -2512.34857
+     54       2.00000         -92.327110        -2512.34849
+     55       2.00000         -92.327110        -2512.34848
+     56       2.00000         -92.327109        -2512.34846
+     57       2.00000         -92.327096        -2512.34810
+     58       2.00000         -92.327095        -2512.34810
+     59       2.00000         -92.327095        -2512.34808
+     60       2.00000         -92.326449        -2512.33049
+     61       2.00000         -92.326448        -2512.33049
+     62       2.00000         -92.326448        -2512.33048
+     63       2.00000         -92.326448        -2512.33048
+     64       2.00000         -92.326447        -2512.33046
+     65       2.00000         -92.326447        -2512.33045
+     66       2.00000         -92.326439        -2512.33023
+     67       2.00000         -92.326439        -2512.33022
+     68       2.00000         -92.326438        -2512.33020
+     69       2.00000         -92.326437        -2512.33018
+     70       2.00000         -92.326437        -2512.33018
+     71       2.00000         -92.326437        -2512.33017
+     72       2.00000         -92.326437        -2512.33017
+     73       2.00000         -92.326436        -2512.33016
+     74       2.00000         -92.326436        -2512.33015
+     75       2.00000         -92.326436        -2512.33014
+     76       2.00000         -92.326435        -2512.33012
+     77       2.00000         -92.326435        -2512.33012
+     78       2.00000         -92.326434        -2512.33010
+     79       2.00000         -92.326434        -2512.33009
+     80       2.00000         -92.326433        -2512.33006
+     81       2.00000         -92.326424        -2512.32983
+     82       2.00000         -92.326424        -2512.32982
+     83       2.00000         -92.326423        -2512.32979
+     84       2.00000         -92.326422        -2512.32978
+     85       2.00000         -92.326422        -2512.32976
+     86       2.00000         -92.326422        -2512.32976
+     87       2.00000         -92.326422        -2512.32976
+     88       2.00000         -92.326422        -2512.32976
+     89       2.00000         -92.326408        -2512.32938
+     90       2.00000         -92.326262        -2512.32543
+     91       2.00000         -92.326260        -2512.32537
+     92       2.00000         -92.326260        -2512.32536
+     93       2.00000         -92.326260        -2512.32536
+     94       2.00000         -92.326258        -2512.32530
+     95       2.00000         -92.326258        -2512.32529
+     96       2.00000         -92.326247        -2512.32500
+     97       2.00000         -92.326244        -2512.32494
+     98       2.00000         -92.326244        -2512.32493
+     99       2.00000         -92.326226        -2512.32445
+    100       2.00000         -92.326226        -2512.32444
+    101       2.00000         -92.326225        -2512.32442
+    102       2.00000         -92.326204        -2512.32384
+    103       2.00000         -92.326204        -2512.32383
+    104       2.00000         -92.326203        -2512.32381
+    105       2.00000         -92.326178        -2512.32313
+    106       2.00000         -92.326178        -2512.32312
+    107       2.00000         -92.326177        -2512.32310
+    108       2.00000         -92.325927        -2512.31631
+    109       2.00000         -92.325927        -2512.31631
+    110       2.00000         -92.325926        -2512.31627
+    111       2.00000         -92.325925        -2512.31625
+    112       2.00000         -92.325925        -2512.31625
+    113       2.00000         -92.325924        -2512.31623
+    114       2.00000         -92.325920        -2512.31610
+    115       2.00000         -92.325920        -2512.31610
+    116       2.00000         -92.325918        -2512.31606
+    117       2.00000         -92.325917        -2512.31604
+    118       2.00000         -92.325917        -2512.31604
+    119       2.00000         -92.325917        -2512.31602
+    120       2.00000         -92.325908        -2512.31578
+    121       2.00000         -92.325908        -2512.31578
+    122       2.00000         -92.325906        -2512.31574
+    123       2.00000         -92.325906        -2512.31572
+    124       2.00000         -92.325906        -2512.31572
+    125       2.00000         -92.325905        -2512.31570
+    126       2.00000         -88.713116        -2414.00670
+    127       2.00000         -88.713116        -2414.00670
+    128       2.00000         -88.713115        -2414.00668
+    129       2.00000         -88.713115        -2414.00668
+    130       2.00000         -88.713113        -2414.00663
+    131       2.00000         -88.713113        -2414.00663
+    132       2.00000         -88.712728        -2413.99616
+    133       2.00000         -88.712728        -2413.99616
+    134       2.00000         -88.712727        -2413.99612
+    135       2.00000         -88.712727        -2413.99612
+    136       2.00000         -88.712727        -2413.99612
+    137       2.00000         -88.712727        -2413.99612
+    138       2.00000         -88.712571        -2413.99189
+    139       2.00000         -88.712571        -2413.99189
+    140       2.00000         -88.712571        -2413.99188
+    141       2.00000         -88.712571        -2413.99188
+    142       2.00000         -88.712570        -2413.99186
+    143       2.00000         -88.712570        -2413.99186
+    144       2.00000         -88.712570        -2413.99184
+    145       2.00000         -88.712570        -2413.99184
+    146       2.00000         -88.712568        -2413.99179
+    147       2.00000         -88.712568        -2413.99179
+    148       2.00000         -88.712567        -2413.99178
+    149       2.00000         -88.712567        -2413.99178
+    150       2.00000         -88.712444        -2413.98842
+    151       2.00000         -88.712444        -2413.98842
+    152       2.00000         -88.712443        -2413.98839
+    153       2.00000         -88.712443        -2413.98839
+    154       2.00000         -88.712443        -2413.98839
+    155       2.00000         -88.712443        -2413.98839
+    156       2.00000         -88.712409        -2413.98747
+    157       2.00000         -88.712409        -2413.98747
+    158       2.00000         -88.712408        -2413.98745
+    159       2.00000         -88.712408        -2413.98745
+    160       2.00000         -88.712406        -2413.98739
+    161       2.00000         -88.712406        -2413.98739
+    162       2.00000         -88.712406        -2413.98739
+    163       2.00000         -88.712406        -2413.98739
+    164       2.00000         -88.712406        -2413.98738
+    165       2.00000         -88.712406        -2413.98738
+    166       2.00000         -88.712405        -2413.98737
+    167       2.00000         -88.712405        -2413.98737
+    168       2.00000         -88.712284        -2413.98407
+    169       2.00000         -88.712284        -2413.98407
+    170       2.00000         -88.712283        -2413.98404
+    171       2.00000         -88.712283        -2413.98404
+    172       2.00000         -88.712280        -2413.98397
+    173       2.00000         -88.712280        -2413.98397
+    174       2.00000         -17.536877         -477.20269
+    175       2.00000         -17.536876         -477.20268
+    176       2.00000         -17.536876         -477.20267
+    177       2.00000         -17.536165         -477.18333
+    178       2.00000         -17.536165         -477.18333
+    179       2.00000         -17.536164         -477.18329
+    180       2.00000         -17.536157         -477.18310
+    181       2.00000         -17.536156         -477.18309
+    182       2.00000         -17.536155         -477.18307
+    183       2.00000         -17.536155         -477.18305
+    184       2.00000         -17.536154         -477.18303
+    185       2.00000         -17.536154         -477.18303
+    186       2.00000         -17.536139         -477.18263
+    187       2.00000         -17.535962         -477.17781
+    188       2.00000         -17.535960         -477.17775
+    189       2.00000         -17.535960         -477.17774
+    190       2.00000         -17.535771         -477.17261
+    191       2.00000         -17.535771         -477.17260
+    192       2.00000         -17.535770         -477.17257
+    193       2.00000         -17.535592         -477.16775
+    194       2.00000         -17.535592         -477.16775
+    195       2.00000         -17.535591         -477.16770
+    196       2.00000         -17.535590         -477.16768
+    197       2.00000         -17.535590         -477.16768
+    198       2.00000         -17.535589         -477.16766
+    199       2.00000         -13.956332         -379.77110
+    200       2.00000         -13.956331         -379.77109
+    201       2.00000         -13.956331         -379.77108
+    202       2.00000         -13.956291         -379.77001
+    203       2.00000         -13.956291         -379.77001
+    204       2.00000         -13.956291         -379.76999
+    205       2.00000         -13.956155         -379.76629
+    206       2.00000         -13.956154         -379.76628
+    207       2.00000         -13.956154         -379.76627
+    208       2.00000         -13.955595         -379.75106
+    209       2.00000         -13.955595         -379.75105
+    210       2.00000         -13.955593         -379.75102
+    211       2.00000         -13.955592         -379.75098
+    212       2.00000         -13.955592         -379.75097
+    213       2.00000         -13.955591         -379.75094
+    214       2.00000         -13.955591         -379.75094
+    215       2.00000         -13.955590         -379.75094
+    216       2.00000         -13.955590         -379.75093
+    217       2.00000         -13.955589         -379.75091
+    218       2.00000         -13.955589         -379.75091
+    219       2.00000         -13.955589         -379.75091
+    220       2.00000         -13.955574         -379.75050
+    221       2.00000         -13.955574         -379.75049
+    222       2.00000         -13.955573         -379.75047
+    223       2.00000         -13.955573         -379.75045
+    224       2.00000         -13.955572         -379.75043
+    225       2.00000         -13.955572         -379.75043
+    226       2.00000         -13.955566         -379.75028
+    227       2.00000         -13.955566         -379.75028
+    228       2.00000         -13.955453         -379.74719
+    229       2.00000         -13.955453         -379.74719
+    230       2.00000         -13.955451         -379.74716
+    231       2.00000         -13.955447         -379.74703
+    232       2.00000         -13.955447         -379.74702
+    233       2.00000         -13.955446         -379.74700
+    234       2.00000         -13.955445         -379.74698
+    235       2.00000         -13.955444         -379.74696
+    236       2.00000         -13.955444         -379.74696
+    237       2.00000         -13.955429         -379.74654
+    238       2.00000         -13.955402         -379.74582
+    239       2.00000         -13.955400         -379.74576
+    240       2.00000         -13.955400         -379.74575
+    241       2.00000         -13.955393         -379.74556
+    242       2.00000         -13.955392         -379.74555
+    243       2.00000         -13.955391         -379.74552
+    244       2.00000         -13.955378         -379.74515
+    245       2.00000         -13.955376         -379.74509
+    246       2.00000         -13.955375         -379.74508
+    247       2.00000         -13.955248         -379.74161
+    248       2.00000         -13.955245         -379.74155
+    249       2.00000         -13.955245         -379.74154
+    250       2.00000         -13.955151         -379.73899
+    251       2.00000         -13.955151         -379.73898
+    252       2.00000         -13.955150         -379.73896
+    253       2.00000         -13.955063         -379.73658
+    254       2.00000         -13.955063         -379.73658
+    255       2.00000         -13.955061         -379.73654
+    256       2.00000         -13.955060         -379.73652
+    257       2.00000         -13.955060         -379.73651
+    258       2.00000         -13.955060         -379.73649
+    259       2.00000         -13.954983         -379.73442
+    260       2.00000         -13.954983         -379.73442
+    261       2.00000         -13.954982         -379.73437
+    262       2.00000         -13.954981         -379.73435
+    263       2.00000         -13.954981         -379.73435
+    264       2.00000         -13.954980         -379.73433
+    265       2.00000         -13.954894         -379.73199
+    266       2.00000         -13.954894         -379.73198
+    267       2.00000         -13.954893         -379.73196
+    268       2.00000         -13.954869         -379.73131
+    269       2.00000         -13.954869         -379.73131
+    270       2.00000         -13.954867         -379.73126
+    271       2.00000         -13.954867         -379.73124
+    272       2.00000         -13.954867         -379.73124
+    273       2.00000         -13.954866         -379.73122
+    274       2.00000          -8.139279         -221.48104
+    275       2.00000          -8.139278         -221.48103
+    276       2.00000          -8.139278         -221.48102
+    277       2.00000          -8.139278         -221.48102
+    278       2.00000          -8.139278         -221.48101
+    279       2.00000          -8.139277         -221.48100
+    280       2.00000          -8.139205         -221.47904
+    281       2.00000          -8.139205         -221.47903
+    282       2.00000          -8.139204         -221.47901
+    283       2.00000          -8.139177         -221.47829
+    284       2.00000          -8.139177         -221.47828
+    285       2.00000          -8.139177         -221.47826
+    286       2.00000          -8.139112         -221.47649
+    287       2.00000          -8.139111         -221.47649
+    288       2.00000          -8.139111         -221.47647
+    289       2.00000          -8.138558         -221.46144
+    290       2.00000          -8.138558         -221.46144
+    291       2.00000          -8.138558         -221.46143
+    292       2.00000          -8.138558         -221.46143
+    293       2.00000          -8.138557         -221.46140
+    294       2.00000          -8.138557         -221.46140
+    295       2.00000          -8.138548         -221.46117
+    296       2.00000          -8.138548         -221.46117
+    297       2.00000          -8.138548         -221.46116
+    298       2.00000          -8.138548         -221.46116
+    299       2.00000          -8.138547         -221.46114
+    300       2.00000          -8.138547         -221.46113
+    301       2.00000          -8.138547         -221.46112
+    302       2.00000          -8.138546         -221.46112
+    303       2.00000          -8.138546         -221.46110
+    304       2.00000          -8.138546         -221.46110
+    305       2.00000          -8.138546         -221.46110
+    306       2.00000          -8.138546         -221.46109
+    307       2.00000          -8.138531         -221.46071
+    308       2.00000          -8.138531         -221.46071
+    309       2.00000          -8.138485         -221.45944
+    310       2.00000          -8.138485         -221.45944
+    311       2.00000          -8.138484         -221.45940
+    312       2.00000          -8.138482         -221.45937
+    313       2.00000          -8.138482         -221.45936
+    314       2.00000          -8.138482         -221.45936
+    315       2.00000          -8.138482         -221.45936
+    316       2.00000          -8.138481         -221.45933
+    317       2.00000          -8.138481         -221.45932
+    318       2.00000          -8.138480         -221.45932
+    319       2.00000          -8.138480         -221.45930
+    320       2.00000          -8.138480         -221.45930
+    321       2.00000          -8.138470         -221.45904
+    322       2.00000          -8.138470         -221.45903
+    323       2.00000          -8.138469         -221.45900
+    324       2.00000          -8.138468         -221.45899
+    325       2.00000          -8.138468         -221.45897
+    326       2.00000          -8.138467         -221.45896
+    327       2.00000          -8.138459         -221.45873
+    328       2.00000          -8.138459         -221.45872
+    329       2.00000          -8.138410         -221.45740
+    330       2.00000          -8.138410         -221.45739
+    331       2.00000          -8.138408         -221.45736
+    332       2.00000          -8.138403         -221.45720
+    333       2.00000          -8.138402         -221.45719
+    334       2.00000          -8.138401         -221.45716
+    335       2.00000          -8.138401         -221.45715
+    336       2.00000          -8.138400         -221.45713
+    337       2.00000          -8.138400         -221.45713
+    338       2.00000          -8.138385         -221.45672
+    339       2.00000          -8.138357         -221.45597
+    340       2.00000          -8.138357         -221.45595
+    341       2.00000          -8.138355         -221.45591
+    342       2.00000          -8.138355         -221.45590
+    343       2.00000          -8.138354         -221.45588
+    344       2.00000          -8.138354         -221.45587
+    345       2.00000          -8.138288         -221.45409
+    346       2.00000          -8.138286         -221.45403
+    347       2.00000          -8.138286         -221.45402
+    348       2.00000          -8.138284         -221.45399
+    349       2.00000          -8.138284         -221.45398
+    350       2.00000          -8.138284         -221.45397
+    351       2.00000          -8.138283         -221.45396
+    352       2.00000          -8.138283         -221.45395
+    353       2.00000          -8.138283         -221.45394
+    354       2.00000          -8.138271         -221.45363
+    355       2.00000          -8.138269         -221.45356
+    356       2.00000          -8.138269         -221.45356
+    357       2.00000          -8.138205         -221.45184
+    358       2.00000          -8.138203         -221.45177
+    359       2.00000          -8.138203         -221.45176
+    360       2.00000          -8.138120         -221.44951
+    361       2.00000          -8.138120         -221.44950
+    362       2.00000          -8.138119         -221.44947
+    363       2.00000          -8.137998         -221.44619
+    364       2.00000          -8.137998         -221.44619
+    365       2.00000          -8.137996         -221.44614
+    366       2.00000          -8.137995         -221.44612
+    367       2.00000          -8.137995         -221.44612
+    368       2.00000          -8.137995         -221.44610
+    369       2.00000          -8.137992         -221.44604
+    370       2.00000          -8.137992         -221.44604
+    371       2.00000          -8.137991         -221.44599
+    372       2.00000          -8.137990         -221.44597
+    373       2.00000          -8.137990         -221.44597
+    374       2.00000          -8.137989         -221.44595
+    375       2.00000          -8.137935         -221.44449
+    376       2.00000          -8.137935         -221.44449
+    377       2.00000          -8.137934         -221.44444
+    378       2.00000          -8.137933         -221.44442
+    379       2.00000          -8.137933         -221.44442
+    380       2.00000          -8.137932         -221.44440
+    381       2.00000          -8.137930         -221.44434
+    382       2.00000          -8.137930         -221.44433
+    383       2.00000          -8.137929         -221.44431
+    384       2.00000          -8.137894         -221.44336
+    385       2.00000          -8.137894         -221.44335
+    386       2.00000          -8.137893         -221.44333
+    387       2.00000          -8.137878         -221.44293
+    388       2.00000          -8.137878         -221.44293
+    389       2.00000          -8.137876         -221.44288
+    390       2.00000          -8.137876         -221.44286
+    391       2.00000          -8.137875         -221.44286
+    392       2.00000          -8.137875         -221.44284
+    393       2.00000          -8.137826         -221.44151
+    394       2.00000          -8.137826         -221.44151
+    395       2.00000          -8.137824         -221.44146
+    396       2.00000          -8.137823         -221.44144
+    397       2.00000          -8.137823         -221.44144
+    398       2.00000          -8.137823         -221.44142
+    399       2.00000          -7.817039         -212.71246
+    400       2.00000          -7.817039         -212.71246
+    401       2.00000          -7.817039         -212.71244
+    402       2.00000          -7.817038         -212.71244
+    403       2.00000          -7.817036         -212.71239
+    404       2.00000          -7.817036         -212.71238
+    405       2.00000          -7.816624         -212.70117
+    406       2.00000          -7.816624         -212.70117
+    407       2.00000          -7.816623         -212.70113
+    408       2.00000          -7.816623         -212.70113
+    409       2.00000          -7.816623         -212.70112
+    410       2.00000          -7.816623         -212.70112
+    411       2.00000          -7.816455         -212.69656
+    412       2.00000          -7.816455         -212.69656
+    413       2.00000          -7.816455         -212.69655
+    414       2.00000          -7.816455         -212.69655
+    415       2.00000          -7.816454         -212.69653
+    416       2.00000          -7.816454         -212.69653
+    417       2.00000          -7.816453         -212.69652
+    418       2.00000          -7.816453         -212.69651
+    419       2.00000          -7.816451         -212.69646
+    420       2.00000          -7.816451         -212.69645
+    421       2.00000          -7.816451         -212.69645
+    422       2.00000          -7.816451         -212.69645
+    423       2.00000          -7.816317         -212.69282
+    424       2.00000          -7.816317         -212.69281
+    425       2.00000          -7.816316         -212.69278
+    426       2.00000          -7.816316         -212.69278
+    427       2.00000          -7.816316         -212.69278
+    428       2.00000          -7.816316         -212.69277
+    429       2.00000          -7.816278         -212.69174
+    430       2.00000          -7.816278         -212.69174
+    431       2.00000          -7.816277         -212.69173
+    432       2.00000          -7.816277         -212.69173
+    433       2.00000          -7.816275         -212.69166
+    434       2.00000          -7.816275         -212.69166
+    435       2.00000          -7.816275         -212.69165
+    436       2.00000          -7.816275         -212.69165
+    437       2.00000          -7.816275         -212.69165
+    438       2.00000          -7.816274         -212.69165
+    439       2.00000          -7.816274         -212.69164
+    440       2.00000          -7.816274         -212.69164
+    441       2.00000          -7.816144         -212.68810
+    442       2.00000          -7.816144         -212.68810
+    443       2.00000          -7.816143         -212.68806
+    444       2.00000          -7.816142         -212.68806
+    445       2.00000          -7.816140         -212.68799
+    446       2.00000          -7.816140         -212.68798
+    447       2.00000          -5.787253         -157.47916
+    448       2.00000          -5.787252         -157.47915
+    449       2.00000          -5.787252         -157.47914
+    450       2.00000          -5.787252         -157.47913
+    451       2.00000          -5.787250         -157.47908
+    452       2.00000          -5.787250         -157.47908
+    453       2.00000          -5.786826         -157.46755
+    454       2.00000          -5.786826         -157.46755
+    455       2.00000          -5.786825         -157.46751
+    456       2.00000          -5.786824         -157.46750
+    457       2.00000          -5.786824         -157.46750
+    458       2.00000          -5.786824         -157.46750
+    459       2.00000          -5.786808         -157.46707
+    460       2.00000          -5.786808         -157.46707
+    461       2.00000          -5.786808         -157.46705
+    462       2.00000          -5.786808         -157.46705
+    463       2.00000          -5.786806         -157.46699
+    464       2.00000          -5.786806         -157.46699
+    465       2.00000          -5.786801         -157.46687
+    466       2.00000          -5.786801         -157.46687
+    467       2.00000          -5.786801         -157.46685
+    468       2.00000          -5.786801         -157.46685
+    469       2.00000          -5.786798         -157.46680
+    470       2.00000          -5.786798         -157.46680
+    471       2.00000          -5.786682         -157.46363
+    472       2.00000          -5.786682         -157.46362
+    473       2.00000          -5.786682         -157.46362
+    474       2.00000          -5.786681         -157.46361
+    475       2.00000          -5.786681         -157.46360
+    476       2.00000          -5.786681         -157.46360
+    477       2.00000          -5.786680         -157.46358
+    478       2.00000          -5.786680         -157.46358
+    479       2.00000          -5.786678         -157.46352
+    480       2.00000          -5.786678         -157.46352
+    481       2.00000          -5.786678         -157.46351
+    482       2.00000          -5.786678         -157.46351
+    483       2.00000          -5.786508         -157.45889
+    484       2.00000          -5.786508         -157.45888
+    485       2.00000          -5.786506         -157.45885
+    486       2.00000          -5.786506         -157.45885
+    487       2.00000          -5.786506         -157.45885
+    488       2.00000          -5.786506         -157.45884
+    489       2.00000          -5.786477         -157.45806
+    490       2.00000          -5.786477         -157.45806
+    491       2.00000          -5.786477         -157.45805
+    492       2.00000          -5.786477         -157.45804
+    493       2.00000          -5.786474         -157.45798
+    494       2.00000          -5.786474         -157.45797
+    495       2.00000          -5.786474         -157.45797
+    496       2.00000          -5.786474         -157.45797
+    497       2.00000          -5.786474         -157.45797
+    498       2.00000          -5.786474         -157.45797
+    499       2.00000          -5.786474         -157.45796
+    500       2.00000          -5.786474         -157.45796
+    501       2.00000          -5.786403         -157.45604
+    502       2.00000          -5.786403         -157.45604
+    503       2.00000          -5.786402         -157.45600
+    504       2.00000          -5.786402         -157.45600
+    505       2.00000          -5.786401         -157.45599
+    506       2.00000          -5.786401         -157.45599
+    507       2.00000          -5.786400         -157.45596
+    508       2.00000          -5.786400         -157.45596
+    509       2.00000          -5.786399         -157.45593
+    510       2.00000          -5.786399         -157.45593
+    511       2.00000          -5.786399         -157.45592
+    512       2.00000          -5.786399         -157.45592
+    513       2.00000          -5.786335         -157.45419
+    514       2.00000          -5.786335         -157.45419
+    515       2.00000          -5.786334         -157.45415
+    516       2.00000          -5.786334         -157.45415
+    517       2.00000          -5.786331         -157.45407
+    518       2.00000          -5.786331         -157.45407
+    519       2.00000          -5.786295         -157.45309
+    520       2.00000          -5.786295         -157.45309
+    521       2.00000          -5.786294         -157.45308
+    522       2.00000          -5.786294         -157.45308
+    523       2.00000          -5.786294         -157.45306
+    524       2.00000          -5.786294         -157.45306
+    525       2.00000          -5.786293         -157.45304
+    526       2.00000          -5.786293         -157.45304
+    527       2.00000          -5.786291         -157.45299
+    528       2.00000          -5.786291         -157.45299
+    529       2.00000          -5.786291         -157.45298
+    530       2.00000          -5.786291         -157.45298
+    531       2.00000          -5.786149         -157.44913
+    532       2.00000          -5.786149         -157.44913
+    533       2.00000          -5.786149         -157.44912
+    534       2.00000          -5.786149         -157.44912
+    535       2.00000          -5.786148         -157.44910
+    536       2.00000          -5.786148         -157.44910
+    537       2.00000          -5.786148         -157.44909
+    538       2.00000          -5.786148         -157.44909
+    539       2.00000          -5.786146         -157.44903
+    540       2.00000          -5.786145         -157.44903
+    541       2.00000          -5.786145         -157.44903
+    542       2.00000          -5.786145         -157.44902
+    543       2.00000          -5.786106         -157.44795
+    544       2.00000          -5.786106         -157.44795
+    545       2.00000          -5.786105         -157.44792
+    546       2.00000          -5.786105         -157.44792
+    547       2.00000          -5.786104         -157.44791
+    548       2.00000          -5.786104         -157.44791
+    549       2.00000          -5.786104         -157.44791
+    550       2.00000          -5.786104         -157.44791
+    551       2.00000          -5.786103         -157.44788
+    552       2.00000          -5.786103         -157.44788
+    553       2.00000          -5.786103         -157.44788
+    554       2.00000          -5.786103         -157.44787
+    555       2.00000          -5.786069         -157.44695
+    556       2.00000          -5.786069         -157.44695
+    557       2.00000          -5.786069         -157.44694
+    558       2.00000          -5.786069         -157.44694
+    559       2.00000          -5.786066         -157.44687
+    560       2.00000          -5.786066         -157.44687
+    561       2.00000          -5.786066         -157.44687
+    562       2.00000          -5.786066         -157.44687
+    563       2.00000          -5.786066         -157.44687
+    564       2.00000          -5.786066         -157.44687
+    565       2.00000          -5.786066         -157.44686
+    566       2.00000          -5.786066         -157.44685
+    567       2.00000          -5.786054         -157.44654
+    568       2.00000          -5.786054         -157.44654
+    569       2.00000          -5.786054         -157.44653
+    570       2.00000          -5.786054         -157.44653
+    571       2.00000          -5.786051         -157.44646
+    572       2.00000          -5.786051         -157.44646
+    573       2.00000          -5.786051         -157.44646
+    574       2.00000          -5.786051         -157.44646
+    575       2.00000          -5.786051         -157.44645
+    576       2.00000          -5.786051         -157.44645
+    577       2.00000          -5.786051         -157.44645
+    578       2.00000          -5.786050         -157.44644
+    579       2.00000          -5.785942         -157.44348
+    580       2.00000          -5.785942         -157.44348
+    581       2.00000          -5.785940         -157.44345
+    582       2.00000          -5.785940         -157.44345
+    583       2.00000          -5.785938         -157.44337
+    584       2.00000          -5.785938         -157.44337
+    585       2.00000          -5.785927         -157.44307
+    586       2.00000          -5.785927         -157.44307
+    587       2.00000          -5.785925         -157.44304
+    588       2.00000          -5.785925         -157.44303
+    589       2.00000          -5.785923         -157.44296
+    590       2.00000          -5.785923         -157.44296
+    591       2.00000          -2.394226          -65.15020
+    592       2.00000          -2.394078          -65.14619
+    593       2.00000          -2.394077          -65.14616
+    594       2.00000          -2.393578          -65.13258
+    595       2.00000          -2.393380          -65.12719
+    596       2.00000          -2.393165          -65.12134
+    597       2.00000          -2.393164          -65.12130
+    598       2.00000          -2.392848          -65.11270
+    599       2.00000          -2.392846          -65.11265
+    600       2.00000          -2.392630          -65.10678
+    601       2.00000          -2.392630          -65.10676
+    602       2.00000          -2.392570          -65.10515
+    603       2.00000          -2.392493          -65.10306
+    604       2.00000          -2.392269          -65.09694
+    605       2.00000          -2.392267          -65.09689
+    606       2.00000          -2.392198          -65.09503
+    607       2.00000          -2.391948          -65.08823
+    608       2.00000          -2.391903          -65.08700
+    609       2.00000          -2.391902          -65.08695
+    610       2.00000          -2.391696          -65.08136
+    611       2.00000          -2.391525          -65.07672
+    612       2.00000          -2.391483          -65.07556
+    613       2.00000          -2.391481          -65.07551
+    614       2.00000          -2.390085          -65.03753
+    615       2.00000          -2.390083          -65.03746
+    616       2.00000          -1.460144          -39.73253
+    617       2.00000          -1.460143          -39.73252
+    618       2.00000          -1.458839          -39.69703
+    619       2.00000          -1.458627          -39.69125
+    620       2.00000          -1.458626          -39.69123
+    621       2.00000          -1.458552          -39.68921
+    622       2.00000          -1.458469          -39.68696
+    623       2.00000          -1.458468          -39.68693
+    624       2.00000          -1.458025          -39.67488
+    625       2.00000          -1.458023          -39.67482
+    626       2.00000          -1.457807          -39.66894
+    627       2.00000          -1.457245          -39.65365
+    628       2.00000          -1.455539          -39.60722
+    629       2.00000          -1.455538          -39.60720
+    630       2.00000          -1.455472          -39.60541
+    631       2.00000          -1.455274          -39.60003
+    632       2.00000          -1.455212          -39.59832
+    633       2.00000          -1.455210          -39.59829
+    634       2.00000          -1.453783          -39.55946
+    635       2.00000          -1.453122          -39.54147
+    636       2.00000          -1.453121          -39.54143
+    637       2.00000          -1.452756          -39.53151
+    638       2.00000          -1.452499          -39.52451
+    639       2.00000          -1.452203          -39.51646
+    640       2.00000          -1.452201          -39.51641
+    641       2.00000          -1.451771          -39.50470
+    642       2.00000          -1.451393          -39.49440
+    643       2.00000          -1.451391          -39.49436
+    644       2.00000          -1.451158          -39.48801
+    645       2.00000          -1.451156          -39.48797
+    646       2.00000          -1.450894          -39.48083
+    647       2.00000          -1.450893          -39.48080
+    648       2.00000          -1.450819          -39.47880
+    649       2.00000          -1.450748          -39.47687
+    650       2.00000          -1.450748          -39.47686
+    651       2.00000          -1.450746          -39.47681
+    652       2.00000          -1.450661          -39.47448
+    653       2.00000          -1.450368          -39.46652
+    654       2.00000          -1.450366          -39.46647
+    655       2.00000          -1.450179          -39.46137
+    656       2.00000          -1.450131          -39.46006
+    657       2.00000          -1.449864          -39.45280
+    658       2.00000          -1.449827          -39.45180
+    659       2.00000          -1.449826          -39.45177
+    660       2.00000          -1.449815          -39.45149
+    661       2.00000          -1.449814          -39.45145
+    662       2.00000          -1.449352          -39.43888
+    663       2.00000          -1.449166          -39.43382
+    664       2.00000          -1.449158          -39.43359
+    665       2.00000          -1.449158          -39.43359
+    666       2.00000          -1.449057          -39.43086
+    667       2.00000          -1.449055          -39.43080
+    668       2.00000          -1.448326          -39.41096
+    669       2.00000          -1.448325          -39.41094
+    670       2.00000          -1.448118          -39.40528
+    671       2.00000          -1.448028          -39.40285
+    672       2.00000          -1.447385          -39.38535
+    673       2.00000          -1.447384          -39.38534
+    674       2.00000          -1.447314          -39.38340
+    675       2.00000          -1.447313          -39.38340
+    676       2.00000          -1.446918          -39.37264
+    677       2.00000          -1.446745          -39.36795
+    678       2.00000          -1.446422          -39.35915
+    679       2.00000          -1.446421          -39.35912
+    680       2.00000          -1.446395          -39.35842
+    681       2.00000          -1.445251          -39.32728
+    682       2.00000          -1.445251          -39.32728
+    683       2.00000          -1.445075          -39.32250
+    684       2.00000          -1.445071          -39.32239
+    685       2.00000          -1.444979          -39.31988
+    686       2.00000          -1.444598          -39.30950
+    687       2.00000          -1.444179          -39.29810
+    688       2.00000          -1.444177          -39.29806
+    689       2.00000          -1.439898          -39.18162
+    690       2.00000          -1.439895          -39.18153
+    691       2.00000          -0.776288          -21.12387
+    692       2.00000          -0.757842          -20.62193
+    693       2.00000          -0.757644          -20.61655
+    694       2.00000          -0.757640          -20.61644
+    695       2.00000          -0.757023          -20.59964
+    696       2.00000          -0.757021          -20.59958
+    697       2.00000          -0.751337          -20.44492
+    698       2.00000          -0.729025          -19.83777
+    699       2.00000          -0.729024          -19.83775
+    700       2.00000          -0.727694          -19.80157
+    701       2.00000          -0.727694          -19.80156
+    702       2.00000          -0.727294          -19.79067
+    703       2.00000          -0.726183          -19.76044
+    704       2.00000          -0.724186          -19.70610
+    705       2.00000          -0.720989          -19.61910
+    706       2.00000          -0.720985          -19.61901
+    707       2.00000          -0.720390          -19.60281
+    708       2.00000          -0.720390          -19.60280
+    709       2.00000          -0.720131          -19.59576
+    710       2.00000          -0.719875          -19.58880
+    711       2.00000          -0.719311          -19.57344
+    712       2.00000          -0.719308          -19.57337
+    713       2.00000          -0.719293          -19.57295
+    714       2.00000          -0.718234          -19.54414
+    715       2.00000          -0.718234          -19.54413
+    716       2.00000          -0.711976          -19.37386
+    717       2.00000          -0.710654          -19.33789
+    718       2.00000          -0.710652          -19.33782
+    719       2.00000          -0.708637          -19.28300
+    720       2.00000          -0.708636          -19.28297
+    721       2.00000          -0.707889          -19.26263
+    722       2.00000          -0.707791          -19.25997
+    723       2.00000          -0.707074          -19.24045
+    724       2.00000          -0.707072          -19.24040
+    725       2.00000          -0.706884          -19.23528
+    726       2.00000          -0.706335          -19.22036
+    727       2.00000          -0.706335          -19.22035
+    728       2.00000          -0.705750          -19.20443
+    729       2.00000          -0.705749          -19.20440
+    730       2.00000          -0.704850          -19.17994
+    731       2.00000          -0.704847          -19.17987
+    732       2.00000          -0.704440          -19.16878
+    733       2.00000          -0.703207          -19.13523
+    734       2.00000          -0.700563          -19.06328
+    735       2.00000          -0.700562          -19.06325
+    736       2.00000          -0.700375          -19.05816
+    737       2.00000          -0.700371          -19.05808
+    738       2.00000          -0.697484          -18.97951
+    739       2.00000          -0.452907          -12.32424
+    740       2.00000          -0.450856          -12.26842
+    741       2.00000          -0.450044          -12.24631
+    742       2.00000          -0.450041          -12.24624
+    743       2.00000          -0.448934          -12.21612
+    744       2.00000          -0.445816          -12.13128
+    745       2.00000          -0.445812          -12.13117
+    746       2.00000          -0.440423          -11.98452
+    747       2.00000          -0.439208          -11.95146
+    748       2.00000          -0.437690          -11.91015
+    749       2.00000          -0.437688          -11.91009
+    750       2.00000          -0.435503          -11.85063
+    751       2.00000          -0.433709          -11.80183
+    752       2.00000          -0.433705          -11.80170
+    753       2.00000          -0.433511          -11.79643
+    754       2.00000          -0.433296          -11.79058
+    755       2.00000          -0.433295          -11.79057
+    756       2.00000          -0.433058          -11.78410
+    757       2.00000          -0.431712          -11.74748
+    758       2.00000          -0.431415          -11.73941
+    759       2.00000          -0.431415          -11.73939
+    760       2.00000          -0.431353          -11.73770
+    761       2.00000          -0.431349          -11.73761
+    762       2.00000          -0.429878          -11.69757
+    763       2.00000          -0.429877          -11.69756
+    764       2.00000          -0.428766          -11.66731
+    765       2.00000          -0.428765          -11.66728
+    766       2.00000          -0.428663          -11.66452
+    767       2.00000          -0.423322          -11.51917
+    768       2.00000          -0.417559          -11.36236
+    769       2.00000          -0.416515          -11.33395
+    770       2.00000          -0.416513          -11.33390
+    771       2.00000          -0.413130          -11.24183
+    772       2.00000          -0.413127          -11.24176
+    773       2.00000          -0.412631          -11.22827
+    774       2.00000          -0.409210          -11.13516
+    775       2.00000          -0.409209          -11.13514
+    776       2.00000          -0.400688          -10.90328
+    777       2.00000          -0.398864          -10.85366
+    778       2.00000          -0.398863          -10.85361
+    779       2.00000          -0.397167          -10.80748
+    780       2.00000          -0.392365          -10.67678
+    781       2.00000          -0.391168          -10.64423
+    782       2.00000          -0.391166          -10.64416
+    783       2.00000          -0.390152          -10.61658
+    784       2.00000          -0.390150          -10.61653
+    785       2.00000          -0.390128          -10.61592
+    786       2.00000          -0.390127          -10.61589
+    787       2.00000          -0.390041          -10.61355
+    788       2.00000          -0.388925          -10.58320
+    789       2.00000          -0.388359          -10.56778
+    790       2.00000          -0.388357          -10.56774
+    791       2.00000          -0.387436          -10.54268
+    792       2.00000          -0.386344          -10.51296
+    793       2.00000          -0.386343          -10.51293
+    794       2.00000          -0.384928          -10.47442
+    795       2.00000          -0.384927          -10.47441
+    796       2.00000          -0.383194          -10.42724
+    797       2.00000          -0.382248          -10.40150
+    798       2.00000          -0.382246          -10.40145
+    799       2.00000          -0.379242          -10.31971
+    800       2.00000          -0.373506          -10.16362
+    801       2.00000          -0.372623          -10.13959
+    802       2.00000          -0.372623          -10.13958
+    803       2.00000          -0.365158           -9.93645
+    804       2.00000          -0.363691           -9.89652
+    805       2.00000          -0.363690           -9.89650
+    806       2.00000          -0.363645           -9.89528
+    807       2.00000          -0.363643           -9.89523
+    808       2.00000          -0.361664           -9.84137
+    809       2.00000          -0.361662           -9.84132
+    810       2.00000          -0.361563           -9.83864
+    811       2.00000          -0.361563           -9.83862
+    812       2.00000          -0.360956           -9.82210
+    813       2.00000          -0.360826           -9.81856
+    814       2.00000          -0.359645           -9.78644
+    815       2.00000          -0.359228           -9.77508
+    816       2.00000          -0.359226           -9.77502
+    817       2.00000          -0.358633           -9.75889
+    818       2.00000          -0.358564           -9.75702
+    819       2.00000          -0.358276           -9.74919
+    820       2.00000          -0.358272           -9.74907
+    821       2.00000          -0.355874           -9.68383
+    822       2.00000          -0.355872           -9.68377
+    823       2.00000          -0.353117           -9.60879
+    824       2.00000          -0.352266           -9.58564
+    825       2.00000          -0.352265           -9.58561
+    826       2.00000          -0.348936           -9.49502
+    827       2.00000          -0.348848           -9.49263
+    828       2.00000          -0.348377           -9.47982
+    829       2.00000          -0.348372           -9.47970
+    830       2.00000          -0.347707           -9.46159
+    831       2.00000          -0.343802           -9.35533
+    832       2.00000          -0.343799           -9.35525
+    833       2.00000          -0.334245           -9.09527
+    834       2.00000          -0.329135           -8.95622
+    835       2.00000          -0.329135           -8.95621
+    836       2.00000          -0.327517           -8.91218
+    837       2.00000          -0.327515           -8.91215
+    838       2.00000          -0.327510           -8.91199
+    839       2.00000          -0.327508           -8.91195
+    840       2.00000          -0.324864           -8.83999
+    841       2.00000          -0.322308           -8.77044
+    842       2.00000          -0.321015           -8.73528
+    843       2.00000          -0.321014           -8.73522
+    844       2.00000          -0.319541           -8.69514
+    845       2.00000          -0.319428           -8.69208
+    846       2.00000          -0.319426           -8.69202
+    847       2.00000          -0.317364           -8.63591
+    848       2.00000          -0.317362           -8.63587
+    849       2.00000          -0.317247           -8.63273
+    850       2.00000          -0.315117           -8.57476
+    851       2.00000          -0.315117           -8.57476
+    852       2.00000          -0.314903           -8.56896
+    853       2.00000          -0.314902           -8.56892
+    854       2.00000          -0.314840           -8.56724
+    855       2.00000          -0.314742           -8.56457
+    856       2.00000          -0.313856           -8.54046
+    857       2.00000          -0.313854           -8.54041
+    858       2.00000          -0.313395           -8.52790
+    859       2.00000          -0.312343           -8.49928
+    860       2.00000          -0.312078           -8.49208
+    861       2.00000          -0.312077           -8.49205
+    862       2.00000          -0.306521           -8.34087
+    863       2.00000          -0.305947           -8.32525
+    864       2.00000          -0.305180           -8.30437
+    865       2.00000          -0.305178           -8.30432
+    866       2.00000          -0.300591           -8.17950
+    867       2.00000          -0.300589           -8.17943
+    868       2.00000          -0.298281           -8.11665
+    869       2.00000          -0.297641           -8.09921
+    870       2.00000          -0.296858           -8.07793
+    871       2.00000          -0.296858           -8.07791
+    872       2.00000          -0.296156           -8.05882
+    873       2.00000          -0.296154           -8.05876
+    874       2.00000          -0.295212           -8.03312
+    875       2.00000          -0.295211           -8.03309
+    876       2.00000          -0.294461           -8.01268
+    877       2.00000          -0.293096           -7.97556
+    878       2.00000          -0.293095           -7.97551
+    879       2.00000          -0.292934           -7.97115
+    880       2.00000          -0.292927           -7.97096
+    881       2.00000          -0.292630           -7.96285
+    882       2.00000          -0.290298           -7.89941
+    883       2.00000          -0.279379           -7.60229
+    884       2.00000          -0.253609           -6.90105
+    885       2.00000          -0.252941           -6.88286
+    886       2.00000          -0.252939           -6.88283
+    887       2.00000          -0.249834           -6.79833
+    888       2.00000          -0.249829           -6.79820
+    889       2.00000          -0.248313           -6.75695
+    890       2.00000          -0.246991           -6.72097
+    891       2.00000          -0.246990           -6.72094
+    892       2.00000          -0.243793           -6.63396
+    893       2.00000          -0.241584           -6.57384
+    894       2.00000          -0.241581           -6.57374
+    895       2.00000          -0.239794           -6.52514
+    896       2.00000          -0.235088           -6.39706
+    897       2.00000          -0.231579           -6.30160
+    898       2.00000          -0.231578           -6.30156
+    899       2.00000          -0.230561           -6.27389
+    900       2.00000          -0.230559           -6.27382
+    901       2.00000          -0.230269           -6.26593
+    902       2.00000          -0.227210           -6.18270
+    903       2.00000          -0.226012           -6.15011
+    904       2.00000          -0.226011           -6.15006
+    905       2.00000          -0.222201           -6.04638
+    906       2.00000          -0.222193           -6.04619
+    907       2.00000          -0.221337           -6.02289
+    908       2.00000          -0.218917           -5.95702
+    909       2.00000          -0.210674           -5.73274
+    910       0.00000          -0.166735           -4.53709
+    911       0.00000          -0.166714           -4.53651
+    912       0.00000          -0.146736           -3.99288
+    913       0.00000          -0.146721           -3.99248
+    914       0.00000          -0.140668           -3.82776
+    915       0.00000          -0.140667           -3.82774
+    916       0.00000          -0.140555           -3.82470
+    917       0.00000          -0.140182           -3.81454
+    918       0.00000          -0.140180           -3.81449
+    919       0.00000          -0.139805           -3.80429
+    920       0.00000          -0.138237           -3.76162
+    921       0.00000          -0.137906           -3.75262
+    922       0.00000          -0.137904           -3.75256
+    923       0.00000          -0.136271           -3.70813
+    924       0.00000          -0.136270           -3.70809
+    925       0.00000          -0.130829           -3.56004
+    926       0.00000          -0.130143           -3.54137
+    927       0.00000          -0.130142           -3.54133
+    928       0.00000          -0.128728           -3.50287
+    929       0.00000          -0.127828           -3.47838
+    930       0.00000          -0.127825           -3.47829
+    931       0.00000          -0.126694           -3.44752
+    932       0.00000          -0.125487           -3.41469
+    933       0.00000          -0.125486           -3.41464
+    934       0.00000          -0.124234           -3.38058
+    935       0.00000          -0.123351           -3.35655
+    936       0.00000          -0.123308           -3.35539
+    937       0.00000          -0.123305           -3.35529
+    938       0.00000          -0.122507           -3.33359
+    939       0.00000          -0.122502           -3.33346
+    940       0.00000          -0.122473           -3.33267
+    941       0.00000          -0.118172           -3.21563
+    942       0.00000          -0.117862           -3.20720
+    943       0.00000          -0.117861           -3.20717
+    944       0.00000          -0.115043           -3.13047
+    945       0.00000          -0.115041           -3.13042
+    946       0.00000          -0.114889           -3.12630
+    947       0.00000          -0.114888           -3.12627
+    948       0.00000          -0.114744           -3.12236
+    949       0.00000          -0.114130           -3.10563
+    950       0.00000          -0.114124           -3.10548
+    951       0.00000          -0.112304           -3.05594
+    952       0.00000          -0.109915           -2.99093
+    953       0.00000          -0.109872           -2.98978
+    954       0.00000          -0.109871           -2.98974
+    955       0.00000          -0.109423           -2.97754
+    956       0.00000          -0.109422           -2.97751
+    957       0.00000          -0.107939           -2.93717
+    958       0.00000          -0.107741           -2.93179
+    959       0.00000          -0.107739           -2.93172
+    960       0.00000          -0.107611           -2.92825
+    961       0.00000          -0.107611           -2.92824
+    962       0.00000          -0.107246           -2.91830
+    963       0.00000          -0.105629           -2.87432
+    964       0.00000          -0.105628           -2.87430
+    965       0.00000          -0.104630           -2.84714
+    966       0.00000          -0.104299           -2.83812
+    967       0.00000          -0.104298           -2.83809
+    968       0.00000          -0.103481           -2.81587
+    969       0.00000          -0.102935           -2.80101
+    970       0.00000          -0.093907           -2.55534
+    971       0.00000          -0.093906           -2.55530
+    972       0.00000          -0.093285           -2.53843
+    973       0.00000          -0.092923           -2.52855
+    974       0.00000          -0.092139           -2.50722
+    975       0.00000          -0.092138           -2.50720
+    976       0.00000          -0.091520           -2.49039
+    977       0.00000          -0.090612           -2.46569
+    978       0.00000          -0.090610           -2.46563
+    979       0.00000          -0.089630           -2.43895
+    980       0.00000          -0.089037           -2.42283
+    981       0.00000          -0.087107           -2.37030
+    982       0.00000          -0.087105           -2.37025
+    983       0.00000          -0.085644           -2.33050
+    984       0.00000          -0.085644           -2.33048
+    985       0.00000          -0.084398           -2.29658
+    986       0.00000          -0.084396           -2.29653
+    987       0.00000          -0.084023           -2.28638
+    988       0.00000          -0.084017           -2.28622
+    989       0.00000          -0.078977           -2.14906
+    990       0.00000          -0.075270           -2.04820
+    991       0.00000          -0.075266           -2.04809
+    992       0.00000          -0.073334           -1.99552
+    993       0.00000          -0.072959           -1.98531
+    994       0.00000          -0.062251           -1.69392
+    995       0.00000          -0.061637           -1.67722
+    996       0.00000          -0.061636           -1.67719
+    997       0.00000          -0.059564           -1.62083
+    998       0.00000          -0.057141           -1.55489
+    999       0.00000          -0.057140           -1.55485
+   1000       0.00000          -0.054672           -1.48769
+   1001       0.00000          -0.054062           -1.47111
+   1002       0.00000          -0.053566           -1.45759
+   1003       0.00000          -0.053561           -1.45748
+   1004       0.00000          -0.050810           -1.38260
+   1005       0.00000          -0.050801           -1.38237
+   1006       0.00000          -0.050358           -1.37030
+   1007       0.00000          -0.050353           -1.37017
+   1008       0.00000          -0.047970           -1.30533
+   1009       0.00000          -0.013207           -0.35937
+   1010       0.00000           0.009828            0.26744
+   1011       0.00000           0.013419            0.36514
+   1012       0.00000           0.013421            0.36520
+   1013       0.00000           0.014799            0.40271
+   1014       0.00000           0.016479            0.44842
+   1015       0.00000           0.017571            0.47813
+   1016       0.00000           0.017571            0.47814
+   1017       0.00000           0.018720            0.50940
+   1018       0.00000           0.018721            0.50943
+   1019       0.00000           0.021392            0.58211
+   1020       0.00000           0.032004            0.87088
+   1021       0.00000           0.032006            0.87093
+   1022       0.00000           0.039993            1.08826
+   1023       0.00000           0.043311            1.17856
+   1024       0.00000           0.043316            1.17868
+   1025       0.00000           0.045113            1.22760
+   1026       0.00000           0.048230            1.31239
+   1027       0.00000           0.048236            1.31256
+   1028       0.00000           0.048530            1.32056
+   1029       0.00000           0.052656            1.43286
+   1030       0.00000           0.053367            1.45218
+   1031       0.00000           0.053367            1.45219
+   1032       0.00000           0.057479            1.56407
+   1033       0.00000           0.057483            1.56418
+   1034       0.00000           0.062815            1.70928
+   1035       0.00000           0.062819            1.70938
+   1036       0.00000           0.063695            1.73324
+   1037       0.00000           0.064213            1.74732
+   1038       0.00000           0.067363            1.83304
+   1039       0.00000           0.067645            1.84071
+   1040       0.00000           0.067649            1.84083
+   1041       0.00000           0.069763            1.89835
+   1042       0.00000           0.069764            1.89837
+   1043       0.00000           0.070489            1.91811
+   1044       0.00000           0.075021            2.04142
+   1045       0.00000           0.079661            2.16770
+   1046       0.00000           0.080317            2.18555
+   1047       0.00000           0.081805            2.22603
+   1048       0.00000           0.081807            2.22607
+   1049       0.00000           0.084157            2.29003
+   1050       0.00000           0.084158            2.29005
+   1051       0.00000           0.084818            2.30801
+   1052       0.00000           0.084819            2.30805
+   1053       0.00000           0.085603            2.32938
+   1054       0.00000           0.085976            2.33951
+   1055       0.00000           0.086050            2.34153
+   1056       0.00000           0.086051            2.34157
+   1057       0.00000           0.088815            2.41678
+   1058       0.00000           0.090172            2.45371
+   1059       0.00000           0.090175            2.45379
+   1060       0.00000           0.091147            2.48024
+   1061       0.00000           0.091211            2.48197
+   1062       0.00000           0.091952            2.50214
+   1063       0.00000           0.092298            2.51156
+   1064       0.00000           0.092299            2.51158
+   1065       0.00000           0.092367            2.51343
+   1066       0.00000           0.092369            2.51349
+   1067       0.00000           0.093807            2.55262
+   1068       0.00000           0.096709            2.63158
+   1069       0.00000           0.096709            2.63160
+   1070       0.00000           0.097906            2.66417
+   1071       0.00000           0.097908            2.66421
+   1072       0.00000           0.098189            2.67187
+   1073       0.00000           0.099896            2.71832
+   1074       0.00000           0.099898            2.71837
+   1075       0.00000           0.101720            2.76795
+   1076       0.00000           0.102811            2.79763
+   1077       0.00000           0.102814            2.79771
+   1078       0.00000           0.104445            2.84209
+   1079       0.00000           0.104447            2.84214
+   1080       0.00000           0.105995            2.88427
+   1081       0.00000           0.106241            2.89096
+   1082       0.00000           0.110397            3.00406
+   1083       0.00000           0.112524            3.06192
+   1084       0.00000           0.116249            3.16330
+   1085       0.00000           0.116252            3.16337
+   1086       0.00000           0.119877            3.26203
+   1087       0.00000           0.120875            3.28917
+   1088       0.00000           0.120876            3.28921
+   1089       0.00000           0.125399            3.41227
+   1090       0.00000           0.125399            3.41228
+   1091       0.00000           0.125782            3.42270
+   1092       0.00000           0.125855            3.42470
+   1093       0.00000           0.128544            3.49785
+   1094       0.00000           0.128547            3.49795
+   1095       0.00000           0.128940            3.50865
+   1096       0.00000           0.128942            3.50869
+   1097       0.00000           0.131779            3.58589
+   1098       0.00000           0.131779            3.58590
+   1099       0.00000           0.132308            3.60029
+   1100       0.00000           0.133384            3.62956
+   1101       0.00000           0.133457            3.63155
+   1102       0.00000           0.133459            3.63160
+   1103       0.00000           0.135372            3.68366
+   1104       0.00000           0.135395            3.68429
+   1105       0.00000           0.135903            3.69812
+   1106       0.00000           0.135904            3.69814
+   1107       0.00000           0.136280            3.70837
+   1108       0.00000           0.136282            3.70842
+   1109       0.00000           0.137300            3.73612
+   1110       0.00000           0.137301            3.73614
+   1111       0.00000           0.137821            3.75030
+   1112       0.00000           0.137824            3.75038
+   1113       0.00000           0.138542            3.76992
+   1114       0.00000           0.138866            3.77874
+   1115       0.00000           0.144488            3.93172
+   1116       0.00000           0.147052            4.00150
+   1117       0.00000           0.147053            4.00152
+   1118       0.00000           0.148400            4.03816
+   1119       0.00000           0.148403            4.03826
+   1120       0.00000           0.150954            4.10768
+   1121       0.00000           0.150957            4.10776
+   1122       0.00000           0.151611            4.12554
+   1123       0.00000           0.151993            4.13593
+   1124       0.00000           0.152037            4.13713
+   1125       0.00000           0.155793            4.23933
+   1126       0.00000           0.155794            4.23937
+   1127       0.00000           0.156716            4.26447
+   1128       0.00000           0.156717            4.26449
+   1129       0.00000           0.159503            4.34030
+   1130       0.00000           0.162115            4.41137
+   1131       0.00000           0.162118            4.41145
+   1132       0.00000           0.163158            4.43975
+   1133       0.00000           0.163164            4.43991
+   1134       0.00000           0.168066            4.57330
+   1135       0.00000           0.168067            4.57334
+   1136       0.00000           0.169110            4.60171
+   1137       0.00000           0.171707            4.67239
+   1138       0.00000           0.175210            4.76772
+   1139       0.00000           0.176428            4.80085
+   1140       0.00000           0.176432            4.80097
+   1141       0.00000           0.178156            4.84788
+   1142       0.00000           0.179691            4.88964
+   1143       0.00000           0.179693            4.88969
+   1144       0.00000           0.183696            4.99861
+   1145       0.00000           0.183702            4.99878
+   1146       0.00000           0.185604            5.05053
+   1147       0.00000           0.185605            5.05057
+   1148       0.00000           0.185978            5.06073
+   1149       0.00000           0.187024            5.08918
+   1150       0.00000           0.187642            5.10599
+   1151       0.00000           0.187643            5.10603
+   1152       0.00000           0.188427            5.12737
+   1153       0.00000           0.188431            5.12747
+   1154       0.00000           0.188954            5.14171
+   1155       0.00000           0.192420            5.23601
+   1156       0.00000           0.193563            5.26713
+   1157       0.00000           0.193565            5.26718
+   1158       0.00000           0.199352            5.42465
+   1159       0.00000           0.199358            5.42482
+   1160       0.00000           0.199695            5.43399
+   1161       0.00000           0.199927            5.44028
+   1162       0.00000           0.201232            5.47580
+   1163       0.00000           0.201235            5.47587
+   1164       0.00000           0.204743            5.57135
+   1165       0.00000           0.205062            5.58003
+   1166       0.00000           0.205063            5.58004
+   1167       0.00000           0.208914            5.68485
+   1168       0.00000           0.209678            5.70564
+   1169       0.00000           0.209679            5.70566
+   1170       0.00000           0.214445            5.83533
+   1171       0.00000           0.215717            5.86996
+   1172       0.00000           0.215720            5.87003
+   1173       0.00000           0.216381            5.88803
+   1174       0.00000           0.218068            5.93394
+   1175       0.00000           0.219502            5.97294
+   1176       0.00000           0.219504            5.97301
+   1177       0.00000           0.226522            6.16398
+   1178       0.00000           0.226526            6.16408
+   1179       0.00000           0.227532            6.19145
+   1180       0.00000           0.228961            6.23035
+   1181       0.00000           0.228963            6.23039
+   1182       0.00000           0.229751            6.25185
+   1183       0.00000           0.229760            6.25207
+   1184       0.00000           0.230544            6.27343
+   1185       0.00000           0.230548            6.27353
+   1186       0.00000           0.232867            6.33662
+   1187       0.00000           0.233236            6.34668
+   1188       0.00000           0.233639            6.35764
+   1189       0.00000           0.233641            6.35769
+   1190       0.00000           0.234384            6.37792
+   1191       0.00000           0.235605            6.41115
+
+  What follows are estimated values for band gap, HOMO, LUMO, etc.
+  | They are estimated on a discrete k-point grid and not necessarily exact.
+  | For converged numbers, create a DOS and/or band structure plot on a denser k-grid.
+
+  Highest occupied state (VBM) at     -5.73273904 eV (relative to internal zero)
+  | Occupation number:      2.00000000
+  | K-point:       1 at    0.000000    0.000000    0.000000 (in units of recip. lattice)
+
+  Lowest unoccupied state (CBM) at    -4.55290606 eV (relative to internal zero)
+  | Occupation number:      0.00000000
+  | K-point:       4 at    0.500000    0.500000    0.000000 (in units of recip. lattice)
+
+  ESTIMATED overall HOMO-LUMO gap:      1.17983298 eV between HOMO at k-point 1 and LUMO at k-point 4
+  | This appears to be an indirect band gap.
+  | Smallest direct gap :      1.19565251 eV for k_point 1 at    0.000000    0.000000    0.000000 (in units of recip. lattice)
+  The gap value is above 0.2 eV. Unless you are using a very sparse k-point grid,
+  this system is most likely an insulator or a semiconductor.
+  Calculating total energy contributions from superposition of free atom densities.
+
+  Total energy components:
+  | Sum of eigenvalues            :      -72744.77951975 Ha    -1979486.16587962 eV
+  | XC energy correction          :       -4340.06901360 Ha     -118099.28668553 eV
+  | XC potential correction       :        5643.41193080 Ha      153565.05194083 eV
+  | Free-atom electrostatic energy:      -49948.43370089 Ha    -1359166.03460780 eV
+  | Hartree energy correction     :           0.00000000 Ha           0.00000000 eV
+  | vdW energy correction         :           0.00000000 Ha           0.00000000 eV
+  | Entropy correction            :          -0.00000000 Ha          -0.00000000 eV
+  | ---------------------------
+  | Total energy                  :     -121389.87030344 Ha    -3303186.43523212 eV
+  | Total energy, T -> 0          :     -121389.87030344 Ha    -3303186.43523212 eV  <-- do not rely on this value for anything but (periodic) metals
+  | Electronic free energy        :     -121389.87030344 Ha    -3303186.43523212 eV
+
+  Derived energy quantities:
+  | Kinetic energy                :      124655.17620413 Ha     3392039.92960578 eV
+  | Electrostatic energy          :     -241704.97749397 Ha    -6577127.07815237 eV
+  | Energy correction for multipole
+  | error in Hartree potential    :           0.00000000 Ha           0.00000000 eV
+  | Sum of eigenvalues per atom                           :      -27116.24884767 eV
+  | Total energy (T->0) per atom                          :      -45249.12924976 eV  <-- do not rely on this value for anything but (periodic) metals
+  | Electronic free energy per atom                       :      -45249.12924976 eV
+  Initialize hartree_potential_storage
+  Max. number of atoms included in rho_multipole:           73
+
+  End scf initialization - timings             :  max(cpu_time)    wall_clock(cpu1)
+  | Time for scf. initialization               :        7.416 s           7.423 s
+  | Boundary condition initialization          :        1.076 s           1.076 s
+  | Integration                                :        3.535 s           3.538 s
+  | Solution of K.-S. eqns.                    :        0.758 s           0.756 s
+  | Grid partitioning                          :        1.232 s           1.233 s
+  | Preloading free-atom quantities on grid    :        0.526 s           0.525 s
+  | Free-atom superposition energy             :        0.063 s           0.063 s
+  | Total energy evaluation                    :        0.000 s           0.001 s
+
+  Partial memory accounting:
+  | Current value for overall tracked memory usage:
+  |   Minimum:       63.218 MB (on task  14)
+  |   Maximum:       63.588 MB (on task   0)
+  |   Average:       63.363 MB
+  | Peak value for overall tracked memory usage:
+  |   Minimum:      152.243 MB (on task  14 after allocating temp_ham_ovlp)
+  |   Maximum:      152.612 MB (on task   0 after allocating temp_ham_ovlp)
+  |   Average:      152.387 MB
+  | Largest tracked array allocation so far:
+  |   Minimum:       44.512 MB (overlap_matrix on task   0)
+  |   Maximum:       44.512 MB (overlap_matrix on task   0)
+  |   Average:       44.512 MB
+  Note:  These values currently only include a subset of arrays which are explicitly tracked.
+  The "true" memory usage will be greater.
+------------------------------------------------------------
+  Evaluating new KS density using the density matrix
+  Evaluating density matrix
+  Finished density matrix calculation
+  | Time :     0.029 s
+  Time summed over all CPUs for getting density from density matrix: real work      477.922 s, elapsed      504.613 s
+  Integration grid: deviation in total charge (<rho> - N_e) =   3.410605E-12
+
+  Time for density update prior                :  max(cpu_time)    wall_clock(cpu1)
+  | self-consistency iterative process         :        3.265 s           3.267 s
+
+------------------------------------------------------------
+          Begin self-consistency iteration #    1
+
+  Date     :  20210602, Time     :  120352.963
+------------------------------------------------------------
+  Pulay mixing of updated and previous charge densities.
+  Renormalizing the density to the exact electron count on the 3D integration grid.
+  | Formal number of electrons (from input files) :    1818.0000000000
+  | Integrated number of electrons on 3D grid     :    1817.9963001721
+  | Charge integration error                      :      -0.0036998279
+  | Normalization factor for density and gradient :       1.0000020351
+
+  Evaluating partitioned Hartree potential by multipole expansion.
+  | Original multipole sum: apparent total charge =  -0.600231E-12
+  | Sum of charges compensated after spline to logarithmic grids =   0.445956E-06
+  | Analytical far-field extrapolation by fixed multipoles:
+  | Hartree multipole sum: apparent total charge =  -0.600090E-12
+  Summing up the Hartree potential.
+  Calculating dipole correction via potential gradient
+  Time summed over all CPUs for potential: real work      227.594 s, elapsed      234.026 s
+  | RMS charge density error from multipole expansion :   0.174287E-02
+  | Average real-space part of the electrostatic potential :     -0.00032364 eV
+
+  Integrating Hamiltonian matrix: batch-based integration.

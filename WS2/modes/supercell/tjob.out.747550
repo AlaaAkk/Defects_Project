@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  BKB
+Node list: ravc[3626-3627,3629-3630]
+Job start: Fri Oct  1 04:11:55 CEST 2021
+Job end:   Fri Oct  1 04:12:13 CEST 2021
+Work dir:  /ptmp/alaa/raman/./
+Command:   /raven/ptmp/alaa/raman/sub_4.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+747550              BKB      4           576                             00:00:18      1:0 
+747550.0     aims_late+      4    160    160        1.35M        0.35M   00:00:06     0:15 
+  
+Maximum memory per node: 0.05536 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 0 %
+     

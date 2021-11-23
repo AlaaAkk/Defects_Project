@@ -1,0 +1,32 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  BKB
+Node list: co[2387-2390]
+Job start: Wed Sep  8 09:32:13 CEST 2021
+Job end:   Wed Sep  8 10:32:20 CEST 2021
+Work dir:  /u/alaa/do/WS2/with/supercell/raman/./
+Command:   /cobra/u/alaa/do/WS2/with/supercell/raman/sub_1.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+4519735             BKB      4           320                             01:00:07      0:0 
+4519735.0    aims_late+      4    160    160      560.28M      542.54M   00:10:38      0:0 
+4519735.1    aims_late+      4    160    160      546.04M      532.26M   00:10:40      0:0 
+4519735.2    aims_late+      4    160    160      549.95M      531.64M   00:13:19      0:0 
+4519735.3    aims_late+      4    160    160      556.57M      541.76M   00:14:38      0:0 
+4519735.4    aims_late+      4    160    160      501.31M      334.45M   00:10:16      1:0 
+  
+Maximum memory per node: 22.9492 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 98.4 %
+     

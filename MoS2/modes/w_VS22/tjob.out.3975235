@@ -1,0 +1,40 @@
+the date is: 1619422479
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  test_slurm
+Node list: co[1610-1612,1614]
+Job start: Mon Apr 26 09:34:37 CEST 2021
+Job end:   Mon Apr 26 11:19:20 CEST 2021
+Work dir:  /u/alaa/data/MoS2_defect/VS22/with/modes/./
+Command:   /cobra/u/alaa/data/MoS2_defect/VS22/with/modes/sub_2.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+3975235      test_slurm      4           320                             01:44:43      1:0 
+3975235.0        aims.x      4    128    128      590.98M      524.67M   00:08:45      0:0 
+3975235.1        aims.x      4    128    128      753.56M      525.80M   00:08:41      0:0 
+3975235.2        aims.x      4    128    128      724.11M      526.52M   00:08:44      0:0 
+3975235.3        aims.x      4    128    128      730.16M      525.22M   00:08:40      0:0 
+3975235.4        aims.x      4    128    128      727.28M      526.24M   00:08:40      0:0 
+3975235.5        aims.x      4    128    128      726.33M      526.68M   00:08:41      0:0 
+3975235.6        aims.x      4    128    128      727.25M      525.63M   00:08:41      0:0 
+3975235.7        aims.x      4    128    128      581.77M      524.26M   00:08:42      0:0 
+3975235.8        aims.x      4    128    128      710.11M      525.03M   00:08:38      0:0 
+3975235.9        aims.x      4    128    128      579.09M      524.27M   00:08:38      0:0 
+3975235.10       aims.x      4    128    128      716.19M      525.81M   00:08:42      0:0 
+3975235.11       aims.x      4    128    128      592.40M      526.02M   00:08:43      0:0 
+  
+Maximum memory per node: 24.6926 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 99.0 %
+     

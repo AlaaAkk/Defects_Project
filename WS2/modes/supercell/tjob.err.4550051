@@ -1,0 +1,8 @@
+srun: error: Unable to confirm allocation for job 4550051: Socket timed out on send/recv operation
+srun: Check SLURM_JOB_ID environment variable. Expired or invalid job 4550051
+Traceback (most recent call last):
+  File "get_vibrations_1.py", line 868, in <module>
+    main()
+  File "get_vibrations_1.py", line 536, in main
+    if "Have a nice day." in out[-2]:
+IndexError: list index out of range

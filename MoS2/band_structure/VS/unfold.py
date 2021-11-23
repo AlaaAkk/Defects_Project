@@ -513,7 +513,7 @@ def plot(opt):
   wMax = broadenParams["wMax"]
   plotParams = {
     "levels": np.linspace(0, wMax, 100),
-    "cmap": "hot",
+    "cmap": "gnuplot",
     "extend": ("max" if wMax < 1.0 else "neither")
   }
   rcParams["font.family"] = "serif"

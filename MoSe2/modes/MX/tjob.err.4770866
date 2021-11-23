@@ -1,0 +1,8 @@
+srun: Job 4770866 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 4770866
+Traceback (most recent call last):
+  File "get_vibrations_4.py", line 868, in <module>
+    main()
+  File "get_vibrations_4.py", line 461, in main
+    struc_new.atoms[atom].coord[coord]=struc_new.atoms[atom].coord[coord]+delta
+IndexError: index 73 is out of bounds for axis 0 with size 73

@@ -1,0 +1,12 @@
+srun: Job 4545645 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 4545645
+srun: Job 4545645 step creation temporarily disabled, retrying (Requested nodes are busy)
+srun: Step created for job 4545645
+slurmstepd: error: *** JOB 4545645 ON co3580 CANCELLED AT 2021-09-15T10:03:36 ***
+slurmstepd: error: *** STEP 4545645.97 ON co3580 CANCELLED AT 2021-09-15T10:03:36 ***
+srun: Job step aborted: Waiting up to 302 seconds for job step to finish.
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims_latest.x      0000000002E1F0CB  Unknown               Unknown  Unknown
+libpthread-2.22.s  00002B24EA615C00  Unknown               Unknown  Unknown
+libmkl_avx512.so   00002B263A0333F2  mkl_blas_avx512_d     Unknown  Unknown

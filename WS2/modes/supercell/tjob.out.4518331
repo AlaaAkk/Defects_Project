@@ -1,0 +1,37 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  BKB
+Node list: co[3502-3505]
+Job start: Tue Sep  7 18:00:33 CEST 2021
+Job end:   Tue Sep  7 20:00:50 CEST 2021
+Work dir:  /u/alaa/do/WS2/with/supercell/raman/./
+Command:   /cobra/u/alaa/do/WS2/with/supercell/raman/sub_1.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+4518331             BKB      4           320                             02:00:17      0:0 
+4518331.0    aims_late+      4    160    160      575.26M      533.21M   00:10:42      0:0 
+4518331.1    aims_late+      4    160    160      546.64M      533.10M   00:10:50      0:0 
+4518331.2    aims_late+      4    160    160      544.91M      532.03M   00:13:16      0:0 
+4518331.3    aims_late+      4    160    160      548.22M      532.15M   00:14:50      0:0 
+4518331.4    aims_late+      4    160    160      545.00M      532.39M   00:15:17      0:0 
+4518331.5    aims_late+      4    160    160      551.52M      532.66M   00:18:11      0:0 
+4518331.6    aims_late+      4    160    160      540.43M      528.96M   00:09:56      0:0 
+4518331.7    aims_late+      4    160    160      551.65M      538.75M   00:10:36      0:0 
+4518331.8    aims_late+      4    160    160      547.52M      528.83M   00:15:40      0:0 
+4518331.9    aims_late+      4    160    160      399.58M      325.60M   00:00:46      1:0 
+  
+Maximum memory per node: 23.5626 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 99.3 %
+     

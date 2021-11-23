@@ -1,0 +1,44 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  BKB
+Node list: co[1526,1528-1529,1616]
+Job start: Wed Sep  8 16:53:32 CEST 2021
+Job end:   Wed Sep  8 20:24:00 CEST 2021
+Work dir:  /u/alaa/do/WS2/with/supercell/raman/./
+Command:   /cobra/u/alaa/do/WS2/with/supercell/raman/sub_2.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+4521275             BKB      4           320                             03:30:28      0:0 
+4521275.0    aims_late+      4    160    160      544.51M      528.82M   00:09:50      0:0 
+4521275.1    aims_late+      4    160    160      549.75M      528.82M   00:10:26      0:0 
+4521275.2    aims_late+      4    160    160      548.57M      529.22M   00:15:22      0:0 
+4521275.3    aims_late+      4    160    160      552.35M      528.79M   00:15:22      0:0 
+4521275.4    aims_late+      4    160    160      555.47M      533.18M   00:14:59      0:0 
+4521275.5    aims_late+      4    160    160      554.17M      533.58M   00:14:21      0:0 
+4521275.6    aims_late+      4    160    160      547.49M      532.25M   00:10:27      0:0 
+4521275.7    aims_late+      4    160    160      546.19M      532.97M   00:10:26      0:0 
+4521275.8    aims_late+      4    160    160      553.95M      532.58M   00:13:16      0:0 
+4521275.9    aims_late+      4    160    160      555.72M      532.80M   00:12:57      0:0 
+4521275.10   aims_late+      4    160    160      555.94M      532.20M   00:17:42      0:0 
+4521275.11   aims_late+      4    160    160      554.22M      531.92M   00:16:19      0:0 
+4521275.12   aims_late+      4    160    160      547.97M      532.61M   00:10:23      0:0 
+4521275.13   aims_late+      4    160    160      551.79M      532.64M   00:10:28      0:0 
+4521275.14   aims_late+      4    160    160      552.53M      447.40M   00:13:30      0:0 
+4521275.15   aims_late+      4    160    160      547.44M      497.40M   00:13:00      0:0 
+4521275.16   aims_late+      4    160    160      502.46M      329.98M   00:00:58      1:0 
+  
+Maximum memory per node: 22.7714 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 99.2 %
+     

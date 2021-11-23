@@ -50,6 +50,7 @@ E4=-5975218.551673065 # di S vacancy neighboring
 E5=-5997073.704 # mono Mo vacancy
 E6=-5930526.433449251
 E7=-5863977.123614309
+E8=-5797431.054699400
 E_MoSe2=-244332.785924554 # primtitive
 ESe8=-66548.05582020049*8   #8 atoms in unitcell
 ESe8_2=-532375.657399940 #8 atoms in unitcell
@@ -68,6 +69,7 @@ d4=pd.read_csv('VS22', sep='\s+',header=0)
 d5=pd.read_csv('VMo', sep='\s+',header=0)
 d6=pd.read_csv('MX', sep='\s+',header=0)
 d7=pd.read_csv('MX2', sep='\s+',header=0)
+d8=pd.read_csv('VMoSe3', sep='\s+',header=0)
 dW=pd.read_csv('Mo_BCC', sep='\s+',header=0)
 dSe=pd.read_csv('w_Se8', sep='\s+',header=0)
 wSe=dSe['x']*convert
@@ -80,6 +82,7 @@ w4=d4['VS22']*convert
 w5=d5['VMo']*convert #THZ to Hz
 w6=d6['MX']*convert #THZ to Hz
 w7=d7['MX2']*convert #THZ to Hz
+w8=d8['x']*convert #THZ to Hz
 
 
 xr=np.array(np.arange(199.85,1326.85,100))
@@ -158,6 +161,7 @@ conc_VS22_1=np.zeros((len(xr),len(xr)))
 conc_VMo_1=np.zeros((len(xr),len(xr)))
 conc_MX_1=np.zeros((len(xr),len(xr)))
 conc_MX2_1=np.zeros((len(xr),len(xr)))
+conc_MX3_1=np.zeros((len(xr),len(xr)))
 conc_addS_2=np.zeros((len(xr),len(xr)))
 conc_VS_2=np.zeros((len(xr),len(xr)))
 conc_VS2_2=np.zeros((len(xr),len(xr)))
@@ -165,6 +169,7 @@ conc_VS22_2=np.zeros((len(xr),len(xr)))
 conc_VMo_2=np.zeros((len(xr),len(xr)))
 conc_MX_2=np.zeros((len(xr),len(xr)))
 conc_MX2_2=np.zeros((len(xr),len(xr)))
+conc_MX3_2=np.zeros((len(xr),len(xr)))
 
 #fig = plt.figure()
 #ax = plt.axes(projection='3d')
@@ -175,6 +180,8 @@ conc_MX2_2=np.zeros((len(xr),len(xr)))
 addS=np.zeros((len(xr),len(xr)))
 VS=np.zeros((len(xr),len(xr)))
 VMo=np.zeros((len(xr),len(xr)))
+VMoSe3=np.zeros((len(xr),len(xr)))
+VMoSe3_2=np.zeros((len(xr),len(xr)))
 MX=np.zeros((len(xr),len(xr)))
 MX2=np.zeros((len(xr),len(xr)))
 VMo_2=np.zeros((len(xr),len(xr)))
@@ -224,6 +231,7 @@ for pindx,p in enumerate(list(pS*p0)):
    MX [pindx,:] = [E6-E0+a + b+c for a, b, c in zip(mu_S, DeltaF(w6,w0),mu_Mo)]
    MX2 [pindx,:] = [E7-E0+2*a + b+c for a, b, c in zip(mu_S, DeltaF(w7,w0),mu_Mo)]
    VMo [pindx,:] =[E5-E0+a +b for a, b in zip(mu_Mo, DeltaF(w5,w0))]
+   VMoSe3 [pindx,:] = [E8-E0+3*a + b+c for a, b, c in zip(mu_S, DeltaF(w8,w0),mu_Mo)]
 #   VMo [pindx,:] =[E5-E0+a +b for a, b in zip(2*mu_S, DeltaF(w5,w0))]
 #VMo = [E5-E0+a + b for a, b in zip(mu_Mo, DeltaF(w5,w0))]
 
@@ -232,8 +240,9 @@ for pindx,p in enumerate(list(pS*p0)):
    VS2_2 [pindx,:] = [E3-E0+2*a + b for a, b in zip(mu_S_2, DeltaF(w3,w0))]
    VS22_2 [pindx,:] = [E4-E0+2*a + b for a, b in zip(mu_S_2, DeltaF(w4,w0))]
    VMo_2 [pindx,:] =[E5-E0+a +b for a, b in zip(mu_Mo_2, DeltaF(w5,w0))]
-   MX_2 [pindx,:] = [E6-E0+a + b+c for a, b, c in zip(mu_S, DeltaF(w6,w0),mu_Mo)]
-   MX2_2 [pindx,:] = [E7-E0+2*a + b+c for a, b, c in zip(mu_S, DeltaF(w7,w0),mu_Mo)]
+   MX_2 [pindx,:] = [E6-E0+a + b+c for a, b, c in zip(mu_S_2, DeltaF(w6,w0),mu_Mo_2)]
+   MX2_2 [pindx,:] = [E7-E0+2*a + b+c for a, b, c in zip(mu_S_2, DeltaF(w7,w0),mu_Mo_2)]
+   VMoSe3_2 [pindx,:] = [E8-E0+3*a + b+c for a, b, c in zip(mu_S_2, DeltaF(w8,w0),mu_Mo_2)]
    #mu_S8=np.array(mu_0) + np.array(E) + D + ESe8
 
    conc_addS_1[pindx,:] = conc(addS[pindx,:],1)
@@ -243,6 +252,7 @@ for pindx,p in enumerate(list(pS*p0)):
    conc_VMo_1[pindx,:] = conc(VMo[pindx,:],6)
    conc_MX_1[pindx,:] = conc(MX[pindx,:],6)
    conc_MX2_1[pindx,:] = conc(MX2[pindx,:],6)
+   conc_MX3_1[pindx,:] = conc(VMoSe3[pindx,:],6)
 
    conc_addS_2[pindx,:] = conc(addS_2[pindx,:],1)
    conc_VS_2[pindx,:] = conc(VS_2[pindx,:],1)
@@ -251,11 +261,20 @@ for pindx,p in enumerate(list(pS*p0)):
    conc_VMo_2[pindx,:] = conc(VMo_2[pindx,:],6)
    conc_MX_2[pindx,:] = conc(MX_2[pindx,:],6)
    conc_MX2_2[pindx,:] = conc(MX2_2[pindx,:],6)
+   conc_MX3_2[pindx,:] = conc(VMoSe3_2[pindx,:],6)
 
 
 # set up a figure twice as wide as it is tall
 fig = plt.figure(figsize=plt.figaspect(0.5))
 
+b1 = plt.Rectangle((0, 0), 1, 1, fc="red")
+b2 = plt.Rectangle((0, 0), 1, 1, fc="blue")
+b3 = plt.Rectangle((0, 0), 1, 1, fc="green")
+b4 = plt.Rectangle((0, 0), 1, 1, fc="orange")
+b5 = plt.Rectangle((0, 0), 1, 1, fc="black")
+b6 = plt.Rectangle((0, 0), 1, 1, fc="m")
+b7 = plt.Rectangle((0, 0), 1, 1, fc="c")
+b8 = plt.Rectangle((0, 0), 1, 1, fc="lime")
 #===============
 #  First subplot
 #===============
@@ -271,6 +290,8 @@ ax.plot_surface(Y, X, VS22.T, rstride=1, cstride=1,color='orange')
 ax.plot_surface(Y, X, VMo.T, rstride=1, cstride=1,color='black')
 ax.plot_surface(Y, X, MX.T, rstride=1, cstride=1,color='m')
 ax.plot_surface(Y, X, MX2.T, rstride=1, cstride=1,color='c')
+ax.plot_surface(Y, X, VMoSe3.T, rstride=1, cstride=1,color='lime')
+ax.legend([b1, b2,b3,b4,b5,b6,b7,b8], ['adatom', 'VSe', 'di up$\&$down','di neigh', 'VMo', 'VMoSe','VMoSe2','VMoSe3'])
 ax.set_xlabel(' Tempreture [k]')
 ax.set_zlabel(' Formation Energy [eV]')
 ax.set_ylabel(' Pressure [atm]')
@@ -292,20 +313,14 @@ ax.plot_surface(Y, X, VS22_2.T, rstride=1, cstride=1,color='orange')
 ax.plot_surface(Y, X, VMo_2.T, rstride=1, cstride=1,color='black')
 ax.plot_surface(Y, X, MX_2.T, rstride=1, cstride=1,color='m')
 ax.plot_surface(Y, X, MX2_2.T, rstride=1, cstride=1,color='c')
+ax.plot_surface(Y, X, VMoSe3_2.T, rstride=1, cstride=1,color='lime')
 ax.set_xlabel(' Tempreture [k]')
 ax.set_zlabel(' Formation Energy [eV]')
 ax.set_ylabel(' Pressure [atm]')
 ax.set_title('MoSe2 high Se environment')
 
-b1 = plt.Rectangle((0, 0), 1, 1, fc="red")
-b2 = plt.Rectangle((0, 0), 1, 1, fc="blue")
-b3 = plt.Rectangle((0, 0), 1, 1, fc="green")
-b4 = plt.Rectangle((0, 0), 1, 1, fc="orange")
-b5 = plt.Rectangle((0, 0), 1, 1, fc="black")
-b6 = plt.Rectangle((0, 0), 1, 1, fc="m")
-b7 = plt.Rectangle((0, 0), 1, 1, fc="c")
 
-ax.legend([b1, b2,b3,b4,b5,b6,b7], ['adatom', 'VSe', 'di up$\&$down','di neigh', 'VMo', 'VMoSe','VMoSe2'])
+ax.legend([b1, b2,b3,b4,b5,b6,b7,b8], ['adatom', 'VSe', 'di up$\&$down','di neigh', 'VMo', 'VMoSe','VMoSe2','VMoSe3'])
 plt.show()
 
 
@@ -370,11 +385,14 @@ ax.plot_surface(Y, X, conc_addS_1.T, rstride=1, cstride=1,color='r')
 ax.plot_surface(Y, X, conc_VS_1.T, rstride=1, cstride=1,color='b')
 ax.plot_surface(Y, X, conc_VS2_1.T, rstride=1, cstride=1,color='g')
 ax.plot_surface(Y, X, conc_VS22_1.T, rstride=1, cstride=1,color='k')
+ax.plot_surface(Y, X, conc_MX_1.T, rstride=1, cstride=1,color='m')
+ax.plot_surface(Y, X, conc_MX2_1.T, rstride=1, cstride=1,color='c')
+ax.plot_surface(Y, X, conc_MX3_1.T, rstride=1, cstride=1,color='lime')
 ax.set_xlabel(' Tempreture [k]')
 ax.set_zlabel(' Concentration')
 ax.set_ylabel(' Pressure [atm]')
 ax.set_title('MoSe2 low Se environment')
-ax.legend([b1, b2,b3,b4], ['adatom', 'Mono', 'di up$\&$down','di neigh'])
+ax.legend([b1, b2,b3,b4,b5,b6,b7,b8], ['adatom', 'VSe', 'di up$\&$down','di neigh', 'VMo', 'VMoSe','VMoSe2','VMoSe3'])
 #===============
 # Second subplot
 #===============
@@ -386,10 +404,13 @@ ax.plot_surface(Y, X, conc_addS_2.T, rstride=1, cstride=1,color='r')
 ax.plot_surface(Y, X, conc_VS_2.T, rstride=1, cstride=1,color='b')
 ax.plot_surface(Y, X, conc_VS2_2.T, rstride=1, cstride=1,color='g')
 ax.plot_surface(Y, X, conc_VS22_2.T, rstride=1, cstride=1,color='k')
+ax.plot_surface(Y, X, conc_MX_2.T, rstride=1, cstride=1,color='m')
+ax.plot_surface(Y, X, conc_MX2_2.T, rstride=1, cstride=1,color='c')
+ax.plot_surface(Y, X, conc_MX3_2.T, rstride=1, cstride=1,color='lime')
 ax.set_xlabel(' Tempreture [k]')
 ax.set_zlabel(' Concentration')
 ax.set_ylabel(' Pressure [atm]')
 ax.set_title('MoSe2 high Se environment')
-ax.legend([b1, b2,b3,b4], ['adatom', 'Mono', 'di up$\&$down','di neigh'])
+ax.legend([b1, b2,b3,b4,b5,b6,b7,b8], ['adatom', 'VSe', 'di up$\&$down','di neigh', 'VMo', 'VMoSe','VMoSe2','VMoSe3'])
 plt.show()
 

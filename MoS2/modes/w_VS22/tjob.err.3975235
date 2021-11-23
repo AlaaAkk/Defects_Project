@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "get_vibrations_2.py", line 847, in <module>
+    main()
+  File "get_vibrations_2.py", line 459, in main
+    struc_new.atoms[atom].coord[coord]=struc_new.atoms[atom].coord[coord]+delta
+IndexError: index 73 is out of bounds for axis 0 with size 73

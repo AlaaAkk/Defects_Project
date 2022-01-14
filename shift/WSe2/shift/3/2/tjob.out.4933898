@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  BKB
+Node list: co[4323-4325,4399]
+Job start: Fri Jan  7 11:41:15 CET 2022
+Job end:   Fri Jan  7 14:19:43 CET 2022
+Work dir:  /ptmp/alaa/do/WSe2/with/VW/shift/3/2/./
+Command:   /cobra/ptmp/alaa/do/WSe2/with/VW/shift/3/2/sub.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+4933898             BKB      4           320                             02:38:28      0:0 
+4933898.0    aims_late+      4    160    160      385.52M      360.05M   02:38:24      0:0 
+  
+Maximum memory per node: 15.791 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 99.6 %
+     

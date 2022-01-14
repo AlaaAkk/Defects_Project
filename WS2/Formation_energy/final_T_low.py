@@ -23,10 +23,12 @@ E3=-11839713.678986968 # di S vacancy up&down
 E4=-11839713.145423930 # di S vacancy neighboring
 E5=-11408771.970668823 # mono W vacancy
 E_WS2=-474458.138971034 # primtitive
-ES8=-10879.736195389734*8   #8 atoms in unitcell of S8 ring
+#ES8=-10879.736195389734*8   #8 atoms in unitcell of S8 ring
 ES8_2=-87031.629750345    #8 atoms in unitcell of S8 ring
-EW=-452700.23153344775*2 # W BCC
+#EW=-452700.23153344775*2 # W BCC
+EW=-905397.333160509
 
+ES8=4*(E_WS2-EW/2)
 
 # In[5]:
 
@@ -88,6 +90,7 @@ w1=d1['addS']*convert
 w2=d2['VS']*convert
 w3=d3['VS2']*convert
 w4=d4['VS22']*convert
+w5=d5['VW']*convert
 
 #  #### Total Energies in eV
 
@@ -131,12 +134,14 @@ conc_addS_2=np.zeros((len(xr),len(xr)))
 conc_VS_2=np.zeros((len(xr),len(xr)))
 conc_VS2_2=np.zeros((len(xr),len(xr)))
 conc_VS22_2=np.zeros((len(xr),len(xr)))
+conc_VW_2=np.zeros((len(xr),len(xr)))
 
 
 conc_addS_1=np.zeros((len(xr),len(xr)))
 conc_VS_1=np.zeros((len(xr),len(xr)))
 conc_VS2_1=np.zeros((len(xr),len(xr)))
 conc_VS22_1=np.zeros((len(xr),len(xr)))
+conc_VW_1=np.zeros((len(xr),len(xr)))
 
 
 
@@ -144,18 +149,22 @@ addS=np.zeros((len(xr),len(xr)))
 VS=np.zeros((len(xr),len(xr)))
 VS2=np.zeros((len(xr),len(xr)))
 VS22=np.zeros((len(xr),len(xr)))
+VW=np.zeros((len(xr),len(xr)))
 addS_2=np.zeros((len(xr),len(xr)))
 VS_2=np.zeros((len(xr),len(xr)))
 VS2_2=np.zeros((len(xr),len(xr)))
 VS22_2=np.zeros((len(xr),len(xr)))
+VW_2=np.zeros((len(xr),len(xr)))
 for pindx,p in enumerate(list(pS*p0)):
    D=[]
    E=[]
    mu_0=[]
    mu_S8=[]
    mu_S=[]
+   mu_W=[]
    mu_S8_2=[]
    mu_S_2=[]
+   mu_W_2=[]
    I=np.sqrt(IA)*np.sqrt(IB)*np.sqrt(IC)
    for Tindx,T in enumerate(list(arange(473,1600,100))):
         A=np.log((((2*pi*m)**(3/2))*((kk*T)**(5/2)))/(p0*(h**3)))
@@ -173,28 +182,34 @@ for pindx,p in enumerate(list(pS*p0)):
    mu_S8=np.array(mu_0) + np.array(E) + D + ES8
    mu_S8_2=np.array(mu_0) + np.array(E) + D + ES8_2
    mu_S=np.array(mu_S8)/8
+   mu_W=E_WS2-2*mu_S
    mu_S_2=np.array(mu_S8_2)/8
+   mu_W_2=E_WS2-2*mu_S_2
    addS[pindx,:] = [E1-E0-a + b for a, b in zip(mu_S, DeltaF(w1,w0))]
    VS [pindx,:] = [E2-E0+a + b for a, b in zip(mu_S, DeltaF(w2,w0))]
    VS2 [pindx,:] = [E3-E0+2*a + b for a, b in zip(mu_S, DeltaF(w3,w0))]
    VS22 [pindx,:] = [E4-E0+2*a + b for a, b in zip(mu_S, DeltaF(w4,w0))]
+   VW [pindx,:] = [E5-E0+a + b for a, b in zip(mu_W, DeltaF(w5,w0))]
 #VMo = [E5-E0+a + b for a, b in zip(mu_Mo, DeltaF(w5,w0))]
 
    addS_2[pindx,:] = [E1-E0-a + b for a, b in zip(mu_S_2, DeltaF(w1,w0))]
    VS_2[pindx,:] = [E2-E0+a + b for a, b in zip(mu_S_2, DeltaF(w2,w0))]
    VS2_2 [pindx,:] = [E3-E0+2*a + b for a, b in zip(mu_S_2, DeltaF(w3,w0))]
    VS22_2 [pindx,:] = [E4-E0+2*a + b for a, b in zip(mu_S_2, DeltaF(w4,w0))]
+   VW_2 [pindx,:] = [E5-E0+a + b for a, b in zip(mu_W_2, DeltaF(w5,w0))]
    #mu_S8=np.array(mu_0) + np.array(E) + D + ESe8
 
    conc_addS_1[pindx,:] = conc(addS[pindx,:],1)
    conc_VS_1[pindx,:] = conc(VS[pindx,:],1)
    conc_VS2_1[pindx,:] = conc(VS2[pindx,:],6)
    conc_VS22_1[pindx,:] = conc(VS22[pindx,:],6)
+   conc_VW_1[pindx,:] = conc(VW[pindx,:],6)
 
    conc_addS_2[pindx,:] = conc(addS_2[pindx,:],1)
    conc_VS_2[pindx,:] = conc(VS_2[pindx,:],1)
    conc_VS2_2[pindx,:] = conc(VS2_2[pindx,:],6)
    conc_VS22_2[pindx,:] = conc(VS22_2[pindx,:],6)
+   conc_VW_2[pindx,:] = conc(VW_2[pindx,:],6)
   # ax.plot3D(T, z1,np.array(addS),'r')
   # ax.plot3D(T, z1,np.array(VS),'b')
   # ax.plot3D(T, z1,np.array(VS2),'g')
@@ -215,7 +230,8 @@ X, Y = np.meshgrid(pS, T)
 ax.plot_surface(Y, X, addS.T, rstride=1, cstride=1,color='r')
 ax.plot_surface(Y, X, VS.T, rstride=1, cstride=1,color='b')
 ax.plot_surface(Y, X, VS2.T, rstride=1, cstride=1,color='g')
-ax.plot_surface(Y, X, VS22.T, rstride=1, cstride=1,color='k')
+ax.plot_surface(Y, X, VS22.T, rstride=1, cstride=1,color='orange')
+ax.plot_surface(Y, X, VW.T, rstride=1, cstride=1,color='k')
 ax.set_xlabel(' Tempreture [k]')
 ax.set_zlabel(' Formation Energy [eV]')
 ax.set_ylabel(' Pressure [atm]')
@@ -233,6 +249,7 @@ ax.plot_surface(Y, X, addS_2.T, rstride=1, cstride=1,color='r')
 ax.plot_surface(Y, X, VS_2.T, rstride=1, cstride=1,color='b')
 ax.plot_surface(Y, X, VS2_2.T, rstride=1, cstride=1,color='g')
 ax.plot_surface(Y, X, VS22_2.T, rstride=1, cstride=1,color='k')
+ax.plot_surface(Y, X, VW_2.T, rstride=1, cstride=1,color='k')
 ax.set_xlabel(' Tempreture [k]')
 ax.set_zlabel(' Formation Energy [eV]')
 ax.set_ylabel(' Pressure [atm]')
@@ -259,7 +276,8 @@ X, Y = np.meshgrid(pS, T)
 ax.plot_surface(Y, X, conc_addS_1.T, rstride=1, cstride=1,color='r')
 ax.plot_surface(Y, X, conc_VS_1.T, rstride=1, cstride=1,color='b')
 ax.plot_surface(Y, X, conc_VS2_1.T, rstride=1, cstride=1,color='g')
-ax.plot_surface(Y, X, conc_VS22_1.T, rstride=1, cstride=1,color='k')
+ax.plot_surface(Y, X, conc_VS22_1.T, rstride=1, cstride=1,color='orange')
+ax.plot_surface(Y, X, conc_VW_1.T, rstride=1, cstride=1,color='k')
 ax.legend([b1, b2,b3,b4], ['adatom', 'Mono', 'di up$\&$down','di neigh'])
 ax.set_xlabel(' Tempreture [k]')
 ax.set_zlabel(' Defect Concentration')
@@ -276,6 +294,7 @@ ax.plot_surface(Y, X, conc_addS_2.T, rstride=1, cstride=1,color='r')
 ax.plot_surface(Y, X, conc_VS_2.T, rstride=1, cstride=1,color='b')
 ax.plot_surface(Y, X, conc_VS2_2.T, rstride=1, cstride=1,color='g')
 ax.plot_surface(Y, X, conc_VS22_2.T, rstride=1, cstride=1,color='k')
+ax.plot_surface(Y, X, conc_VW_2.T, rstride=1, cstride=1,color='k')
 ax.legend([b1, b2,b3,b4], ['adatom', 'Mono', 'di up$\&$down','di neigh'])
 ax.set_xlabel(' Tempreture [k]')
 ax.set_zlabel(' Defect Concentration')

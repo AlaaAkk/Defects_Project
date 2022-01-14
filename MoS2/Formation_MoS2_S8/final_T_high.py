@@ -1,11 +1,6 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[10]:
-
-
 import  pandas as pd
 import matplotlib
+import matplotlib as mpl
 matplotlib.rcParams['text.usetex'] = True
 import matplotlib.pyplot as plt
 import numpy as np
@@ -16,44 +11,46 @@ import numpy
 from sys import argv
 
 
-#  #### Total Energies in eV
-
-# In[11]:
-
-
-E0=-3324932.942491689 # pristine
-E1=-3335811.376811718# addon S
-E2=-3314050.981984572 # mono S vacancy
-E3=-3303169.071443753 # di S vacancy up&down
-E4=-3303169.047079117 # di S vacancy neighboring
-E5=-3213689.419187400  # mono Mo vacancy
-E_MoS2=-132997.116189474 # primtitive
-ES8=-87031.629750345
-EMo=-222473.348568306
+E0=-3325083.824431094 # pristine
+E1=-3335963.299011943 # addon S
+E2=-3314200.125378767 # mono S vacancy
+E3=-3303316.491191206 # di S vacancy up&down
+E4=-3303316.476018199 # di S vacancy neighboring
+E5=-3213835.070481706  # mono Mo vacancy
+E_MoS2=-133003.350424015 # primtitive
+ES8_2=-87044.115400996
+EMo=-222479.115614341
 
 
-# In[12]:
+ES8=4*(E_MoS2-EMo/2)
+#print(EMo/2)
+#print(ES8)
 
 
-xr=np.array(np.arange(473,1600,1))
+xr=np.array(np.arange(473,1600,100))
 xr=1/xr
 yr=(4.1879-(3209*xr))
 
 pS=np.exp(yr)
 
 
+def conc(r,g):
+   rho=[]
+   T=arange(473,1600,100)
+   t=k*T
+   for i,j in zip(r,t):
+       temp=(g)*math.exp(-i/j)
+       rho.append(temp)
+
+   return rho
 # #### Constants
 
-# In[13]:
+# In[4]:
 
 
 pi=numpy.pi
 convert=29979245800.0*2*pi #cm^-1 to Hz
 
-
-# # Calculation of $\mu_S$ on full temperature Range
-
-# In[14]:
 
 
 p0=1013250  # atm to g/(cm s^2)
@@ -70,7 +67,7 @@ IB=1.314146807283309e-37
 IC=2.42660958899724e-37
 
 
-# In[15]:
+# In[6]:
 
 
 d0=pd.read_csv('w0', sep='\s+',header=0)
@@ -94,23 +91,19 @@ w5=d5['VMo']*convert #THZ to Hz
 
 # ## $$ \mu=\mu_{0}+ kT \ln\frac{p}{p_{0}}+ E_{DFT}+ \sum_{i}\frac{\hbar \omega_{i}}{2}$$
 
-# In[16]:
-
+# In[7]:
+mpl.rcParams['legend.fontsize'] = 10
 
 def free_energy(omega):
    F=[]
 
    omega = numpy.array(omega)
-   for T in arange(473,1600,10):
+   for T in arange(473,1600,100):
 
      temp3=numpy.array([(hb*i/2 + k*T*np.log(1-math.exp(-(hb*i)/(k*T)))) for i in omega])
      F.append(numpy.sum(temp3))
 
    return F
-
-
-# In[17]:
-
 
 def DeltaF(X,Y):
    deltaF=[]
@@ -122,23 +115,46 @@ def DeltaF(X,Y):
    return deltaF
 
 
-# In[18]:
+conc_addS_2=np.zeros((len(xr),len(xr)))
+conc_VS_2=np.zeros((len(xr),len(xr)))
+conc_VS2_2=np.zeros((len(xr),len(xr)))
+conc_VS22_2=np.zeros((len(xr),len(xr)))
+conc_VMo_2=np.zeros((len(xr),len(xr)))
 
 
-fig = plt.figure()
-ax = plt.axes(projection='3d')
-for p in pS*p0:
+conc_addS_1=np.zeros((len(xr),len(xr)))
+conc_VS_1=np.zeros((len(xr),len(xr)))
+conc_VS2_1=np.zeros((len(xr),len(xr)))
+conc_VS22_1=np.zeros((len(xr),len(xr)))
+conc_VMo_1=np.zeros((len(xr),len(xr)))
+
+
+
+addS=np.zeros((len(xr),len(xr)))
+VS=np.zeros((len(xr),len(xr)))
+VS2=np.zeros((len(xr),len(xr)))
+VS22=np.zeros((len(xr),len(xr)))
+VMo=np.zeros((len(xr),len(xr)))
+
+
+addS_2=np.zeros((len(xr),len(xr)))
+VS_2=np.zeros((len(xr),len(xr)))
+VS2_2=np.zeros((len(xr),len(xr)))
+VS22_2=np.zeros((len(xr),len(xr)))
+VMo_2=np.zeros((len(xr),len(xr)))
+
+for pindx,p in enumerate(list(pS*p0)):
    D=[]
    E=[]
    mu_0=[]
    mu_S8=[]
    mu_S=[]
-   addS=[]
-   VS=[]
-   VS2=[]
-   VS22=[]
+   mu_Mo=[]
+   mu_S8_2=[]
+   mu_S_2=[]
+   mu_Mo_2=[]
    I=np.sqrt(IA)*np.sqrt(IB)*np.sqrt(IC)
-   for T in arange(473,1600,10):
+   for Tindx,T in enumerate(list(arange(473,1600,100))):
         A=np.log((((2*pi*m)**(3/2))*((kk*T)**(5/2)))/(p0*(h**3)))
         B=np.log(np.sqrt(pi)/sigma)+ np.log((((8*pi*kk*T)/(h**2))**(3/2))*I)
         temp=numpy.array([(np.log(1-math.exp(-(hbar*i)/(kk*T)))) for i in wS8])
@@ -147,50 +163,127 @@ for p in pS*p0:
         mu_0.append(-k*T*(A+B-C))
 
 
-#print('E',E)
-#print('mu_0', mu_0)
    temp2=numpy.array([(hb*i)/(2) for i in wS8])
    D=np.sum(temp2)
    mu_S8=np.array(mu_0) + np.array(E) + D + ES8
+   mu_S8_2=np.array(mu_0) + np.array(E) + D + ES8_2
    mu_S=np.array(mu_S8)/8
-   addS = [E1-E0-a + b for a, b in zip(mu_S, DeltaF(w1,w0))]
-   VS = [E2-E0+a + b for a, b in zip(mu_S, DeltaF(w2,w0))]
-   VS2 = [E3-E0+2*a + b for a, b in zip(mu_S, DeltaF(w3,w0))]
-   VS22 = [E4-E0+2*a + b for a, b in zip(mu_S, DeltaF(w4,w0))]
-#VMo = [E5-E0+a + b for a, b in zip(mu_Mo, DeltaF(w5,w0))]
+   mu_Mo=(E_MoS2-2*mu_S)
+   mu_S_2=np.array(mu_S8_2)/8
+   mu_Mo_2=E_MoS2-2*mu_S_2
+   addS[pindx,:] = [E1-E0-a + b for a, b in zip(mu_S, DeltaF(w1,w0))]
+   VS [pindx,:] = [E2-E0+a + b for a, b in zip(mu_S, DeltaF(w2,w0))]
+   VS2 [pindx,:] = [E3-E0+2*a + b for a, b in zip(mu_S, DeltaF(w3,w0))]
+   VS22 [pindx,:] = [E4-E0+2*a + b for a, b in zip(mu_S, DeltaF(w4,w0))]
+   VMo [pindx,:] = [E5-E0+a + b for a, b in zip(mu_Mo, DeltaF(w5,w0))]
 
-   #mu_S8=np.array(mu_0) + np.array(E) + D + ESe8
-
-   T=arange(473,1600,10)
-   a = np.empty(np.size(addS))
-   a.fill(p)
- #  ax = plt.axes(projection='3d')
-# Data for a three-dimensional line
-   z1 = a/p0
-
-#   print(z1)
+   addS_2[pindx,:] = [E1-E0-a + b for a, b in zip(mu_S_2, DeltaF(w1,w0))]
+   VS_2[pindx,:] = [E2-E0+a + b for a, b in zip(mu_S_2, DeltaF(w2,w0))]
+   VS2_2 [pindx,:] = [E3-E0+2*a + b for a, b in zip(mu_S_2, DeltaF(w3,w0))]
+   VS22_2 [pindx,:] = [E4-E0+2*a + b for a, b in zip(mu_S_2, DeltaF(w4,w0))]
+   VMo_2 [pindx,:] = [E5-E0+a + b for a, b in zip(mu_Mo_2, DeltaF(w5,w0))]
+   #print('mu_S',mu_S_2)
+   #print('mu_Mo',mu_Mo_2)
 
 
+   conc_addS_1[pindx,:] = conc(addS[pindx,:],1)
+   conc_VS_1[pindx,:] = conc(VS[pindx,:],1)
+   conc_VS2_1[pindx,:] = conc(VS2[pindx,:],6)
+   conc_VS22_1[pindx,:] = conc(VS22[pindx,:],6)
+   conc_VMo_1[pindx,:] = conc(VMo[pindx,:],6)
 
-   ax.plot3D(T, z1,np.array(addS),'r')
-   ax.plot3D(T, z1,np.array(VS),'b')
-   ax.plot3D(T, z1,np.array(VS2),'g')
-   ax.plot3D(T, z1,np.array(VS22),'k')
-ax.set_xlabel(' Tempreture [k]')
-ax.set_zlabel(' Formation Energy [eV]')
-ax.set_ylabel(' Pressure [atm]')
-#print(y22)
-#plt.savefig('3D.png',dpi=400)
+   conc_addS_2[pindx,:] = conc(addS_2[pindx,:],1)
+   conc_VS_2[pindx,:] = conc(VS_2[pindx,:],1)
+   conc_VS2_2[pindx,:] = conc(VS2_2[pindx,:],6)
+   conc_VS22_2[pindx,:] = conc(VS22_2[pindx,:],6)
+   conc_VMo_2[pindx,:] = conc(VMo_2[pindx,:],6)
+
+
+
+fig = plt.figure(figsize=plt.figaspect(0.5))
+
+#===============
+#  First subplot
+#===============
+# set up the axes for the first plot
+ax = fig.add_subplot(1, 2, 1, projection='3d')
+T=arange(473,1600,100)
+X, Y = np.meshgrid(pS, T)
+ax.plot_surface(Y, X, addS.T, rstride=1, cstride=1,color='red',shade=False)
+ax.plot_surface(Y, X, VS.T, rstride=1, cstride=1,color='blue',shade=False)
+ax.plot_surface(Y, X, VS2.T, rstride=1, cstride=1,color='green',shade=False)
+ax.plot_surface(Y, X, VS22.T, rstride=1, cstride=1,color='k',shade=False)
+ax.plot_surface(Y, X, VMo.T, rstride=1, cstride=1,color='orange',shade=False)
+ax.set_xlabel(' Tempreture [k]', fontsize=14)
+ax.set_zlabel(' Formation Energy [eV]', fontsize=14)
+ax.set_ylabel(' Pressure [atm]', fontsize=14)
+ax.set_title('MoS2 low S environment', fontsize=14)
+b1 = plt.Rectangle((0, 0), 1, 1, fc="red")
+b2 = plt.Rectangle((0, 0), 1, 1, fc="blue")
+b3 = plt.Rectangle((0, 0), 1, 1, fc="green")
+b4 = plt.Rectangle((0, 0), 1, 1, fc="k")
+b5 = plt.Rectangle((0, 0), 1, 1, fc="orange")
+ax.legend([b1, b2,b3,b4,b5], ['adatom', 'Mono S', 'di up$\&$down','di neigh','Mono Mo'],bbox_to_anchor =(0.05, 1.0))
+#===============
+# Second subplot
+#===============
+# set up the axes for the second plot
+ax = fig.add_subplot(1, 2, 2, projection='3d')
+
+# plot a 3D wireframe like in the example mplot3d/wire3d_demo
+
+ax.plot_surface(Y, X, addS_2.T, rstride=1, cstride=1,color='red', label='addon Se',shade=False)
+ax.plot_surface(Y, X, VS_2.T, rstride=1, cstride=1,color='blue',shade=False)
+ax.plot_surface(Y, X, VS2_2.T, rstride=1, cstride=1,color='green',shade=False)
+ax.plot_surface(Y, X, VS22_2.T, rstride=1, cstride=1,color='k',shade=False)
+ax.plot_surface(Y, X, VMo_2.T, rstride=1, cstride=1,color='orange',shade=False)
+ax.set_xlabel(' Tempreture [k]', fontsize=14)
+ax.set_zlabel(' Formation Energy [eV]', fontsize=14)
+ax.set_ylabel(' Pressure [atm]', fontsize=14)
+ax.set_title('MoS2 high S environment', fontsize=14)
+
+
+#plt.savefig('1.png',dpi=400)
+#ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 plt.show()
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
+fig = plt.figure(figsize=plt.figaspect(0.5))
+#===============
+#  First subplot
+#===============
+# set up the axes for the first plot
+ax = fig.add_subplot(1, 2, 1, projection='3d')
+T=arange(473,1600,100)
+X, Y = np.meshgrid(pS, T)
+ax.plot_surface(Y, X, conc_addS_1.T, rstride=1, cstride=1,color='r',shade=False)
+ax.plot_surface(Y, X, conc_VS_1.T, rstride=1, cstride=1,color='b',shade=False)
+ax.plot_surface(Y, X, conc_VS2_1.T, rstride=1, cstride=1,color='g',shade=False)
+ax.plot_surface(Y, X, conc_VS22_1.T, rstride=1, cstride=1,color='k',shade=False)
+ax.plot_surface(Y, X, conc_VMo_1.T, rstride=1, cstride=1,color='yellow',shade=False)
+ax.set_xlabel(' Tempreture [k]', fontsize=14)
+ax.set_zlabel(' Defect Concentration', fontsize=14)
+ax.set_ylabel(' Pressure [atm]', fontsize=14)
+ax.set_title('MoS2 low S environment', fontsize=14)
+ax.legend([b1, b2,b3,b4,b5], ['adatom', 'Mono S', 'di up$\&$down','di neigh','Mono Mo'])
+#===============
+# Second subplot
+#===============
+# set up the axes for the second plot
+ax = fig.add_subplot(1, 2, 2, projection='3d')
+T=arange(473,1600,100)
+X, Y = np.meshgrid(pS, T)
+ax.plot_surface(Y, X, conc_addS_2.T, rstride=1, cstride=1,color='r',shade=False)
+ax.plot_surface(Y, X, conc_VS_2.T, rstride=1, cstride=1,color='b',shade=False)
+ax.plot_surface(Y, X, conc_VS2_2.T, rstride=1, cstride=1,color='g',shade=False)
+ax.plot_surface(Y, X, conc_VS22_2.T, rstride=1, cstride=1,color='k',shade=False)
+ax.plot_surface(Y, X, conc_VMo_2.T, rstride=1, cstride=1,color='yellow',shade=False)
+ax.set_xlabel(' Tempreture [k]')
+ax.set_zlabel(' Defect Concentration')
+ax.set_ylabel(' Pressure [atm]')
+ax.set_title('MoS2 high S environment')
+ax.legend([b1, b2,b3,b4,b5], ['adatom', 'Mono S', 'di up$\&$down','di neigh','Mono Mo'])
+plt.show()
 
 
 

@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  BKB
+Node list: co[2604,2606-2607,2609]
+Job start: Thu Jan 13 20:44:58 CET 2022
+Job end:   Thu Jan 13 20:50:23 CET 2022
+Work dir:  /u/alaa/data/MoS2_defect/VS/dos/no_So/./
+Command:   /cobra/u/alaa/data/MoS2_defect/VS/dos/no_So/sub.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+4954607             BKB      4           320                             00:05:25      0:0 
+4954607.0    aims_late+      4    160    160      395.63M      352.90M   00:05:16      0:0 
+  
+Maximum memory per node: 16.205 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 95.7 %
+     

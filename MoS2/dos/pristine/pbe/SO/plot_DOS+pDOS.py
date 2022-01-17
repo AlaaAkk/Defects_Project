@@ -41,7 +41,7 @@ energy_tot, dos_tot = np.loadtxt(total_dos_file, unpack=True)
 xmin=min(energy_tot)
 xmax=max(energy_tot)
 # Or custom limits
-xmin=-1.5
+xmin=-1
 xmax=3
 ymin=0
 ymax=40
@@ -89,7 +89,7 @@ plt.subplot(len(sys.argv), 1, 1)
 plt.fill_between(energy_tot-VBM, dos_tot, color='black')
 plt.xlim(xmin,xmax)
 plt.ylim(ymin,2*ymax)
-plt.ylabel("Total DOS", size=16)
+plt.ylabel("Total DOS", size=12)
 
 if (VBM !=0) and (Eg !=0):
   # Adding lines and labels for VBM and CBM
@@ -175,12 +175,11 @@ for i in range(2, len(sys.argv)):
 
   plt.xlim(xmin,xmax)
   plt.ylim(ymin,ymax)
-  plt.ylabel(str(species)+' DOS', size=16)
+  plt.ylabel(str(species)+' DOS', size=12)
 
-plt.xlabel('Energy (eV)', size=16) # Just for final plot
+plt.xlabel('Energy (eV)', size=12) # Just for final plot
 plt.subplots_adjust(bottom=0.0002)
 #plt.legend(bbox_to_anchor=(1.05, 1.0), loc='upper center')
 plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.8), fancybox=True, shadow=True, ncol=5)
 plt.savefig('%s_DOS.pdf'%compoundName)
-plt.show()
 plt.show()

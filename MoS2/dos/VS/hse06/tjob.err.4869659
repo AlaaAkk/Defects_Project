@@ -1,0 +1,876 @@
+srun: Job step aborted: Waiting up to 302 seconds for job step to finish.
+slurmstepd: error: *** JOB 4869659 ON co4244 CANCELLED AT 2021-12-11T21:16:41 DUE TO TIME LIMIT ***
+slurmstepd: error: *** STEP 4869659.0 ON co4244 CANCELLED AT 2021-12-11T21:16:41 DUE TO TIME LIMIT ***
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+======= Backtrace: =========
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+/lib64/libc.so.6(+0x7732f)[0x2aebd2a7132f]
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+/lib64/libc.so.6(__fortify_fail+0x37)[0x2aebd2afa657]
+/lib64/libc.so.6(+0x10057d)[0x2aebd2afa57d]
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+/lib64/libc.so.6(__longjmp_chk+0x29)[0x2aebd2afa4d9]
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd036]
+/lib64/libpthread.so.0(+0x11ca0)[0x2aebd24f1ca0]
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd020]
+======= Memory map: ========
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+00400000-032b5000 r-xp 00000000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b4000-034b7000 r--p 02eb4000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b7000-03890000 rw-p 02eb7000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+03890000-0868a000 rw-p 00000000 00:00 0 
+092ad000-3bb9d000 rw-p 00000000 00:00 0                                  [heap]
+2aebc8d2e000-2aebc8d4f000 r-xp 00000000 fe:01 101                        /lib64/ld-2.22.so
+2aebc8d4f000-2aebc8d63000 rw-p 00000000 00:00 0 
+2aebc8d63000-2aebc8d64000 r--s dabbad00030b0000 00:06 29735              /dev/hfi1_0
+2aebc8d64000-2aebc8d6a000 -w-s dabbad00020b0000 00:06 29735              /dev/hfi1_0
+2aebc8d6a000-2aebc8d6b000 r--s ffffaa934cf0d000 00:06 29735              /dev/hfi1_0
+2aebc8d6b000-2aebc8d6c000 rw-s dabbad00060b0000 00:06 29735              /dev/hfi1_0
+2aebc8d6c000-2aebc8e1f000 rw-p 00000000 00:00 0 
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebc8e1f000-2aebc8e25000 -w-s dabbad00010b0000 00:06 29735              /dev/hfi1_0
+2aebc8e25000-2aebc8f25000 r--s dabbad00040b0000 00:06 29735              /dev/hfi1_0
+2aebc8f25000-2aebc8f26000 r--s ffffaa934fe89000 00:06 29735              /dev/hfi1_0
+2aebc8f26000-2aebc8f27000 r--s dabbad00080b0000 00:06 29735              /dev/hfi1_0
+2aebc8f27000-2aebc8f2f000 rw-p 00000000 00:00 0 
+2aebc8f2f000-2aebc8f30000 rw-s 00000000 00:15 21968266                   /dev/shm/Intel_MPI_JlrR2C (deleted)
+2aebc8f30000-2aebc8f31000 rw-s 00000000 00:15 21968268                   /dev/shm/Intel_MPI_rgYCew (deleted)
+2aebc8f31000-2aebc8f32000 rw-s 00000000 00:15 21968270                   /dev/shm/Intel_MPI_ZOBVsp (deleted)
+2aebc8f32000-2aebc8f33000 rw-s 00000000 00:15 21953534                   /dev/shm/Intel_MPI_BWzypQ (deleted)
+2aebc8f33000-2aebc8f34000 rw-s 00000000 00:15 21968274                   /dev/shm/Intel_MPI_NNVaUq (deleted)
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebc8f34000-2aebc8f35000 rw-s 00000000 00:15 21968276                   /dev/shm/Intel_MPI_pAIpwh (deleted)
+2aebc8f35000-2aebc8f36000 rw-s 00000000 00:15 21953536                   /dev/shm/Intel_MPI_bzp8U8 (deleted)
+2aebc8f36000-2aebc8f37000 rw-s 00000000 00:15 21986306                   /dev/shm/Intel_MPI_9oBRqr (deleted)
+2aebc8f37000-2aebc8f38000 rw-s 00000000 00:15 21986308                   /dev/shm/Intel_MPI_hInIWJ (deleted)
+2aebc8f38000-2aebc8f45000 rw-s 00000000 00:15 21986309                   /dev/shm/Intel_MPI_44tGco (deleted)
+2aebc8f45000-2aebc8f46000 rw-s 00000000 00:15 21986310                   /dev/shm/Intel_MPI_p98Fs2 (deleted)
+2aebc8f46000-2aebc8f4b000 rw-s 00000000 00:15 21986311                   /dev/shm/Intel_MPI_Yz8HIG (deleted)
+2aebc8f4b000-2aebc8f4c000 rw-s 00000000 00:15 21986312                   /dev/shm/Intel_MPI_JYGLYk (deleted)
+2aebc8f4c000-2aebc8f4d000 rw-s 00000000 00:15 21986314                   /dev/shm/Intel_MPI_zuosvD (deleted)
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebc8f4d000-2aebc8f4e000 rw-p 00000000 00:00 0 
+2aebc8f4f000-2aebc8f50000 r--p 00021000 fe:01 101                        /lib64/ld-2.22.so
+2aebc8f50000-2aebc8f51000 rw-p 00022000 fe:01 101                        /lib64/ld-2.22.so
+2aebc8f51000-2aebc8f52000 rw-p 00000000 00:00 0 
+2aebc8f52000-2aebc98a9000 r-xp 00000000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2aebc98a9000-2aebc9aa9000 ---p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2aebc9aa9000-2aebc9aaa000 r--p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebc9aaa000-2aebc9abc000 rw-p 00958000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2aebc9abc000-2aebc9ac2000 rw-p 00000000 00:00 0 
+2aebc9ac2000-2aebcaecf000 r-xp 00000000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2aebcaecf000-2aebcb0cf000 ---p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2aebcb0cf000-2aebcb0d2000 r--p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebcb0d2000-2aebcb0e9000 rw-p 01410000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2aebcb0e9000-2aebcf20b000 r-xp 00000000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2aebcf20b000-2aebcf40b000 ---p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2aebcf40b000-2aebcf412000 r--p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebcf412000-2aebcf442000 rw-p 04129000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2aebcf442000-2aebcf469000 rw-p 00000000 00:00 0 
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebcf469000-2aebcf4aa000 r-xp 00000000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2aebcf4aa000-2aebcf6a9000 ---p 00041000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2aebcf6a9000-2aebcf6aa000 r--p 00040000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2aebcf6aa000-2aebcf6ab000 rw-p 00041000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebcf6ab000-2aebcfd4e000 r-xp 00000000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2aebcfd4e000-2aebcff4d000 ---p 006a3000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2aebcff4d000-2aebcff4e000 r--p 006a2000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2aebcff4e000-2aebcff52000 rw-p 006a3000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2aebcff52000-2aebcffd6000 rw-p 00000000 00:00 0 
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebcffd6000-2aebd012d000 r-xp 00000000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2aebd012d000-2aebd032d000 ---p 00157000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2aebd032d000-2aebd032e000 r--p 00157000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2aebd032e000-2aebd0341000 rw-p 00158000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebd0341000-2aebd0379000 r-xp 00000000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2aebd0379000-2aebd0579000 ---p 00038000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2aebd0579000-2aebd057a000 r--p 00038000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2aebd057a000-2aebd057d000 rw-p 00039000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2aebd057d000-2aebd057e000 rw-p 00000000 00:00 0 
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebd057e000-2aebd0743000 r-xp 00000000 fe:00 19068                      /usr/lib64/libstdc++.so.6.0.28
+2aebd0743000-2aebd0942000 ---p 001c5000 fe:00 19068                      /usr/lib64/libstdc++.so.6.0.28
+2aebd0942000-2aebd094d000 r--p 001c4000 fe:00 19068                      /usr/lib64/libstdc++.so.6.0.28
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebd094d000-2aebd0950000 rw-p 001cf000 fe:00 19068                      /usr/lib64/libstdc++.so.6.0.28
+2aebd0950000-2aebd0953000 rw-p 00000000 00:00 0 
+2aebd0953000-2aebd0ae5000 r-xp 00000000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2aebd0ae5000-2aebd0ce5000 ---p 00192000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2aebd0ce5000-2aebd0cea000 r--p 00192000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebd0cea000-2aebd0cee000 rw-p 00197000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2aebd0cee000-2aebd0d12000 rw-p 00000000 00:00 0 
+2aebd0d12000-2aebd196e000 r-xp 00000000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2aebd196e000-2aebd1b6d000 ---p 00c5c000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2aebd1b6d000-2aebd1b7e000 r--p 00c5b000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebd1b7e000-2aebd1b8f000 rw-p 00c6c000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2aebd1b8f000-2aebd1e95000 rw-p 00000000 00:00 0 
+2aebd1e95000-2aebd1e97000 r-xp 00000000 fe:01 3430                       /lib64/libdl-2.22.so
+2aebd1e97000-2aebd2097000 ---p 00002000 fe:01 3430                       /lib64/libdl-2.22.so
+2aebd2097000-2aebd2098000 r--p 00002000 fe:01 3430                       /lib64/libdl-2.22.so
+2aebd2098000-2aebd2099000 rw-p 00003000 fe:01 3430                       /lib64/libdl-2.22.so
+2aebd2099000-2aebd20d6000 r-xp 00000000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebd20d6000-2aebd22d5000 ---p 0003d000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2aebd22d5000-2aebd22d8000 rw-p 0003c000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2aebd22d8000-2aebd22df000 r-xp 00000000 fe:01 7122                       /lib64/librt-2.22.so
+2aebd22df000-2aebd24de000 ---p 00007000 fe:01 7122                       /lib64/librt-2.22.so
+2aebd24de000-2aebd24df000 r--p 00006000 fe:01 7122                       /lib64/librt-2.22.so
+2aebd24df000-2aebd24e0000 rw-p 00007000 fe:01 7122                       /lib64/librt-2.22.so
+2aebd24e0000-2aebd24f8000 r-xp 00000000 fe:01 6977                       /lib64/libpthread-2.22.so
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebd24f8000-2aebd26f7000 ---p 00018000 fe:01 6977                       /lib64/libpthread-2.22.so
+2aebd26f7000-2aebd26f8000 r--p 00017000 fe:01 6977                       /lib64/libpthread-2.22.so
+2aebd26f8000-2aebd26f9000 rw-p 00018000 fe:01 6977                       /lib64/libpthread-2.22.so
+2aebd26f9000-2aebd26fd000 rw-p 00000000 00:00 0 
+2aebd26fd000-2aebd27f8000 r-xp 00000000 fe:01 3451                       /lib64/libm-2.22.so
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+2aebd27f8000-2aebd29f8000 ---p 000fb000 fe:01 3451                       /lib64/libm-2.22.so
+2aebd29f8000-2aebd29f9000 r--p 000fb000 fe:01 3451                       /lib64/libm-2.22.so
+2aebd29f9000-2aebd29fa000 rw-p 000fc000 fe:01 3451                       /lib64/libm-2.22.so
+2aebd29fa000-2aebd2b95000 r-xp 00000000 fe:01 2616                       /lib64/libc-2.22.so
+2aebd2b95000-2aebd2d95000 ---p 0019b000 fe:01 2616                       /lib64/libc-2.22.so
+2aebd2d95000-2aebd2d99000 r--p 0019b000 fe:01 2616                       /lib64/libc-2.22.so
+2aebd2d99000-2aebd2d9b000 rw-p 0019f000 fe:01 2616                       /lib64/libc-2.22.so
+2aebd2d9b000-2aebd2d9f000 rw-p 00000000 00:00 0 
+2aebd2d9f000-2aebd2db6000 r-xp 00000000 fe:01 7285                       /lib64/libgcc_s.so.1
+2aebd2db6000-2aebd2fb5000 ---p 00017000 fe:01 7285                       /lib64/libgcc_s.so.1
+2aebd2fb5000-2aebd2fb6000 r--p 00016000 fe:01 7285                       /lib64/libgcc_s.so.1
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+2aebd2fb6000-2aebd2fb7000 rw-p 00017000 fe:01 7285                       /lib64/libgcc_s.so.1
+2aebd2fb7000-2aebd302b000 r-xp 00000000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2aebd302b000-2aebd322b000 ---p 00074000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2aebd322b000-2aebd322c000 r--p 00074000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2aebd322c000-2aebd322d000 rw-p 00075000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+2aebd322d000-2aebd322f000 rw-p 00000000 00:00 0 
+2aebd322f000-2aebd3239000 r-xp 00000000 fe:00 6140                       /usr/lib64/libnuma.so.1.0.0
+2aebd3239000-2aebd3439000 ---p 0000a000 fe:00 6140                       /usr/lib64/libnuma.so.1.0.0
+2aebd3439000-2aebd343a000 r--p 0000a000 fe:00 6140                       /usr/lib64/libnuma.so.1.0.0
+2aebd343a000-2aebd343b000 rw-p 0000b000 fe:00 6140                       /usr/lib64/libnuma.so.1.0.0
+2aebd343b000-2aebd3442000 r-xp 00000000 fe:00 45276                      /usr/lib64/libpmi2.so.0.0.0
+2aebd3442000-2aebd3642000 ---p 00007000 fe:00 45276                      /usr/lib64/libpmi2.so.0.0.0
+2aebd3642000-2aebd3643000 r--p 00007000 fe:00 45276                      /usr/lib64/libpmi2.so.0.0.0
+2aebd3643000-2aebd3644000 rw-p 00008000 fe:00 45276                      /usr/lib64/libpmi2.so.0.0.0
+2aebd3644000-2aebd3654000 rw-p 00000000 00:00 0 
+2aebd3654000-2aebd3668000 r-xp 00000000 fe:01 6990                       /lib64/libresolv-2.22.so
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+======= Backtrace: =========
+2aebd3668000-2aebd3867000 ---p 00014000 fe:01 6990                       /lib64/libresolv-2.22.so
+2aebd3867000-2aebd3868000 r--p 00013000 fe:01 6990                       /lib64/libresolv-2.22.so
+2aebd3868000-2aebd3869000 rw-p 00014000 fe:01 6990                       /lib64/libresolv-2.22.so
+2aebd3869000-2aebd386b000 rw-p 00000000 00:00 0 
+2aebd386b000-2aebd3a00000 rw-s 00000000 00:15 21890687                   /dev/shm/Intel_MPI_KP4GpC (deleted)
+2aebd3a00000-2aec73a00000 rw-s 00195000 00:15 21890687                   /dev/shm/Intel_MPI_KP4GpC (deleted)
+2aec73a00000-2aec73e00000 rw-s a0195000 00:15 21890687                   /dev/shm/Intel_MPI_KP4GpC (deleted)
+2aec73e00000-2aed1ae00000 rw-s a0595000 00:15 21890687                   /dev/shm/Intel_MPI_KP4GpC (deleted)
+2aed1ae00000-2aed1ae73000 rw-s 147595000 00:15 21890687                  /dev/shm/Intel_MPI_KP4GpC (deleted)
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+/lib64/libc.so.6(+0x7732f)[0x2b87c96e332f]
+2aed1ae73000-2aed1aec5000 r-xp 00000000 00:2e 220984245                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libsockets-fi.so
+2aed1aec5000-2aed1b0c5000 ---p 00052000 00:2e 220984245                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libsockets-fi.so
+2aed1b0c5000-2aed1b0c8000 rw-p 00052000 00:2e 220984245                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libsockets-fi.so
+2aed1b0c8000-2aed1b138000 r-xp 00000000 00:2e 220984242                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libpsmx2-fi.so
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+/lib64/libc.so.6(__fortify_fail+0x37)[0x2b87c976c657]
+2aed1b138000-2aed1b337000 ---p 00070000 00:2e 220984242                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libpsmx2-fi.so
+2aed1b337000-2aed1b33d000 rw-p 0006f000 00:2e 220984242                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libpsmx2-fi.so
+2aed1b33d000-2aed1b341000 rw-p 00000000 00:00 0 
+2aed1b341000-2aed1b3d1000 r-xp 00000000 fe:00 8932                       /usr/lib64/libpsm2.so.2.2
+2aed1b3d1000-2aed1b5d0000 ---p 00090000 fe:00 8932                       /usr/lib64/libpsm2.so.2.2
+2aed1b5d0000-2aed1b5d1000 r--p 0008f000 fe:00 8932                       /usr/lib64/libpsm2.so.2.2
+2aed1b5d1000-2aed1b5d3000 rw-p 00090000 fe:00 8932                       /usr/lib64/libpsm2.so.2.2
+2aed1b5d3000-2aed1b5d5000 rw-p 00000000 00:00 0 
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+/lib64/libc.so.6(+0x10057d)[0x2b87c976c57d]
+2aed1b5d5000-2aed1b620000 r-xp 00000000 00:2e 220984243                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/librxm-fi.so
+2aed1b620000-2aed1b820000 ---p 0004b000 00:2e 220984243                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/librxm-fi.so
+2aed1b820000-2aed1b823000 rw-p 0004b000 00:2e 220984243                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/librxm-fi.so
+2aed1b823000-2aed1b85d000 r-xp 00000000 00:2e 220984246                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libtcp-fi.so
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+/lib64/libc.so.6(__longjmp_chk+0x29)[0x2b87c976c4d9]
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd036]
+2aed1b85d000-2aed1ba5d000 ---p 0003a000 00:2e 220984246                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libtcp-fi.so
+2aed1ba5d000-2aed1ba60000 rw-p 0003a000 00:2e 220984246                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libtcp-fi.so
+2aed1ba60000-2aed1ba9d000 r-xp 00000000 00:2e 220984244                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libshm-fi.so
+2aed1ba9d000-2aed1bc9c000 ---p 0003d000 00:2e 220984244                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libshm-fi.so
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+/lib64/libpthread.so.0(+0x11ca0)[0x2b87c9163ca0]
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd020]
+======= Memory map: ========
+2aed1bc9c000-2aed1bc9f000 rw-p 0003c000 00:2e 220984244                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libshm-fi.so
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+00400000-032b5000 r-xp 00000000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b4000-034b7000 r--p 02eb4000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b7000-03890000 rw-p 02eb7000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+03890000-0868a000 rw-p 00000000 00:00 0 
+0a1bf000-2d5f4000 rw-p 00000000 00:00 0                                  [heap]
+2b87bf9a0000-2b87bf9c1000 r-xp 00000000 fe:01 101                        /lib64/ld-2.22.so
+2b87bf9c1000-2b87bf9d5000 rw-p 00000000 00:00 0 
+2b87bf9d5000-2b87bf9d6000 r--s dabbad0003110000 00:06 1185               /dev/hfi1_0
+2b87bf9d6000-2b87bf9dc000 -w-s dabbad0002110000 00:06 1185               /dev/hfi1_0
+2b87bf9dc000-2b87bf9dd000 r--s ffffb91a8d4dd000 00:06 1185               /dev/hfi1_0
+2b87bf9dd000-2b87bf9de000 rw-s dabbad0006110000 00:06 1185               /dev/hfi1_0
+2b87bf9de000-2b87bfa91000 rw-p 00000000 00:00 0 
+2aed1bc9f000-2aed1bcec000 r-xp 00000000 00:2e 220984247                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libverbs-fi.so
+2aed1bcec000-2aed1beeb000 ---p 0004d000 00:2e 220984247                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libverbs-fi.so
+2aed1beeb000-2aed1beef000 rw-p 0004c000 00:2e 220984247                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libverbs-fi.so
+2aed1beef000-2aed1bf04000 r-xp 00000000 fe:00 33704                      /usr/lib64/librdmacm.so.1.1.22.5
+2aed1bf04000-2aed1c103000 ---p 00015000 fe:00 33704                      /usr/lib64/librdmacm.so.1.1.22.5
+2aed1c103000-2aed1c104000 r--p 00014000 fe:00 33704                      /usr/lib64/librdmacm.so.1.1.22.5
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+2b87bfa91000-2b87bfa97000 -w-s dabbad0001110000 00:06 1185               /dev/hfi1_0
+2b87bfa97000-2b87bfb97000 r--s dabbad0004110000 00:06 1185               /dev/hfi1_0
+2b87bfb97000-2b87bfb98000 r--s ffffb91a8ffd9000 00:06 1185               /dev/hfi1_0
+2b87bfb98000-2b87bfb99000 r--s dabbad0008110000 00:06 1185               /dev/hfi1_0
+2b87bfb99000-2b87bfba1000 rw-p 00000000 00:00 0 
+2b87bfba1000-2b87bfba2000 rw-s 00000000 00:15 21865485                   /dev/shm/Intel_MPI_1phJa8 (deleted)
+2b87bfba2000-2b87bfba3000 rw-s 00000000 00:15 21865487                   /dev/shm/Intel_MPI_NzNdqK (deleted)
+2b87bfba3000-2b87bfba4000 rw-s 00000000 00:15 21865489                   /dev/shm/Intel_MPI_n8sgIm (deleted)
+2b87bfba4000-2b87bfba5000 rw-s 00000000 00:15 21842564                   /dev/shm/Intel_MPI_lw7iHd (deleted)
+2b87bfba5000-2b87bfba6000 rw-s 00000000 00:15 21865493                   /dev/shm/Intel_MPI_dglj1P (deleted)
+2aed1c104000-2aed1c105000 rw-p 00015000 fe:00 33704                      /usr/lib64/librdmacm.so.1.1.22.5
+2aed1c105000-2aed1c11d000 r-xp 00000000 fe:00 33680                      /usr/lib64/libibverbs.so.1.5.22.5
+2aed1c11d000-2aed1c31d000 ---p 00018000 fe:00 33680                      /usr/lib64/libibverbs.so.1.5.22.5
+2aed1c31d000-2aed1c31e000 r--p 00018000 fe:00 33680                      /usr/lib64/libibverbs.so.1.5.22.5
+2aed1c31e000-2aed1c31f000 rw-p 00019000 fe:00 33680                      /usr/lib64/libibverbs.so.1.5.22.5
+2aed1c31f000-2aed1c36b000 r-xp 00000000 fe:00 6157                       /usr/lib64/libnl-route-3.so.200.18.0
+2aed1c36b000-2aed1c56a000 ---p 0004c000 fe:00 6157                       /usr/lib64/libnl-route-3.so.200.18.0
+2aed1c56a000-2aed1c56d000 r--p 0004b000 fe:00 6157                       /usr/lib64/libnl-route-3.so.200.18.0
+2aed1c56d000-2aed1c571000 rw-p 0004e000 fe:00 6157                       /usr/lib64/libnl-route-3.so.200.18.0
+2aed1c571000-2aed1c573000 rw-p 00000000 00:00 0 
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+2b87bfba6000-2b87bfba7000 rw-s 00000000 00:15 21842470                   /dev/shm/Intel_MPI_n1y5Gp (deleted)
+2b87bfba7000-2b87bfba8000 rw-s 00000000 00:15 21842566                   /dev/shm/Intel_MPI_5uj7ff (deleted)
+2b87bfba8000-2b87bfba9000 rw-s 00000000 00:15 21842568                   /dev/shm/Intel_MPI_rCb5Og (deleted)
+2b87bfba9000-2b87bfbaa000 rw-s 00000000 00:15 21842570                   /dev/shm/Intel_MPI_3hCaoi (deleted)
+2b87bfbaa000-2b87bfbb7000 rw-s 00000000 00:15 21842571                   /dev/shm/Intel_MPI_chzLaO (deleted)
+2b87bfbb7000-2b87bfbb8000 rw-s 00000000 00:15 21842572                   /dev/shm/Intel_MPI_JRInXj (deleted)
+2b87bfbb8000-2b87bfbbd000 rw-s 00000000 00:15 21842573                   /dev/shm/Intel_MPI_m4v2JP (deleted)
+2b87bfbbd000-2b87bfbbe000 rw-s 00000000 00:15 21842574                   /dev/shm/Intel_MPI_5NTIwl (deleted)
+2b87bfbbe000-2b87bfbbf000 rw-s 00000000 00:15 21842576                   /dev/shm/Intel_MPI_RiRd6m (deleted)
+2aed1c573000-2aed1c58f000 r-xp 00000000 fe:00 6147                       /usr/lib64/libnl-3.so.200.18.0
+2aed1c58f000-2aed1c78e000 ---p 0001c000 fe:00 6147                       /usr/lib64/libnl-3.so.200.18.0
+2aed1c78e000-2aed1c790000 r--p 0001b000 fe:00 6147                       /usr/lib64/libnl-3.so.200.18.0
+2aed1c790000-2aed1c791000 rw-p 0001d000 fe:00 6147                       /usr/lib64/libnl-3.so.200.18.0
+2aed1c791000-2aed1c795000 r-xp 00000000 fe:00 33692                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2aed1c795000-2aed1c994000 ---p 00004000 fe:00 33692                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2aed1c994000-2aed1c995000 r--p 00003000 fe:00 33692                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2aed1c995000-2aed1c996000 rw-p 00004000 fe:00 33692                      /usr/lib64/libibverbs/libipathverbs-rdmav22.so
+2aed1c996000-2aed1c99c000 r-xp 00000000 fe:00 33697                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+======= Backtrace: =========
+2b87bfbbf000-2b87bfbc0000 rw-p 00000000 00:00 0 
+2b87bfbc1000-2b87bfbc2000 r--p 00021000 fe:01 101                        /lib64/ld-2.22.so
+2aed1c99c000-2aed1cb9b000 ---p 00006000 fe:00 33697                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2aed1cb9b000-2aed1cb9c000 r--p 00005000 fe:00 33697                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2aed1cb9c000-2aed1cb9d000 rw-p 00006000 fe:00 33697                      /usr/lib64/libibverbs/libocrdma-rdmav22.so
+2aed1cb9d000-2aed1cba7000 r-xp 00000000 fe:00 33684                      /usr/lib64/libmlx4.so.1.0.22.5
+2aed1cba7000-2aed1cda7000 ---p 0000a000 fe:00 33684                      /usr/lib64/libmlx4.so.1.0.22.5
+2aed1cda7000-2aed1cda8000 r--p 0000a000 fe:00 33684                      /usr/lib64/libmlx4.so.1.0.22.5
+2aed1cda8000-2aed1cda9000 rw-p 0000b000 fe:00 33684                      /usr/lib64/libmlx4.so.1.0.22.5
+2aed1cda9000-2aed1cdad000 r-xp 00000000 fe:00 33699                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2aed1cdad000-2aed1cfac000 ---p 00004000 fe:00 33699                      /usr/lib64/libibverbs/librxe-rdmav22.so
+/lib64/libc.so.6(+0x7732f)[0x2b3bf723b32f]
+2b87bfbc2000-2b87bfbc3000 rw-p 00022000 fe:01 101                        /lib64/ld-2.22.so
+2b87bfbc3000-2b87bfbc4000 rw-p 00000000 00:00 0 
+2b87bfbc4000-2b87c051b000 r-xp 00000000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b87c051b000-2b87c071b000 ---p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b87c071b000-2b87c071c000 r--p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2aed1cfac000-2aed1cfad000 r--p 00003000 fe:00 33699                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2aed1cfad000-2aed1cfae000 rw-p 00004000 fe:00 33699                      /usr/lib64/libibverbs/librxe-rdmav22.so
+2aed1cfae000-2aed1cfb7000 r-xp 00000000 fe:00 33698                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2aed1cfb7000-2aed1d1b6000 ---p 00009000 fe:00 33698                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2aed1d1b6000-2aed1d1b7000 r--p 00008000 fe:00 33698                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2aed1d1b7000-2aed1d1b8000 rw-p 00009000 fe:00 33698                      /usr/lib64/libibverbs/libqedr-rdmav22.so
+2aed1d1b8000-2aed1d1bc000 r-xp 00000000 fe:00 33689                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2aed1d1bc000-2aed1d3bb000 ---p 00004000 fe:00 33689                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+/lib64/libc.so.6(__fortify_fail+0x37)[0x2b3bf72c4657]
+/lib64/libc.so.6(+0x10057d)[0x2b3bf72c457d]
+2b87c071c000-2b87c072e000 rw-p 00958000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b87c072e000-2b87c0734000 rw-p 00000000 00:00 0 
+2b87c0734000-2b87c1b41000 r-xp 00000000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b87c1b41000-2b87c1d41000 ---p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b87c1d41000-2b87c1d44000 r--p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2aed1d3bb000-2aed1d3bc000 r--p 00003000 fe:00 33689                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2aed1d3bc000-2aed1d3bd000 rw-p 00004000 fe:00 33689                      /usr/lib64/libibverbs/libhfi1verbs-rdmav22.so
+2aed1d3bd000-2aed1d3c1000 r-xp 00000000 fe:00 33700                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2aed1d3c1000-2aed1d5c1000 ---p 00004000 fe:00 33700                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2aed1d5c1000-2aed1d5c2000 r--p 00004000 fe:00 33700                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2aed1d5c2000-2aed1d5c3000 rw-p 00005000 fe:00 33700                      /usr/lib64/libibverbs/libvmw_pvrdma-rdmav22.so
+2aed1d5c3000-2aed1d5ea000 r-xp 00000000 fe:00 33682                      /usr/lib64/libmlx5.so.1.8.22.5
+2aed1d5ea000-2aed1d7ea000 ---p 00027000 fe:00 33682                      /usr/lib64/libmlx5.so.1.8.22.5
+/lib64/libc.so.6(__longjmp_chk+0x29)[0x2b3bf72c44d9]
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd036]
+/lib64/libpthread.so.0(+0x11ca0)[0x2b3bf6cbbca0]
+2b87c1d44000-2b87c1d5b000 rw-p 01410000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b87c1d5b000-2b87c5e7d000 r-xp 00000000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b87c5e7d000-2b87c607d000 ---p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b87c607d000-2b87c6084000 r--p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2aed1d7ea000-2aed1d7eb000 r--p 00027000 fe:00 33682                      /usr/lib64/libmlx5.so.1.8.22.5
+2aed1d7eb000-2aed1d7ec000 rw-p 00028000 fe:00 33682                      /usr/lib64/libmlx5.so.1.8.22.5
+2aed1d7ec000-2aed1d7f3000 r-xp 00000000 fe:00 33695                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2aed1d7f3000-2aed1d9f3000 ---p 00007000 fe:00 33695                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2aed1d9f3000-2aed1d9f4000 r--p 00007000 fe:00 33695                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2aed1d9f4000-2aed1d9f5000 rw-p 00008000 fe:00 33695                      /usr/lib64/libibverbs/libmthca-rdmav22.so
+2aed1d9f5000-2aed1d9fa000 r-xp 00000000 fe:00 33687                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2aed1d9fa000-2aed1dbfa000 ---p 00005000 fe:00 33687                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2aed1dbfa000-2aed1dbfb000 r--p 00005000 fe:00 33687                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd020]
+======= Memory map: ========
+2b87c6084000-2b87c60b4000 rw-p 04129000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b87c60b4000-2b87c60db000 rw-p 00000000 00:00 0 
+2b87c60db000-2b87c611c000 r-xp 00000000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2b87c611c000-2b87c631b000 ---p 00041000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2b87c631b000-2b87c631c000 r--p 00040000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2aed1dbfb000-2aed1dbfc000 rw-p 00006000 fe:00 33687                      /usr/lib64/libibverbs/libcxgb3-rdmav22.so
+2aed1dbfc000-2aed1dc01000 r-xp 00000000 fe:00 33696                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2aed1dc01000-2aed1de01000 ---p 00005000 fe:00 33696                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2aed1de01000-2aed1de02000 r--p 00005000 fe:00 33696                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2aed1de02000-2aed1de03000 rw-p 00006000 fe:00 33696                      /usr/lib64/libibverbs/libnes-rdmav22.so
+2aed1de03000-2aed1de0c000 r-xp 00000000 fe:00 33688                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2aed1de0c000-2aed1e00c000 ---p 00009000 fe:00 33688                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2aed1e00c000-2aed1e00d000 r--p 00009000 fe:00 33688                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+00400000-032b5000 r-xp 00000000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b4000-034b7000 r--p 02eb4000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b7000-03890000 rw-p 02eb7000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+03890000-0868a000 rw-p 00000000 00:00 0 
+08933000-30d85000 rw-p 00000000 00:00 0                                  [heap]
+2b3bed4f8000-2b3bed519000 r-xp 00000000 fe:01 101                        /lib64/ld-2.22.so
+2b3bed519000-2b3bed52d000 rw-p 00000000 00:00 0 
+2b3bed52d000-2b3bed52e000 r--s dabbad00032c0000 00:06 1219               /dev/hfi1_0
+2b3bed52e000-2b3bed534000 -w-s dabbad00022c0000 00:06 1219               /dev/hfi1_0
+2b3bed534000-2b3bed535000 r--s ffffb9f70d61d000 00:06 1219               /dev/hfi1_0
+2b3bed535000-2b3bed536000 rw-s dabbad00062c0000 00:06 1219               /dev/hfi1_0
+2b3bed536000-2b3bed5e9000 rw-p 00000000 00:00 0 
+2b87c631c000-2b87c631d000 rw-p 00041000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2aed1e00d000-2aed1e00e000 rw-p 0000a000 fe:00 33688                      /usr/lib64/libibverbs/libcxgb4-rdmav22.so
+2aed1e00e000-2aed1e014000 r-xp 00000000 fe:00 33686                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2b3bed5e9000-2b3bed5ef000 -w-s dabbad00012c0000 00:06 1219               /dev/hfi1_0
+2b3bed5ef000-2b3bed6ef000 r--s dabbad00042c0000 00:06 1219               /dev/hfi1_0
+2b3bed6ef000-2b3bed6f0000 r--s ffffb9f70fea1000 00:06 1219               /dev/hfi1_0
+2b3bed6f0000-2b3bed6f1000 r--s dabbad00082c0000 00:06 1219               /dev/hfi1_0
+2b3bed6f1000-2b3bed6f9000 rw-p 00000000 00:00 0 
+2b3bed6f9000-2b3bed6fa000 rw-s 00000000 00:15 22203187                   /dev/shm/Intel_MPI_EdZN5q (deleted)
+2b3bed6fa000-2b3bed6fb000 rw-s 00000000 00:15 22203189                   /dev/shm/Intel_MPI_eA3Bzo (deleted)
+2b3bed6fb000-2b3bed6fc000 rw-s 00000000 00:15 22203191                   /dev/shm/Intel_MPI_ico45l (deleted)
+2b3bed6fc000-2b3bed6fd000 rw-s 00000000 00:15 22219228                   /dev/shm/Intel_MPI_o5lH8X (deleted)
+2b3bed6fd000-2b3bed6fe000 rw-s 00000000 00:15 22203195                   /dev/shm/Intel_MPI_WXJKZv (deleted)
+forrtl: error (78): process killed (SIGTERM)
+
+Stack trace terminated abnormally.
+2aed1e014000-2aed1e213000 ---p 00006000 fe:00 33686                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2aed1e213000-2aed1e214000 r--p 00005000 fe:00 33686                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2aed1e214000-2aed1e215000 rw-p 00006000 fe:00 33686                      /usr/lib64/libibverbs/libbnxt_re-rdmav22.so
+2aed1e215000-2aed1e21d000 r-xp 00000000 fe:00 33690                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2aed1e21d000-2aed1e41c000 ---p 00008000 fe:00 33690                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2aed1e41c000-2aed1e41d000 r--p 00007000 fe:00 33690                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2aed1e41d000-2aed1e41e000 rw-p 00008000 fe:00 33690                      /usr/lib64/libibverbs/libhns-rdmav22.so
+2aed1e41e000-2aed1e424000 r-xp 00000000 fe:00 33691                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2b3bed6fe000-2b3bed6ff000 rw-s 00000000 00:15 22203197                   /dev/shm/Intel_MPI_A2hPTq (deleted)
+2b3bed6ff000-2b3bed700000 rw-s 00000000 00:15 22219230                   /dev/shm/Intel_MPI_c9TzVk (deleted)
+2b3bed700000-2b3bed701000 rw-s 00000000 00:15 22219232                   /dev/shm/Intel_MPI_AhFAIH (deleted)
+2b3bed701000-2b3bed702000 rw-s 00000000 00:15 22219234                   /dev/shm/Intel_MPI_gaIIv4 (deleted)
+2b3bed702000-2b3bed70f000 rw-s 00000000 00:15 22219235                   /dev/shm/Intel_MPI_DnLkUK (deleted)
+2b3bed70f000-2b3bed710000 rw-s 00000000 00:15 22219236                   /dev/shm/Intel_MPI_wymYir (deleted)
+2b3bed710000-2b3bed715000 rw-s 00000000 00:15 22219237                   /dev/shm/Intel_MPI_5mbEH7 (deleted)
+2b3bed715000-2b3bed716000 rw-s 00000000 00:15 22219238                   /dev/shm/Intel_MPI_QRtl6N (deleted)
+2b3bed716000-2b3bed717000 rw-s 00000000 00:15 22219240                   /dev/shm/Intel_MPI_yCw5Ta (deleted)
+2b87c631d000-2b87c69c0000 r-xp 00000000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2b87c69c0000-2b87c6bbf000 ---p 006a3000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2b87c6bbf000-2b87c6bc0000 r--p 006a2000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2b87c6bc0000-2b87c6bc4000 rw-p 006a3000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2b87c6bc4000-2b87c6c48000 rw-p 00000000 00:00 0 
+2aed1e424000-2aed1e624000 ---p 00006000 fe:00 33691                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2aed1e624000-2aed1e625000 r--p 00006000 fe:00 33691                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2aed1e625000-2aed1e626000 rw-p 00007000 fe:00 33691                      /usr/lib64/libibverbs/libi40iw-rdmav22.so
+2aed1e626000-2aed1ee26000 r--s dabbad00050b0000 00:06 29735              /dev/hfi1_0
+2aed1ee26000-2aed204af000 rw-p 00000000 00:00 0 
+2aed204af000-2aed204b0000 ---p 00000000 00:00 0 
+2aed204b0000-2aed206b0000 rw-p 00000000 00:00 0 
+2aed206b0000-2aed20ad3000 rw-s 00000000 00:15 21906338                   /dev/shm/psm2_shm.30902000000000c260b020
+2aed20ad3000-2aed2100e000 rw-p 00000000 00:00 0 
+2aed2100e000-2aed2487c000 r-xp 00000000 00:2e 56093448                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_avx512.so
+2b3bed717000-2b3bed718000 rw-p 00000000 00:00 0 
+2b3bed719000-2b3bed71a000 r--p 00021000 fe:01 101                        /lib64/ld-2.22.so
+2b3bed71a000-2b3bed71b000 rw-p 00022000 fe:01 101                        /lib64/ld-2.22.so
+2b3bed71b000-2b3bed71c000 rw-p 00000000 00:00 0 
+2b3bed71c000-2b3bee073000 r-xp 00000000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b3bee073000-2b3bee273000 ---p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b3bee273000-2b3bee274000 r--p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b87c6c48000-2b87c6d9f000 r-xp 00000000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2b87c6d9f000-2b87c6f9f000 ---p 00157000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2b87c6f9f000-2b87c6fa0000 r--p 00157000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2b87c6fa0000-2b87c6fb3000 rw-p 00158000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2aed2487c000-2aed24a7c000 ---p 0386e000 00:2e 56093448                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_avx512.so
+2aed24a7c000-2aed24a85000 r--p 0386e000 00:2e 56093448                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_avx512.so
+2aed24a85000-2aed24a93000 rw-p 03877000 00:2e 56093448                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_avx512.so
+2aed24a93000-2aed24a95000 rw-p 00000000 00:00 0 
+2aed24a95000-2aed2560a000 r-xp 00000000 00:2e 56093496                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_vml_avx512.so
+2b3bee274000-2b3bee286000 rw-p 00958000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b3bee286000-2b3bee28c000 rw-p 00000000 00:00 0 
+2b3bee28c000-2b3bef699000 r-xp 00000000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b3bef699000-2b3bef899000 ---p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b3bef899000-2b3bef89c000 r--p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b87c6fb3000-2b87c6feb000 r-xp 00000000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2b87c6feb000-2b87c71eb000 ---p 00038000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2b87c71eb000-2b87c71ec000 r--p 00038000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2b87c71ec000-2b87c71ef000 rw-p 00039000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2b87c71ef000-2b87c71f0000 rw-p 00000000 00:00 0 
+2aed2560a000-2aed2580a000 ---p 00b75000 00:2e 56093496                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_vml_avx512.so
+2aed2580a000-2aed2580d000 r--p 00b75000 00:2e 56093496                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_vml_avx512.so
+2aed2580d000-2aed25824000 rw-p 00b78000 00:2e 56093496                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_vml_avx512.so
+2aed25824000-2aed2b576000 rw-p 00000000 00:00 0 
+2aed2b576000-2aed2b610000 rw-s 00000000 00:15 21968265                   /dev/shm/Intel_MPI_Q1Seub (deleted)
+2aed2b610000-2aed2b6aa000 rw-s 00000000 00:15 21968267                   /dev/shm/Intel_MPI_OecJD4 (deleted)
+2b3bef89c000-2b3bef8b3000 rw-p 01410000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b3bef8b3000-2b3bf39d5000 r-xp 00000000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b3bf39d5000-2b3bf3bd5000 ---p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b3bf3bd5000-2b3bf3bdc000 r--p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b87c71f0000-2b87c73b5000 r-xp 00000000 fe:00 9254                       /usr/lib64/libstdc++.so.6.0.28
+2b87c73b5000-2b87c75b4000 ---p 001c5000 fe:00 9254                       /usr/lib64/libstdc++.so.6.0.28
+2b87c75b4000-2b87c75bf000 r--p 001c4000 fe:00 9254                       /usr/lib64/libstdc++.so.6.0.28
+2b87c75bf000-2b87c75c2000 rw-p 001cf000 fe:00 9254                       /usr/lib64/libstdc++.so.6.0.28
+2b87c75c2000-2b87c75c5000 rw-p 00000000 00:00 0 
+2b87c75c5000-2b87c7757000 r-xp 00000000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2b87c7757000-2b87c7957000 ---p 00192000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2aed2b6aa000-2aed2b6d2000 rw-s 00000000 00:15 21968269                   /dev/shm/Intel_MPI_gh5KQX (deleted)
+2aed2b6d2000-2aed2b7e9000 rw-s 00000000 00:15 21953533                   /dev/shm/Intel_MPI_oYiP9b (deleted)
+2b3bf3bdc000-2b3bf3c0c000 rw-p 04129000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b3bf3c0c000-2b3bf3c33000 rw-p 00000000 00:00 0 
+2b87c7957000-2b87c795c000 r--p 00192000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2aed2b7e9000-2aed2b831000 rw-s 00000000 00:15 21986305                   /dev/shm/Intel_MPI_gAxZaN (deleted)
+2aed2b831000-2aed2b855000 rw-s 00000000 00:15 21986307                   /dev/shm/Intel_MPI_svsMG5 (deleted)
+2aed2b855000-2aed2b988000 rw-s 00000000 00:15 21986313                   /dev/shm/Intel_MPI_aZe6eZ (deleted)
+2aed2d880000-2aed2d9d7000 rw-s 00000000 00:15 21968273                   /dev/shm/Intel_MPI_EdPP1S (deleted)
+2aed2d9d7000-2aed730b7000 rw-p 00000000 00:00 0 
+2aed730b7000-2aed7331c000 rw-s 00000000 00:15 21968275                   /dev/shm/Intel_MPI_Iwihdm (deleted)
+2aed7331c000-2aed7be3e000 rw-s 00000000 00:15 21953535                   /dev/shm/Intel_MPI_C2lkFu (deleted)
+2aed7c000000-2aed7c021000 rw-p 00000000 00:00 0 
+2aed7c021000-2aed80000000 ---p 00000000 00:00 0 
+7f0000000000-7f0003000000 rw-p 00000000 00:00 0 
+7f1000000000-7f1000200000 rw-p 00000000 00:00 0 
+7f2000000000-7f2003a00000 rw-p 00000000 00:00 0 
+2b3bf3c33000-2b3bf3c74000 r-xp 00000000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2b3bf3c74000-2b3bf3e73000 ---p 00041000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2b3bf3e73000-2b3bf3e74000 r--p 00040000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2b3bf3e74000-2b3bf3e75000 rw-p 00041000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7732f)[0x2b349912932f]
+/lib64/libc.so.6(__fortify_fail+0x37)[0x2b34991b2657]
+/lib64/libc.so.6(+0x10057d)[0x2b34991b257d]
+7fff675f1000-7fff68e74000 rw-p 00000000 00:00 0                          [stack]
+7fff68f2e000-7fff68f31000 r--p 00000000 00:00 0                          [vvar]
+7fff68f31000-7fff68f33000 r-xp 00000000 00:00 0                          [vdso]
+ffffffffff600000-ffffffffff601000 r-xp 00000000 00:00 0                  [vsyscall]
+*** longjmp causes uninitialized stack frame ***: /u/alaa/band/FHIaims/build/aims_latest.x terminated
+======= Backtrace: =========
+/lib64/libc.so.6(+0x7732f)[0x2aebd2a7132f]
+/lib64/libc.so.6(__fortify_fail+0x37)[0x2aebd2afa657]
+/lib64/libc.so.6(+0x10057d)[0x2aebd2afa57d]
+/lib64/libc.so.6(__longjmp_chk+0x29)[0x2aebd2afa4d9]
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd036]
+/lib64/libpthread.so.0(+0x11ca0)[0x2aebd24f1ca0]
+/lib64/libc.so.6(gsignal+0x37)[0x2aebd2a320d7]
+/lib64/libc.so.6(abort+0x13a)[0x2aebd2a334aa]
+/lib64/libc.so.6(+0x77334)[0x2aebd2a71334]
+/lib64/libc.so.6(__fortify_fail+0x37)[0x2aebd2afa657]
+/lib64/libc.so.6(+0x10057d)[0x2aebd2afa57d]
+2b3bf3e75000-2b3bf4518000 r-xp 00000000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2b3bf4518000-2b3bf4717000 ---p 006a3000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2b3bf4717000-2b3bf4718000 r--p 006a2000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2b3bf4718000-2b3bf471c000 rw-p 006a3000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2b3bf471c000-2b3bf47a0000 rw-p 00000000 00:00 0 
+2b87c795c000-2b87c7960000 rw-p 00197000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2b87c7960000-2b87c7984000 rw-p 00000000 00:00 0 
+2b87c7984000-2b87c85e0000 r-xp 00000000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2b87c85e0000-2b87c87df000 ---p 00c5c000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2b87c87df000-2b87c87f0000 r--p 00c5b000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+/lib64/libc.so.6(__longjmp_chk+0x29)[0x2aebd2afa4d9]
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd036]
+/lib64/libpthread.so.0(+0x11ca0)[0x2aebd24f1ca0]
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd020]
+======= Memory map: ========
+00400000-032b5000 r-xp 00000000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b4000-034b7000 r--p 02eb4000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b7000-03890000 rw-p 02eb7000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+03890000-0868a000 rw-p 00000000 00:00 0 
+092ad000-3bb9d000 rw-p 00000000 00:00 0                                  [heap]
+2aebc8d2e000-2aebc8d4f000 r-xp 00000000 fe:01 101                        /lib64/ld-2.22.so
+2aebc8d4f000-2aebc8d63000 rw-p 00000000 00:00 0 
+2aebc8d63000-2aebc8d64000 r--s dabbad00030b0000 00:06 29735              /dev/hfi1_0
+2b3bf47a0000-2b3bf48f7000 r-xp 00000000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2b3bf48f7000-2b3bf4af7000 ---p 00157000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2b3bf4af7000-2b3bf4af8000 r--p 00157000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2b3bf4af8000-2b3bf4b0b000 rw-p 00158000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2b87c87f0000-2b87c8801000 rw-p 00c6c000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2b87c8801000-2b87c8b07000 rw-p 00000000 00:00 0 
+2b87c8b07000-2b87c8b09000 r-xp 00000000 fe:01 3430                       /lib64/libdl-2.22.so
+2b87c8b09000-2b87c8d09000 ---p 00002000 fe:01 3430                       /lib64/libdl-2.22.so
+2b87c8d09000-2b87c8d0a000 r--p 00002000 fe:01 3430                       /lib64/libdl-2.22.so
+2b87c8d0a000-2b87c8d0b000 rw-p 00003000 fe:01 3430                       /lib64/libdl-2.22.so
+2b87c8d0b000-2b87c8d48000 r-xp 00000000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2aebc8d64000-2aebc8d6a000 -w-s dabbad00020b0000 00:06 29735              /dev/hfi1_0
+2aebc8d6a000-2aebc8d6b000 r--s ffffaa934cf0d000 00:06 29735              /dev/hfi1_0
+2aebc8d6b000-2aebc8d6c000 rw-s dabbad00060b0000 00:06 29735              /dev/hfi1_0
+2aebc8d6c000-2aebc8e1f000 rw-p 00000000 00:00 0 
+2aebc8e1f000-2aebc8e25000 -w-s dabbad00010b0000 00:06 29735              /dev/hfi1_0
+2aebc8e25000-2aebc8f25000 r--s dabbad00040b0000 00:06 29735              /dev/hfi1_0
+2aebc8f25000-2aebc8f26000 r--s ffffaa934fe89000 00:06 29735              /dev/hfi1_0
+2aebc8f26000-2aebc8f27000 r--s dabbad00080b0000 00:06 29735              /dev/hfi1_0
+2aebc8f27000-2aebc8f2f000 rw-p 00000000 00:00 0 
+2aebc8f2f000-2aebc8f30000 rw-s 00000000 00:15 21968266                   /dev/shm/Intel_MPI_JlrR2C (deleted)
+2aebc8f30000-2aebc8f31000 rw-s 00000000 00:15 21968268                   /dev/shm/Intel_MPI_rgYCew (deleted)
+2aebc8f31000-2aebc8f32000 rw-s 00000000 00:15 21968270                   /dev/shm/Intel_MPI_ZOBVsp (deleted)
+2b3bf4b0b000-2b3bf4b43000 r-xp 00000000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2b3bf4b43000-2b3bf4d43000 ---p 00038000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2b3bf4d43000-2b3bf4d44000 r--p 00038000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2b3bf4d44000-2b3bf4d47000 rw-p 00039000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2b3bf4d47000-2b3bf4d48000 rw-p 00000000 00:00 0 
+2b87c8d48000-2b87c8f47000 ---p 0003d000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2b87c8f47000-2b87c8f4a000 rw-p 0003c000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2b87c8f4a000-2b87c8f51000 r-xp 00000000 fe:01 7122                       /lib64/librt-2.22.so
+2b87c8f51000-2b87c9150000 ---p 00007000 fe:01 7122                       /lib64/librt-2.22.so
+2b87c9150000-2b87c9151000 r--p 00006000 fe:01 7122                       /lib64/librt-2.22.so
+2b87c9151000-2b87c9152000 rw-p 00007000 fe:01 7122                       /lib64/librt-2.22.so
+2b87c9152000-2b87c916a000 r-xp 00000000 fe:01 6977                       /lib64/libpthread-2.22.so
+2aebc8f32000-2aebc8f33000 rw-s 00000000 00:15 21953534                   /dev/shm/Intel_MPI_BWzypQ (deleted)
+2b3bf4d48000-2b3bf4f0d000 r-xp 00000000 fe:00 10196                      /usr/lib64/libstdc++.so.6.0.28
+2b3bf4f0d000-2b3bf510c000 ---p 001c5000 fe:00 10196                      /usr/lib64/libstdc++.so.6.0.28
+2b3bf510c000-2b3bf5117000 r--p 001c4000 fe:00 10196                      /usr/lib64/libstdc++.so.6.0.28
+2b87c916a000-2b87c9369000 ---p 00018000 fe:01 6977                       /lib64/libpthread-2.22.so
+2b87c9369000-2b87c936a000 r--p 00017000 fe:01 6977                       /lib64/libpthread-2.22.so
+2b87c936a000-2b87c936b000 rw-p 00018000 fe:01 6977                       /lib64/libpthread-2.22.so
+2b87c936b000-2b87c936f000 rw-p 00000000 00:00 0 
+2b87c936f000-2b87c946a000 r-xp 00000000 fe:01 3451                       /lib64/libm-2.22.so
+2b87c946a000-2b87c966a000 ---p 000fb000 fe:01 3451                       /lib64/libm-2.22.so
+2b87c966a000-2b87c966b000 r--p 000fb000 fe:01 3451                       /lib64/libm-2.22.so
+2b87c966b000-2b87c966c000 rw-p 000fc000 fe:01 3451                       /lib64/libm-2.22.so
+2b87c966c000-2b87c9807000 r-xp 00000000 fe:01 2615                       /lib64/libc-2.22.so
+2b87c9807000-2b87c9a07000 ---p 0019b000 fe:01 2615                       /lib64/libc-2.22.so
+2b87c9a07000-2b87c9a0b000 r--p 0019b000 fe:01 2615                       /lib64/libc-2.22.so
+2aebc8f33000-2aebc8f34000 rw-s 00000000 00:15 21968274                   /dev/shm/Intel_MPI_NNVaUq (deleted)
+2aebc8f34000-2aebc8f35000 rw-s 00000000 00:15 21968276                   /dev/shm/Intel_MPI_pAIpwh (deleted)
+2aebc8f35000-2aebc8f36000 rw-s 00000000 00:15 21953536                   /dev/shm/Intel_MPI_bzp8U8 (deleted)
+2aebc8f36000-2aebc8f37000 rw-s 00000000 00:15 21986306                   /dev/shm/Intel_MPI_9oBRqr (deleted)
+2aebc8f37000-2aebc8f38000 rw-s 00000000 00:15 21986308                   /dev/shm/Intel_MPI_hInIWJ (deleted)
+2aebc8f38000-2aebc8f45000 rw-s 00000000 00:15 21986309                   /dev/shm/Intel_MPI_44tGco (deleted)
+2aebc8f45000-2aebc8f46000 rw-s 00000000 00:15 21986310                   /dev/shm/Intel_MPI_p98Fs2 (deleted)
+2aebc8f46000-2aebc8f4b000 rw-s 00000000 00:15 21986311                   /dev/shm/Intel_MPI_Yz8HIG (deleted)
+2aebc8f4b000-2aebc8f4c000 rw-s 00000000 00:15 21986312                   /dev/shm/Intel_MPI_JYGLYk (deleted)
+2b3bf5117000-2b3bf511a000 rw-p 001cf000 fe:00 10196                      /usr/lib64/libstdc++.so.6.0.28
+2b3bf511a000-2b3bf511d000 rw-p 00000000 00:00 0 
+2b3bf511d000-2b3bf52af000 r-xp 00000000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2b3bf52af000-2b3bf54af000 ---p 00192000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2b3bf54af000-2b3bf54b4000 r--p 00192000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2b87c9a0b000-2b87c9a0d000 rw-p 0019f000 fe:01 2615                       /lib64/libc-2.22.so
+2b87c9a0d000-2b87c9a11000 rw-p 00000000 00:00 0 
+2b87c9a11000-2b87c9a28000 r-xp 00000000 fe:01 7285                       /lib64/libgcc_s.so.1
+2b87c9a28000-2b87c9c27000 ---p 00017000 fe:01 7285                       /lib64/libgcc_s.so.1
+2aebc8f4c000-2aebc8f4d000 rw-s 00000000 00:15 21986314                   /dev/shm/Intel_MPI_zuosvD (deleted)
+2aebc8f4e000-2aebc8f4f000 rw-p 00000000 00:00 0 
+2aebc8f4f000-2aebc8f50000 r--p 00021000 fe:01 101                        /lib64/ld-2.22.so
+2aebc8f50000-2aebc8f51000 rw-p 00022000 fe:01 101                        /lib64/ld-2.22.so
+2aebc8f51000-2aebc8f52000 rw-p 00000000 00:00 0 
+2aebc8f52000-2aebc98a9000 r-xp 00000000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2aebc98a9000-2aebc9aa9000 ---p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b3bf54b4000-2b3bf54b8000 rw-p 00197000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2b3bf54b8000-2b3bf54dc000 rw-p 00000000 00:00 0 
+2b3bf54dc000-2b3bf6138000 r-xp 00000000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2b3bf6138000-2b3bf6337000 ---p 00c5c000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2b3bf6337000-2b3bf6348000 r--p 00c5b000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+/lib64/libc.so.6(__longjmp_chk+0x29)[0x2b34991b24d9]
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd036]
+/lib64/libpthread.so.0(+0x11ca0)[0x2b3498ba9ca0]
+/u/alaa/band/FHIaims/build/aims_latest.x[0x2edd020]
+======= Memory map: ========
+00400000-032b5000 r-xp 00000000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b4000-034b7000 r--p 02eb4000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+034b7000-03890000 rw-p 02eb7000 00:2e 206186234                          /cobra/u/alaa/band/FHIaims/build/aims_latest.x
+03890000-0868a000 rw-p 00000000 00:00 0 
+08acd000-2e47e000 rw-p 00000000 00:00 0                                  [heap]
+2b348f3e6000-2b348f407000 r-xp 00000000 fe:01 101                        /lib64/ld-2.22.so
+2b348f407000-2b348f41b000 rw-p 00000000 00:00 0 
+2b348f41b000-2b348f41c000 r--s dabbad0003140000 00:06 1185               /dev/hfi1_0
+2aebc9aa9000-2aebc9aaa000 r--p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2aebc9aaa000-2aebc9abc000 rw-p 00958000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2aebc9abc000-2aebc9ac2000 rw-p 00000000 00:00 0 
+2aebc9ac2000-2aebcaecf000 r-xp 00000000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2aebcaecf000-2aebcb0cf000 ---p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b3bf6348000-2b3bf6359000 rw-p 00c6c000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2b3bf6359000-2b3bf665f000 rw-p 00000000 00:00 0 
+2b3bf665f000-2b3bf6661000 r-xp 00000000 fe:01 3430                       /lib64/libdl-2.22.so
+2b3bf6661000-2b3bf6861000 ---p 00002000 fe:01 3430                       /lib64/libdl-2.22.so
+2b3bf6861000-2b3bf6862000 r--p 00002000 fe:01 3430                       /lib64/libdl-2.22.so
+2b3bf6862000-2b3bf6863000 rw-p 00003000 fe:01 3430                       /lib64/libdl-2.22.so
+2b3bf6863000-2b3bf68a0000 r-xp 00000000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2b348f41c000-2b348f422000 -w-s dabbad0002140000 00:06 1185               /dev/hfi1_0
+2b348f422000-2b348f423000 r--s ffffb91a8d56d000 00:06 1185               /dev/hfi1_0
+2b348f423000-2b348f424000 rw-s dabbad0006140000 00:06 1185               /dev/hfi1_0
+2b348f424000-2b348f4d7000 rw-p 00000000 00:00 0 
+2b348f4d7000-2b348f4dd000 -w-s dabbad0001140000 00:06 1185               /dev/hfi1_0
+2b348f4dd000-2b348f5dd000 r--s dabbad0004140000 00:06 1185               /dev/hfi1_0
+2b348f5dd000-2b348f5de000 r--s ffffb91a8ffd9000 00:06 1185               /dev/hfi1_0
+2b348f5de000-2b348f5df000 r--s dabbad0008140000 00:06 1185               /dev/hfi1_0
+2b348f5df000-2b348f5e7000 rw-p 00000000 00:00 0 
+2b348f5e7000-2b348f5e8000 rw-s 00000000 00:15 21865485                   /dev/shm/Intel_MPI_1phJa8 (deleted)
+2b348f5e8000-2b348f5e9000 rw-s 00000000 00:15 21865487                   /dev/shm/Intel_MPI_NzNdqK (deleted)
+2b348f5e9000-2b348f5ea000 rw-s 00000000 00:15 21865489                   /dev/shm/Intel_MPI_n8sgIm (deleted)
+2aebcb0cf000-2aebcb0d2000 r--p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2aebcb0d2000-2aebcb0e9000 rw-p 01410000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2aebcb0e9000-2aebcf20b000 r-xp 00000000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2aebcf20b000-2aebcf40b000 ---p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b3bf68a0000-2b3bf6a9f000 ---p 0003d000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2b3bf6a9f000-2b3bf6aa2000 rw-p 0003c000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2b3bf6aa2000-2b3bf6aa9000 r-xp 00000000 fe:01 7122                       /lib64/librt-2.22.so
+2b3bf6aa9000-2b3bf6ca8000 ---p 00007000 fe:01 7122                       /lib64/librt-2.22.so
+2b3bf6ca8000-2b3bf6ca9000 r--p 00006000 fe:01 7122                       /lib64/librt-2.22.so
+2b3bf6ca9000-2b3bf6caa000 rw-p 00007000 fe:01 7122                       /lib64/librt-2.22.so
+2b3bf6caa000-2b3bf6cc2000 r-xp 00000000 fe:01 6977                       /lib64/libpthread-2.22.so
+2b348f5ea000-2b348f5eb000 rw-s 00000000 00:15 21842564                   /dev/shm/Intel_MPI_lw7iHd (deleted)
+2b348f5eb000-2b348f5ec000 rw-s 00000000 00:15 21865493                   /dev/shm/Intel_MPI_dglj1P (deleted)
+2b348f5ec000-2b348f5ed000 rw-s 00000000 00:15 21842470                   /dev/shm/Intel_MPI_n1y5Gp (deleted)
+2b348f5ed000-2b348f5ee000 rw-s 00000000 00:15 21842566                   /dev/shm/Intel_MPI_5uj7ff (deleted)
+2b348f5ee000-2b348f5ef000 rw-s 00000000 00:15 21842568                   /dev/shm/Intel_MPI_rCb5Og (deleted)
+2b348f5ef000-2b348f5f0000 rw-s 00000000 00:15 21842570                   /dev/shm/Intel_MPI_3hCaoi (deleted)
+2b348f5f0000-2b348f5fd000 rw-s 00000000 00:15 21842571                   /dev/shm/Intel_MPI_chzLaO (deleted)
+2b348f5fd000-2b348f5fe000 rw-s 00000000 00:15 21842572                   /dev/shm/Intel_MPI_JRInXj (deleted)
+2b348f5fe000-2b348f603000 rw-s 00000000 00:15 21842573                   /dev/shm/Intel_MPI_m4v2JP (deleted)
+2aebcf40b000-2aebcf412000 r--p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b3bf6cc2000-2b3bf6ec1000 ---p 00018000 fe:01 6977                       /lib64/libpthread-2.22.so
+2b3bf6ec1000-2b3bf6ec2000 r--p 00017000 fe:01 6977                       /lib64/libpthread-2.22.so
+2b3bf6ec2000-2b3bf6ec3000 rw-p 00018000 fe:01 6977                       /lib64/libpthread-2.22.so
+2b3bf6ec3000-2b3bf6ec7000 rw-p 00000000 00:00 0 
+2b3bf6ec7000-2b3bf6fc2000 r-xp 00000000 fe:01 3451                       /lib64/libm-2.22.so
+2b348f603000-2b348f604000 rw-s 00000000 00:15 21842574                   /dev/shm/Intel_MPI_5NTIwl (deleted)
+2b348f604000-2b348f605000 rw-s 00000000 00:15 21842576                   /dev/shm/Intel_MPI_RiRd6m (deleted)
+2b348f605000-2b348f606000 rw-p 00000000 00:00 0 
+2b348f607000-2b348f608000 r--p 00021000 fe:01 101                        /lib64/ld-2.22.so
+2aebcf412000-2aebcf442000 rw-p 04129000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2aebcf442000-2aebcf469000 rw-p 00000000 00:00 0 
+2aebcf469000-2aebcf4aa000 r-xp 00000000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2aebcf4aa000-2aebcf6a9000 ---p 00041000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2aebcf6a9000-2aebcf6aa000 r--p 00040000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2b3bf6fc2000-2b3bf71c2000 ---p 000fb000 fe:01 3451                       /lib64/libm-2.22.so
+2b3bf71c2000-2b3bf71c3000 r--p 000fb000 fe:01 3451                       /lib64/libm-2.22.so
+2b3bf71c3000-2b3bf71c4000 rw-p 000fc000 fe:01 3451                       /lib64/libm-2.22.so
+2b3bf71c4000-2b3bf735f000 r-xp 00000000 fe:01 2615                       /lib64/libc-2.22.so
+2b3bf735f000-2b3bf755f000 ---p 0019b000 fe:01 2615                       /lib64/libc-2.22.so
+2b3bf755f000-2b3bf7563000 r--p 0019b000 fe:01 2615                       /lib64/libc-2.22.so
+2b3bf7563000-2b3bf7565000 rw-p 0019f000 fe:01 2615                       /lib64/libc-2.22.so
+2b3bf7565000-2b3bf7569000 rw-p 00000000 00:00 0 
+2b3bf7569000-2b3bf7580000 r-xp 00000000 fe:01 7285                       /lib64/libgcc_s.so.1
+2b3bf7580000-2b3bf777f000 ---p 00017000 fe:01 7285                       /lib64/libgcc_s.so.1
+2b3bf777f000-2b3bf7780000 r--p 00016000 fe:01 7285                       /lib64/libgcc_s.so.1
+2b87c9c27000-2b87c9c28000 r--p 00016000 fe:01 7285                       /lib64/libgcc_s.so.1
+2b87c9c28000-2b87c9c29000 rw-p 00017000 fe:01 7285                       /lib64/libgcc_s.so.1
+2b87c9c29000-2b87c9c9d000 r-xp 00000000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b87c9c9d000-2b87c9e9d000 ---p 00074000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b87c9e9d000-2b87c9e9e000 r--p 00074000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2aebcf6aa000-2aebcf6ab000 rw-p 00041000 00:2e 56093453                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_blacs_intelmpi_lp64.so
+2aebcf6ab000-2aebcfd4e000 r-xp 00000000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2aebcfd4e000-2aebcff4d000 ---p 006a3000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2aebcff4d000-2aebcff4e000 r--p 006a2000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2b3bf7780000-2b3bf7781000 rw-p 00017000 fe:01 7285                       /lib64/libgcc_s.so.1
+2b3bf7781000-2b3bf77f5000 r-xp 00000000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b3bf77f5000-2b3bf79f5000 ---p 00074000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b3bf79f5000-2b3bf79f6000 r--p 00074000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b3bf79f6000-2b3bf79f7000 rw-p 00075000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b87c9e9e000-2b87c9e9f000 rw-p 00075000 00:2e 192787719                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libintlc.so.5
+2b87c9e9f000-2b87c9ea1000 rw-p 00000000 00:00 0 
+2b87c9ea1000-2b87c9eab000 r-xp 00000000 fe:00 586                        /usr/lib64/libnuma.so.1.0.0
+2b87c9eab000-2b87ca0ab000 ---p 0000a000 fe:00 586                        /usr/lib64/libnuma.so.1.0.0
+2b87ca0ab000-2b87ca0ac000 r--p 0000a000 fe:00 586                        /usr/lib64/libnuma.so.1.0.0
+2b87ca0ac000-2b87ca0ad000 rw-p 0000b000 fe:00 586                        /usr/lib64/libnuma.so.1.0.0
+2b87ca0ad000-2b87ca0b4000 r-xp 00000000 fe:00 12878                      /usr/lib64/libpmi2.so.0.0.0
+2b87ca0b4000-2b87ca2b4000 ---p 00007000 fe:00 12878                      /usr/lib64/libpmi2.so.0.0.0
+2b87ca2b4000-2b87ca2b5000 r--p 00007000 fe:00 12878                      /usr/lib64/libpmi2.so.0.0.0
+2aebcff4e000-2aebcff52000 rw-p 006a3000 00:2e 56093489                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_scalapack_lp64.so
+2aebcff52000-2aebcffd6000 rw-p 00000000 00:00 0 
+2aebcffd6000-2aebd012d000 r-xp 00000000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2aebd012d000-2aebd032d000 ---p 00157000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2aebd032d000-2aebd032e000 r--p 00157000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2b3bf79f7000-2b3bf79f9000 rw-p 00000000 00:00 0 
+2b3bf79f9000-2b3bf7a03000 r-xp 00000000 fe:00 6142                       /usr/lib64/libnuma.so.1.0.0
+2b3bf7a03000-2b3bf7c03000 ---p 0000a000 fe:00 6142                       /usr/lib64/libnuma.so.1.0.0
+2b3bf7c03000-2b3bf7c04000 r--p 0000a000 fe:00 6142                       /usr/lib64/libnuma.so.1.0.0
+2b3bf7c04000-2b3bf7c05000 rw-p 0000b000 fe:00 6142                       /usr/lib64/libnuma.so.1.0.0
+2b3bf7c05000-2b3bf7c0c000 r-xp 00000000 fe:00 41021                      /usr/lib64/libpmi2.so.0.0.0
+2b3bf7c0c000-2b3bf7e0c000 ---p 00007000 fe:00 41021                      /usr/lib64/libpmi2.so.0.0.0
+2b3bf7e0c000-2b3bf7e0d000 r--p 00007000 fe:00 41021                      /usr/lib64/libpmi2.so.0.0.0
+2b3bf7e0d000-2b3bf7e0e000 rw-p 00008000 fe:00 41021                      /usr/lib64/libpmi2.so.0.0.0
+2b3bf7e0e000-2b3bf7e1e000 rw-p 00000000 00:00 0 
+2b3bf7e1e000-2b3bf7e32000 r-xp 00000000 fe:01 6990                       /lib64/libresolv-2.22.so
+2b87ca2b5000-2b87ca2b6000 rw-p 00008000 fe:00 12878                      /usr/lib64/libpmi2.so.0.0.0
+2b87ca2b6000-2b87ca2c6000 rw-p 00000000 00:00 0 
+2b87ca2c6000-2b87ca2da000 r-xp 00000000 fe:01 6990                       /lib64/libresolv-2.22.so
+2b87ca2da000-2b87ca4d9000 ---p 00014000 fe:01 6990                       /lib64/libresolv-2.22.so
+2b87ca4d9000-2b87ca4da000 r--p 00013000 fe:01 6990                       /lib64/libresolv-2.22.so
+2b87ca4da000-2b87ca4db000 rw-p 00014000 fe:01 6990                       /lib64/libresolv-2.22.so
+2b87ca4db000-2b87ca4dd000 rw-p 00000000 00:00 0 
+2b87ca4dd000-2b87ca600000 rw-s 00000000 00:15 21740335                   /dev/shm/Intel_MPI_IqfRzx (deleted)
+2b87ca600000-2b886a600000 rw-s 00123000 00:15 21740335                   /dev/shm/Intel_MPI_IqfRzx (deleted)
+2b886a600000-2b886aa00000 rw-s a0123000 00:15 21740335                   /dev/shm/Intel_MPI_IqfRzx (deleted)
+2aebd032e000-2aebd0341000 rw-p 00158000 00:2e 192787732                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libirng.so
+2aebd0341000-2aebd0379000 r-xp 00000000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2aebd0379000-2aebd0579000 ---p 00038000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2aebd0579000-2aebd057a000 r--p 00038000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2b3bf7e32000-2b3bf8031000 ---p 00014000 fe:01 6990                       /lib64/libresolv-2.22.so
+2b3bf8031000-2b3bf8032000 r--p 00013000 fe:01 6990                       /lib64/libresolv-2.22.so
+2b3bf8032000-2b3bf8033000 rw-p 00014000 fe:01 6990                       /lib64/libresolv-2.22.so
+2b3bf8033000-2b3bf8035000 rw-p 00000000 00:00 0 
+2b3bf8035000-2b3bf8200000 rw-s 00000000 00:15 22105829                   /dev/shm/Intel_MPI_JX5BWe (deleted)
+2b3bf8200000-2b3c98200000 rw-s 001cb000 00:15 22105829                   /dev/shm/Intel_MPI_JX5BWe (deleted)
+2b3c98200000-2b3c98600000 rw-s a01cb000 00:15 22105829                   /dev/shm/Intel_MPI_JX5BWe (deleted)
+2b3c98600000-2b3d3f600000 rw-s a05cb000 00:15 22105829                   /dev/shm/Intel_MPI_JX5BWe (deleted)
+2b3d3f600000-2b3d3f63d000 rw-s 1475cb000 00:15 22105829                  /dev/shm/Intel_MPI_JX5BWe (deleted)
+2b886aa00000-2b8911a00000 rw-s a0523000 00:15 21740335                   /dev/shm/Intel_MPI_IqfRzx (deleted)
+2b8911a00000-2b8911ae5000 rw-s 147523000 00:15 21740335                  /dev/shm/Intel_MPI_IqfRzx (deleted)
+2b8911ae5000-2b8911b37000 r-xp 00000000 00:2e 220984245                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libsockets-fi.so
+2b8911b37000-2b8911d37000 ---p 00052000 00:2e 220984245                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libsockets-fi.so
+2b8911d37000-2b8911d3a000 rw-p 00052000 00:2e 220984245                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libsockets-fi.so
+2aebd057a000-2aebd057d000 rw-p 00039000 00:2e 192787702                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/compiler/lib/intel64_lin/libcilkrts.so.5
+2aebd057d000-2aebd057e000 rw-p 00000000 00:00 0 
+2b3d3f63d000-2b3d3f68f000 r-xp 00000000 00:2e 220984245                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libsockets-fi.so
+2b3d3f68f000-2b3d3f88f000 ---p 00052000 00:2e 220984245                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libsockets-fi.so
+2b3d3f88f000-2b3d3f892000 rw-p 00052000 00:2e 220984245                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libsockets-fi.so
+2b3d3f892000-2b3d3f902000 r-xp 00000000 00:2e 220984242                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libpsmx2-fi.so
+2b8911d3a000-2b8911daa000 r-xp 00000000 00:2e 220984242                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libpsmx2-fi.so
+2aebd057e000-2aebd0743000 r-xp 00000000 fe:00 19068                      /usr/lib64/libstdc++.so.6.0.28
+2aebd0743000-2aebd0942000 ---p 001c5000 fe:00 19068                      /usr/lib64/libstdc++.so.6.0.28
+2aebd0942000-2aebd094d000 r--p 001c4000 fe:00 19068                      /usr/lib64/libstdc++.so.6.0.28
+2aebd094d000-2aebd0950000 rw-p 001cf000 fe:00 19068                      /usr/lib64/libstdc++.so.6.0.28
+2aebd0950000-2aebd0953000 rw-p 00000000 00:00 0 
+2aebd0953000-2aebd0ae5000 r-xp 00000000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2aebd0ae5000-2aebd0ce5000 ---p 00192000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2b3d3f902000-2b3d3fb01000 ---p 00070000 00:2e 220984242                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libpsmx2-fi.so
+2b3d3fb01000-2b3d3fb07000 rw-p 0006f000 00:2e 220984242                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libpsmx2-fi.so
+2b3d3fb07000-2b3d3fb0b000 rw-p 00000000 00:00 0 
+2b3d3fb0b000-2b3d3fb9b000 r-xp 00000000 fe:00 8951                       /usr/lib64/libpsm2.so.2.2
+2b3d3fb9b000-2b3d3fd9a000 ---p 00090000 fe:00 8951                       /usr/lib64/libpsm2.so.2.2
+2b3d3fd9a000-2b3d3fd9b000 r--p 0008f000 fe:00 8951                       /usr/lib64/libpsm2.so.2.2
+2b3d3fd9b000-2b3d3fd9d000 rw-p 00090000 fe:00 8951                       /usr/lib64/libpsm2.so.2.2
+2b3d3fd9d000-2b3d3fd9f000 rw-p 00000000 00:00 0 
+2b348f608000-2b348f609000 rw-p 00022000 fe:01 101                        /lib64/ld-2.22.so
+2b348f609000-2b348f60a000 rw-p 00000000 00:00 0 
+2b348f60a000-2b348ff61000 r-xp 00000000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b348ff61000-2b3490161000 ---p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b3490161000-2b3490162000 r--p 00957000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+
+Stack trace terminated abnormally.
+2aebd0ce5000-2aebd0cea000 r--p 00192000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2aebd0cea000-2aebd0cee000 rw-p 00197000 00:2e 56093954                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/libmpifort.so.12.0.0
+2aebd0cee000-2aebd0d12000 rw-p 00000000 00:00 0 
+2aebd0d12000-2aebd196e000 r-xp 00000000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2aebd196e000-2aebd1b6d000 ---p 00c5c000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2b3d3fd9f000-2b3d3fdea000 r-xp 00000000 00:2e 220984243                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/librxm-fi.so
+2b3d3fdea000-2b3d3ffea000 ---p 0004b000 00:2e 220984243                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/librxm-fi.so
+2b3d3ffea000-2b3d3ffed000 rw-p 0004b000 00:2e 220984243                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/librxm-fi.so
+2b3d3ffed000-2b3d40027000 r-xp 00000000 00:2e 220984246                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libtcp-fi.so
+2b3490162000-2b3490174000 rw-p 00958000 00:2e 56093478                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+2b3490174000-2b349017a000 rw-p 00000000 00:00 0 
+2b349017a000-2b3491587000 r-xp 00000000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b3491587000-2b3491787000 ---p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b3491787000-2b349178a000 r--p 0140d000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2aebd1b6d000-2aebd1b7e000 r--p 00c5b000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2aebd1b7e000-2aebd1b8f000 rw-p 00c6c000 00:2e 56093964                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/lib/release/libmpi.so.12.0.0
+2aebd1b8f000-2aebd1e95000 rw-p 00000000 00:00 0 
+2aebd1e95000-2aebd1e97000 r-xp 00000000 fe:01 3430                       /lib64/libdl-2.22.so
+2aebd1e97000-2aebd2097000 ---p 00002000 fe:01 3430                       /lib64/libdl-2.22.so
+2aebd2097000-2aebd2098000 r--p 00002000 fe:01 3430                       /lib64/libdl-2.22.so
+2aebd2098000-2aebd2099000 rw-p 00003000 fe:01 3430                       /lib64/libdl-2.22.so
+2b3d40027000-2b3d40227000 ---p 0003a000 00:2e 220984246                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libtcp-fi.so
+2b3d40227000-2b3d4022a000 rw-p 0003a000 00:2e 220984246                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libtcp-fi.so
+2b3d4022a000-2b3d40267000 r-xp 00000000 00:2e 220984244                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libshm-fi.so
+2b3d40267000-2b3d40466000 ---p 0003d000 00:2e 220984244                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libshm-fi.so
+2b349178a000-2b34917a1000 rw-p 01410000 00:2e 56093491                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_sequential.so
+2b34917a1000-2b34958c3000 r-xp 00000000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b34958c3000-2b3495ac3000 ---p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2b3495ac3000-2b3495aca000 r--p 04122000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so
+2aebd2099000-2aebd20d6000 r-xp 00000000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2aebd20d6000-2aebd22d5000 ---p 0003d000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2aebd22d5000-2aebd22d8000 rw-p 0003c000 00:2e 56093982                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/libfabric/lib/libfabric.so.1
+2aebd22d8000-2aebd22df000 r-xp 00000000 fe:01 7122                       /lib64/librt-2.22.so
+2aebd22df000-2aebd24de000 ---p 00007000 fe:01 7122                       /lib64/librt-2.22.so
+2aebd24de000-2aebd24df000 r--p 00006000 fe:01 7122                       /lib64/librt-2.22.so
+2b3d40466000-2b3d40469000 rw-p 0003c000 00:2e 220984244                  /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.4/compilers_and_libraries_2020.4.304/linux/mpi/intel64/libfabric/lib/prov/libshm-fi.so
+2b3495aca000-2b3495afa000 rw-p 04129000 00:2e 56093467                   /cobra/u/system/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mkl/lib/intel64_lin/libmkl_core.so

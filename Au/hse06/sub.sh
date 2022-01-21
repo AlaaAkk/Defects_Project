@@ -31,7 +31,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$MKLROOT/lib/intel6
 AIMSPATH=/u/alaa/band/FHIaims/build
 EXE=aims.x
 export aimsbin=${AIMSPATH}/${EXE}
-srun $aimsbin > out_$date
+srun $aimsbin > out_2
 
 
 

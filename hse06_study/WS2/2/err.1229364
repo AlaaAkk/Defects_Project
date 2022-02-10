@@ -1,0 +1,40 @@
+/u/alaa/.bashrc: line 27: expert: command not found
+Currently Loaded Modulefiles:
+  1) mkl/2021.2     2) intel/19.1.2   3) impi/2019.8
+Starting MPS on ravg1139
+Starting MPS on ravg1140
+Starting MPS on ravg1136
+Starting MPS on ravg1141
+Starting MPS on ravg1142
+ *** trusted_descent: Numerical inconsistency of forces and energy above energy_tolerance.
+Abort(806969103) on node 288 (rank 288 in comm 0): Fatal error in PMPI_Finalize: Other MPI error, error stack:
+PMPI_Finalize(214)...............: MPI_Finalize failed
+PMPI_Finalize(159)...............: 
+MPID_Finalize(1267)..............: 
+MPIDI_OFI_mpi_finalize_hook(1776): OFI domain close failed (ofi_init.c:1776:MPIDI_OFI_mpi_finalize_hook:Device or resource busy)
+Abort(806969103) on node 0 (rank 0 in comm 0): Fatal error in PMPI_Finalize: Other MPI error, error stack:
+PMPI_Finalize(214)...............: MPI_Finalize failed
+PMPI_Finalize(159)...............: 
+MPID_Finalize(1267)..............: 
+MPIDI_OFI_mpi_finalize_hook(1776): OFI domain close failed (ofi_init.c:1776:MPIDI_OFI_mpi_finalize_hook:Device or resource busy)
+Abort(806969103) on node 144 (rank 144 in comm 0): Fatal error in PMPI_Finalize: Other MPI error, error stack:
+PMPI_Finalize(214)...............: MPI_Finalize failed
+PMPI_Finalize(159)...............: 
+MPID_Finalize(1267)..............: 
+MPIDI_OFI_mpi_finalize_hook(1776): OFI domain close failed (ofi_init.c:1776:MPIDI_OFI_mpi_finalize_hook:Device or resource busy)
+slurmstepd: error: *** STEP 1229364.0 ON ravg1136 CANCELLED AT 2022-02-02T17:21:59 ***
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+Cannot find MPS control daemon process
+Cannot find MPS control daemon process
+Cannot find MPS control daemon process
+Cannot find MPS control daemon process
+Cannot find MPS control daemon process
+srun: error: ravg1140: task 144: Exited with exit code 1
+srun: launch/slurm: _step_signal: Terminating StepId=1229364.0
+srun: error: ravg1140: tasks 151,212-213,215: Killed
+srun: error: ravg1136: task 0: Exited with exit code 1
+srun: error: ravg1136: tasks 46,71: Killed
+srun: error: ravg1142: task 288: Exited with exit code 1
+srun: error: ravg1142: tasks 289,295,316,337-338,350: Killed
+srun: error: ravg1141: tasks 216,219,282: Killed
+srun: error: ravg1139: tasks 72-73,113,142: Killed

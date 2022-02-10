@@ -1,0 +1,28 @@
+                                  
+================================= 
+Global information about the job: 
+================================= 
+  
+Job owner: alaa(30902)
+Job name:  Alaa
+Node list: ravg[1064,1160,1171,1195]
+Job start: Wed Feb  2 14:19:38 CET 2022
+Job end:   Wed Feb  2 15:21:00 CET 2022
+Work dir:  /ptmp/alaa/WS2/monolayer/2/./
+Command:   /raven/ptmp/alaa/WS2/monolayer/2/sub.sh
+  
+  
+  
+==========================================================================================
+Information on jobsteps (Note: MaxRSS/AveRSS is the maximum/average over all 
+tasks of the per-task memory high-water marks; cf. "man sacct"): 
+==========================================================================================
+  
+       JobID    JobName NNodes NTasks  NCPUS       MaxRSS       AveRSS    Elapsed ExitCode 
+------------ ---------- ------ ------ ------ ------------ ------------ ---------- -------- 
+1219865            Alaa      4           576                             01:01:22      0:0 
+1219865.0        aims.x      4    288    576     1363.28M      977.13M   01:01:24      1:0 
+  
+Maximum memory per node: 100.512 GB (defined as MaxRSS*Ntasks/NNodes)
+CPU utilization: 99.8 %
+     

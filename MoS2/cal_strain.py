@@ -14,13 +14,13 @@ latvec = []
 F = []
 F1 = []
 
-geo =fcc111('Au', (1, 1,4), a=4.13002462)
+geo =fcc111('Au', (9, 9,4), a=4.13002462)
 geo.center(axis=(2))
 #geo = read("geometry.in", 0, "aims")
-slab = make_supercell(geo,numpy.diag([9,9,4]))
-slab.center(vacuum=50,axis=(2))
+#slab = make_supercell(geo,numpy.diag([9,9,4]))
+geo.center(vacuum=50,axis=(2))
 #slab.center()
-slab.write('geometry_supercell.in',format='aims')
+geo.write('geometry_supercell.in',format='aims')
 for line in open("geometry_supercell.in"):
     line = line.split("#")[0]
     words = line.split()
@@ -52,7 +52,7 @@ geo.center(axis=(2))
 slab2 = make_supercell(geo,numpy.diag([8,8,1]))
 #slab.write('geometry_MoS2.in',format='aims')
 slab2.center(vacuum=50,axis=(2))
-slab2.translate(10)
+slab2.translate(7)
 slab2.write('geometry_mos2.in',format='aims')
 for line in open("geometry_mos2.in"):
     line = line.split("#")[0]
@@ -88,14 +88,9 @@ print("Lattice vectors of Film Supercell without z:")
 for i in range(2):
     print(F1[i,:])
 print()
-
-F_inv=np.linalg.pinv(F1)
-#for i in range(3):
-#    print(F_inv[i,:])
-#print()
 n_array=np.matmul(S1, np.linalg.pinv(F1))
 numpy.around(n_array,10,n_array)
-print(n_array)
+#print(n_array)
 det = np.linalg.det(n_array)
 print('det of T is', det)
 print('% of strain ', (1-det)*100)

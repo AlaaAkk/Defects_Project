@@ -14,12 +14,12 @@ latvec = []
 F = []
 F1 = []
 
-geo =fcc111('Au', (1, 1,4), a=4.13002462)
+geo =fcc111('Au', (7, 7,4), a=4.13002462)
 #geo = read("geometry.in", 0, "aims")
-slab = make_supercell(geo,numpy.diag([7,7,4]))
-slab.center(vacuum=50,axis=(2))
+#slab = make_supercell(geo,numpy.diag([7,7,4]), wrap=True, tol=1e-05)
+geo.center(vacuum=50,axis=(2))
 #slab.center()
-slab.write('geometry_supercell.in',format='aims')
+geo.write('geometry_supercell.in',format='aims')
 for line in open("geometry_supercell.in"):
     line = line.split("#")[0]
     words = line.split()

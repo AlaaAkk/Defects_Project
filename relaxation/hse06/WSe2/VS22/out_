@@ -1,0 +1,1711 @@
+------------------------------------------------------------
+          Invoking FHI-aims ...
+
+          When using FHI-aims, please cite the following reference:
+
+            Volker Blum, Ralf Gehrke, Felix Hanke, Paula Havu,
+            Ville Havu, Xinguo Ren, Karsten Reuter, and Matthias Scheffler,
+            'Ab Initio Molecular Simulations with Numeric Atom-Centered Orbitals',
+            Computer Physics Communications 180, 2175-2196 (2009)
+
+          In addition, many other developments in FHI-aims are likely important for
+          your particular application. A partial list of references is given at the end of
+          this file. Thank you for giving credit to the authors of these developments.
+
+          For any questions about FHI-aims, please visit our slack channel at
+
+            https://fhi-aims.slack.com
+
+          and our main development and support site at
+
+            https://aims-git.rz-berlin.mpg.de .
+
+          The latter site, in particular, has a wiki to collect information, as well
+          as an issue tracker to log discussions, suggest improvements, and report issues
+          or bugs. https://aims-git.rz-berlin.mpg.de is also the main development site
+          of the project and all new and updated code versions can be obtained there.
+          Please send an email to aims-coordinators@fhi-berlin.mpg.de and we will add
+          you to these sites. They are for you and everyone is welcome there.
+
+------------------------------------------------------------
+
+
+
+  Date     :  20220126, Time     :  183736.032
+  Time zero on CPU 1             :   0.155515000000000E+00  s.
+  Internal wall clock time zero  :           412454256.032  s.
+
+  FHI-aims created a unique identifier for this run for later identification
+  aims_uuid : 75A9155C-0C95-4514-AA47-D6A822C4FB91
+
+  Build configuration of the current instance of FHI-aims
+  -------------------------------------------------------
+  FHI-aims version      : 210513
+  Commit number         : 300bfe3f4
+  CMake host system     : Linux-4.12.14-122.63-default
+  CMake version         : 3.5.2
+  Fortran compiler      : /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/compilers_and_libraries_2020.1.217/linux/mpi/intel64/bin/mpiifort (Intel) version 19.1.0.20200306
+  Fortran compiler flags: -O3 -ip -fp-model precise
+  C compiler            : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icc (Intel) version 19.1.0.20200306
+  C compiler flags      : -O3 -ip -fp-model precise -std=gnu99
+  C++ compiler          : /mpcdf/soft/SLE_12/packages/x86_64/intel/19.1.1/bin/icpc (Intel) version 19.1.0.20200306
+  C++ compiler flags    : -O3 -ip -fp-model precise -std=gnu99
+  Using MPI
+  Using ScaLAPACK
+  Using LibXC
+  Using i-PI
+  Using RLSY
+  Linking against: /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_intel_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_sequential.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_core.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_blacs_intelmpi_lp64.so
+                   /mpcdf/soft/SLE_12/packages/x86_64/intel_parallel_studio/2020.1/mkl/lib/intel64/libmkl_scalapack_lp64.so
+
+  Using      160 parallel tasks.
+  Task        0 on host co5483 reporting.
+  Task        1 on host co5483 reporting.
+  Task        2 on host co5483 reporting.
+  Task        3 on host co5483 reporting.
+  Task        4 on host co5483 reporting.
+  Task        5 on host co5483 reporting.
+  Task        6 on host co5483 reporting.
+  Task        7 on host co5483 reporting.
+  Task        8 on host co5483 reporting.
+  Task        9 on host co5483 reporting.
+  Task       10 on host co5483 reporting.
+  Task       11 on host co5483 reporting.
+  Task       12 on host co5483 reporting.
+  Task       13 on host co5483 reporting.
+  Task       14 on host co5483 reporting.
+  Task       15 on host co5483 reporting.
+  Task       16 on host co5483 reporting.
+  Task       17 on host co5483 reporting.
+  Task       18 on host co5483 reporting.
+  Task       19 on host co5483 reporting.
+  Task       20 on host co5483 reporting.
+  Task       21 on host co5483 reporting.
+  Task       22 on host co5483 reporting.
+  Task       23 on host co5483 reporting.
+  Task       24 on host co5483 reporting.
+  Task       25 on host co5483 reporting.
+  Task       26 on host co5483 reporting.
+  Task       27 on host co5483 reporting.
+  Task       28 on host co5483 reporting.
+  Task       29 on host co5483 reporting.
+  Task       30 on host co5483 reporting.
+  Task       31 on host co5483 reporting.
+  Task       32 on host co5483 reporting.
+  Task       33 on host co5483 reporting.
+  Task       34 on host co5483 reporting.
+  Task       35 on host co5483 reporting.
+  Task       36 on host co5483 reporting.
+  Task       37 on host co5483 reporting.
+  Task       38 on host co5483 reporting.
+  Task       39 on host co5483 reporting.
+  Task       40 on host co5484 reporting.
+  Task       41 on host co5484 reporting.
+  Task       42 on host co5484 reporting.
+  Task       43 on host co5484 reporting.
+  Task       44 on host co5484 reporting.
+  Task       45 on host co5484 reporting.
+  Task       46 on host co5484 reporting.
+  Task       47 on host co5484 reporting.
+  Task       48 on host co5484 reporting.
+  Task       49 on host co5484 reporting.
+  Task       50 on host co5484 reporting.
+  Task       51 on host co5484 reporting.
+  Task       52 on host co5484 reporting.
+  Task       53 on host co5484 reporting.
+  Task       54 on host co5484 reporting.
+  Task       55 on host co5484 reporting.
+  Task       56 on host co5484 reporting.
+  Task       57 on host co5484 reporting.
+  Task       58 on host co5484 reporting.
+  Task       59 on host co5484 reporting.
+  Task       60 on host co5484 reporting.
+  Task       61 on host co5484 reporting.
+  Task       62 on host co5484 reporting.
+  Task       63 on host co5484 reporting.
+  Task       64 on host co5484 reporting.
+  Task       65 on host co5484 reporting.
+  Task       66 on host co5484 reporting.
+  Task       67 on host co5484 reporting.
+  Task       68 on host co5484 reporting.
+  Task       69 on host co5484 reporting.
+  Task       70 on host co5484 reporting.
+  Task       71 on host co5484 reporting.
+  Task       72 on host co5484 reporting.
+  Task       73 on host co5484 reporting.
+  Task       74 on host co5484 reporting.
+  Task       75 on host co5484 reporting.
+  Task       76 on host co5484 reporting.
+  Task       77 on host co5484 reporting.
+  Task       78 on host co5484 reporting.
+  Task       79 on host co5484 reporting.
+  Task       80 on host co5485 reporting.
+  Task       81 on host co5485 reporting.
+  Task       82 on host co5485 reporting.
+  Task       83 on host co5485 reporting.
+  Task       84 on host co5485 reporting.
+  Task       85 on host co5485 reporting.
+  Task       86 on host co5485 reporting.
+  Task       87 on host co5485 reporting.
+  Task       88 on host co5485 reporting.
+  Task       89 on host co5485 reporting.
+  Task       90 on host co5485 reporting.
+  Task       91 on host co5485 reporting.
+  Task       92 on host co5485 reporting.
+  Task       93 on host co5485 reporting.
+  Task       94 on host co5485 reporting.
+  Task       95 on host co5485 reporting.
+  Task       96 on host co5485 reporting.
+  Task       97 on host co5485 reporting.
+  Task       98 on host co5485 reporting.
+  Task       99 on host co5485 reporting.
+  Task      100 on host co5485 reporting.
+  Task      101 on host co5485 reporting.
+  Task      102 on host co5485 reporting.
+  Task      103 on host co5485 reporting.
+  Task      104 on host co5485 reporting.
+  Task      105 on host co5485 reporting.
+  Task      106 on host co5485 reporting.
+  Task      107 on host co5485 reporting.
+  Task      108 on host co5485 reporting.
+  Task      109 on host co5485 reporting.
+  Task      110 on host co5485 reporting.
+  Task      111 on host co5485 reporting.
+  Task      112 on host co5485 reporting.
+  Task      113 on host co5485 reporting.
+  Task      114 on host co5485 reporting.
+  Task      115 on host co5485 reporting.
+  Task      116 on host co5485 reporting.
+  Task      117 on host co5485 reporting.
+  Task      118 on host co5485 reporting.
+  Task      119 on host co5485 reporting.
+  Task      120 on host co5486 reporting.
+  Task      121 on host co5486 reporting.
+  Task      122 on host co5486 reporting.
+  Task      123 on host co5486 reporting.
+  Task      124 on host co5486 reporting.
+  Task      125 on host co5486 reporting.
+  Task      126 on host co5486 reporting.
+  Task      127 on host co5486 reporting.
+  Task      128 on host co5486 reporting.
+  Task      129 on host co5486 reporting.
+  Task      130 on host co5486 reporting.
+  Task      131 on host co5486 reporting.
+  Task      132 on host co5486 reporting.
+  Task      133 on host co5486 reporting.
+  Task      134 on host co5486 reporting.
+  Task      135 on host co5486 reporting.
+  Task      136 on host co5486 reporting.
+  Task      137 on host co5486 reporting.
+  Task      138 on host co5486 reporting.
+  Task      139 on host co5486 reporting.
+  Task      140 on host co5486 reporting.
+  Task      141 on host co5486 reporting.
+  Task      142 on host co5486 reporting.
+  Task      143 on host co5486 reporting.
+  Task      144 on host co5486 reporting.
+  Task      145 on host co5486 reporting.
+  Task      146 on host co5486 reporting.
+  Task      147 on host co5486 reporting.
+  Task      148 on host co5486 reporting.
+  Task      149 on host co5486 reporting.
+  Task      150 on host co5486 reporting.
+  Task      151 on host co5486 reporting.
+  Task      152 on host co5486 reporting.
+  Task      153 on host co5486 reporting.
+  Task      154 on host co5486 reporting.
+  Task      155 on host co5486 reporting.
+  Task      156 on host co5486 reporting.
+  Task      157 on host co5486 reporting.
+  Task      158 on host co5486 reporting.
+  Task      159 on host co5486 reporting.
+
+  Performing system and environment tests:
+  | Environment variable OMP_NUM_THREADS correctly set to 1.
+  | Checking for ScaLAPACK...
+  | Testing pdtran()...
+  | All pdtran() tests passed.
+
+  Obtaining array dimensions for all initial allocations:
+  
+  -----------------------------------------------------------------------
+  Parsing control.in (first pass over file, find array dimensions only).
+  The contents of control.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of control.in .
+  -----------------------------------------------------------------------
+  
+  xc                 hse06  0.11
+  hse_unit b
+  spin               collinear
+  default_initial_moment 1
+  charge      0.0
+  relativistic       atomic_zora scalar
+  #elsi_restart read
+  # SCF settings
+  relax_geometry bfgs 1E-3
+  #relax_unit_cell fixed_angles
+  use_symmetric_forces .true.
+  occupation_type gaussian       0.1
+  # k-grid settings  (to be adjusted)
+  k_grid  4 4 1
+  #empty_states 8
+  use_dipole_correction
+  #include_spin_orbit non_self_consistent
+  # sc_accuracy_rho    1E-4
+  #    sc_accuracy_eev    1E-3
+  #    sc_accuracy_etot   1E-4
+  #    sc_accuracy_forces 1E-2
+  many_body_dispersion_nl    beta=0.83
+  ################################################################################
+  #
+  #  FHI-aims code project
+  #  Volker Blum, 2018
+  #
+  #  Suggested "intermediate" defaults for Se atom (to be pasted into control.in file)
+  #
+  #  2020/09/15 These "intermediate" settings are identical to past "tight" defaults
+  #             and differ only in the "g" function that is now included in "tight".
+  #
+  ################################################################################
+    species        Se
+  #     global species definitions
+      nucleus             34
+      mass                78.96
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0          2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         55 7.0
+      radial_multiplier   2
+      angular_grids       specified
+        division   0.0830  110
+        division   0.1357  194
+        division   0.7377  302
+        division   0.8610  434
+  #      division   0.9640  590
+  #      division   1.0773  770
+  #      division   2.5539  974
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      4  s   2.
+      valence      4  p   4.
+      valence      3  d  10.
+  #     ion occupancy
+      ion_occ      4  s   1.
+      ion_occ      4  p   3.
+      ion_occ      3  d  10.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.85 A, 2.15 A, 2.50 A, 3.00 A, 4.00 A
+  #
+  ################################################################################
+  #  "First tier" - improvements: -336.21 meV to -36.85 meV
+       hydro 3 d 4.3
+       hydro 2 p 1.6
+       hydro 4 f 7.2
+       ionic 4 s auto
+  #  "Second tier" - improvements: -14.39 meV to -1.49 meV
+  #     hydro 5 g 10.4
+  #     hydro 4 p 4.5
+  #     hydro 4 d 6.2
+  #     hydro 4 f 11.2
+  #     hydro 1 s 0.65
+  #     hydro 6 h 15.2
+  #  "Third tier" - improvements: -0.46 meV and below
+  #     hydro 5 g 14.4
+  #     ionic 4 d auto
+  #     hydro 4 f 22.4
+  #     hydro 5 f 7.4
+  #     hydro 5 p 8
+  #     hydro 5 s 9.4
+  #  "Fourth tier" - improvements: -0.12 meV and below
+  #     hydro 5 d 11.6
+  #     hydro 6 h 18
+  #     hydro 4 p 4
+  #     hydro 5 f 16
+  #     hydro 4 s 3.9
+  
+  
+  ################################################################################
+  #
+  #  FHI-aims code project
+  #  Volker Blum, 2018
+  #
+  #  Suggested "intermediate" defaults for S atom (to be pasted into control.in file)
+  #
+  ################################################################################
+    species        S
+  #     global species definitions
+      nucleus             16
+      mass                32.065
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0          2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         44 7.0
+      radial_multiplier   2
+      angular_grids       specified
+        division   0.4665  110
+        division   0.5810  194
+        division   0.7139  302
+        division   0.8274  434
+  #      division   0.9105  590
+  #      division   1.0975  770
+  #      division   1.2028  974
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      3  s   2.
+      valence      3  p   4.
+  #     ion occupancy
+      ion_occ      3  s   1.
+      ion_occ      3  p   3.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.6 A, 1.9 A, 2.5 A, 3.25 A, 4.0 A
+  #
+  ################################################################################
+  #  "First tier" - improvements: -652.81 meV to -45.53 meV
+       ionic 3 d auto
+       hydro 2 p 1.8
+       hydro 4 f 7
+       ionic 3 s auto
+  #  "Second tier" - improvements: -30.20 meV to -1.74 meV
+  #     hydro 4 d 6.2
+  for_aux     hydro 5 g 10.8
+  #     hydro 4 p 4.9
+  #     hydro 5 f 10
+  #     hydro 1 s 0.8
+  #  "Third tier" - improvements: -1.04 meV to -0.20 meV
+  #     hydro 3 d 3.9
+  #     hydro 3 d 2.7
+  #     hydro 5 g 12
+  #     hydro 4 p 10.4
+  #     hydro 5 f 12.4
+  #     hydro 2 s 1.9
+  #  "Fourth tier" - improvements: -0.35 meV to -0.06 meV
+  #     hydro 4 d 10.4
+  #     hydro 4 p 7.2
+  #     hydro 4 d 10
+  #     hydro 5 g 19.2
+  #     hydro 4 s 12
+  
+  ################################################################################
+  #
+  #  FHI-aims code project
+  # Volker Blum, Fritz Haber Institute Berlin, 2009
+  #
+  #  Suggested "intermediate" defaults for Mo atom (to be pasted into control.in file)
+  #
+  #  See https://aaltodoc.aalto.fi/handle/123456789/33620 for the report these
+  #  setting are based on
+  ################################################################################
+    species        Mo
+  #     global species definitions
+      nucleus             42
+      mass                95.94
+  #
+      l_hartree           6
+  #
+      cut_pot             4.0  2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base         59 7.0
+      radial_multiplier   2
+      angular_grids specified
+        division   0.3117   50
+        division   0.6750  110
+        division   1.0351  194
+        division   1.2073  302
+        division   1.6402  434
+  #      division   1.9185  590
+  #      division   2.0237  770
+  #      division   2.0980  974
+  #      division   2.7972 1202
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      5  s   1.
+      valence      4  p   6.
+      valence      4  d   5.
+  #     ion occupancy
+      ion_occ     5  s   0.
+      ion_occ     4  p   6.
+      ion_occ     4  d   4.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.675 A, 1.9 A, 2.375 A, 3.00 A, 4.00 A
+  #
+  ################################################################################
+  #  "First tier"  - max. impr. -711.23  meV, min. impr. -21.07 meV
+       hydro 4 f 8.4
+       hydro 3 d 2.8
+       ionic 5 p auto
+       for_aux hydro 5 g 12
+       ionic 5 s auto
+  #  "Second tier" - max. impr. -39.38  meV, min. impr. -2.68 meV
+  #     hydro 4 f 12.4
+  #     hydro 3 d 3.3
+  #     hydro 6 h 17.2
+  #     hydro 4 f 7.6
+  #     hydro 3 p 3.0
+  #     hydro 1 s 0.65
+  #  "Third tier"  - max. impr. -5.50 meV, min. impr. -0.47 meV
+  #     hydro 4 f 29.2
+  #     hydro 5 g 11.2
+  #     hydro 3 d 6.8
+  #     hydro 6 h 14.8
+  #     hydro 2 p 2.3
+  #     hydro 4 s 3.8
+  #  "Fourth tier"  - max. impr. -0.58 meV, min. impr. -0.19 meV
+  #     hydro 5 f 6.8
+  #     hydro 5 d 14.8
+  #     hydro 6 s 7.8
+  #     hydro 5 g 20.8
+  #     hydro 5 d 10.4
+  #     hydro 5 p 9.8
+  #  Further functions - -0.17 meV and below
+  #     hydro 5 d 3.2
+  ################################################################################
+  #
+  #  FHI-aims code project
+  #  Volker Blum, Maria Dragoumi, Sebastian Kokott 2020
+  #
+  #  Suggested "intermediate" defaults for W atom (to be pasted into control.in file)
+  #
+  ################################################################################
+    species          W
+  #     global species definitions
+      nucleus        74
+      mass           183.84
+  #
+      l_hartree      6
+  #
+      cut_pot        4.0  2.0  1.0
+      basis_dep_cutoff    1e-4
+  #
+      radial_base    71  7.0
+      radial_multiplier  2
+      angular_grids specified
+        division   0.2901   50
+        division   0.6986  110
+        division   1.0528  194
+        division   1.2659  302
+        division   1.5223  434
+  #      division   1.8111  590
+  #      division   2.0105  770
+  #      division   2.0413  974
+  #      division   2.8804 1202
+  #      outer_grid  974
+        outer_grid  434
+  ################################################################################
+  #
+  #  Definition of "minimal" basis
+  #
+  ################################################################################
+  #     valence basis states
+      valence      6  s   2.
+      valence      5  p   6.
+      valence      5  d   4.
+      valence      4  f  14.
+  #     ion occupancy
+      ion_occ      6  s   1.
+      ion_occ      5  p   6.
+      ion_occ      5  d   3.
+      ion_occ      4  f  14.
+  ################################################################################
+  #
+  #  Suggested additional basis functions. For production calculations,
+  #  uncomment them one after another (the most important basis functions are
+  #  listed first).
+  #
+  #  Constructed for dimers: 1.775, 1.99, 2.50, 3.25, 4.50 AA
+  #
+  ################################################################################
+  #
+  #  "First tier" - improvements: -603.77 meV to -28.99 meV
+       hydro 4 f 7.8
+       hydro 4 d 5.8
+       ionic 6 p auto
+    for_aux   hydro 5 g 12.4
+       ionic 6 s auto
+  #  "Second tier" - improvements: -28.30 meV to -1.31 meV
+  #     hydro 6 h 16.8
+  #     ionic 5 d auto
+  #     hydro 4 f 8.6
+  #     hydro 5 g 16.8
+  #     hydro 5 d 8.4
+  #     hydro 3 p 3.3
+  #     hydro 1 s 0.55
+  #  "Third tier" - max. impr. -1.79 meV, min. impr. -0.26 meV
+  #     hydro 5 f 10.8
+  #     hydro 5 g 34.4
+  #     hydro 6 h 20.8
+  #     hydro 5 g 12.8
+  #     hydro 2 p 1.6
+  #     hydro 4 s 4.7
+  #     hydro 6 d 18.4
+  #  "Fourth tier" -0.46 max. impr. - meV, min. impr. -0.09 meV
+  #     hydro 6 h 21.6
+  #     hydro 5 f 22.4
+  #     hydro 4 f 4
+  #     hydro 5 p 9.6
+  #     hydro 6 d 17.2
+  #     hydro 3 p 5.2
+  #     hydro 5 g 4.7
+  #     hydro 6 s 7.6
+  
+  -----------------------------------------------------------------------
+  Completed first pass over input file control.in .
+  -----------------------------------------------------------------------
+  
+  
+  -----------------------------------------------------------------------
+  Parsing geometry.in (first pass over file, find array dimensions only).
+  The contents of geometry.in will be repeated verbatim below
+  unless switched off by setting 'verbatim_writeout .false.' .
+  in the first line of geometry.in .
+  -----------------------------------------------------------------------
+  
+  lattice_vector 16.3574250499999998 -0.0112194000000000 -0.0153012000000000
+  lattice_vector -8.1707383000000000 14.1707286999999997 0.0066471000000000
+  lattice_vector -0.0023578059486359 0.0032805479536764 103.3491051833604928
+  atom -0.0006811830485621 0.9460116435360019 51.6745020318731605 W
+  atom 1.6372264069514380 1.8892877035360016 53.3474167718731564 Se
+  atom 1.6340611769514377 1.8890839235360022 49.9983605418731614 Se
+  atom -1.6348288430485625 3.7801573835360021 51.6758314518731581 W
+  atom 0.0030787469514377 4.7234334435360026 53.3487461918731540 Se
+  atom -0.0000864830485626 4.7232296635360029 49.9996899618731589 Se
+  atom -3.2689765030485622 6.6143031235360024 51.6771608718731557 W
+  atom -1.6310689130485625 7.5575791835360029 53.3500756118731658 Se
+  atom -1.6342341430485614 7.5573754035360023 50.0010193818731707 Se
+  atom -4.9031241630485631 9.4484488635360062 51.6784902918731603 W
+  atom -3.2652165730485629 10.3917249235360067 53.3514050318731563 Se
+  atom -3.2683818030485638 10.3915211435360053 50.0023488018731612 Se
+  atom -6.5372718230485622 12.2825946035360047 51.6798197118731579 W
+  atom -4.8993642330485621 13.2258706635360053 53.3527344518731539 Se
+  atom -4.9025294630485625 13.2256668835360056 50.0036782218731588 Se
+  atom 3.2708038269514379 0.9437677635360019 51.6714417918731570 W
+  atom 4.9087114169514381 1.8870438235360016 53.3443565318731601 Se
+  atom 4.9055461869514376 1.8868400435360022 49.9953003018731650 Se
+  atom 1.6366561669514375 3.7779135035360012 51.6727712118731617 W
+  atom 3.2745637569514381 4.7211895635360026 53.3456859518731576 Se
+  atom 3.2713985269514372 4.7209857835360030 49.9966297218731697 Se
+  atom 0.0025085069514379 6.6120592435360024 51.6741006318731593 W
+  atom 1.6404160969514372 7.5553353035360029 53.3470153718731552 Se
+  atom 1.6372508669514374 7.5551315235360024 49.9979591418731601 Se
+  atom -1.6316391530485628 9.4462049835360062 51.6754300518731569 W
+  atom 0.0031032069514369 10.3892772635360053 49.9992885618731648 Se
+  atom -3.2657868130485621 12.2803507235360048 51.6767594718731615 W
+  atom -1.6278792230485630 13.2236267835360053 53.3496742118731575 Se
+  atom -1.6310444530485628 13.2234230035360056 50.0006179818731695 Se
+  atom 6.5422888369514380 0.9415238835360019 51.6683815518731606 W
+  atom 8.1801964269514382 1.8847999435360017 53.3412962918731566 Se
+  atom 8.1770311969514378 1.8845961635360022 49.9922400618731615 Se
+  atom 4.9081411769514380 3.7756696235360012 51.6697109718731582 W
+  atom 6.5460487669514382 4.7189456835360026 53.3426257118731542 Se
+  atom 6.5428835369514386 4.7187419035360030 49.9935694818731591 Se
+  atom 3.2739935169514385 6.6098153635360015 51.6710403918731558 W
+  atom 4.9087358769514386 7.5528876435360024 49.9948989018731709 Se
+  atom 1.6398458569514374 9.4439611035360063 51.6723698118731605 W
+  atom 3.2777534469514369 10.3872371635360068 53.3452845518731564 Se
+  atom 3.2745882169514369 10.3870333835360036 49.9962283218731613 Se
+  atom 0.0056981969514379 12.2781068435360048 51.6736992318731581 W
+  atom 1.6436057869514371 13.2213829035360053 53.3466139718731540 Se
+  atom 1.6404405569514382 13.2211791235360057 49.9975577418731589 Se
+  atom 9.8137738469514399 0.9392800035360019 51.6653213118731571 W
+  atom 11.4516814369514393 1.8825560635360017 53.3382360518731602 Se
+  atom 11.4485162069514388 1.8823522835360023 49.9891798218731651 Se
+  atom 8.1796261869514399 3.7734257435360012 51.6666507318731618 W
+  atom 9.8175337769514393 4.7167018035360027 53.3395654718731578 Se
+  atom 9.8143685469514370 4.7164980235360030 49.9905092418731698 Se
+  atom 6.5454785269514391 6.6075714835360015 51.6679801518731594 W
+  atom 8.1833861169514375 7.5508475435360012 53.3408948918731554 Se
+  atom 8.1802208869514388 7.5506437635360024 49.9918386618731603 Se
+  atom 4.9113308669514373 9.4417172235360063 51.6693095718731570 W
+  atom 6.5492384569514392 10.3849932835360068 53.3422243118731600 Se
+  atom 6.5460732269514370 10.3847895035360036 49.9931680818731650 Se
+  atom 3.2771832069514382 12.2758629635360048 51.6706389918731617 W
+  atom 4.9150907969514384 13.2191390235360053 53.3435537318731576 Se
+  atom 4.9119255669514397 13.2189352435360057 49.9944975018731697 Se
+  atom 13.0852588569514392 0.9370361235360019 51.6622610718731607 W
+  atom 14.7231664469514385 1.8803121835360022 53.3351758118731567 Se
+  atom 14.7200012169514380 1.8801084035360023 49.9861195818731616 Se
+  atom 11.4511111969514392 3.7711818635360013 51.6635904918731583 W
+  atom 13.0890187869514385 4.7144579235360018 53.3365052318731543 Se
+  atom 13.0858535569514363 4.7142541435360030 49.9874490018731592 Se
+  atom 9.8169635369514392 6.6053276035360016 51.6649199118731559 W
+  atom 11.4548711269514367 7.5486036635360012 53.3378346518731661 Se
+  atom 11.4517058969514380 7.5483998835360016 49.9887784218731639 Se
+  atom 8.1828158769514410 9.4394733435360063 51.6662493318731606 W
+  atom 9.8207234669514385 10.3827494035360068 53.3391640718731566 Se
+  atom 9.8175582369514380 10.3825456235360036 49.9901078418731615 Se
+  atom 6.5486682169514383 12.2736190835360031 51.6675787518731582 W
+  atom 8.1865758069514385 13.2168951435360036 53.3404934918731541 Se
+  atom 8.1834105769514380 13.2166913635360022 49.9914372618731591 Se
+  
+  -----------------------------------------------------------------------
+  Completed first pass over input file geometry.in .
+  -----------------------------------------------------------------------
+  
+
+  Basic array size parameters:
+  | Number of species                 :        4
+  | Number of atoms                   :       73
+  | Number of lattice vectors         :        3
+  | Max. basis fn. angular momentum   :        4
+  | Max. atomic/ionic basis occupied n:        6
+  | Max. number of basis fn. types    :        3
+  | Max. radial fns per species/type  :       14
+  | Max. logarithmic grid size        :     1483
+  | Max. radial integration grid size :      143
+  | Max. angular integration grid size:      434
+  | Max. angular grid division number :        8
+  | Radial grid for Hartree potential :     1483
+  | Number of spin channels           :        2
+
+------------------------------------------------------------
+          Reading file control.in.
+------------------------------------------------------------
+
+  XC: Using HSE-functional with OMEGA =  0.110000E+00 <units>.
+  XC: For the actual units (bohr^-1 or Angstrom^-1), see below.
+  hse_unit: Unit for the HSE06 hybrid functional screening parameter set to bohr^(-1).
+  Spin treatment: Spin density functional theory - collinear spins.
+  Initial spin moment per atom:   1.0000
+  Charge =   0.000000E+00: Neutral system requested explicitly.
+  Scalar relativistic treatment of kinetic energy: on-site free-atom approximation to ZORA.
+  Geometry relaxation: Modified BFGS - TRM (trust radius method) for lattice optimization.
+  Convergence accuracy for geometry relaxation: Maximum force <   0.100000E-02 eV/A.
+  Occupation type: Gaussian broadening, width =   0.100000E+00 eV.
+  Found k-point grid:         4         4         1
+  Using dipole correction.
+  Using libMBD for calculating MBD and TS energies
+ 
+  Reading configuration options for species Se                  .
+  | Found nuclear charge :  34.0000
+  | Found atomic mass :    78.9600000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    55 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     5 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  4 s   2.000
+  | Found free-atom valence shell :  4 p   4.000
+  | Found free-atom valence shell :  3 d  10.000
+  | Found free-ion valence shell :  4 s   1.000
+  | Found free-ion valence shell :  4 p   3.000
+  | Found free-ion valence shell :  3 d  10.000
+  | Found hydrogenic basis function :  3 d   4.300
+  | Found hydrogenic basis function :  2 p   1.600
+  | Found hydrogenic basis function :  4 f   7.200
+  | Found ionic basis function :  4 s , default cutoff radius.
+  Species Se                  : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species Se: No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive Se                   ion.
+  Species Se: On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species Se                  : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species Se                  : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species Se                  : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain   111 grid points.
+ 
+  Reading configuration options for species S                   .
+  | Found nuclear charge :  16.0000
+  | Found atomic mass :    32.0650000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    44 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     5 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  3 s   2.000
+  | Found free-atom valence shell :  3 p   4.000
+  | Found free-ion valence shell :  3 s   1.000
+  | Found free-ion valence shell :  3 p   3.000
+  | Found ionic basis function :  3 d , default cutoff radius.
+  | Found hydrogenic basis function :  2 p   1.800
+  | Found hydrogenic basis function :  4 f   7.000
+  | Found ionic basis function :  3 s , default cutoff radius.
+  | Found hydrogenic extended basis function :  5 g  10.800
+  Species S                   : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species S : No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive S                    ion.
+  Species S : On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species S                   : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species S                   : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species S                   : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain    89 grid points.
+ 
+  Reading configuration options for species Mo                  .
+  | Found nuclear charge :  42.0000
+  | Found atomic mass :    95.9400000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    59 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     6 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  5 s   1.000
+  | Found free-atom valence shell :  4 p   6.000
+  | Found free-atom valence shell :  4 d   5.000
+  | Found free-ion valence shell :  5 s   0.000
+  | Found free-ion valence shell :  4 p   6.000
+  | Found free-ion valence shell :  4 d   4.000
+  | Found hydrogenic basis function :  4 f   8.400
+  | Found hydrogenic basis function :  3 d   2.800
+  | Found ionic basis function :  5 p , default cutoff radius.
+  | Found hydrogenic extended basis function :  5 g  12.000
+  | Found ionic basis function :  5 s , default cutoff radius.
+  Species Mo                  : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species Mo: No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive Mo                   ion.
+  Species Mo: On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species Mo                  : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species Mo                  : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species Mo                  : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain   119 grid points.
+ 
+  Reading configuration options for species W                   .
+  | Found nuclear charge :  74.0000
+  | Found atomic mass :    183.840000000000      amu
+  | Found l_max for Hartree potential  :   6
+  | Found cutoff potl. onset [A], width [A], scale factor :    4.00000    2.00000    1.00000
+  | Threshold for basis-dependent cutoff potential is   0.100000E-03
+  | Found data for basic radial integration grid :    71 points, outermost radius =    7.000 A
+  | Found multiplier for basic radial grid :   2
+  | Found angular grid specification: user-specified.
+  | Specified grid contains     6 separate shells.
+  | Check grid settings after all constraints further below.
+  | Found free-atom valence shell :  6 s   2.000
+  | Found free-atom valence shell :  5 p   6.000
+  | Found free-atom valence shell :  5 d   4.000
+  | Found free-atom valence shell :  4 f  14.000
+  | Found free-ion valence shell :  6 s   1.000
+  | Found free-ion valence shell :  5 p   6.000
+  | Found free-ion valence shell :  5 d   3.000
+  | Found free-ion valence shell :  4 f  14.000
+  | Found hydrogenic basis function :  4 f   7.800
+  | Found hydrogenic basis function :  4 d   5.800
+  | Found ionic basis function :  6 p , default cutoff radius.
+  | Found hydrogenic extended basis function :  5 g  12.400
+  | Found ionic basis function :  6 s , default cutoff radius.
+  Species W                   : Missing cutoff potential type.
+  Defaulting to exp(1/x)/(1-x)^2 type cutoff potential.
+  Species W : No 'logarithmic' tag. Using default grid for free atom:
+  | Default logarithmic grid data [bohr] : 0.1000E-03 0.1000E+03 0.1012E+01
+  | Will include ionic basis functions of  2.0-fold positive W                    ion.
+  Species W : On-site basis accuracy parameter (for Gram-Schmidt orthonormalisation) not specified.
+  Using default value basis_acc =  0.1000000E-03.
+  Species W                   : Using default innermost maximum threshold i_radial=  2 for radial functions.
+  Species W                   : Default cutoff onset for free atom density etc. : 0.40000000E+01 AA.
+  Species W                   : Basic radial grid will be enhanced according to radial_multiplier =   2, to contain   143 grid points.
+ 
+  Finished reading input file 'control.in'.
+ 
+------------------------------------------------------------
+
+
+------------------------------------------------------------
+          Reading geometry description geometry.in.
+------------------------------------------------------------
+  | The smallest distance between any two atoms is         2.52411464 AA.
+  | The first atom of this pair is atom number                     68 .
+  | The second atom of this pair is atom number                    69 .
+  | Wigner-Seitz cell of the first atom image           0     0     0 .
+  | (The Wigner-Seitz cell of the second atom is 0 0 0  by definition.)
+
+  Symmetry information by spglib:
+  | Precision set to  0.1E-04
+  | Number of Operations  : 1
+  | Space group           : 1
+  | International         : P1 e
+  | Schoenflies           : C1^1
+  Input structure read successfully.
+  The structure contains       73 atoms,  and a total of       3482.000 electrons.
+
+  Input geometry:
+  | Unit cell:
+  |       16.35742505       -0.01121940       -0.01530120
+  |       -8.17073830       14.17072870        0.00664710
+  |       -0.00235781        0.00328055      103.34910518
+  | Atomic structure:
+  |       Atom                x [A]            y [A]            z [A]
+  |    1: Species W            -0.00068118        0.94601164       51.67450203
+  |    2: Species Se            1.63722641        1.88928770       53.34741677
+  |    3: Species Se            1.63406118        1.88908392       49.99836054
+  |    4: Species W            -1.63482884        3.78015738       51.67583145
+  |    5: Species Se            0.00307875        4.72343344       53.34874619
+  |    6: Species Se           -0.00008648        4.72322966       49.99968996
+  |    7: Species W            -3.26897650        6.61430312       51.67716087
+  |    8: Species Se           -1.63106891        7.55757918       53.35007561
+  |    9: Species Se           -1.63423414        7.55737540       50.00101938
+  |   10: Species W            -4.90312416        9.44844886       51.67849029
+  |   11: Species Se           -3.26521657       10.39172492       53.35140503
+  |   12: Species Se           -3.26838180       10.39152114       50.00234880
+  |   13: Species W            -6.53727182       12.28259460       51.67981971
+  |   14: Species Se           -4.89936423       13.22587066       53.35273445
+  |   15: Species Se           -4.90252946       13.22566688       50.00367822
+  |   16: Species W             3.27080383        0.94376776       51.67144179
+  |   17: Species Se            4.90871142        1.88704382       53.34435653
+  |   18: Species Se            4.90554619        1.88684004       49.99530030
+  |   19: Species W             1.63665617        3.77791350       51.67277121
+  |   20: Species Se            3.27456376        4.72118956       53.34568595
+  |   21: Species Se            3.27139853        4.72098578       49.99662972
+  |   22: Species W             0.00250851        6.61205924       51.67410063
+  |   23: Species Se            1.64041610        7.55533530       53.34701537
+  |   24: Species Se            1.63725087        7.55513152       49.99795914
+  |   25: Species W            -1.63163915        9.44620498       51.67543005
+  |   26: Species Se            0.00310321       10.38927726       49.99928856
+  |   27: Species W            -3.26578681       12.28035072       51.67675947
+  |   28: Species Se           -1.62787922       13.22362678       53.34967421
+  |   29: Species Se           -1.63104445       13.22342300       50.00061798
+  |   30: Species W             6.54228884        0.94152388       51.66838155
+  |   31: Species Se            8.18019643        1.88479994       53.34129629
+  |   32: Species Se            8.17703120        1.88459616       49.99224006
+  |   33: Species W             4.90814118        3.77566962       51.66971097
+  |   34: Species Se            6.54604877        4.71894568       53.34262571
+  |   35: Species Se            6.54288354        4.71874190       49.99356948
+  |   36: Species W             3.27399352        6.60981536       51.67104039
+  |   37: Species Se            4.90873588        7.55288764       49.99489890
+  |   38: Species W             1.63984586        9.44396110       51.67236981
+  |   39: Species Se            3.27775345       10.38723716       53.34528455
+  |   40: Species Se            3.27458822       10.38703338       49.99622832
+  |   41: Species W             0.00569820       12.27810684       51.67369923
+  |   42: Species Se            1.64360579       13.22138290       53.34661397
+  |   43: Species Se            1.64044056       13.22117912       49.99755774
+  |   44: Species W             9.81377385        0.93928000       51.66532131
+  |   45: Species Se           11.45168144        1.88255606       53.33823605
+  |   46: Species Se           11.44851621        1.88235228       49.98917982
+  |   47: Species W             8.17962619        3.77342574       51.66665073
+  |   48: Species Se            9.81753378        4.71670180       53.33956547
+  |   49: Species Se            9.81436855        4.71649802       49.99050924
+  |   50: Species W             6.54547853        6.60757148       51.66798015
+  |   51: Species Se            8.18338612        7.55084754       53.34089489
+  |   52: Species Se            8.18022089        7.55064376       49.99183866
+  |   53: Species W             4.91133087        9.44171722       51.66930957
+  |   54: Species Se            6.54923846       10.38499328       53.34222431
+  |   55: Species Se            6.54607323       10.38478950       49.99316808
+  |   56: Species W             3.27718321       12.27586296       51.67063899
+  |   57: Species Se            4.91509080       13.21913902       53.34355373
+  |   58: Species Se            4.91192557       13.21893524       49.99449750
+  |   59: Species W            13.08525886        0.93703612       51.66226107
+  |   60: Species Se           14.72316645        1.88031218       53.33517581
+  |   61: Species Se           14.72000122        1.88010840       49.98611958
+  |   62: Species W            11.45111120        3.77118186       51.66359049
+  |   63: Species Se           13.08901879        4.71445792       53.33650523
+  |   64: Species Se           13.08585356        4.71425414       49.98744900
+  |   65: Species W             9.81696354        6.60532760       51.66491991
+  |   66: Species Se           11.45487113        7.54860366       53.33783465
+  |   67: Species Se           11.45170590        7.54839988       49.98877842
+  |   68: Species W             8.18281588        9.43947334       51.66624933
+  |   69: Species Se            9.82072347       10.38274940       53.33916407
+  |   70: Species Se            9.81755824       10.38254562       49.99010784
+  |   71: Species W             6.54866822       12.27361908       51.66757875
+  |   72: Species Se            8.18657581       13.21689514       53.34049349
+  |   73: Species Se            8.18341058       13.21669136       49.99143726
+
+  Lattice parameters for 3D lattice (in Angstroms) :    16.357436   16.357584  103.349105
+  Angle(s) between unit vectors (in degrees)       :    89.974489   90.054904  120.006740
+
+
+  Quantities derived from the lattice vectors:
+  | Reciprocal lattice vector 1:  0.384270  0.221567  0.000002
+  | Reciprocal lattice vector 2:  0.000304  0.443567 -0.000014
+  | Reciprocal lattice vector 3:  0.000057  0.000004  0.060796
+  | Unit cell volume                               :   0.239465E+05  A^3
+
+  Fractional coordinates:
+                         L1                L2                L3
+       atom_frac         0.03333232        0.06666879        0.50000016  W
+       atom_frac         0.16676802        0.13333579        0.51620265  Se
+       atom_frac         0.16656633        0.13332875        0.48379735  Se
+       atom_frac         0.03333232        0.26666879        0.50000016  W
+       atom_frac         0.16676802        0.33333579        0.51620265  Se
+       atom_frac         0.16656633        0.33332875        0.48379735  Se
+       atom_frac         0.03333232        0.46666879        0.50000016  W
+       atom_frac         0.16676802        0.53333579        0.51620265  Se
+       atom_frac         0.16656633        0.53332875        0.48379735  Se
+       atom_frac         0.03333232        0.66666879        0.50000016  W
+       atom_frac         0.16676802        0.73333579        0.51620265  Se
+       atom_frac         0.16656633        0.73332875        0.48379735  Se
+       atom_frac         0.03333232        0.86666879        0.50000016  W
+       atom_frac         0.16676802        0.93333579        0.51620265  Se
+       atom_frac         0.16656633        0.93332875        0.48379735  Se
+       atom_frac         0.23333232        0.06666879        0.50000016  W
+       atom_frac         0.36676802        0.13333579        0.51620265  Se
+       atom_frac         0.36656633        0.13332875        0.48379735  Se
+       atom_frac         0.23333232        0.26666879        0.50000016  W
+       atom_frac         0.36676802        0.33333579        0.51620265  Se
+       atom_frac         0.36656633        0.33332875        0.48379735  Se
+       atom_frac         0.23333232        0.46666879        0.50000016  W
+       atom_frac         0.36676802        0.53333579        0.51620265  Se
+       atom_frac         0.36656633        0.53332875        0.48379735  Se
+       atom_frac         0.23333232        0.66666879        0.50000016  W
+       atom_frac         0.36656633        0.73332875        0.48379735  Se
+       atom_frac         0.23333232        0.86666879        0.50000016  W
+       atom_frac         0.36676802        0.93333579        0.51620265  Se
+       atom_frac         0.36656633        0.93332875        0.48379735  Se
+       atom_frac         0.43333232        0.06666879        0.50000016  W
+       atom_frac         0.56676802        0.13333579        0.51620265  Se
+       atom_frac         0.56656633        0.13332875        0.48379735  Se
+       atom_frac         0.43333232        0.26666879        0.50000016  W
+       atom_frac         0.56676802        0.33333579        0.51620265  Se
+       atom_frac         0.56656633        0.33332875        0.48379735  Se
+       atom_frac         0.43333232        0.46666879        0.50000016  W
+       atom_frac         0.56656633        0.53332875        0.48379735  Se
+       atom_frac         0.43333232        0.66666879        0.50000016  W
+       atom_frac         0.56676802        0.73333579        0.51620265  Se
+       atom_frac         0.56656633        0.73332875        0.48379735  Se
+       atom_frac         0.43333232        0.86666879        0.50000016  W
+       atom_frac         0.56676802        0.93333579        0.51620265  Se
+       atom_frac         0.56656633        0.93332875        0.48379735  Se
+       atom_frac         0.63333232        0.06666879        0.50000016  W
+       atom_frac         0.76676802        0.13333579        0.51620265  Se
+       atom_frac         0.76656633        0.13332875        0.48379735  Se
+       atom_frac         0.63333232        0.26666879        0.50000016  W
+       atom_frac         0.76676802        0.33333579        0.51620265  Se
+       atom_frac         0.76656633        0.33332875        0.48379735  Se
+       atom_frac         0.63333232        0.46666879        0.50000016  W
+       atom_frac         0.76676802        0.53333579        0.51620265  Se
+       atom_frac         0.76656633        0.53332875        0.48379735  Se
+       atom_frac         0.63333232        0.66666879        0.50000016  W
+       atom_frac         0.76676802        0.73333579        0.51620265  Se
+       atom_frac         0.76656633        0.73332875        0.48379735  Se
+       atom_frac         0.63333232        0.86666879        0.50000016  W
+       atom_frac         0.76676802        0.93333579        0.51620265  Se
+       atom_frac         0.76656633        0.93332875        0.48379735  Se
+       atom_frac         0.83333232        0.06666879        0.50000016  W
+       atom_frac         0.96676802        0.13333579        0.51620265  Se
+       atom_frac         0.96656633        0.13332875        0.48379735  Se
+       atom_frac         0.83333232        0.26666879        0.50000016  W
+       atom_frac         0.96676802        0.33333579        0.51620265  Se
+       atom_frac         0.96656633        0.33332875        0.48379735  Se
+       atom_frac         0.83333232        0.46666879        0.50000016  W
+       atom_frac         0.96676802        0.53333579        0.51620265  Se
+       atom_frac         0.96656633        0.53332875        0.48379735  Se
+       atom_frac         0.83333232        0.66666879        0.50000016  W
+       atom_frac         0.96676802        0.73333579        0.51620265  Se
+       atom_frac         0.96656633        0.73332875        0.48379735  Se
+       atom_frac         0.83333232        0.86666879        0.50000016  W
+       atom_frac         0.96676802        0.93333579        0.51620265  Se
+       atom_frac         0.96656633        0.93332875        0.48379735  Se
+
+  Initial moments and charges:
+  |  Atom   Moment         Charge        Species
+  |     1   0.100000E+01   0.000000E+00   W
+  |     2   0.100000E+01   0.000000E+00   Se
+  |     3   0.100000E+01   0.000000E+00   Se
+  |     4   0.100000E+01   0.000000E+00   W
+  |     5   0.100000E+01   0.000000E+00   Se
+  |     6   0.100000E+01   0.000000E+00   Se
+  |     7   0.100000E+01   0.000000E+00   W
+  |     8   0.100000E+01   0.000000E+00   Se
+  |     9   0.100000E+01   0.000000E+00   Se
+  |    10   0.100000E+01   0.000000E+00   W
+  |    11   0.100000E+01   0.000000E+00   Se
+  |    12   0.100000E+01   0.000000E+00   Se
+  |    13   0.100000E+01   0.000000E+00   W
+  |    14   0.100000E+01   0.000000E+00   Se
+  |    15   0.100000E+01   0.000000E+00   Se
+  |    16   0.100000E+01   0.000000E+00   W
+  |    17   0.100000E+01   0.000000E+00   Se
+  |    18   0.100000E+01   0.000000E+00   Se
+  |    19   0.100000E+01   0.000000E+00   W
+  |    20   0.100000E+01   0.000000E+00   Se
+  |    21   0.100000E+01   0.000000E+00   Se
+  |    22   0.100000E+01   0.000000E+00   W
+  |    23   0.100000E+01   0.000000E+00   Se
+  |    24   0.100000E+01   0.000000E+00   Se
+  |    25   0.100000E+01   0.000000E+00   W
+  |    26   0.100000E+01   0.000000E+00   Se
+  |    27   0.100000E+01   0.000000E+00   W
+  |    28   0.100000E+01   0.000000E+00   Se
+  |    29   0.100000E+01   0.000000E+00   Se
+  |    30   0.100000E+01   0.000000E+00   W
+  |    31   0.100000E+01   0.000000E+00   Se
+  |    32   0.100000E+01   0.000000E+00   Se
+  |    33   0.100000E+01   0.000000E+00   W
+  |    34   0.100000E+01   0.000000E+00   Se
+  |    35   0.100000E+01   0.000000E+00   Se
+  |    36   0.100000E+01   0.000000E+00   W
+  |    37   0.100000E+01   0.000000E+00   Se
+  |    38   0.100000E+01   0.000000E+00   W
+  |    39   0.100000E+01   0.000000E+00   Se
+  |    40   0.100000E+01   0.000000E+00   Se
+  |    41   0.100000E+01   0.000000E+00   W
+  |    42   0.100000E+01   0.000000E+00   Se
+  |    43   0.100000E+01   0.000000E+00   Se
+  |    44   0.100000E+01   0.000000E+00   W
+  |    45   0.100000E+01   0.000000E+00   Se
+  |    46   0.100000E+01   0.000000E+00   Se
+  |    47   0.100000E+01   0.000000E+00   W
+  |    48   0.100000E+01   0.000000E+00   Se
+  |    49   0.100000E+01   0.000000E+00   Se
+  |    50   0.100000E+01   0.000000E+00   W
+  |    51   0.100000E+01   0.000000E+00   Se
+  |    52   0.100000E+01   0.000000E+00   Se
+  |    53   0.100000E+01   0.000000E+00   W
+  |    54   0.100000E+01   0.000000E+00   Se
+  |    55   0.100000E+01   0.000000E+00   Se
+  |    56   0.100000E+01   0.000000E+00   W
+  |    57   0.100000E+01   0.000000E+00   Se
+  |    58   0.100000E+01   0.000000E+00   Se
+  |    59   0.100000E+01   0.000000E+00   W
+  |    60   0.100000E+01   0.000000E+00   Se
+  |    61   0.100000E+01   0.000000E+00   Se
+  |    62   0.100000E+01   0.000000E+00   W
+  |    63   0.100000E+01   0.000000E+00   Se
+  |    64   0.100000E+01   0.000000E+00   Se
+  |    65   0.100000E+01   0.000000E+00   W
+  |    66   0.100000E+01   0.000000E+00   Se
+  |    67   0.100000E+01   0.000000E+00   Se
+  |    68   0.100000E+01   0.000000E+00   W
+  |    69   0.100000E+01   0.000000E+00   Se
+  |    70   0.100000E+01   0.000000E+00   Se
+  |    71   0.100000E+01   0.000000E+00   W
+  |    72   0.100000E+01   0.000000E+00   Se
+  |    73   0.100000E+01   0.000000E+00   Se
+
+ 
+  Finished reading input file 'control.in'.
+ 
+
+------------------------------------------------------------
+          Reading geometry description geometry.in.
+------------------------------------------------------------
+ 
+  Consistency checks for stacksize environment parameter are next.
+ 
+  | Maximum stacksize for task 0: unlimited
+  | Maximum stacksize for task 1: unlimited
+  | Maximum stacksize for task 2: unlimited
+  | Maximum stacksize for task 3: unlimited
+  | Maximum stacksize for task 4: unlimited
+  | Maximum stacksize for task 5: unlimited
+  | Maximum stacksize for task 6: unlimited
+  | Maximum stacksize for task 7: unlimited
+  | Maximum stacksize for task 8: unlimited
+  | Maximum stacksize for task 9: unlimited
+  | Maximum stacksize for task 10: unlimited
+  | Maximum stacksize for task 11: unlimited
+  | Maximum stacksize for task 12: unlimited
+  | Maximum stacksize for task 13: unlimited
+  | Maximum stacksize for task 14: unlimited
+  | Maximum stacksize for task 15: unlimited
+  | Maximum stacksize for task 16: unlimited
+  | Maximum stacksize for task 17: unlimited
+  | Maximum stacksize for task 18: unlimited
+  | Maximum stacksize for task 19: unlimited
+  | Maximum stacksize for task 20: unlimited
+  | Maximum stacksize for task 21: unlimited
+  | Maximum stacksize for task 22: unlimited
+  | Maximum stacksize for task 23: unlimited
+  | Maximum stacksize for task 24: unlimited
+  | Maximum stacksize for task 25: unlimited
+  | Maximum stacksize for task 26: unlimited
+  | Maximum stacksize for task 27: unlimited
+  | Maximum stacksize for task 28: unlimited
+  | Maximum stacksize for task 29: unlimited
+  | Maximum stacksize for task 30: unlimited
+  | Maximum stacksize for task 31: unlimited
+  | Maximum stacksize for task 32: unlimited
+  | Maximum stacksize for task 33: unlimited
+  | Maximum stacksize for task 34: unlimited
+  | Maximum stacksize for task 35: unlimited
+  | Maximum stacksize for task 36: unlimited
+  | Maximum stacksize for task 37: unlimited
+  | Maximum stacksize for task 38: unlimited
+  | Maximum stacksize for task 39: unlimited
+  | Maximum stacksize for task 40: unlimited
+  | Maximum stacksize for task 41: unlimited
+  | Maximum stacksize for task 42: unlimited
+  | Maximum stacksize for task 43: unlimited
+  | Maximum stacksize for task 44: unlimited
+  | Maximum stacksize for task 45: unlimited
+  | Maximum stacksize for task 46: unlimited
+  | Maximum stacksize for task 47: unlimited
+  | Maximum stacksize for task 48: unlimited
+  | Maximum stacksize for task 49: unlimited
+  | Maximum stacksize for task 50: unlimited
+  | Maximum stacksize for task 51: unlimited
+  | Maximum stacksize for task 52: unlimited
+  | Maximum stacksize for task 53: unlimited
+  | Maximum stacksize for task 54: unlimited
+  | Maximum stacksize for task 55: unlimited
+  | Maximum stacksize for task 56: unlimited
+  | Maximum stacksize for task 57: unlimited
+  | Maximum stacksize for task 58: unlimited
+  | Maximum stacksize for task 59: unlimited
+  | Maximum stacksize for task 60: unlimited
+  | Maximum stacksize for task 61: unlimited
+  | Maximum stacksize for task 62: unlimited
+  | Maximum stacksize for task 63: unlimited
+  | Maximum stacksize for task 64: unlimited
+  | Maximum stacksize for task 65: unlimited
+  | Maximum stacksize for task 66: unlimited
+  | Maximum stacksize for task 67: unlimited
+  | Maximum stacksize for task 68: unlimited
+  | Maximum stacksize for task 69: unlimited
+  | Maximum stacksize for task 70: unlimited
+  | Maximum stacksize for task 71: unlimited
+  | Maximum stacksize for task 72: unlimited
+  | Maximum stacksize for task 73: unlimited
+  | Maximum stacksize for task 74: unlimited
+  | Maximum stacksize for task 75: unlimited
+  | Maximum stacksize for task 76: unlimited
+  | Maximum stacksize for task 77: unlimited
+  | Maximum stacksize for task 78: unlimited
+  | Maximum stacksize for task 79: unlimited
+  | Maximum stacksize for task 80: unlimited
+  | Maximum stacksize for task 81: unlimited
+  | Maximum stacksize for task 82: unlimited
+  | Maximum stacksize for task 83: unlimited
+  | Maximum stacksize for task 84: unlimited
+  | Maximum stacksize for task 85: unlimited
+  | Maximum stacksize for task 86: unlimited
+  | Maximum stacksize for task 87: unlimited
+  | Maximum stacksize for task 88: unlimited
+  | Maximum stacksize for task 89: unlimited
+  | Maximum stacksize for task 90: unlimited
+  | Maximum stacksize for task 91: unlimited
+  | Maximum stacksize for task 92: unlimited
+  | Maximum stacksize for task 93: unlimited
+  | Maximum stacksize for task 94: unlimited
+  | Maximum stacksize for task 95: unlimited
+  | Maximum stacksize for task 96: unlimited
+  | Maximum stacksize for task 97: unlimited
+  | Maximum stacksize for task 98: unlimited
+  | Maximum stacksize for task 99: unlimited
+  | Maximum stacksize for task 100: unlimited
+  | Maximum stacksize for task 101: unlimited
+  | Maximum stacksize for task 102: unlimited
+  | Maximum stacksize for task 103: unlimited
+  | Maximum stacksize for task 104: unlimited
+  | Maximum stacksize for task 105: unlimited
+  | Maximum stacksize for task 106: unlimited
+  | Maximum stacksize for task 107: unlimited
+  | Maximum stacksize for task 108: unlimited
+  | Maximum stacksize for task 109: unlimited
+  | Maximum stacksize for task 110: unlimited
+  | Maximum stacksize for task 111: unlimited
+  | Maximum stacksize for task 112: unlimited
+  | Maximum stacksize for task 113: unlimited
+  | Maximum stacksize for task 114: unlimited
+  | Maximum stacksize for task 115: unlimited
+  | Maximum stacksize for task 116: unlimited
+  | Maximum stacksize for task 117: unlimited
+  | Maximum stacksize for task 118: unlimited
+  | Maximum stacksize for task 119: unlimited
+  | Maximum stacksize for task 120: unlimited
+  | Maximum stacksize for task 121: unlimited
+  | Maximum stacksize for task 122: unlimited
+  | Maximum stacksize for task 123: unlimited
+  | Maximum stacksize for task 124: unlimited
+  | Maximum stacksize for task 125: unlimited
+  | Maximum stacksize for task 126: unlimited
+  | Maximum stacksize for task 127: unlimited
+  | Maximum stacksize for task 128: unlimited
+  | Maximum stacksize for task 129: unlimited
+  | Maximum stacksize for task 130: unlimited
+  | Maximum stacksize for task 131: unlimited
+  | Maximum stacksize for task 132: unlimited
+  | Maximum stacksize for task 133: unlimited
+  | Maximum stacksize for task 134: unlimited
+  | Maximum stacksize for task 135: unlimited
+  | Maximum stacksize for task 136: unlimited
+  | Maximum stacksize for task 137: unlimited
+  | Maximum stacksize for task 138: unlimited
+  | Maximum stacksize for task 139: unlimited
+  | Maximum stacksize for task 140: unlimited
+  | Maximum stacksize for task 141: unlimited
+  | Maximum stacksize for task 142: unlimited
+  | Maximum stacksize for task 143: unlimited
+  | Maximum stacksize for task 144: unlimited
+  | Maximum stacksize for task 145: unlimited
+  | Maximum stacksize for task 146: unlimited
+  | Maximum stacksize for task 147: unlimited
+  | Maximum stacksize for task 148: unlimited
+  | Maximum stacksize for task 149: unlimited
+  | Maximum stacksize for task 150: unlimited
+  | Maximum stacksize for task 151: unlimited
+  | Maximum stacksize for task 152: unlimited
+  | Maximum stacksize for task 153: unlimited
+  | Maximum stacksize for task 154: unlimited
+  | Maximum stacksize for task 155: unlimited
+  | Maximum stacksize for task 156: unlimited
+  | Maximum stacksize for task 157: unlimited
+  | Maximum stacksize for task 158: unlimited
+  | Maximum stacksize for task 159: unlimited
+  | Current stacksize for task 0: unlimited
+  | Current stacksize for task 1: unlimited
+  | Current stacksize for task 2: unlimited
+  | Current stacksize for task 3: unlimited
+  | Current stacksize for task 4: unlimited
+  | Current stacksize for task 5: unlimited
+  | Current stacksize for task 6: unlimited
+  | Current stacksize for task 7: unlimited
+  | Current stacksize for task 8: unlimited
+  | Current stacksize for task 9: unlimited
+  | Current stacksize for task 10: unlimited
+  | Current stacksize for task 11: unlimited
+  | Current stacksize for task 12: unlimited
+  | Current stacksize for task 13: unlimited
+  | Current stacksize for task 14: unlimited
+  | Current stacksize for task 15: unlimited
+  | Current stacksize for task 16: unlimited
+  | Current stacksize for task 17: unlimited
+  | Current stacksize for task 18: unlimited
+  | Current stacksize for task 19: unlimited
+  | Current stacksize for task 20: unlimited
+  | Current stacksize for task 21: unlimited
+  | Current stacksize for task 22: unlimited
+  | Current stacksize for task 23: unlimited
+  | Current stacksize for task 24: unlimited
+  | Current stacksize for task 25: unlimited
+  | Current stacksize for task 26: unlimited
+  | Current stacksize for task 27: unlimited
+  | Current stacksize for task 28: unlimited
+  | Current stacksize for task 29: unlimited
+  | Current stacksize for task 30: unlimited
+  | Current stacksize for task 31: unlimited
+  | Current stacksize for task 32: unlimited
+  | Current stacksize for task 33: unlimited
+  | Current stacksize for task 34: unlimited
+  | Current stacksize for task 35: unlimited
+  | Current stacksize for task 36: unlimited
+  | Current stacksize for task 37: unlimited
+  | Current stacksize for task 38: unlimited
+  | Current stacksize for task 39: unlimited
+  | Current stacksize for task 40: unlimited
+  | Current stacksize for task 41: unlimited
+  | Current stacksize for task 42: unlimited
+  | Current stacksize for task 43: unlimited
+  | Current stacksize for task 44: unlimited
+  | Current stacksize for task 45: unlimited
+  | Current stacksize for task 46: unlimited
+  | Current stacksize for task 47: unlimited
+  | Current stacksize for task 48: unlimited
+  | Current stacksize for task 49: unlimited
+  | Current stacksize for task 50: unlimited
+  | Current stacksize for task 51: unlimited
+  | Current stacksize for task 52: unlimited
+  | Current stacksize for task 53: unlimited
+  | Current stacksize for task 54: unlimited
+  | Current stacksize for task 55: unlimited
+  | Current stacksize for task 56: unlimited
+  | Current stacksize for task 57: unlimited
+  | Current stacksize for task 58: unlimited
+  | Current stacksize for task 59: unlimited
+  | Current stacksize for task 60: unlimited
+  | Current stacksize for task 61: unlimited
+  | Current stacksize for task 62: unlimited
+  | Current stacksize for task 63: unlimited
+  | Current stacksize for task 64: unlimited
+  | Current stacksize for task 65: unlimited
+  | Current stacksize for task 66: unlimited
+  | Current stacksize for task 67: unlimited
+  | Current stacksize for task 68: unlimited
+  | Current stacksize for task 69: unlimited
+  | Current stacksize for task 70: unlimited
+  | Current stacksize for task 71: unlimited
+  | Current stacksize for task 72: unlimited
+  | Current stacksize for task 73: unlimited
+  | Current stacksize for task 74: unlimited
+  | Current stacksize for task 75: unlimited
+  | Current stacksize for task 76: unlimited
+  | Current stacksize for task 77: unlimited
+  | Current stacksize for task 78: unlimited
+  | Current stacksize for task 79: unlimited
+  | Current stacksize for task 80: unlimited
+  | Current stacksize for task 81: unlimited
+  | Current stacksize for task 82: unlimited
+  | Current stacksize for task 83: unlimited
+  | Current stacksize for task 84: unlimited
+  | Current stacksize for task 85: unlimited
+  | Current stacksize for task 86: unlimited
+  | Current stacksize for task 87: unlimited
+  | Current stacksize for task 88: unlimited
+  | Current stacksize for task 89: unlimited
+  | Current stacksize for task 90: unlimited
+  | Current stacksize for task 91: unlimited
+  | Current stacksize for task 92: unlimited
+  | Current stacksize for task 93: unlimited
+  | Current stacksize for task 94: unlimited
+  | Current stacksize for task 95: unlimited
+  | Current stacksize for task 96: unlimited
+  | Current stacksize for task 97: unlimited
+  | Current stacksize for task 98: unlimited
+  | Current stacksize for task 99: unlimited
+  | Current stacksize for task 100: unlimited
+  | Current stacksize for task 101: unlimited
+  | Current stacksize for task 102: unlimited
+  | Current stacksize for task 103: unlimited
+  | Current stacksize for task 104: unlimited
+  | Current stacksize for task 105: unlimited
+  | Current stacksize for task 106: unlimited
+  | Current stacksize for task 107: unlimited
+  | Current stacksize for task 108: unlimited
+  | Current stacksize for task 109: unlimited
+  | Current stacksize for task 110: unlimited
+  | Current stacksize for task 111: unlimited
+  | Current stacksize for task 112: unlimited
+  | Current stacksize for task 113: unlimited
+  | Current stacksize for task 114: unlimited
+  | Current stacksize for task 115: unlimited
+  | Current stacksize for task 116: unlimited
+  | Current stacksize for task 117: unlimited
+  | Current stacksize for task 118: unlimited
+  | Current stacksize for task 119: unlimited
+  | Current stacksize for task 120: unlimited
+  | Current stacksize for task 121: unlimited
+  | Current stacksize for task 122: unlimited
+  | Current stacksize for task 123: unlimited
+  | Current stacksize for task 124: unlimited
+  | Current stacksize for task 125: unlimited
+  | Current stacksize for task 126: unlimited
+  | Current stacksize for task 127: unlimited
+  | Current stacksize for task 128: unlimited
+  | Current stacksize for task 129: unlimited
+  | Current stacksize for task 130: unlimited
+  | Current stacksize for task 131: unlimited
+  | Current stacksize for task 132: unlimited
+  | Current stacksize for task 133: unlimited
+  | Current stacksize for task 134: unlimited
+  | Current stacksize for task 135: unlimited
+  | Current stacksize for task 136: unlimited
+  | Current stacksize for task 137: unlimited
+  | Current stacksize for task 138: unlimited
+  | Current stacksize for task 139: unlimited
+  | Current stacksize for task 140: unlimited
+  | Current stacksize for task 141: unlimited
+  | Current stacksize for task 142: unlimited
+  | Current stacksize for task 143: unlimited
+  | Current stacksize for task 144: unlimited
+  | Current stacksize for task 145: unlimited
+  | Current stacksize for task 146: unlimited
+  | Current stacksize for task 147: unlimited
+  | Current stacksize for task 148: unlimited
+  | Current stacksize for task 149: unlimited
+  | Current stacksize for task 150: unlimited
+  | Current stacksize for task 151: unlimited
+  | Current stacksize for task 152: unlimited
+  | Current stacksize for task 153: unlimited
+  | Current stacksize for task 154: unlimited
+  | Current stacksize for task 155: unlimited
+  | Current stacksize for task 156: unlimited
+  | Current stacksize for task 157: unlimited
+  | Current stacksize for task 158: unlimited
+  | Current stacksize for task 159: unlimited
+ 
+  Consistency checks for the contents of control.in are next.
+ 
+  HSE06 screening parameters: omega_HF  =      0.11000000 bohr^-1, and
+                              omega_PBE =      0.11000000 bohr^-1.
+  MPI_IN_PLACE appears to work with this MPI implementation.
+  | Keeping use_mpi_in_place .true. (see manual).
+  Explicit treatment of the Coulomb operator is needed, but the RI method is not specified.
+  Coulomb operator: Defaulting to 'LVL fast' resolution of identity - RI_type = LVL_fast
+  Species Se: Using default value for prodbas_acc =   1.000000E-04.
+  Species Se: Using default value max_l_prodbas =    20.
+  Species S: Using default value for prodbas_acc =   1.000000E-04.
+  Species S: Using default value max_l_prodbas =    20.
+  Species Mo: Using default value for prodbas_acc =   1.000000E-04.
+  Species Mo: Using default value max_l_prodbas =    20.
+  Species W: Using default value for prodbas_acc =   1.000000E-04.
+  Species W: Using default value max_l_prodbas =    20.
+  Target number of points in a grid batch is not set. Defaulting to  100
+  Method for grid partitioning is not set. Defaulting to parallel hash+maxmin partitioning.
+  Batch size limit is not set. Defaulting to    200
+  By default, will store active basis functions for each batch.
+  If in need of memory, prune_basis_once .false. can be used to disable this option.
+  communication_type for Hartree potential was not specified.
+  Defaulting to calc_hartree .
+  Defaulting to Pulay charge density mixer.
+  Pulay mixer: Number of relevant iterations not set.
+  Defaulting to    8 iterations.
+  Pulay mixer: Number of initial linear mixing iterations not set.
+  Defaulting to    0 iterations.
+  Work space size for distributed Hartree potential not set.
+  Defaulting to   0.200000E+03 MB.
+  Mixing parameter for charge density mixing has not been set.
+  Using default: charge_mix_param =     0.0500.
+  The mixing parameter will be adjusted in iteration number     2 of the first full s.c.f. cycle only.
+  Mixing parameter for spin density mixing has not been set.
+  Using charge_mix_param as default:     0.0500.
+  Algorithm-dependent basis array size parameters:
+  | n_max_pulay                         :        8
+  Maximum number of self-consistency iterations not provided.
+  Presetting  1000 iterations.
+  Presetting      1001 iterations before the initial mixing cycle
+  is restarted anyway using the sc_init_iter criterion / keyword.
+  Presetting a factor      1.000 between actual scf density residual
+  and density convergence criterion sc_accuracy_rho below which sc_init_iter
+  takes no effect.
+ * No s.c.f. convergence criteria (sc_accuracy_*) were provided in control.in.
+ * The run will proceed with a reasonable default guess, but please check whether.
+ * the s.c.f. cycles seem to take too much or too little time.
+  No maximum number of relaxation steps, defaulting to     1000
+  Default initial Hessian is Lindh matrix (thres = 15.00) plus  0.200000E+01 eV/A^2 times unity.
+  No maximum energy tolerance for TRM/BFGS moves, defaulting to   0.100000E-02
+  Maximum energy tolerance by which TRM/BFGS trajectory may increase over multiple steps:   0.300000E-02
+  No harmonic length scale. Defaulting to   0.250000E-01 A.
+  No trust radius initializer. Defaulting to   0.200000E+00 A.
+  Forces evaluation will include force correction term due to incomplete self-consistency (default).
+ * Notice: The s.c.f. convergence criterion sc_accuracy_rho was not provided.
+ * We used to stop in this case, and ask the user to provide reasonable
+ * scf convergence criteria. However, this led some users to employ criteria
+ * that led to extremely long run times, e.g., for simple relaxation.
+ * We now preset a default value for sc_accuracy_rho if it is not set.
+ * You may still wish to check if this setting is too tight or too loose for your needs.
+ * Based on n_atoms and forces and force-correction status, FHI-aims chose sc_accuracy_rho =  0.279046E-04 .
+  Force calculation: scf convergence accuracy of forces not set.
+  Defaulting to 'sc_accuracy_forces not_checked'.
+  Handling of forces: Unphysical translation and rotation will be removed from forces.
+  No accuracy limit for integral partition fn. given. Defaulting to  0.1000E-14.
+  No threshold value for u(r) in integrations given. Defaulting to  0.1000E-05.
+  No accuracy for occupation numbers given. Defaulting to  0.1000E-12.
+  No threshold value for occupation numbers given. Defaulting to  0.0000E+00.
+  No accuracy for fermi level given. Defaulting to  0.1000E-19.
+  Maximum # of iterations to find E_F not set. Defaulting to  200.
+  Preferred method for the eigenvalue solver ('KS_method') not specified in 'control.in'.
+  Calling BLACS routine to test compilation state
+  Since ScaLAPACK support is enabled, defaulting to ELPA (via ELSI).
+  Will not use alltoall communication since running on < 1024 CPUs.
+  Threshold for basis singularities not set.
+  Default threshold for basis singularities:  0.1000E-04
+  partition_type (choice of integration weights) for integrals was not specified.
+  | Using a version of the partition function of Stratmann and coworkers ('stratmann_sparse').
+  | At each grid point, the set of atoms used to build the partition table is smoothly restricted to
+  | only those atoms whose free-atom density would be non-zero at that grid point.
+  Partitioning for Hartree potential was not defined. Using partition_type for integrals.
+  | Adjusted default value of keyword multip_moments_threshold to:       0.10000000E-11
+  | This value may affect high angular momentum components of the Hartree potential in periodic systems.
+  Threshold for auxiliary basis singularities not set.
+  Default threshold for auxiliary basis singularities:  0.1000E-04
+  No q(lm)/r^(l+1) cutoff set for long-range Hartree potential.
+  | Using default value of  0.100000E-09 .
+  | Verify using the multipole_threshold keyword.
+  Defaulting to new monopole extrapolation.
+  Density update method: automatic selection selected.
+  Using density matrix based charge density update.
+  Using density matrix based charge density update.
+  Using packed matrix style: index .
+ * NOTE: You are attempting to run a periodic structure with an exchange treatment
+ * which requires a two-electron Coulomb operator (Hartree-Fock or a hybrid functional).
+ * The present implementation is reliable to our knowledge, but some things
+ * (like band structure output, or perhaps the auxilary basis set for small
+ * orbital basis sets - see the "for_aux" keyword) require extra care.
+ * Please let us know if you encounter any trouble.
+  Coulomb operator: Defaulting to screening threshold for four-center integrals:   0.100000E-06
+  Coulomb operator: Defaulting to screening threshold for Coulomb matrix:   0.100000E-09
+  Coulomb operator: Defaulting to 'LVL_fast' resolution of identity - RI_type = LVL_fast 
+  No other resolution of identity version is supported for periodic boundary conditions at present.
+ *** Proc   73 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  123 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  141 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   77 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  143 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   76 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   54 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   58 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   61 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  157 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  121 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  135 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  132 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  138 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  154 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   60 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   67 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   43 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   47 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   52 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  122 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+  Coulomb operator: Defaulting to logarithmic spherical Bessel transform integrals (use_logsbt .true.).
+  HSE with LVL_fast: Also defaulting to logarithmic spherical Bessel transform integrals.
+  Geometry relaxation: A file "geometry.in.next_step" is written out by default after each step.
+  | This file contains the geometry of the current relaxation step as well as
+  | the current Hessian matrix needed to restart the relaxation algorithm.
+  | If you do not want part or all of this information, use the keywords
+ *** Proc  159 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   71 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+  | "write_restart_geometry" or "hessian_to_restart_geometry" to switch the output off.
+  Defaulting to use full k-point grid (no symmetry reduction).
+  Charge integration errors on the 3D integration grid will be compensated
+  by explicit normalization and distribution of residual charges.
+  Use the "compensate_multipole_errors" flag to change this behaviour.
+  LVL not implemented with density matrix yet
+  -> switching to transformed overlap
+ *** Proc  127 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+  LVL probably works better with logsbt
+  Default to 1D ("use_logsbt") integrations for auxiliary 2-center integrals.
+  Default onset of logarithmic r-grid for SBT is -38.000000000000
+  Default onset of logarithmic k-grid for SBT is -25.000000000000
+  Default range of logarithmic r- and k-grid for SBT is  45.000000000000
+ *** Proc   45 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+  Default number of logarithmic r- and k-grid for SBT is   4096
+  * Use logSBT for radial HSE integration, too
+  Default of use_2d_corr is to use the efficient 2D distribution where possible
+ *** Proc  128 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   75 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   30 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   32 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  147 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  111 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   40 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   31 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  124 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   46 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  145 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   65 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   33 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  130 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   37 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  146 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   42 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   62 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   12 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   64 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   14 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  120 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   66 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   17 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  155 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   20 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  156 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   44 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   18 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  148 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   68 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  151 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   69 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   13 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  158 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   34 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   11 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   23 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   15 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   78 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   29 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   55 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc    9 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  142 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   48 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   24 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  149 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  152 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   74 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   19 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   56 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  144 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   38 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ 
+  Consistency checks for the contents of geometry.in are next.
+ 
+
+  Range separation radius for Ewald summation (hartree_convergence_parameter):      5.00000000 bohr.
+  Number of empty states per atom not set in control.in - providing a guess from actual geometry.
+  | Total number of empty states used during s.c.f. cycle:      489
+  If you use a very high smearing, use empty_states (per atom!) in control.in to increase this value.
+ *** Proc   21 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   27 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  140 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+
+  Structure-dependent array size parameters: 
+  | Number of distinct atom types in initial rho :        2
+  | Maximum number of distinct radial functions  :       56
+  | Maximum number of basis functions            :     3257
+  | Number of Kohn-Sham states (occupied + empty):     2230
+------------------------------------------------------------
+ * Error: You have requested a work function calculation or dipole correction for a surface.
+ * This is only supported if there is a periodic surface, where the surface is in the xy plane
+ * (i.e., only one of your lattice vectors can have a z component).
+ *** Proc    0 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  150 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc    2 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  139 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc    4 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   26 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc    3 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   10 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   25 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   51 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   35 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  125 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  126 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   39 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  129 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   70 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc    1 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  131 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   72 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc    5 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  133 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   41 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc    6 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   49 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  134 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   57 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc    7 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  136 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc    8 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  137 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   16 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   22 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   28 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   36 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   63 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   50 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   53 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   59 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc   79 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in
+ *** Proc  153 in read_geo_checkinput: Dipole correction clashes with lattice vector definition - found while reading geometry.in

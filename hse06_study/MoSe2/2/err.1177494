@@ -1,0 +1,59 @@
+/u/alaa/.bashrc: line 27: expert: command not found
+Currently Loaded Modulefiles:
+  1) mkl/2021.2     2) intel/19.1.2   3) impi/2019.8
+Starting MPS on ravg1104
+Starting MPS on ravg1034
+Starting MPS on ravg1032
+Starting MPS on ravg1033
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 1177494.0 ON ravg1032 CANCELLED AT 2022-01-24T09:32:34 ***
+slurmstepd: error: *** JOB 1177494 ON ravg1032 CANCELLED AT 2022-01-24T09:32:34 ***
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  000014EA59BF0310  Unknown               Unknown  Unknown
+libmkl_avx512.so.  000014E82EA9F46E  mkl_blas_avx512_x     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  0000151692CE1310  Unknown               Unknown  Unknown
+libmkl_avx512.so.  0000151467D49C0C  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  000014AF2A212310  Unknown               Unknown  Unknown
+libmkl_avx512.so.  000014ACFF0C1411  mkl_blas_avx512_x     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  000014F21E0CC310  Unknown               Unknown  Unknown
+libmkl_avx512.so.  000014EFF3158379  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  000014F6D71FE310  Unknown               Unknown  Unknown
+libmkl_avx512.so.  000014F4AC289CE7  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  000014E5BCD74310  Unknown               Unknown  Unknown
+libmkl_avx512.so.  000014E391E0176D  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  000014554D5F8310  Unknown               Unknown  Unknown
+libmkl_avx512.so.  0000145322419569  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  0000145A5C3D3310  Unknown               Unknown  Unknown
+libmkl_avx512.so.  0000145831466DD5  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  0000151D3AAB5310  Unknown               Unknown  Unknown
+libmkl_avx512.so.  0000151B0FB49431  mkl_blas_avx512_d     Unknown  Unknown
+forrtl: error (78): process killed (SIGTERM)
+Image              PC                Routine            Line        Source             
+aims.x             00000000030B1A0B  Unknown               Unknown  Unknown
+libpthread-2.26.s  000015419DC34310  Unknown               Unknown  Unknown
